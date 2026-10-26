@@ -1,0 +1,15 @@
+{
+  "python": "3.10.7 (tags/v3.10.7:6cc6b13, Sep  5 2022, 14:08:36) [MSC v.1933 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "sqlite": "3.37.2",
+  "test_returncode": 0,
+  "test_wall_seconds": 2.184336500009522,
+  "fixture_byte_identical": {
+    "fixture_manifest.json": false,
+    "gold_annotations.jsonl": false,
+    "synthetic_notes.jsonl": false
+  },
+  "benchmark_equal_historical": true,
+  "stress_equal_historical": true,
+  "note": "Executed BEFORE modifications; all historical files preserved."
+}

@@ -1,0 +1,255 @@
+{
+  "audit_version": "lab-independence-1.0.0",
+  "generated_at_utc": "2026-10-26T18:11:35Z",
+  "independent_path": {
+    "atomic_weights": {
+      "C": 12.011,
+      "H": 1.008,
+      "N": 14.007,
+      "O": 15.999
+    },
+    "molar_mass": {
+      "GLUCOSE": 180.156,
+      "CREATININE": 113.12
+    },
+    "factors": {
+      "GLUCOSE": 0.055507,
+      "CREATININE": 88.401697,
+      "HGB": 10.0,
+      "ALT": 1.0,
+      "AST": 1.0
+    },
+    "bands": {
+      "ALT": {
+        "lo": 7.0,
+        "hi": 40.0,
+        "unit": "U/L"
+      },
+      "AST": {
+        "lo": 8.0,
+        "hi": 40.0,
+        "unit": "U/L"
+      },
+      "GLUCOSE": {
+        "lo": 3.9,
+        "hi": 6.1,
+        "unit": "mmol/L"
+      },
+      "HGB": {
+        "lo": 115.0,
+        "hi": 175.0,
+        "unit": "g/L"
+      }
+    },
+    "band_status": "demo values for pipeline testing; not a clinical reference standard"
+  },
+  "sources": [
+    {
+      "id": "ciaaw-atomic-weights",
+      "publisher": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+      "title": "Standard Atomic Weights",
+      "url": "https://www.ciaaw.org/atomic-weights.htm",
+      "used_for": "abridged atomic weights C 12.011, H 1.008, N 14.007, O 15.999; used to derive molar masses of glucose (C6H12O6) and creatinine (C4H7N3O)",
+      "verification": "molar mass recomputed from the molecular formula in clinforge/lab_standards.py; no dependence on the project's REFERENCE_INTERVALS table"
+    },
+    {
+      "id": "bipm-si-prefixes",
+      "publisher": "Bureau International des Poids et Mesures (BIPM)",
+      "title": "SI prefixes",
+      "url": "https://www.bipm.org/en/measurement-units/si-prefixes",
+      "used_for": "g/dL -> g/L (deci = 10^-1, so 1 g/dL = 10 g/L); mg/dL -> mg/L for the glucose derivation",
+      "verification": "definitional; no empirical constant involved"
+    },
+    {
+      "id": "iupac-enzyme-unit",
+      "publisher": "IUPAC",
+      "title": "Definition of the enzyme unit (U)",
+      "url": null,
+      "citation": "1 U = 1 micromole of substrate converted per minute under defined conditions; enzyme activity is reported in U/L and is not converted by molar mass",
+      "used_for": "ALT and AST are handled as activity concentrations; no mass conversion is applied",
+      "verification": "definitional; the project reports the same U/L value it displays"
+    }
+  ],
+  "band_status": "demo values for pipeline testing; not a clinical reference standard",
+  "table_difference": {
+    "ALT": {
+      "project_factor": 1.0,
+      "independent_factor": 1.0,
+      "factor_relative_difference": 0.0,
+      "factor_agrees_within_0.1pct": true,
+      "project_band": [
+        7.0,
+        40.0
+      ],
+      "independent_band": [
+        7.0,
+        40.0
+      ],
+      "band_identical": true
+    },
+    "AST": {
+      "project_factor": 1.0,
+      "independent_factor": 1.0,
+      "factor_relative_difference": 0.0,
+      "factor_agrees_within_0.1pct": true,
+      "project_band": [
+        8.0,
+        40.0
+      ],
+      "independent_band": [
+        8.0,
+        40.0
+      ],
+      "band_identical": true
+    },
+    "GLUCOSE": {
+      "project_factor": 0.05550622,
+      "independent_factor": 0.05550745,
+      "factor_relative_difference": 2.2202486678373493e-05,
+      "factor_agrees_within_0.1pct": true,
+      "project_band": [
+        3.9,
+        6.1
+      ],
+      "independent_band": [
+        3.9,
+        6.1
+      ],
+      "band_identical": true
+    },
+    "HGB": {
+      "project_factor": 10.0,
+      "independent_factor": 10.0,
+      "factor_relative_difference": 0.0,
+      "factor_agrees_within_0.1pct": true,
+      "project_band": [
+        115.0,
+        175.0
+      ],
+      "independent_band": [
+        115.0,
+        175.0
+      ],
+      "band_identical": true
+    }
+  },
+  "corpus_recomputation": {
+    "n_lab_values": 1277,
+    "n_checked": 1277,
+    "unparsable": 0,
+    "conversion_mismatch": 0,
+    "direction_mismatch": 0,
+    "max_absolute_delta": 0.01,
+    "by_analyte": {
+      "HGB": 346,
+      "GLUCOSE": 488,
+      "ALT": 344,
+      "AST": 99
+    },
+    "by_unit": {
+      "g/L": 244,
+      "mmol/L": 396,
+      "U/L": 443,
+      "g/dL": 102,
+      "mg/dL": 92
+    },
+    "conversion_mismatch_examples": [],
+    "direction_mismatch_examples": []
+  },
+  "perturbation_experiment": {
+    "n_cases": 300,
+    "seed": 424242,
+    "injected_errors": {
+      "GLUCOSE.factor_mgdl_to_mmoll": {
+        "used": 20.0,
+        "correct_approx": 18.0156
+      },
+      "HGB.factor_gdl_to_gl": {
+        "used": 12.0,
+        "correct": 10.0
+      },
+      "GLUCOSE.hi": {
+        "used": 4.5,
+        "demo_band": 6.1
+      },
+      "HGB.lo": {
+        "used": 160.0,
+        "demo_band": 115.0
+      }
+    },
+    "arm_shared_table": {
+      "checked": 159,
+      "conversion_mismatch": 0,
+      "direction_mismatch": 0
+    },
+    "arm_independent_table": {
+      "checked": 159,
+      "conversion_mismatch": 26,
+      "direction_mismatch": 10
+    },
+    "independent_examples": [
+      {
+        "text": "7.2 g/dL",
+        "analyte": "HGB",
+        "recorded_std": 86.4,
+        "recorded_direction": "low",
+        "recomputed": 72.0,
+        "recomputed_direction": "low"
+      },
+      {
+        "text": "36 mg/dL",
+        "analyte": "GLUCOSE",
+        "recorded_std": 1.8,
+        "recorded_direction": "low",
+        "recomputed": 2.0,
+        "recomputed_direction": "low"
+      },
+      {
+        "text": "64 mg/dL",
+        "analyte": "GLUCOSE",
+        "recorded_std": 3.2,
+        "recorded_direction": "low",
+        "recomputed": 3.55,
+        "recomputed_direction": "low"
+      },
+      {
+        "text": "50 mg/dL",
+        "analyte": "GLUCOSE",
+        "recorded_std": 2.5,
+        "recorded_direction": "low",
+        "recomputed": 2.78,
+        "recomputed_direction": "low"
+      },
+      {
+        "text": "41 mg/dL",
+        "analyte": "GLUCOSE",
+        "recorded_std": 2.05,
+        "recorded_direction": "low",
+        "recomputed": 2.28,
+        "recomputed_direction": "low"
+      },
+      {
+        "text": "121 g/L",
+        "analyte": "HGB",
+        "recorded_std": 121,
+        "recorded_direction": "low",
+        "recomputed": 121.0,
+        "recomputed_direction": "normal"
+      }
+    ],
+    "interpretation": "the shared-table arm passes by construction; the independent arm detects the injected factor and band errors, so the second path is sensitive to exactly the class of mistake that circular validation hides",
+    "interpretation_zh": "共享表那一臂按构造必然通过；独立路径检出了注入的换算与区间错误，说明第二条路径恰好对循环验证会掩盖的那类错误敏感"
+  },
+  "conclusion": {
+    "table_agrees": true,
+    "corpus_clean_under_independent_path": true,
+    "circularity_demonstrated": true,
+    "gold_labels_changed": false
+  },
+  "claim_boundary": {
+    "proves": "unit conversions and demo bands are implemented twice from different inputs; the corpus survives independent recomputation; the second path catches an injected factor/band error that the shared path cannot",
+    "does_not_prove": "that the demo bands are clinically correct. Reference intervals are method-, analyser- and population-specific; no laboratory standard or external quality-assessment data are available here.",
+    "proves_zh": "换算与演示区间由两套不同输入分别实现；1,277 个检验值在独立路径下复算一致；第二条路径能检出共享表看不见的注入错误",
+    "does_not_prove_zh": "演示区间在临床上正确。真实参考区间取决于方法、分析仪与人群，本机没有实验室标准或室间质评数据"
+  }
+}

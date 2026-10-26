@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<title>ClinDataForge PHI 方法对照（冻结测试集）</title>
+<style>
+:root { color-scheme: dark; }
+body { background:#12151c; color:#e6e9ef; font-family:"Segoe UI","Microsoft YaHei",sans-serif; margin:0; padding:28px; line-height:1.6; }
+h1 { font-size:22px; margin:0 0 4px; } h2 { font-size:17px; margin:26px 0 8px; color:#9fd0ff; }
+.sub { color:#93a0b4; font-size:13px; margin-bottom:18px; }
+table { border-collapse:collapse; width:100%; font-size:13px; margin-bottom:8px; }
+th,td { border:1px solid #2c3341; padding:6px 9px; text-align:left; }
+th { background:#1b2130; color:#cfe0f5; }
+td.num { text-align:right; font-variant-numeric:tabular-nums; }
+tr:nth-child(even) td { background:#171c26; }
+.ci { color:#8b96a8; font-size:11px; }
+.warn { background:#3a2b16; border-left:3px solid #e0a33a; padding:10px 14px; margin:14px 0; font-size:13px; }
+pre { background:#0e1219; padding:10px; overflow:auto; font-size:12px; color:#b9c6d8; }
+.grid { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:14px 0; }
+.card { background:#1b2130; border:1px solid #2c3341; border-radius:6px; padding:10px 12px; }
+.card b { display:block; font-size:12px; color:#93a0b4; font-weight:500; }
+.card span { font-size:20px; color:#7fd6a0; }
+</style></head><body>
+<h1>ClinDataForge · PHI 识别四路方法对照</h1>
+<div class="sub">冻结测试集 632 条记录 / 1942 个金标 PHI 实体 · 全部数字来自一次实际运行 · 数据集独立审计结论：PASS</div>
+<div class="warn"><b>阅读前提：</b>数据为 100% 合成（ASQ-PHI 第三方合成基准 + 本仓库独立中文模板），标签为机器标签、未经医生复核。
+所有指标只描述该合成分布上的行为，<b>不等于真实患者病历的脱敏准确率</b>，也不能据此宣称满足 HIPAA Safe Harbor。</div>
+<h2>1. 主结果（实体级精确跨度）</h2>
+<table><tr><th>指标</th><th>A 原规则</th><th>B Presidio</th><th>C GLiNER</th><th>D 融合</th></tr><tr><td>精确跨度 Precision</td><td class="num">0.7800</td><td class="num">0.3905</td><td class="num">0.7522</td><td class="num">0.7566</td></tr><tr><td>精确跨度 Recall</td><td class="num">0.0803</td><td class="num">0.3084</td><td class="num">0.8363</td><td class="num">0.9042</td></tr><tr><td>精确跨度 F1</td><td class="num">0.1457</td><td class="num">0.3446</td><td class="num">0.7920</td><td class="num">0.8238</td></tr><tr><td>金标字符全部被掩码率（含PHI记录）</td><td class="num">0.0000</td><td class="num">0.0349</td><td class="num">0.6448</td><td class="num">0.7043</td></tr><tr><td>全部实体精确识别率（含PHI记录）</td><td class="num">0.0000</td><td class="num">0.0246</td><td class="num">0.4620</td><td class="num">0.6427</td></tr><tr><td>金标字符残留率</td><td class="num">0.9032</td><td class="num">0.5383</td><td class="num">0.0704</td><td class="num">0.0536</td></tr><tr><td>保护医学字符误删率</td><td class="num">0.0000</td><td class="num">0.2120</td><td class="num">0.1442</td><td class="num">0.1442</td></tr><tr><td>保护医学跨度受损率</td><td class="num">0.0000</td><td class="num">0.2433</td><td class="num">0.2303</td><td class="num">0.2303</td></tr><tr><td>非PHI字符误删率</td><td class="num">0.0000</td><td class="num">0.0735</td><td class="num">0.0654</td><td class="num">0.0661</td></tr><tr><td>无PHI记录被任意掩码率</td><td class="num">0.0000</td><td class="num">0.7793</td><td class="num">0.9655</td><td class="num">0.9655</td></tr></table>
+<h2>2. 分类别 F1</h2>
+<table><tr><th>类别</th><th>A</th><th>B</th><th>C</th><th>D</th><th>金标数</th></tr><tr><td>ADDRESS</td><td class="num">0.0000</td><td class="num">0.1307</td><td class="num">0.6914</td><td class="num">0.7095</td><td class="num">484</td></tr><tr><td>DATE</td><td class="num">0.0000</td><td class="num">0.2885</td><td class="num">0.9405</td><td class="num">0.9426</td><td class="num">476</td></tr><tr><td>EMAIL</td><td class="num">0.0000</td><td class="num">1.0000</td><td class="num">0.9655</td><td class="num">1.0000</td><td class="num">15</td></tr><tr><td>INSURANCE_ID</td><td class="num">0.0000</td><td class="num">0.0000</td><td class="num">0.7368</td><td class="num">0.8119</td><td class="num">54</td></tr><tr><td>NAME</td><td class="num">0.0000</td><td class="num">0.6566</td><td class="num">0.7886</td><td class="num">0.7904</td><td class="num">477</td></tr><tr><td>PATIENT_ID</td><td class="num">0.4277</td><td class="num">0.0000</td><td class="num">0.6257</td><td class="num">0.7811</td><td class="num">250</td></tr><tr><td>PHONE</td><td class="num">0.5733</td><td class="num">0.4140</td><td class="num">0.8903</td><td class="num">0.9943</td><td class="num">175</td></tr><tr><td>SSN</td><td class="num">0.0000</td><td class="num">0.3000</td><td class="num">1.0000</td><td class="num">0.6286</td><td class="num">11</td></tr></table>
+<h2>3. 资源消耗</h2>
+<table><tr><th>指标</th><th>A</th><th>B</th><th>C</th><th>D</th></tr><tr><td>初始化（秒）</td><td class="num">0.18</td><td class="num">19.63</td><td class="num">8.21</td><td class="num">9.49</td></tr><tr><td>train 预热（秒）</td><td class="num">0.000</td><td class="num">0.480</td><td class="num">0.658</td><td class="num">0.896</td></tr><tr><td>推理总时长（秒）</td><td class="num">0.05</td><td class="num">18.26</td><td class="num">447.66</td><td class="num">405.81</td></tr><tr><td>单文档时延中位数（毫秒）</td><td class="num">0.1</td><td class="num">18.8</td><td class="num">584.7</td><td class="num">549.1</td></tr><tr><td>吞吐（记录/秒）</td><td class="num">12540.63</td><td class="num">34.62</td><td class="num">1.41</td><td class="num">1.56</td></tr><tr><td>峰值进程 RSS（MB）</td><td class="num">24</td><td class="num">616</td><td class="num">1160</td><td class="num">1181</td></tr></table>
+<h2>4. 配对 cluster bootstrap（2000 次）</h2>
+<table><tr><th>比较</th><th>召回 Δ</th><th>F1 Δ</th><th>完整掩码率 Δ</th><th>医学误删率 Δ</th></tr><tr><td>B − A</td><td class="num">+0.2281<br><span class="ci">[+0.2101, +0.2464]</span></td><td class="num">+0.1990<br><span class="ci">[+0.1752, +0.2232]</span></td><td class="num">+0.0349<br><span class="ci">[+0.0183, +0.0535]</span></td><td class="num">+0.2120<br><span class="ci">[+0.1942, +0.2323]</span></td></tr><tr><td>C − A</td><td class="num">+0.7559<br><span class="ci">[+0.7339, +0.7788]</span></td><td class="num">+0.6463<br><span class="ci">[+0.6215, +0.6726]</span></td><td class="num">+0.6448<br><span class="ci">[+0.5983, +0.6938]</span></td><td class="num">+0.1442<br><span class="ci">[+0.1265, +0.1616]</span></td></tr><tr><td>D − A</td><td class="num">+0.8239<br><span class="ci">[+0.8058, +0.8422]</span></td><td class="num">+0.6782<br><span class="ci">[+0.6557, +0.7012]</span></td><td class="num">+0.7043<br><span class="ci">[+0.6467, +0.7641]</span></td><td class="num">+0.1442<br><span class="ci">[+0.1265, +0.1616]</span></td></tr><tr><td>D − C</td><td class="num">+0.0680<br><span class="ci">[+0.0541, +0.0822]</span></td><td class="num">+0.0318<br><span class="ci">[+0.0229, +0.0404]</span></td><td class="num">+0.0595<br><span class="ci">[+0.0222, +0.1014]</span></td><td class="num">+0.0000<br><span class="ci">[+0.0000, +0.0000]</span></td></tr></table>
+<h2>5. 开发集阈值前沿（C 与 D）</h2>
+<table><tr><th>方法</th><th>阈值</th><th>Recall</th><th>Precision</th><th>F1</th><th>医学误删率</th></tr><tr><td>C</td><td>0.05</td><td class="num">0.8242</td><td class="num">0.7224</td><td class="num">0.7699</td><td class="num">0.2277</td></tr><tr><td>C</td><td>0.10</td><td class="num">0.8164</td><td class="num">0.7737</td><td class="num">0.7945</td><td class="num">0.1070</td></tr><tr><td>C</td><td>0.15</td><td class="num">0.8051</td><td class="num">0.7856</td><td class="num">0.7952</td><td class="num">0.0800</td></tr><tr><td>C</td><td>0.20</td><td class="num">0.8009</td><td class="num">0.7913</td><td class="num">0.7961</td><td class="num">0.0693</td></tr><tr><td>C</td><td>0.25</td><td class="num">0.7966</td><td class="num">0.7932</td><td class="num">0.7949</td><td class="num">0.0659</td></tr><tr><td>C</td><td>0.30</td><td class="num">0.7895</td><td class="num">0.7986</td><td class="num">0.7940</td><td class="num">0.0553</td></tr><tr><td>C</td><td>0.35</td><td class="num">0.7824</td><td class="num">0.8029</td><td class="num">0.7925</td><td class="num">0.0509</td></tr><tr><td>C</td><td>0.40</td><td class="num">0.7775</td><td class="num">0.8048</td><td class="num">0.7909</td><td class="num">0.0484</td></tr><tr><td>C</td><td>0.45</td><td class="num">0.7718</td><td class="num">0.8085</td><td class="num">0.7897</td><td class="num">0.0476</td></tr><tr><td>C</td><td>0.50</td><td class="num">0.7640</td><td class="num">0.8117</td><td class="num">0.7871</td><td class="num">0.0463</td></tr><tr><td>C</td><td>0.55</td><td class="num">0.7576</td><td class="num">0.8148</td><td class="num">0.7852</td><td class="num">0.0463</td></tr><tr><td>C</td><td>0.60</td><td class="num">0.7498</td><td class="num">0.8157</td><td class="num">0.7814</td><td class="num">0.0451</td></tr><tr><td>C</td><td>0.65</td><td class="num">0.7413</td><td class="num">0.8210</td><td class="num">0.7791</td><td class="num">0.0420</td></tr><tr><td>C</td><td>0.70</td><td class="num">0.7378</td><td class="num">0.8262</td><td class="num">0.7795</td><td class="num">0.0392</td></tr><tr><td>C</td><td>0.75</td><td class="num">0.7300</td><td class="num">0.8306</td><td class="num">0.7771</td><td class="num">0.0369</td></tr><tr><td>C</td><td>0.80</td><td class="num">0.7172</td><td class="num">0.8377</td><td class="num">0.7728</td><td class="num">0.0303</td></tr><tr><td>C</td><td>0.85</td><td class="num">0.7038</td><td class="num">0.8437</td><td class="num">0.7674</td><td class="num">0.0258</td></tr><tr><td>C</td><td>0.90</td><td class="num">0.6782</td><td class="num">0.8507</td><td class="num">0.7547</td><td class="num">0.0239</td></tr><tr><td>D</td><td>0.05</td><td class="num">0.9220</td><td class="num">0.7268</td><td class="num">0.8129</td><td class="num">0.2277</td></tr><tr><td>D</td><td>0.10</td><td class="num">0.9150</td><td class="num">0.7731</td><td class="num">0.8380</td><td class="num">0.1070</td></tr><tr><td>D</td><td>0.15</td><td class="num">0.9043</td><td class="num">0.7838</td><td class="num">0.8397</td><td class="num">0.0800</td></tr><tr><td>D</td><td>0.20</td><td class="num">0.9001</td><td class="num">0.7888</td><td class="num">0.8408</td><td class="num">0.0693</td></tr><tr><td>D</td><td>0.25</td><td class="num">0.8965</td><td class="num">0.7906</td><td class="num">0.8403</td><td class="num">0.0659</td></tr><tr><td>D</td><td>0.30</td><td class="num">0.8909</td><td class="num">0.7956</td><td class="num">0.8405</td><td class="num">0.0553</td></tr><tr><td>D</td><td>0.35</td><td class="num">0.8845</td><td class="num">0.7995</td><td class="num">0.8398</td><td class="num">0.0509</td></tr><tr><td>D</td><td>0.40</td><td class="num">0.8795</td><td class="num">0.8012</td><td class="num">0.8385</td><td class="num">0.0484</td></tr><tr><td>D</td><td>0.45</td><td class="num">0.8738</td><td class="num">0.8043</td><td class="num">0.8376</td><td class="num">0.0476</td></tr><tr><td>D</td><td>0.50</td><td class="num">0.8661</td><td class="num">0.8071</td><td class="num">0.8356</td><td class="num">0.0463</td></tr><tr><td>D</td><td>0.55</td><td class="num">0.8611</td><td class="num">0.8100</td><td class="num">0.8348</td><td class="num">0.0463</td></tr><tr><td>D</td><td>0.60</td><td class="num">0.8547</td><td class="num">0.8110</td><td class="num">0.8323</td><td class="num">0.0451</td></tr><tr><td>D</td><td>0.65</td><td class="num">0.8462</td><td class="num">0.8156</td><td class="num">0.8306</td><td class="num">0.0420</td></tr><tr><td>D</td><td>0.70</td><td class="num">0.8427</td><td class="num">0.8200</td><td class="num">0.8312</td><td class="num">0.0392</td></tr><tr><td>D</td><td>0.75</td><td class="num">0.8363</td><td class="num">0.8240</td><td class="num">0.8301</td><td class="num">0.0369</td></tr><tr><td>D</td><td>0.80</td><td class="num">0.8257</td><td class="num">0.8298</td><td class="num">0.8277</td><td class="num">0.0303</td></tr><tr><td>D</td><td>0.85</td><td class="num">0.8150</td><td class="num">0.8351</td><td class="num">0.8250</td><td class="num">0.0258</td></tr><tr><td>D</td><td>0.90</td><td class="num">0.7931</td><td class="num">0.8414</td><td class="num">0.8165</td><td class="num">0.0239</td></tr></table>
+<h2>6. 最终选定配置</h2>
+<pre>{
+ "B": {
+  "rule": "max F1; ties by higher recall then lower protected-clinical deletion",
+  "n_candidates": 10,
+  "chosen": {
+   "method": "B",
+   "gliner_threshold": null,
+   "presidio_threshold": 0.1,
+   "components": [
+    "presidio"
+   ],
+   "recall": 0.3621545003543586,
+   "precision": 0.40555555555555556,
+   "f1": 0.38262822912766753,
+   "all_gold_phi_masked_positive_rate": 0.043596730245231606,
+   "all_entities_exact_positive_rate": 0.0326975476839237,
+   "protected_deletion_rate": 0.2541110766366739,
+   "non_phi_deletion_rate": 0.08951097287022637,
+   "negative_record_any_redaction_rate": 0.6896551724137931
+  }
+ },
+ "C": {
+  "rule": "max F1; ties by higher recall then lower protected-clinical deletion",
+  "n_candidates": 18,
+  "chosen": {
+   "method": "C",
+   "gliner_threshold": 0.2,
+   "presidio_threshold": null,
+   "components": [
+    "gliner"
+   ],
+   "recall": 0.8008504606661941,
+   "precision": 0.7913165266106442,
+   "f1": 0.7960549489256781,
+   "all_gold_phi_masked_positive_rate": 0.7002724795640327,
+   "all_entities_exact_positive_rate": 0.3896457765667575,
+   "protected_deletion_rate": 0.06926776295376978,
+   "non_phi_deletion_rate": 0.049322372806043104,
+   "negative_record_any_redaction_rate": 0.9655172413793104
+  }
+ },
+ "D": {
+  "rule": "max F1; ties by higher recall then lower protected-clinical deletion",
+  "n_candidates": 198,
+  "chosen": {
+   "method": "D",
+   "gliner_threshold": 0.2,
+   "presidio_threshold": null,
+   "components": [
+    "context_rules",
+    "gliner"
+   ],
+   "recall": 0.9000708717221828,
+   "precision": 0.7888198757763976,
+   "f1": 0.8407811982787157,
+   "all_gold_phi_masked_positive_rate": 0.7384196185286104,
+   "all_entities_exact_positive_rate": 0.6403269754768393,
+   "protected_deletion_rate": 0.06926776295376978,
+   "non_phi_deletion_rate": 0.05080352514256091,
+   "negative_record_any_redaction_rate": 0.9655172413793104
+  }
+ }
+}</pre>
+</body></html>

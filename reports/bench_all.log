@@ -1,0 +1,5 @@
+baseline_fp16_t2_b1 exit=0
+fp32_t4_b8 exit=0
+fp32_t8_b8 exit=0
+fp32_t4_b8_sorted exit=0
+fp32_t8_b1 exit=0

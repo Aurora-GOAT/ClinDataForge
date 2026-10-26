@@ -1,0 +1,129 @@
+{
+  "seed": 20261026,
+  "n_diseases": 16,
+  "min_phenotypes": 8,
+  "rule": "rank by (#lab-linked phenotypes desc, #phenotypes desc, id asc); top n-4 plus seeded sample of 4 from next 400",
+  "diseases": [
+    {
+      "disease_id": "OMIM:117550",
+      "disease_name": "Sotos syndrome",
+      "source": "OMIM",
+      "n_phenotypes": 122,
+      "onsets": [
+        "HP:0003577"
+      ]
+    },
+    {
+      "disease_id": "OMIM:124000",
+      "disease_name": "Mitochondrial complex III deficiency, nuclear type 1",
+      "source": "OMIM",
+      "n_phenotypes": 53,
+      "onsets": []
+    },
+    {
+      "disease_id": "OMIM:276700",
+      "disease_name": "Tyrosinemia, type I",
+      "source": "OMIM",
+      "n_phenotypes": 38,
+      "onsets": []
+    },
+    {
+      "disease_id": "OMIM:609069",
+      "disease_name": "Pancreatic and cerebellar agenesis",
+      "source": "OMIM",
+      "n_phenotypes": 27,
+      "onsets": []
+    },
+    {
+      "disease_id": "OMIM:613658",
+      "disease_name": "Rajab interstitial lung disease with brain calcifications",
+      "source": "OMIM",
+      "n_phenotypes": 63,
+      "onsets": [
+        "HP:0003593"
+      ]
+    },
+    {
+      "disease_id": "OMIM:615453",
+      "disease_name": "Mitochondrial complex III deficiency, nuclear type 6",
+      "source": "OMIM",
+      "n_phenotypes": 21,
+      "onsets": []
+    },
+    {
+      "disease_id": "OMIM:615471",
+      "disease_name": "Mitochondrial DNA depletion syndrome 13 (encephalomyopathic type)",
+      "source": "OMIM",
+      "n_phenotypes": 113,
+      "onsets": []
+    },
+    {
+      "disease_id": "OMIM:616483",
+      "disease_name": "Infantile liver failure syndrome 2",
+      "source": "OMIM",
+      "n_phenotypes": 11,
+      "onsets": [
+        "HP:0003593"
+      ]
+    },
+    {
+      "disease_id": "OMIM:619991",
+      "disease_name": "Liver disease, severe congenital",
+      "source": "OMIM",
+      "n_phenotypes": 100,
+      "onsets": [
+        "HP:0003577",
+        "HP:0003623"
+      ]
+    },
+    {
+      "disease_id": "OMIM:620887",
+      "disease_name": "Multiple mitochondrial dysfunctions syndrome 9B",
+      "source": "OMIM",
+      "n_phenotypes": 193,
+      "onsets": []
+    },
+    {
+      "disease_id": "OMIM:621184",
+      "disease_name": "Tayoun-Maawali syndrome",
+      "source": "OMIM",
+      "n_phenotypes": 116,
+      "onsets": []
+    },
+    {
+      "disease_id": "ORPHA:264580",
+      "disease_name": "Glycogen storage disease due to liver phosphorylase kinase deficiency",
+      "source": "ORPHA",
+      "n_phenotypes": 51,
+      "onsets": []
+    },
+    {
+      "disease_id": "ORPHA:348",
+      "disease_name": "Fructose-1,6-bisphosphatase deficiency",
+      "source": "ORPHA",
+      "n_phenotypes": 34,
+      "onsets": []
+    },
+    {
+      "disease_id": "ORPHA:39812",
+      "disease_name": "Graft versus host disease",
+      "source": "ORPHA",
+      "n_phenotypes": 41,
+      "onsets": []
+    },
+    {
+      "disease_id": "ORPHA:506",
+      "disease_name": "Leigh syndrome",
+      "source": "ORPHA",
+      "n_phenotypes": 98,
+      "onsets": []
+    },
+    {
+      "disease_id": "ORPHA:618891",
+      "disease_name": "Chronic neurovisceral acid sphingomyelinase deficiency",
+      "source": "ORPHA",
+      "n_phenotypes": 38,
+      "onsets": []
+    }
+  ]
+}

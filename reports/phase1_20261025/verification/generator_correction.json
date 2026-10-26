@@ -1,0 +1,13 @@
+{
+  "changed_record_ids": [
+    "SYN-R00046",
+    "SYN-R00161",
+    "SYN-R00276",
+    "SYN-R00391",
+    "SYN-R00506",
+    "SYN-R00506-NEAR"
+  ],
+  "gold_objects_unchanged": true,
+  "cause": "Legacy abnormal T= replacement also matched suffix in ALT=; parser/gold disagreed in six records.",
+  "interpretation": "Any lab metric increase is fixture correction, NOT a new extraction method or independent evaluation."
+}

@@ -1,0 +1,71 @@
+{
+  "disclaimer": "Metrics use a programmatically generated, templated synthetic fixture; NOT independent clinical data or expert ground truth.",
+  "n_records": 730,
+  "n_patient_groups": 600,
+  "n_duplicates_gold": 130,
+  "metrics": {
+    "baseline_phi_span_exact": {
+      "tp": 438,
+      "fp": 0,
+      "fn": 1752,
+      "precision": 1.0,
+      "recall": 0.2,
+      "f1": 0.3333
+    },
+    "pipeline_phi_span_exact": {
+      "tp": 2190,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "baseline_lab_field_exact_with_numeric_tolerance": {
+      "tp": 430,
+      "fp": 0,
+      "fn": 2456,
+      "precision": 1.0,
+      "recall": 0.149,
+      "f1": 0.2593
+    },
+    "pipeline_lab_field_exact_with_numeric_tolerance": {
+      "tp": 2880,
+      "fp": 6,
+      "fn": 6,
+      "precision": 0.9979,
+      "recall": 0.9979,
+      "f1": 0.9979
+    },
+    "pipeline_duplicate_record_detection": {
+      "tp": 130,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "gold_provenance": "Generator-produced spans/values/clusters; may share structure with operators.",
+  "unsupported_scope": "Unseen hospital notes, handwriting/OCR, DICOM images, ICD/SNOMED/LOINC mapping, real PHI recall, clinical safety",
+  "split_group_integrity_verified": true,
+  "pipeline_audit": {
+    "version": "0.1.0",
+    "input_rows": 730,
+    "processed_rows": 730,
+    "malformed_rows_dropped_without_raw_export": 0,
+    "accepted_rows": 573,
+    "quarantined_rows": 157,
+    "duplicate_rows_quarantined": 130,
+    "known_pattern_phi_spans_masked": 2190,
+    "accepted_fraction": 0.7849,
+    "operator_issue_counts": {
+      "DUPLICATE_WITHIN_PATIENT": 130,
+      "OUT_OF_BROAD_RANGE_TEMP_C": 34
+    },
+    "warnings": [
+      "Research prototype, NOT a certified de-identification system.",
+      "Candidate labels are heuristic, NOT human verified training data.",
+      "Do not send patient data to public APIs; do not treat score as clinical validity."
+    ]
+  }
+}

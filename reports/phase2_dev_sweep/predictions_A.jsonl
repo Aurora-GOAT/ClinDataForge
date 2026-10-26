@@ -1,0 +1,396 @@
+{"doc_id": "EN-0005", "spans": [{"start": 143, "end": 149, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0007", "spans": []}
+{"doc_id": "EN-0013", "spans": []}
+{"doc_id": "EN-0015", "spans": []}
+{"doc_id": "EN-0019", "spans": []}
+{"doc_id": "EN-0025", "spans": [{"start": 152, "end": 162, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0031", "spans": []}
+{"doc_id": "EN-0035", "spans": []}
+{"doc_id": "EN-0039", "spans": []}
+{"doc_id": "EN-0040", "spans": []}
+{"doc_id": "EN-0041", "spans": []}
+{"doc_id": "EN-0045", "spans": []}
+{"doc_id": "EN-0050", "spans": [{"start": 149, "end": 159, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0051", "spans": []}
+{"doc_id": "EN-0055", "spans": [{"start": 168, "end": 175, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0060", "spans": [{"start": 166, "end": 177, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0062", "spans": []}
+{"doc_id": "EN-0065", "spans": [{"start": 140, "end": 149, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0070", "spans": []}
+{"doc_id": "EN-0071", "spans": []}
+{"doc_id": "EN-0072", "spans": []}
+{"doc_id": "EN-0074", "spans": []}
+{"doc_id": "EN-0075", "spans": [{"start": 163, "end": 174, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0076", "spans": []}
+{"doc_id": "EN-0085", "spans": [{"start": 172, "end": 181, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0086", "spans": []}
+{"doc_id": "EN-0090", "spans": [{"start": 141, "end": 150, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0091", "spans": []}
+{"doc_id": "EN-0093", "spans": []}
+{"doc_id": "EN-0100", "spans": [{"start": 130, "end": 137, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0101", "spans": []}
+{"doc_id": "EN-0105", "spans": [{"start": 146, "end": 155, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0109", "spans": [{"start": 135, "end": 144, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0115", "spans": []}
+{"doc_id": "EN-0120", "spans": []}
+{"doc_id": "EN-0125", "spans": [{"start": 143, "end": 154, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0130", "spans": []}
+{"doc_id": "EN-0131", "spans": []}
+{"doc_id": "EN-0133", "spans": []}
+{"doc_id": "EN-0135", "spans": []}
+{"doc_id": "EN-0136", "spans": []}
+{"doc_id": "EN-0139", "spans": []}
+{"doc_id": "EN-0140", "spans": [{"start": 160, "end": 169, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0145", "spans": []}
+{"doc_id": "EN-0148", "spans": []}
+{"doc_id": "EN-0155", "spans": []}
+{"doc_id": "EN-0161", "spans": []}
+{"doc_id": "EN-0165", "spans": []}
+{"doc_id": "EN-0166", "spans": []}
+{"doc_id": "EN-0170", "spans": []}
+{"doc_id": "EN-0171", "spans": []}
+{"doc_id": "EN-0172", "spans": []}
+{"doc_id": "EN-0174", "spans": []}
+{"doc_id": "EN-0175", "spans": [{"start": 159, "end": 170, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0179", "spans": []}
+{"doc_id": "EN-0180", "spans": [{"start": 137, "end": 147, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0181", "spans": []}
+{"doc_id": "EN-0185", "spans": []}
+{"doc_id": "EN-0187", "spans": []}
+{"doc_id": "EN-0188", "spans": [{"start": 163, "end": 172, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0190", "spans": [{"start": 175, "end": 184, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0193", "spans": []}
+{"doc_id": "EN-0195", "spans": [{"start": 150, "end": 159, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0200", "spans": []}
+{"doc_id": "EN-0201", "spans": []}
+{"doc_id": "EN-0204", "spans": []}
+{"doc_id": "EN-0205", "spans": [{"start": 167, "end": 174, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0207", "spans": []}
+{"doc_id": "EN-0210", "spans": []}
+{"doc_id": "EN-0217", "spans": []}
+{"doc_id": "EN-0218", "spans": []}
+{"doc_id": "EN-0220", "spans": []}
+{"doc_id": "EN-0225", "spans": []}
+{"doc_id": "EN-0226", "spans": []}
+{"doc_id": "EN-0228", "spans": []}
+{"doc_id": "EN-0230", "spans": []}
+{"doc_id": "EN-0231", "spans": []}
+{"doc_id": "EN-0236", "spans": [{"start": 106, "end": 115, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0239", "spans": []}
+{"doc_id": "EN-0240", "spans": []}
+{"doc_id": "EN-0242", "spans": []}
+{"doc_id": "EN-0245", "spans": [{"start": 133, "end": 141, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0246", "spans": []}
+{"doc_id": "EN-0250", "spans": [{"start": 149, "end": 157, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0251", "spans": []}
+{"doc_id": "EN-0252", "spans": []}
+{"doc_id": "EN-0255", "spans": [{"start": 142, "end": 151, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0257", "spans": []}
+{"doc_id": "EN-0262", "spans": []}
+{"doc_id": "EN-0265", "spans": []}
+{"doc_id": "EN-0268", "spans": []}
+{"doc_id": "EN-0270", "spans": [{"start": 165, "end": 176, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0271", "spans": []}
+{"doc_id": "EN-0275", "spans": []}
+{"doc_id": "EN-0281", "spans": []}
+{"doc_id": "EN-0282", "spans": []}
+{"doc_id": "EN-0283", "spans": []}
+{"doc_id": "EN-0284", "spans": []}
+{"doc_id": "EN-0285", "spans": [{"start": 166, "end": 174, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0287", "spans": [{"start": 151, "end": 160, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0288", "spans": []}
+{"doc_id": "EN-0289", "spans": []}
+{"doc_id": "EN-0294", "spans": [{"start": 162, "end": 173, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0295", "spans": [{"start": 148, "end": 157, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0299", "spans": []}
+{"doc_id": "EN-0300", "spans": [{"start": 142, "end": 151, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0302", "spans": []}
+{"doc_id": "EN-0303", "spans": [{"start": 137, "end": 146, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0320", "spans": [{"start": 161, "end": 172, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0321", "spans": []}
+{"doc_id": "EN-0324", "spans": []}
+{"doc_id": "EN-0325", "spans": [{"start": 131, "end": 140, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0330", "spans": [{"start": 171, "end": 180, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0334", "spans": []}
+{"doc_id": "EN-0340", "spans": [{"start": 135, "end": 144, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0349", "spans": []}
+{"doc_id": "EN-0351", "spans": []}
+{"doc_id": "EN-0353", "spans": []}
+{"doc_id": "EN-0360", "spans": [{"start": 167, "end": 176, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0369", "spans": []}
+{"doc_id": "EN-0371", "spans": []}
+{"doc_id": "EN-0372", "spans": []}
+{"doc_id": "EN-0373", "spans": []}
+{"doc_id": "EN-0375", "spans": [{"start": 139, "end": 147, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0377", "spans": []}
+{"doc_id": "EN-0380", "spans": []}
+{"doc_id": "EN-0381", "spans": []}
+{"doc_id": "EN-0385", "spans": []}
+{"doc_id": "EN-0387", "spans": []}
+{"doc_id": "EN-0398", "spans": []}
+{"doc_id": "EN-0401", "spans": []}
+{"doc_id": "EN-0405", "spans": []}
+{"doc_id": "EN-0406", "spans": [{"start": 161, "end": 170, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0407", "spans": []}
+{"doc_id": "EN-0409", "spans": [{"start": 148, "end": 158, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0416", "spans": [{"start": 133, "end": 143, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0419", "spans": [{"start": 154, "end": 164, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0423", "spans": []}
+{"doc_id": "EN-0430", "spans": [{"start": 146, "end": 154, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0432", "spans": [{"start": 136, "end": 145, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0434", "spans": []}
+{"doc_id": "EN-0435", "spans": []}
+{"doc_id": "EN-0440", "spans": [{"start": 152, "end": 161, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0443", "spans": []}
+{"doc_id": "EN-0445", "spans": [{"start": 154, "end": 163, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0446", "spans": []}
+{"doc_id": "EN-0448", "spans": []}
+{"doc_id": "EN-0450", "spans": []}
+{"doc_id": "EN-0451", "spans": [{"start": 146, "end": 155, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0453", "spans": []}
+{"doc_id": "EN-0454", "spans": []}
+{"doc_id": "EN-0455", "spans": [{"start": 133, "end": 144, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0459", "spans": [{"start": 136, "end": 146, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0461", "spans": [{"start": 173, "end": 181, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0465", "spans": [{"start": 158, "end": 166, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0470", "spans": []}
+{"doc_id": "EN-0477", "spans": []}
+{"doc_id": "EN-0480", "spans": []}
+{"doc_id": "EN-0485", "spans": []}
+{"doc_id": "EN-0491", "spans": [{"start": 138, "end": 146, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0498", "spans": []}
+{"doc_id": "EN-0499", "spans": []}
+{"doc_id": "EN-0500", "spans": []}
+{"doc_id": "EN-0505", "spans": []}
+{"doc_id": "EN-0507", "spans": []}
+{"doc_id": "EN-0510", "spans": [{"start": 141, "end": 150, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0514", "spans": []}
+{"doc_id": "EN-0521", "spans": []}
+{"doc_id": "EN-0524", "spans": [{"start": 135, "end": 145, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0525", "spans": [{"start": 169, "end": 178, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0526", "spans": []}
+{"doc_id": "EN-0530", "spans": [{"start": 133, "end": 142, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0533", "spans": []}
+{"doc_id": "EN-0543", "spans": []}
+{"doc_id": "EN-0544", "spans": []}
+{"doc_id": "EN-0550", "spans": [{"start": 163, "end": 173, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0556", "spans": []}
+{"doc_id": "EN-0557", "spans": [{"start": 165, "end": 175, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0561", "spans": []}
+{"doc_id": "EN-0564", "spans": [{"start": 148, "end": 158, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0565", "spans": [{"start": 149, "end": 163, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0568", "spans": []}
+{"doc_id": "EN-0574", "spans": []}
+{"doc_id": "EN-0575", "spans": [{"start": 123, "end": 131, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0580", "spans": [{"start": 176, "end": 185, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0584", "spans": [{"start": 148, "end": 158, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0585", "spans": [{"start": 161, "end": 172, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0586", "spans": [{"start": 166, "end": 174, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0589", "spans": [{"start": 156, "end": 164, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0590", "spans": []}
+{"doc_id": "EN-0591", "spans": [{"start": 131, "end": 139, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0593", "spans": []}
+{"doc_id": "EN-0595", "spans": []}
+{"doc_id": "EN-0597", "spans": [{"start": 110, "end": 119, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0598", "spans": []}
+{"doc_id": "EN-0600", "spans": [{"start": 149, "end": 158, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0604", "spans": []}
+{"doc_id": "EN-0606", "spans": [{"start": 170, "end": 181, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0607", "spans": []}
+{"doc_id": "EN-0610", "spans": [{"start": 141, "end": 149, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0613", "spans": []}
+{"doc_id": "EN-0615", "spans": []}
+{"doc_id": "EN-0616", "spans": []}
+{"doc_id": "EN-0620", "spans": [{"start": 184, "end": 194, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0622", "spans": [{"start": 158, "end": 168, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0625", "spans": [{"start": 177, "end": 186, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0630", "spans": []}
+{"doc_id": "EN-0635", "spans": []}
+{"doc_id": "EN-0650", "spans": [{"start": 139, "end": 147, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0653", "spans": []}
+{"doc_id": "EN-0656", "spans": [{"start": 155, "end": 164, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0661", "spans": []}
+{"doc_id": "EN-0666", "spans": [{"start": 120, "end": 130, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0669", "spans": []}
+{"doc_id": "EN-0670", "spans": []}
+{"doc_id": "EN-0671", "spans": []}
+{"doc_id": "EN-0681", "spans": [{"start": 162, "end": 172, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0684", "spans": [{"start": 133, "end": 143, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0689", "spans": [{"start": 150, "end": 160, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0690", "spans": []}
+{"doc_id": "EN-0691", "spans": []}
+{"doc_id": "EN-0692", "spans": []}
+{"doc_id": "EN-0696", "spans": [{"start": 162, "end": 171, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0697", "spans": []}
+{"doc_id": "EN-0698", "spans": [{"start": 152, "end": 160, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0701", "spans": [{"start": 165, "end": 172, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0705", "spans": []}
+{"doc_id": "EN-0706", "spans": []}
+{"doc_id": "EN-0707", "spans": [{"start": 161, "end": 172, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0713", "spans": []}
+{"doc_id": "EN-0716", "spans": [{"start": 177, "end": 186, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0719", "spans": [{"start": 161, "end": 171, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0721", "spans": []}
+{"doc_id": "EN-0722", "spans": []}
+{"doc_id": "EN-0725", "spans": []}
+{"doc_id": "EN-0731", "spans": [{"start": 146, "end": 156, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0735", "spans": []}
+{"doc_id": "EN-0736", "spans": [{"start": 125, "end": 134, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0741", "spans": [{"start": 140, "end": 148, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0742", "spans": []}
+{"doc_id": "EN-0744", "spans": []}
+{"doc_id": "EN-0746", "spans": []}
+{"doc_id": "EN-0751", "spans": []}
+{"doc_id": "EN-0753", "spans": []}
+{"doc_id": "EN-0754", "spans": []}
+{"doc_id": "EN-0757", "spans": [{"start": 138, "end": 147, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0758", "spans": []}
+{"doc_id": "EN-0759", "spans": []}
+{"doc_id": "EN-0760", "spans": []}
+{"doc_id": "EN-0764", "spans": []}
+{"doc_id": "EN-0771", "spans": [{"start": 148, "end": 158, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0772", "spans": [{"start": 159, "end": 169, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0774", "spans": [{"start": 141, "end": 151, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0775", "spans": []}
+{"doc_id": "EN-0778", "spans": [{"start": 133, "end": 142, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0781", "spans": [{"start": 153, "end": 161, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0783", "spans": []}
+{"doc_id": "EN-0790", "spans": []}
+{"doc_id": "EN-0793", "spans": [{"start": 138, "end": 149, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0797", "spans": []}
+{"doc_id": "EN-0800", "spans": []}
+{"doc_id": "EN-0806", "spans": []}
+{"doc_id": "EN-0810", "spans": [{"start": 142, "end": 152, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0813", "spans": [{"start": 162, "end": 171, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0816", "spans": []}
+{"doc_id": "EN-0817", "spans": []}
+{"doc_id": "EN-0821", "spans": [{"start": 121, "end": 130, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0827", "spans": []}
+{"doc_id": "EN-0831", "spans": []}
+{"doc_id": "EN-0836", "spans": []}
+{"doc_id": "EN-0837", "spans": []}
+{"doc_id": "EN-0841", "spans": [{"start": 169, "end": 179, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0844", "spans": [{"start": 148, "end": 159, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0852", "spans": []}
+{"doc_id": "EN-0853", "spans": []}
+{"doc_id": "EN-0855", "spans": []}
+{"doc_id": "EN-0856", "spans": [{"start": 146, "end": 155, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0861", "spans": []}
+{"doc_id": "EN-0866", "spans": [{"start": 153, "end": 162, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0868", "spans": []}
+{"doc_id": "EN-0871", "spans": []}
+{"doc_id": "EN-0874", "spans": []}
+{"doc_id": "EN-0875", "spans": [{"start": 152, "end": 162, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0876", "spans": [{"start": 155, "end": 164, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0877", "spans": []}
+{"doc_id": "EN-0882", "spans": []}
+{"doc_id": "EN-0884", "spans": []}
+{"doc_id": "EN-0886", "spans": []}
+{"doc_id": "EN-0887", "spans": []}
+{"doc_id": "EN-0894", "spans": []}
+{"doc_id": "EN-0895", "spans": []}
+{"doc_id": "EN-0896", "spans": []}
+{"doc_id": "EN-0903", "spans": []}
+{"doc_id": "EN-0906", "spans": []}
+{"doc_id": "EN-0907", "spans": []}
+{"doc_id": "EN-0911", "spans": [{"start": 158, "end": 167, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0917", "spans": []}
+{"doc_id": "EN-0920", "spans": []}
+{"doc_id": "EN-0926", "spans": []}
+{"doc_id": "EN-0931", "spans": [{"start": 144, "end": 151, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0940", "spans": []}
+{"doc_id": "EN-0941", "spans": [{"start": 160, "end": 169, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0942", "spans": []}
+{"doc_id": "EN-0944", "spans": [{"start": 147, "end": 155, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0951", "spans": [{"start": 129, "end": 135, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0954", "spans": []}
+{"doc_id": "EN-0956", "spans": [{"start": 140, "end": 149, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0959", "spans": []}
+{"doc_id": "EN-0960", "spans": [{"start": 159, "end": 168, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0963", "spans": []}
+{"doc_id": "EN-0965", "spans": []}
+{"doc_id": "EN-0966", "spans": []}
+{"doc_id": "EN-0967", "spans": []}
+{"doc_id": "EN-0977", "spans": []}
+{"doc_id": "EN-0982", "spans": [{"start": 136, "end": 147, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0985", "spans": [{"start": 145, "end": 153, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0987", "spans": []}
+{"doc_id": "EN-0994", "spans": [{"start": 157, "end": 168, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-0996", "spans": [{"start": 176, "end": 184, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-1000", "spans": [{"start": 155, "end": 166, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-1005", "spans": [{"start": 147, "end": 155, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-1006", "spans": []}
+{"doc_id": "EN-1012", "spans": []}
+{"doc_id": "EN-1014", "spans": []}
+{"doc_id": "EN-1016", "spans": [{"start": 165, "end": 174, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-1019", "spans": []}
+{"doc_id": "EN-1021", "spans": []}
+{"doc_id": "EN-1022", "spans": []}
+{"doc_id": "EN-1031", "spans": []}
+{"doc_id": "EN-1035", "spans": [{"start": 132, "end": 141, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-1041", "spans": [{"start": 116, "end": 125, "label": "MRN", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "EN-1042", "spans": []}
+{"doc_id": "ZH-0000", "spans": [{"start": 84, "end": 95, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0001", "spans": [{"start": 88, "end": 101, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0002", "spans": [{"start": 86, "end": 97, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0003", "spans": []}
+{"doc_id": "ZH-0004", "spans": [{"start": 85, "end": 96, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0005", "spans": [{"start": 86, "end": 99, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0006", "spans": [{"start": 87, "end": 98, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0007", "spans": []}
+{"doc_id": "ZH-0040", "spans": [{"start": 88, "end": 99, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0041", "spans": [{"start": 89, "end": 102, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0042", "spans": [{"start": 87, "end": 98, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0043", "spans": []}
+{"doc_id": "ZH-0044", "spans": [{"start": 84, "end": 95, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0045", "spans": [{"start": 89, "end": 102, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0046", "spans": [{"start": 93, "end": 104, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0047", "spans": []}
+{"doc_id": "ZH-0128", "spans": [{"start": 85, "end": 96, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0129", "spans": [{"start": 86, "end": 99, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0130", "spans": [{"start": 88, "end": 99, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0131", "spans": []}
+{"doc_id": "ZH-0132", "spans": [{"start": 84, "end": 95, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0133", "spans": [{"start": 85, "end": 98, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0134", "spans": [{"start": 89, "end": 100, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0135", "spans": []}
+{"doc_id": "ZH-0144", "spans": [{"start": 80, "end": 91, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0145", "spans": [{"start": 83, "end": 96, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0146", "spans": [{"start": 84, "end": 95, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0147", "spans": []}
+{"doc_id": "ZH-0148", "spans": [{"start": 80, "end": 91, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0149", "spans": [{"start": 79, "end": 92, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0150", "spans": [{"start": 84, "end": 95, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0151", "spans": []}
+{"doc_id": "ZH-0160", "spans": [{"start": 88, "end": 99, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0161", "spans": [{"start": 91, "end": 104, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0162", "spans": [{"start": 89, "end": 100, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0163", "spans": []}
+{"doc_id": "ZH-0164", "spans": [{"start": 88, "end": 99, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0165", "spans": [{"start": 89, "end": 102, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0166", "spans": [{"start": 91, "end": 102, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0167", "spans": []}
+{"doc_id": "ZH-0168", "spans": [{"start": 110, "end": 121, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0169", "spans": [{"start": 108, "end": 121, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0170", "spans": [{"start": 107, "end": 118, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0171", "spans": []}
+{"doc_id": "ZH-0172", "spans": [{"start": 101, "end": 112, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0173", "spans": [{"start": 107, "end": 120, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0174", "spans": [{"start": 108, "end": 119, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0175", "spans": []}
+{"doc_id": "ZH-0176", "spans": [{"start": 87, "end": 98, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0177", "spans": [{"start": 86, "end": 99, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0178", "spans": [{"start": 93, "end": 104, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0179", "spans": []}
+{"doc_id": "ZH-0180", "spans": [{"start": 86, "end": 97, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0181", "spans": [{"start": 89, "end": 102, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0182", "spans": [{"start": 91, "end": 102, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0183", "spans": []}
+{"doc_id": "ZH-0288", "spans": [{"start": 90, "end": 101, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0289", "spans": [{"start": 91, "end": 104, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0290", "spans": [{"start": 92, "end": 103, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0291", "spans": []}
+{"doc_id": "ZH-0292", "spans": [{"start": 89, "end": 100, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0293", "spans": [{"start": 90, "end": 103, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0294", "spans": [{"start": 94, "end": 105, "label": "PHONE", "score": 1.0, "source": "original_regex"}]}
+{"doc_id": "ZH-0295", "spans": []}

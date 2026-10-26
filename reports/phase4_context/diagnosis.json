@@ -1,0 +1,606 @@
+{
+  "diagnosis_version": "ctxdiag-1.0.0",
+  "n_matched_mentions": 22156,
+  "overall": {
+    "n": 22156,
+    "accuracy": 0.9617,
+    "errors": {
+      "history->affirmed": 783,
+      "affirmed->negated": 30,
+      "negated->affirmed": 19,
+      "history->negated": 17
+    }
+  },
+  "by_language": {
+    "en": {
+      "n": 7076,
+      "accuracy": 0.9973,
+      "errors": {
+        "negated->affirmed": 19
+      }
+    },
+    "zh": {
+      "n": 15080,
+      "accuracy": 0.945,
+      "errors": {
+        "history->affirmed": 783,
+        "affirmed->negated": 30,
+        "history->negated": 17
+      }
+    }
+  },
+  "by_family": {
+    "admission": {
+      "n": 7209,
+      "accuracy": 0.949,
+      "errors": {
+        "history->affirmed": 343,
+        "negated->affirmed": 12,
+        "affirmed->negated": 7,
+        "history->negated": 6
+      }
+    },
+    "clinic": {
+      "n": 2757,
+      "accuracy": 0.9989,
+      "errors": {
+        "negated->affirmed": 3
+      }
+    },
+    "consult": {
+      "n": 2165,
+      "accuracy": 0.9982,
+      "errors": {
+        "negated->affirmed": 4
+      }
+    },
+    "outpatient": {
+      "n": 4996,
+      "accuracy": 0.9796,
+      "errors": {
+        "history->affirmed": 89,
+        "affirmed->negated": 8,
+        "history->negated": 5
+      }
+    },
+    "referral": {
+      "n": 5029,
+      "accuracy": 0.926,
+      "errors": {
+        "history->affirmed": 351,
+        "affirmed->negated": 15,
+        "history->negated": 6
+      }
+    }
+  },
+  "by_section": {
+    "history": {
+      "n": 2463,
+      "accuracy": 0.6939,
+      "errors": {
+        "history->affirmed": 754
+      }
+    },
+    "laboratory": {
+      "n": 485,
+      "accuracy": 0.9773,
+      "errors": {
+        "history->affirmed": 11
+      }
+    },
+    "negation": {
+      "n": 3223,
+      "accuracy": 0.9823,
+      "errors": {
+        "affirmed->negated": 30,
+        "history->negated": 17,
+        "history->affirmed": 10
+      }
+    },
+    "other": {
+      "n": 12624,
+      "accuracy": 0.9979,
+      "errors": {
+        "negated->affirmed": 19,
+        "history->affirmed": 8
+      }
+    },
+    "suspected": {
+      "n": 3361,
+      "accuracy": 1.0,
+      "errors": {}
+    }
+  },
+  "history_recall": 0.6819,
+  "examples": {
+    "history->affirmed": [
+      {
+        "case_id": "SYN-00015",
+        "family": "referral",
+        "lang": "zh",
+        "section": "history",
+        "mention": "肌肉破碎红纤维",
+        "window": "有",
+        "left_context": "无血乳酸升高。查体疑似肌组织线粒体异常；上述表现时轻时重，家属为进一步诊治来诊。既往史：有",
+        "record_head": "姓名：上官思远｜性别：女｜年龄：54岁｜病历号：R5678326｜联系电话：1770198066｜就诊日期：2026-1"
+      },
+      {
+        "case_id": "SYN-00018",
+        "family": "referral",
+        "lang": "zh",
+        "section": "history",
+        "mention": "失明",
+        "window": "并有",
+        "left_context": "中耳炎。尚需评估有无视力丧失。既往史：曾有视锥-视杆细胞营养不良，并有视网膜营养不良，并有",
+        "record_head": "姓名：上官一诺｜性别：女｜年龄：56岁｜病历号：R5757746｜联系电话：1773864346｜就诊日期：2026-1"
+      },
+      {
+        "case_id": "SYN-00034",
+        "family": "referral",
+        "lang": "zh",
+        "section": "history",
+        "mention": "吸吮无力",
+        "window": "并有",
+        "left_context": "仍有无言语；此后逐渐出现听力受损；目前仍有体重增加。既往史：曾有口吃，并有胼胝体变薄，并有",
+        "record_head": "姓名：顾思远｜性别：女｜年龄：1个月｜病历号：R2646627｜联系电话：1500367227｜就诊日期：2026-05"
+      },
+      {
+        "case_id": "SYN-00045",
+        "family": "referral",
+        "lang": "zh",
+        "section": "history",
+        "mention": "血小板减少",
+        "window": "并有",
+        "left_context": "查体发现智力障碍；目前仍有共济失调；此后逐渐出现肝大。既往史：曾有斜视，并有骨量减少，并有",
+        "record_head": "姓名：郗一诺｜性别：女｜年龄：24岁｜病历号：R0178844｜联系电话：1824695138｜就诊日期：2026-06"
+      },
+      {
+        "case_id": "SYN-00046",
+        "family": "outpatient",
+        "lang": "zh",
+        "section": "history",
+        "mention": "言语语言发育迟缓",
+        "window": "并有",
+        "left_context": "宽。另疑有鼻孔前倾；上述表现时轻时重，家属为进一步诊治来诊。既往曾有高腭弓，并有长脸，并有",
+        "record_head": "姓名：寇梓萱｜性别：男｜年龄：29岁｜病历号：R9049499｜联系电话：1895197474｜就诊日期：2026-07"
+      },
+      {
+        "case_id": "SYN-00050",
+        "family": "outpatient",
+        "lang": "zh",
+        "section": "history",
+        "mention": "耳廓后旋",
+        "window": "并有",
+        "left_context": "目前仍有睑裂下斜；此后逐渐出现前额狭窄。尚需评估有无手大；既往曾有体重增加，并有口吃，并有",
+        "record_head": "患儿，男，1个月，因“贫血伴身材高大”2周就诊。患儿出生后即起被发现存在哭声嘶哑，病程中可见低位耳。目前仍有睑裂下斜；此"
+      },
+      {
+        "case_id": "SYN-00051",
+        "family": "referral",
+        "lang": "zh",
+        "section": "history",
+        "mention": "体重增加",
+        "window": "有",
+        "left_context": "；病程中可见低血糖。此后逐渐出现睑裂下斜。尚需评估有无口吃；尚需评估有无无言语；既往史：有",
+        "record_head": "姓名：边梓萱｜性别：女｜年龄：1个月｜病历号：R4675110｜联系电话：1799569145｜就诊日期：2026-05"
+      },
+      {
+        "case_id": "SYN-00051",
+        "family": "referral",
+        "lang": "zh",
+        "section": "history",
+        "mention": "听力受损",
+        "window": "并有",
+        "left_context": "血糖。此后逐渐出现睑裂下斜。尚需评估有无口吃；尚需评估有无无言语；既往史：有体重增加，并有",
+        "record_head": "姓名：边梓萱｜性别：女｜年龄：1个月｜病历号：R4675110｜联系电话：1799569145｜就诊日期：2026-05"
+      },
+      {
+        "case_id": "SYN-00051",
+        "family": "referral",
+        "lang": "zh",
+        "section": "history",
+        "mention": "哭声嘶哑",
+        "window": "并有",
+        "left_context": "出现睑裂下斜。尚需评估有无口吃；尚需评估有无无言语；既往史：有体重增加，并有听力受损，并有",
+        "record_head": "姓名：边梓萱｜性别：女｜年龄：1个月｜病历号：R4675110｜联系电话：1799569145｜就诊日期：2026-05"
+      },
+      {
+        "case_id": "SYN-00055",
+        "family": "referral",
+        "lang": "zh",
+        "section": "history",
+        "mention": "肾功能不全",
+        "window": "有",
+        "left_context": "性酸中毒；另疑有弱视；查体疑似刻板动作。上述表现逐渐进展，家属为进一步诊治来诊。既往史：有",
+        "record_head": "姓名：陆语嫣｜性别：男｜年龄：22岁｜病历号：R6384280｜联系电话：1791292716｜就诊日期：2026-06"
+      },
+      {
+        "case_id": "SYN-00055",
+        "family": "referral",
+        "lang": "zh",
+        "section": "history",
+        "mention": "新生儿肌张力低下",
+        "window": "并有",
+        "left_context": "弱视；查体疑似刻板动作。上述表现逐渐进展，家属为进一步诊治来诊。既往史：有肾功能不全，并有",
+        "record_head": "姓名：陆语嫣｜性别：男｜年龄：22岁｜病历号：R6384280｜联系电话：1791292716｜就诊日期：2026-06"
+      },
+      {
+        "case_id": "SYN-00058",
+        "family": "admission",
+        "lang": "zh",
+        "section": "history",
+        "mention": "正中腭裂",
+        "window": "有",
+        "left_context": "出现小头畸形。病程中可见正中上唇裂；尚需评估有无前脑无裂畸形。查体疑似小眼球；\n既往史：有",
+        "record_head": "姓名：司马沐宸｜性别：女｜年龄：10岁｜病历号：R0819866｜联系电话：1992375896｜就诊日期：2026-0"
+      }
+    ],
+    "history->negated": [
+      {
+        "case_id": "SYN-00034",
+        "family": "referral",
+        "lang": "zh",
+        "section": "negation",
+        "mention": "哭声嘶哑",
+        "window": "并有",
+        "left_context": "后逐渐出现听力受损；目前仍有体重增加。既往史：曾有口吃，并有胼胝体变薄，并有吸吮无力，并有",
+        "record_head": "姓名：顾思远｜性别：女｜年龄：1个月｜病历号：R2646627｜联系电话：1500367227｜就诊日期：2026-05"
+      },
+      {
+        "case_id": "SYN-00231",
+        "family": "referral",
+        "lang": "zh",
+        "section": "negation",
+        "mention": "卒中样发作",
+        "window": "并有",
+        "left_context": "。目前仍有肌肉破碎红纤维。查体发现血乳酸升高。尚需评估有无偏头痛；既往史：曾有肌无力，并有",
+        "record_head": "姓名：闻天佑｜性别：男｜年龄：5岁｜病历号：R6973344｜联系电话：1770894733｜就诊日期：2026-12-"
+      },
+      {
+        "case_id": "SYN-00380",
+        "family": "admission",
+        "lang": "zh",
+        "section": "negation",
+        "mention": "小头畸形",
+        "window": "并有",
+        "left_context": "颌正中中切牙。此后逐渐出现眼距过窄。此后逐渐出现认知障碍；\n既往史：曾有前脑无裂畸形，并有",
+        "record_head": "主诉：因“面部形态异常伴神经系统形态异常”1周入院。\n现病史：目前仍有正中腭裂；此后逐渐出现单枚上颌正中中切牙。此后逐渐"
+      },
+      {
+        "case_id": "SYN-00619",
+        "family": "admission",
+        "lang": "zh",
+        "section": "negation",
+        "mention": "哭声嘶哑",
+        "window": "并有",
+        "left_context": "窄；尚需评估有无贫血；\n既往史：有体重增加，并有胼胝体变薄，并有身材高大，并有无言语，并有",
+        "record_head": "姓名：司马子墨｜性别：女｜年龄：1个月｜病历号：R4379836｜联系电话：1369278629｜就诊日期：2026-1"
+      },
+      {
+        "case_id": "SYN-00792",
+        "family": "admission",
+        "lang": "zh",
+        "section": "negation",
+        "mention": "大耳廓",
+        "window": "并有",
+        "left_context": "额狭窄；上述表现迁延至今，家属为进一步诊治来诊。\n既往史：有胼胝体变薄，并有吸吮无力，并有",
+        "record_head": "主诉：因“低位耳伴低血糖”1个月入院。\n现病史：患儿出生后即起被发现存在贫血，查体发现哭声嘶哑；查体发现身材高大。此后逐"
+      },
+      {
+        "case_id": "SYN-00894",
+        "family": "outpatient",
+        "lang": "zh",
+        "section": "negation",
+        "mention": "大耳廓",
+        "window": "并有",
+        "left_context": "见前额狭窄；病程中可见哭声嘶哑。另疑有体重增加；另疑有贫血。既往有口吃，并有吸吮无力，并有",
+        "record_head": "患儿，女，1个月，因“手大伴睑裂下斜”1年就诊。患儿出生后即起被发现存在无言语，目前仍有低位耳。病程中可见前额狭窄；病程"
+      },
+      {
+        "case_id": "SYN-01021",
+        "family": "referral",
+        "lang": "zh",
+        "section": "negation",
+        "mention": "哭声嘶哑",
+        "window": "并有",
+        "left_context": "尚需评估有无口吃。尚需评估有无收缩期心脏杂音。尚需评估有无无言语。既往史：有吸吮无力，并有",
+        "record_head": "会诊记录：兹介绍女性患儿，1个月，因“身材高大伴胃食管反流”半年就诊。患儿出生后即起被发现存在听力受损，目前仍有睑裂下斜"
+      },
+      {
+        "case_id": "SYN-01037",
+        "family": "outpatient",
+        "lang": "zh",
+        "section": "negation",
+        "mention": "血乳酸升高",
+        "window": "并有",
+        "left_context": "宽；另疑有癫痫发作。查体疑似偏头痛。另疑有失语。另疑有肌组织线粒体异常；既往有肌无力，并有",
+        "record_head": "姓名：祁梓萱｜性别：男｜年龄：48岁｜病历号：R4553673｜联系电话：1748269038｜就诊日期：2026-08"
+      },
+      {
+        "case_id": "SYN-01045",
+        "family": "referral",
+        "lang": "zh",
+        "section": "negation",
+        "mention": "低位耳",
+        "window": "并有",
+        "left_context": "心脏杂音。既往史：有体重增加，并有听力受损，并有胼胝体变薄，并有睑裂下斜，并有无言语，并有",
+        "record_head": "会诊记录：兹介绍男性患儿，1个月，因“口吃伴前额狭窄”3个月就诊。患儿出生后即起被发现存在大耳廓，目前仍有手大；此后逐渐"
+      },
+      {
+        "case_id": "SYN-01117",
+        "family": "outpatient",
+        "lang": "zh",
+        "section": "negation",
+        "mention": "小头畸形",
+        "window": "并有",
+        "left_context": "中上唇裂。另疑有面部形态异常。尚需评估有无低血糖；既往曾有正中腭裂，并有前脑无裂畸形，并有",
+        "record_head": "姓名：顾铭泽｜性别：女｜年龄：42岁｜病历号：R2632785｜联系电话：1378718552｜就诊日期：2026-11"
+      },
+      {
+        "case_id": "SYN-01364",
+        "family": "admission",
+        "lang": "zh",
+        "section": "negation",
+        "mention": "面部形态异常",
+        "window": "并有",
+        "left_context": "逐渐出现后鼻孔闭锁；此后逐渐出现小眼球；查体疑似正中上唇裂；\n既往史：有前脑无裂畸形，并有",
+        "record_head": "主诉：因“正中腭裂伴单枚上颌正中中切牙”半年入院。\n现病史：目前仍有双侧唇裂；查体发现认知障碍；此后逐渐出现后鼻孔闭锁；"
+      },
+      {
+        "case_id": "SYN-01543",
+        "family": "referral",
+        "lang": "zh",
+        "section": "negation",
+        "mention": "低血糖",
+        "window": "并有",
+        "left_context": "后鼻孔闭锁。此后逐渐出现神经系统形态异常；查体疑似面部形态异常；既往史：曾有无眼畸形，并有",
+        "record_head": "姓名：祁雨桐｜性别：女｜年龄：45岁｜病历号：R8624531｜联系电话：1941346553｜就诊日期：2026-06"
+      }
+    ],
+    "affirmed->negated": [
+      {
+        "case_id": "SYN-00072",
+        "family": "referral",
+        "lang": "zh",
+        "section": "negation",
+        "mention": "单枚上颌正中中切牙",
+        "window": "前脑无裂畸形伴",
+        "left_context": "会诊记录：兹介绍女性患者，32岁，因“前脑无裂畸形伴",
+        "record_head": "会诊记录：兹介绍女性患者，32岁，因“前脑无裂畸形伴单枚上颌正中中切牙”2年余就诊。病程中可见正中腭裂；查体疑似面部形态"
+      },
+      {
+        "case_id": "SYN-00206",
+        "family": "admission",
+        "lang": "zh",
+        "section": "negation",
+        "mention": "面部形态异常",
+        "window": "前脑无裂畸形伴",
+        "left_context": "｜联系电话：1332675620｜就诊日期：2026-12-05\n主诉：因“前脑无裂畸形伴",
+        "record_head": "姓名：晏亦辰｜性别：女｜年龄：47岁｜病历号：R4052154｜联系电话：1332675620｜就诊日期：2026-12"
+      },
+      {
+        "case_id": "SYN-00339",
+        "family": "admission",
+        "lang": "zh",
+        "section": "negation",
+        "mention": "血乳酸升高",
+        "window": "肌无力伴",
+        "left_context": "393｜联系电话：1962582355｜就诊日期：2026-06-07\n主诉：因“肌无力伴",
+        "record_head": "姓名：池雨桐｜性别：男｜年龄：12岁｜病历号：R4285393｜联系电话：1962582355｜就诊日期：2026-06"
+      },
+      {
+        "case_id": "SYN-00476",
+        "family": "outpatient",
+        "lang": "zh",
+        "section": "negation",
+        "mention": "听力受损",
+        "window": "无言语伴",
+        "left_context": "患儿，男，1个月，因“无言语伴",
+        "record_head": "患儿，男，1个月，因“无言语伴听力受损”1个月就诊。患儿出生后即即出现贫血，病程中可见收缩期心脏杂音；病程中可见前额狭窄"
+      },
+      {
+        "case_id": "SYN-00508",
+        "family": "referral",
+        "lang": "zh",
+        "section": "negation",
+        "mention": "耳廓后旋",
+        "window": "无言语伴",
+        "left_context": "81826｜就诊日期：2026-11-19\n会诊记录：兹介绍男性患儿，1个月，因“无言语伴",
+        "record_head": "姓名：林宇航｜性别：男｜年龄：1个月｜病历号：R3648478｜联系电话：1508381826｜就诊日期：2026-11"
+      },
+      {
+        "case_id": "SYN-00551",
+        "family": "referral",
+        "lang": "zh",
+        "section": "negation",
+        "mention": "吸吮无力",
+        "window": "无言语伴",
+        "left_context": "会诊记录：兹介绍女性患儿，1个月，因“无言语伴",
+        "record_head": "会诊记录：兹介绍女性患儿，1个月，因“无言语伴吸吮无力”2年余就诊。患儿出生后即起被发现存在体重增加，查体发现听力受损。"
+      },
+      {
+        "case_id": "SYN-00842",
+        "family": "referral",
+        "lang": "zh",
+        "section": "negation",
+        "mention": "虹膜缺损",
+        "window": "前脑无裂畸形伴",
+        "left_context": "19｜就诊日期：2026-07-07\n会诊记录：兹介绍女性患儿，1个月，因“前脑无裂畸形伴",
+        "record_head": "姓名：上官子墨｜性别：女｜年龄：1个月｜病历号：R2239048｜联系电话：1896096419｜就诊日期：2026-0"
+      },
+      {
+        "case_id": "SYN-00884",
+        "family": "referral",
+        "lang": "zh",
+        "section": "negation",
+        "mention": "睑裂下斜",
+        "window": "无言语伴",
+        "left_context": "71554｜就诊日期：2026-04-17\n会诊记录：兹介绍女性患儿，1个月，因“无言语伴",
+        "record_head": "姓名：湛浩然｜性别：女｜年龄：1个月｜病历号：R8419683｜联系电话：1316471554｜就诊日期：2026-04"
+      },
+      {
+        "case_id": "SYN-00973",
+        "family": "outpatient",
+        "lang": "zh",
+        "section": "negation",
+        "mention": "正中上唇裂",
+        "window": "前脑无裂畸形伴",
+        "left_context": "患者，女，32岁，因“前脑无裂畸形伴",
+        "record_head": "患者，女，32岁，因“前脑无裂畸形伴正中上唇裂”半年就诊。此后逐渐出现嗅觉丧失；此后逐渐出现双侧唇裂。此后逐渐出现单枚上"
+      },
+      {
+        "case_id": "SYN-01019",
+        "family": "outpatient",
+        "lang": "zh",
+        "section": "negation",
+        "mention": "痴呆",
+        "window": "肌无力伴",
+        "left_context": "患儿，女，5岁，因“肌无力伴",
+        "record_head": "患儿，女，5岁，因“肌无力伴痴呆”1个月就诊。此后逐渐出现脑电图异常；此后逐渐出现视力丧失；查体发现肌组织线粒体异常；病"
+      },
+      {
+        "case_id": "SYN-01034",
+        "family": "referral",
+        "lang": "zh",
+        "section": "negation",
+        "mention": "正中上唇裂",
+        "window": "无眼畸形伴",
+        "left_context": "会诊记录：兹介绍女性患者，44岁，因“无眼畸形伴",
+        "record_head": "会诊记录：兹介绍女性患者，44岁，因“无眼畸形伴正中上唇裂”1年就诊。目前仍有神经系统形态异常；病程中可见后鼻孔闭锁。此"
+      },
+      {
+        "case_id": "SYN-01267",
+        "family": "outpatient",
+        "lang": "zh",
+        "section": "negation",
+        "mention": "癫痫发作",
+        "window": "肌无力伴",
+        "left_context": "患者，女，52岁，因“肌无力伴",
+        "record_head": "患者，女，52岁，因“肌无力伴癫痫发作”3个月就诊。此后逐渐出现精神病性症状；查体发现偏头痛。目前仍有视力丧失。病程中可"
+      }
+    ],
+    "negated->affirmed": [
+      {
+        "case_id": "SYN-00107",
+        "family": "consult",
+        "lang": "en",
+        "section": "other",
+        "mention": "Progressive sensorineural hearing impairment",
+        "window": "tchy demyelination of subcortical white matter, ",
+        "left_context": "y demyelination of subcortical white matter, ",
+        "record_head": "Name: Anika Roth | Sex: Male | Age: 33 years | MRN: MRN-4911"
+      },
+      {
+        "case_id": "SYN-00166",
+        "family": "admission",
+        "lang": "en",
+        "section": "other",
+        "mention": "Postnatal growth retardation",
+        "window": "tchy demyelination of subcortical white matter, ",
+        "left_context": "y demyelination of subcortical white matter, ",
+        "record_head": "Name: Jonah Fields | Sex: Male | Age: 21 years | MRN: MRN-24"
+      },
+      {
+        "case_id": "SYN-00371",
+        "family": "admission",
+        "lang": "en",
+        "section": "other",
+        "mention": "Cerebral calcification",
+        "window": "s Progressive sensorineural hearing impairment, ",
+        "left_context": "rogressive sensorineural hearing impairment, ",
+        "record_head": "Name: Elena Marsh | Sex: Female | Age: 52 years | MRN: MRN-8"
+      },
+      {
+        "case_id": "SYN-00491",
+        "family": "admission",
+        "lang": "en",
+        "section": "other",
+        "mention": "Failure to thrive",
+        "window": "es Increased circulating lactate concentration, ",
+        "left_context": "Increased circulating lactate concentration, ",
+        "record_head": "The patient is a 16-year-old man presenting with Hypertricho"
+      },
+      {
+        "case_id": "SYN-00542",
+        "family": "consult",
+        "lang": "en",
+        "section": "other",
+        "mention": "Gonadal dysgenesis",
+        "window": "orted Increased circulating gonadotropin level, ",
+        "left_context": "ed Increased circulating gonadotropin level, ",
+        "record_head": "Name: Tobias Reed | Sex: Female | Age: 30 years | MRN: MRN-1"
+      },
+      {
+        "case_id": "SYN-00581",
+        "family": "admission",
+        "lang": "en",
+        "section": "other",
+        "mention": "Cone/cone-rod dystrophy",
+        "window": "d Progressive sensorineural hearing impairment, ",
+        "left_context": "rogressive sensorineural hearing impairment, ",
+        "record_head": "Name: Soren Blake | Sex: Male | Age: 50 years | MRN: MRN-209"
+      },
+      {
+        "case_id": "SYN-00661",
+        "family": "consult",
+        "lang": "en",
+        "section": "other",
+        "mention": "Abnormal Achilles tendon morphology",
+        "window": "o reported Abnormality of the pulmonary artery, ",
+        "left_context": "eported Abnormality of the pulmonary artery, ",
+        "record_head": "Name: Anika Roth | Sex: Female | Age: 2 years | MRN: MRN-456"
+      },
+      {
+        "case_id": "SYN-00744",
+        "family": "admission",
+        "lang": "en",
+        "section": "other",
+        "mention": "Diminished tissue fumarylacetoacetate hydrolase activity",
+        "window": "ated circulating succinylacetone concentration, ",
+        "left_context": "d circulating succinylacetone concentration, ",
+        "record_head": "The child is a 10-year-old boy presenting with Enlarged kidn"
+      },
+      {
+        "case_id": "SYN-00826",
+        "family": "admission",
+        "lang": "en",
+        "section": "other",
+        "mention": "Congenital contracture",
+        "window": "enies Cerebellar dentate nucleus calcification, ",
+        "left_context": "es Cerebellar dentate nucleus calcification, ",
+        "record_head": "Name: Declan Pierce | Sex: Male | Age: 7 years | MRN: MRN-61"
+      },
+      {
+        "case_id": "SYN-01236",
+        "family": "admission",
+        "lang": "en",
+        "section": "other",
+        "mention": "Abnormal skin pigmentation",
+        "window": "o reported Abnormality of chromosome stability, ",
+        "left_context": "eported Abnormality of chromosome stability, ",
+        "record_head": "Name: Elena Marsh | Sex: Male | Age: 38 years | MRN: MRN-585"
+      },
+      {
+        "case_id": "SYN-01319",
+        "family": "admission",
+        "lang": "en",
+        "section": "other",
+        "mention": "Pyridoxine-responsive sideroblastic anemia",
+        "window": "Abnormality of blood and blood-forming tissues, ",
+        "left_context": "ormality of blood and blood-forming tissues, ",
+        "record_head": "The child is a 9-year-old girl presenting with Microcephaly "
+      },
+      {
+        "case_id": "SYN-01484",
+        "family": "admission",
+        "lang": "en",
+        "section": "other",
+        "mention": "Visual loss",
+        "window": "s Progressive sensorineural hearing impairment, ",
+        "left_context": "rogressive sensorineural hearing impairment, ",
+        "record_head": "Name: Elena Marsh | Sex: Male | Age: 15 years | MRN: MRN-296"
+      }
+    ]
+  },
+  "history_to_affirmed": 783
+}

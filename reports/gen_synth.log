@@ -1,0 +1,10 @@
+{
+  "cases": 2400,
+  "pairs": 160,
+  "zh": 1639,
+  "manifest": {
+    "notes.jsonl": "a86a606bc748785e2b5126ed7bb8e74fa8b8a663df88709ee10b9be7ccdf2874",
+    "cases.jsonl": "b506a1b8d4160ebed128225ceb7a2039fa104fcbed702a1e3eb993efc4b9c8ee",
+    "dedup_pairs.jsonl": "cf0599908f4360fd6fbfedf3b44f4e1d172f5c895a56dc06129430afe141e528"
+  }
+}

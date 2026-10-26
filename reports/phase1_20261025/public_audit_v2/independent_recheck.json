@@ -1,0 +1,79 @@
+{
+  "all_six_copies_identical": true,
+  "current_code_matches_saved_v2_aggregate": true,
+  "copies": [
+    {
+      "source_relative_path": "MedDataLab/reports/public_demo/public_clinical_structured.jsonl",
+      "sha256": "8b7e245ab1525c3fc1b15e2f2672b76c36caaf77e80ca04c1a7d0ff0df376d21",
+      "bytes": 59923,
+      "direct_counts": {
+        "rows": 85,
+        "unique_subject_ids": 40,
+        "unique_stay_ids": 85,
+        "diagnosis_links": 21,
+        "stays_with_diagnoses": 13
+      }
+    },
+    {
+      "source_relative_path": "MedDataLab_V2.11.1/reports/public_demo/public_clinical_structured.jsonl",
+      "sha256": "8b7e245ab1525c3fc1b15e2f2672b76c36caaf77e80ca04c1a7d0ff0df376d21",
+      "bytes": 59923,
+      "direct_counts": {
+        "rows": 85,
+        "unique_subject_ids": 40,
+        "unique_stay_ids": 85,
+        "diagnosis_links": 21,
+        "stays_with_diagnoses": 13
+      }
+    },
+    {
+      "source_relative_path": "MedDataLab_V2.12/reports/public_demo/public_clinical_structured.jsonl",
+      "sha256": "8b7e245ab1525c3fc1b15e2f2672b76c36caaf77e80ca04c1a7d0ff0df376d21",
+      "bytes": 59923,
+      "direct_counts": {
+        "rows": 85,
+        "unique_subject_ids": 40,
+        "unique_stay_ids": 85,
+        "diagnosis_links": 21,
+        "stays_with_diagnoses": 13
+      }
+    },
+    {
+      "source_relative_path": "MedDataLab_V2.15/reports/public_demo/public_clinical_structured.jsonl",
+      "sha256": "8b7e245ab1525c3fc1b15e2f2672b76c36caaf77e80ca04c1a7d0ff0df376d21",
+      "bytes": 59923,
+      "direct_counts": {
+        "rows": 85,
+        "unique_subject_ids": 40,
+        "unique_stay_ids": 85,
+        "diagnosis_links": 21,
+        "stays_with_diagnoses": 13
+      }
+    },
+    {
+      "source_relative_path": "MedDataLab_V2.19/reports/public_demo/public_clinical_structured.jsonl",
+      "sha256": "8b7e245ab1525c3fc1b15e2f2672b76c36caaf77e80ca04c1a7d0ff0df376d21",
+      "bytes": 59923,
+      "direct_counts": {
+        "rows": 85,
+        "unique_subject_ids": 40,
+        "unique_stay_ids": 85,
+        "diagnosis_links": 21,
+        "stays_with_diagnoses": 13
+      }
+    },
+    {
+      "source_relative_path": "MedDataLab_V2.9/reports/public_demo/public_clinical_structured.jsonl",
+      "sha256": "8b7e245ab1525c3fc1b15e2f2672b76c36caaf77e80ca04c1a7d0ff0df376d21",
+      "bytes": 59923,
+      "direct_counts": {
+        "rows": 85,
+        "unique_subject_ids": 40,
+        "unique_stay_ids": 85,
+        "diagnosis_links": 21,
+        "stays_with_diagnoses": 13
+      }
+    }
+  ],
+  "no_patient_level_data_exported": true
+}

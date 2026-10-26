@@ -1,0 +1,24 @@
+{
+  "repetitions": 5,
+  "rows_per_repetition": 730,
+  "wall_seconds_each": [
+    0.37567800004035234,
+    0.37664869998116046,
+    0.3436706999782473,
+    0.3728832999477163,
+    0.3843314000405371
+  ],
+  "median_wall_seconds": 0.37567800004035234,
+  "median_rows_per_second": 1943.153445028959,
+  "input_sha256": "b2a219e44547e82569523b9e68c38ca9f0302414d6b56d007538f0d76f2b548f",
+  "environment": {
+    "python": "3.10.7 (tags/v3.10.7:6cc6b13, Sep  5 2022, 14:08:36) [MSC v.1933 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0"
+  },
+  "includes": "read JSONL, parse, within-encounter dedup, metadata-only JSONL+SQLite+audit; text export disabled",
+  "limitations": [
+    "Small synthetic input fits RAM; do not extrapolate to distributed or TB-scale data.",
+    "Local single-process benchmark, environment and disk specific.",
+    "Output policy and software revision affect cost; compare only matching configurations."
+  ]
+}

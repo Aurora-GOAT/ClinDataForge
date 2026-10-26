@@ -1,0 +1,405 @@
+{
+ "method": "C",
+ "metrics_optimized": {
+  "n_records": 632,
+  "n_positive_records": 487,
+  "n_negative_records": 145,
+  "entity_exact": {
+   "tp": 1625,
+   "fp": 536,
+   "fn": 317,
+   "precision": 0.7519666820916242,
+   "recall": 0.8367662203913491,
+   "f1": 0.7921033390202291
+  },
+  "per_label": {
+   "NAME": {
+    "tp": 455,
+    "fp": 223,
+    "fn": 22,
+    "precision": 0.6710914454277286,
+    "recall": 0.9538784067085954,
+    "f1": 0.7878787878787878
+   },
+   "PHONE": {
+    "tp": 143,
+    "fp": 2,
+    "fn": 32,
+    "precision": 0.9862068965517241,
+    "recall": 0.8171428571428572,
+    "f1": 0.89375
+   },
+   "PATIENT_ID": {
+    "tp": 158,
+    "fp": 97,
+    "fn": 92,
+    "precision": 0.6196078431372549,
+    "recall": 0.632,
+    "f1": 0.6257425742574257
+   },
+   "DATE": {
+    "tp": 474,
+    "fp": 58,
+    "fn": 2,
+    "precision": 0.8909774436090225,
+    "recall": 0.9957983193277311,
+    "f1": 0.9404761904761905
+   },
+   "ADDRESS": {
+    "tp": 335,
+    "fp": 150,
+    "fn": 149,
+    "precision": 0.6907216494845361,
+    "recall": 0.6921487603305785,
+    "f1": 0.6914344685242518
+   },
+   "SSN": {
+    "tp": 11,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "EMAIL": {
+    "tp": 14,
+    "fp": 0,
+    "fn": 1,
+    "precision": 1.0,
+    "recall": 0.9333333333333333,
+    "f1": 0.9655172413793104
+   },
+   "INSURANCE_ID": {
+    "tp": 35,
+    "fp": 6,
+    "fn": 19,
+    "precision": 0.8536585365853658,
+    "recall": 0.6481481481481481,
+    "f1": 0.7368421052631579
+   }
+  },
+  "all_entities_exact_positive_rate": 0.4620123203285421,
+  "all_gold_phi_masked_positive_rate": 0.6447638603696099,
+  "all_gold_phi_masked_all_records_rate": 0.7262658227848101,
+  "phi_character_residual_rate": 0.06994521032166844,
+  "protected_clinical_character_deletion_rate": 0.14509643960142182,
+  "protected_clinical_span_damage_rate": 0.23171614771904417,
+  "non_phi_character_deletion_rate": 0.06566387486143614,
+  "negative_record_any_redaction_rate": 0.9655172413793104,
+  "denominators": {
+   "gold_phi_characters": 22632,
+   "missed_phi_characters": 1583,
+   "protected_clinical_characters": 17161,
+   "deleted_protected_clinical_characters": 2490,
+   "protected_clinical_spans": 1381,
+   "damaged_protected_clinical_spans": 320,
+   "non_phi_characters": 64952,
+   "deleted_non_phi_characters": 4265
+  }
+ },
+ "metrics_frozen": {
+  "n_records": 632,
+  "n_positive_records": 487,
+  "n_negative_records": 145,
+  "entity_exact": {
+   "tp": 1624,
+   "fp": 535,
+   "fn": 318,
+   "precision": 0.7522000926354794,
+   "recall": 0.8362512873326468,
+   "f1": 0.792001950743721
+  },
+  "per_label": {
+   "NAME": {
+    "tp": 455,
+    "fp": 222,
+    "fn": 22,
+    "precision": 0.672082717872969,
+    "recall": 0.9538784067085954,
+    "f1": 0.7885615251299827
+   },
+   "PHONE": {
+    "tp": 142,
+    "fp": 2,
+    "fn": 33,
+    "precision": 0.9861111111111112,
+    "recall": 0.8114285714285714,
+    "f1": 0.890282131661442
+   },
+   "PATIENT_ID": {
+    "tp": 158,
+    "fp": 97,
+    "fn": 92,
+    "precision": 0.6196078431372549,
+    "recall": 0.632,
+    "f1": 0.6257425742574257
+   },
+   "DATE": {
+    "tp": 474,
+    "fp": 58,
+    "fn": 2,
+    "precision": 0.8909774436090225,
+    "recall": 0.9957983193277311,
+    "f1": 0.9404761904761905
+   },
+   "ADDRESS": {
+    "tp": 335,
+    "fp": 150,
+    "fn": 149,
+    "precision": 0.6907216494845361,
+    "recall": 0.6921487603305785,
+    "f1": 0.6914344685242518
+   },
+   "SSN": {
+    "tp": 11,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "EMAIL": {
+    "tp": 14,
+    "fp": 0,
+    "fn": 1,
+    "precision": 1.0,
+    "recall": 0.9333333333333333,
+    "f1": 0.9655172413793104
+   },
+   "INSURANCE_ID": {
+    "tp": 35,
+    "fp": 6,
+    "fn": 19,
+    "precision": 0.8536585365853658,
+    "recall": 0.6481481481481481,
+    "f1": 0.7368421052631579
+   }
+  },
+  "all_entities_exact_positive_rate": 0.4620123203285421,
+  "all_gold_phi_masked_positive_rate": 0.6447638603696099,
+  "all_gold_phi_masked_all_records_rate": 0.7262658227848101,
+  "phi_character_residual_rate": 0.07043124779073878,
+  "protected_clinical_character_deletion_rate": 0.14422236466406388,
+  "protected_clinical_span_damage_rate": 0.23026792179580013,
+  "non_phi_character_deletion_rate": 0.06541753910580121,
+  "negative_record_any_redaction_rate": 0.9655172413793104,
+  "denominators": {
+   "gold_phi_characters": 22632,
+   "missed_phi_characters": 1594,
+   "protected_clinical_characters": 17161,
+   "deleted_protected_clinical_characters": 2475,
+   "protected_clinical_spans": 1381,
+   "damaged_protected_clinical_spans": 318,
+   "non_phi_characters": 64952,
+   "deleted_non_phi_characters": 4249
+  }
+ },
+ "doc_identity_rate": 0.9968,
+ "spans_missing_vs_frozen": 0,
+ "spans_added_vs_frozen": 2,
+ "mean_ms_per_doc": 292.2,
+ "p95_ms_per_doc": 632.3
+}
+{
+ "method": "D",
+ "metrics_optimized": {
+  "n_records": 632,
+  "n_positive_records": 487,
+  "n_negative_records": 145,
+  "entity_exact": {
+   "tp": 1756,
+   "fp": 566,
+   "fn": 186,
+   "precision": 0.756244616709733,
+   "recall": 0.9042224510813595,
+   "f1": 0.8236397748592871
+  },
+  "per_label": {
+   "NAME": {
+    "tp": 462,
+    "fp": 231,
+    "fn": 15,
+    "precision": 0.6666666666666666,
+    "recall": 0.9685534591194969,
+    "f1": 0.7897435897435897
+   },
+   "PHONE": {
+    "tp": 175,
+    "fp": 2,
+    "fn": 0,
+    "precision": 0.9887005649717514,
+    "recall": 1.0,
+    "f1": 0.9943181818181818
+   },
+   "PATIENT_ID": {
+    "tp": 223,
+    "fp": 98,
+    "fn": 27,
+    "precision": 0.6947040498442367,
+    "recall": 0.892,
+    "f1": 0.7810858143607706
+   },
+   "DATE": {
+    "tp": 476,
+    "fp": 58,
+    "fn": 0,
+    "precision": 0.8913857677902621,
+    "recall": 1.0,
+    "f1": 0.9425742574257425
+   },
+   "ADDRESS": {
+    "tp": 353,
+    "fp": 158,
+    "fn": 131,
+    "precision": 0.6908023483365949,
+    "recall": 0.7293388429752066,
+    "f1": 0.7095477386934673
+   },
+   "SSN": {
+    "tp": 11,
+    "fp": 13,
+    "fn": 0,
+    "precision": 0.4583333333333333,
+    "recall": 1.0,
+    "f1": 0.6285714285714286
+   },
+   "EMAIL": {
+    "tp": 15,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "INSURANCE_ID": {
+    "tp": 41,
+    "fp": 6,
+    "fn": 13,
+    "precision": 0.8723404255319149,
+    "recall": 0.7592592592592593,
+    "f1": 0.8118811881188119
+   }
+  },
+  "all_entities_exact_positive_rate": 0.6427104722792608,
+  "all_gold_phi_masked_positive_rate": 0.704312114989733,
+  "all_gold_phi_masked_all_records_rate": 0.7721518987341772,
+  "phi_character_residual_rate": 0.053640862495581476,
+  "protected_clinical_character_deletion_rate": 0.14509643960142182,
+  "protected_clinical_span_damage_rate": 0.23171614771904417,
+  "non_phi_character_deletion_rate": 0.06638748614361374,
+  "negative_record_any_redaction_rate": 0.9655172413793104,
+  "denominators": {
+   "gold_phi_characters": 22632,
+   "missed_phi_characters": 1214,
+   "protected_clinical_characters": 17161,
+   "deleted_protected_clinical_characters": 2490,
+   "protected_clinical_spans": 1381,
+   "damaged_protected_clinical_spans": 320,
+   "non_phi_characters": 64952,
+   "deleted_non_phi_characters": 4312
+  }
+ },
+ "metrics_frozen": {
+  "n_records": 632,
+  "n_positive_records": 487,
+  "n_negative_records": 145,
+  "entity_exact": {
+   "tp": 1756,
+   "fp": 565,
+   "fn": 186,
+   "precision": 0.7565704437742352,
+   "recall": 0.9042224510813595,
+   "f1": 0.8238329814684494
+  },
+  "per_label": {
+   "NAME": {
+    "tp": 462,
+    "fp": 230,
+    "fn": 15,
+    "precision": 0.6676300578034682,
+    "recall": 0.9685534591194969,
+    "f1": 0.7904191616766467
+   },
+   "PHONE": {
+    "tp": 175,
+    "fp": 2,
+    "fn": 0,
+    "precision": 0.9887005649717514,
+    "recall": 1.0,
+    "f1": 0.9943181818181818
+   },
+   "PATIENT_ID": {
+    "tp": 223,
+    "fp": 98,
+    "fn": 27,
+    "precision": 0.6947040498442367,
+    "recall": 0.892,
+    "f1": 0.7810858143607706
+   },
+   "DATE": {
+    "tp": 476,
+    "fp": 58,
+    "fn": 0,
+    "precision": 0.8913857677902621,
+    "recall": 1.0,
+    "f1": 0.9425742574257425
+   },
+   "ADDRESS": {
+    "tp": 353,
+    "fp": 158,
+    "fn": 131,
+    "precision": 0.6908023483365949,
+    "recall": 0.7293388429752066,
+    "f1": 0.7095477386934673
+   },
+   "SSN": {
+    "tp": 11,
+    "fp": 13,
+    "fn": 0,
+    "precision": 0.4583333333333333,
+    "recall": 1.0,
+    "f1": 0.6285714285714286
+   },
+   "EMAIL": {
+    "tp": 15,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "INSURANCE_ID": {
+    "tp": 41,
+    "fp": 6,
+    "fn": 13,
+    "precision": 0.8723404255319149,
+    "recall": 0.7592592592592593,
+    "f1": 0.8118811881188119
+   }
+  },
+  "all_entities_exact_positive_rate": 0.6427104722792608,
+  "all_gold_phi_masked_positive_rate": 0.704312114989733,
+  "all_gold_phi_masked_all_records_rate": 0.7721518987341772,
+  "phi_character_residual_rate": 0.053640862495581476,
+  "protected_clinical_character_deletion_rate": 0.14422236466406388,
+  "protected_clinical_span_damage_rate": 0.23026792179580013,
+  "non_phi_character_deletion_rate": 0.06614115038797881,
+  "negative_record_any_redaction_rate": 0.9655172413793104,
+  "denominators": {
+   "gold_phi_characters": 22632,
+   "missed_phi_characters": 1214,
+   "protected_clinical_characters": 17161,
+   "deleted_protected_clinical_characters": 2475,
+   "protected_clinical_spans": 1381,
+   "damaged_protected_clinical_spans": 318,
+   "non_phi_characters": 64952,
+   "deleted_non_phi_characters": 4296
+  }
+ },
+ "doc_identity_rate": 0.9984,
+ "spans_missing_vs_frozen": 0,
+ "spans_added_vs_frozen": 1,
+ "mean_ms_per_doc": 275.2,
+ "p95_ms_per_doc": 550.3
+}
+EXIT=0

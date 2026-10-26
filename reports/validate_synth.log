@@ -1,0 +1,30 @@
+{
+  "n_records": 2400,
+  "span_integrity_errors": 0,
+  "knowledge_violations": 0,
+  "knowledge_violation_rate_per_record": 0.0,
+  "lab_errors": 0,
+  "phenotype_use": {
+    "distinct_hp_used": 214,
+    "by_disease": {
+      "OMIM:117550": 18,
+      "OMIM:276700": 17,
+      "ORPHA:110": 17,
+      "ORPHA:116": 17,
+      "ORPHA:191": 17,
+      "ORPHA:2162": 17,
+      "ORPHA:33364": 17,
+      "ORPHA:355": 16,
+      "ORPHA:506": 18,
+      "ORPHA:534": 17,
+      "ORPHA:550": 17,
+      "ORPHA:64": 17,
+      "ORPHA:79318": 17,
+      "ORPHA:79474": 16,
+      "ORPHA:84": 16,
+      "ORPHA:881": 17
+    }
+  },
+  "human_review_queue_size": 199
+}
+near_duplicate overall: {"overall_mean": 0.2054, "overall_p95": 0.4937, "overall_max": 0.9083, "overall_share_ge_0_7": 0.0018}

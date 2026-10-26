@@ -1,0 +1,20 @@
+{
+  "version": "0.1.0",
+  "input_rows": 730,
+  "processed_rows": 730,
+  "malformed_rows_dropped_without_raw_export": 0,
+  "accepted_rows": 573,
+  "quarantined_rows": 157,
+  "duplicate_rows_quarantined": 130,
+  "known_pattern_phi_spans_masked": 2190,
+  "accepted_fraction": 0.7849,
+  "operator_issue_counts": {
+    "DUPLICATE_WITHIN_PATIENT": 130,
+    "OUT_OF_BROAD_RANGE_TEMP_C": 34
+  },
+  "warnings": [
+    "Research prototype, NOT a certified de-identification system.",
+    "Candidate labels are heuristic, NOT human verified training data.",
+    "Do not send patient data to public APIs; do not treat score as clinical validity."
+  ]
+}

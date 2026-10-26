@@ -1,0 +1,83 @@
+{
+  "verdict": "PASS",
+  "problems": [],
+  "leakage": {
+    "duplicate_texts_total": 0,
+    "duplicate_texts_crossing_splits": 0,
+    "independent_mask_collisions_crossing_splits": 0,
+    "template_families_crossing_splits": 0,
+    "cross_split_pairs_jaccard_ge_0.50": 0,
+    "worst_cross_split_pairs": []
+  },
+  "summary": {
+    "train": {
+      "n_records": 343,
+      "n_with_phi": 258,
+      "n_without_phi": 85,
+      "n_entities": 1017,
+      "languages": {
+        "en": 263,
+        "zh": 80
+      },
+      "labels": {
+        "NAME": 258,
+        "ADDRESS": 254,
+        "DATE": 251,
+        "PATIENT_ID": 128,
+        "INSURANCE_ID": 24,
+        "SSN": 11,
+        "PHONE": 82,
+        "EMAIL": 9
+      },
+      "characters": 48483,
+      "protected_characters": 9418,
+      "components": 251
+    },
+    "dev": {
+      "n_records": 396,
+      "n_with_phi": 367,
+      "n_without_phi": 29,
+      "n_entities": 1411,
+      "languages": {
+        "en": 332,
+        "zh": 64
+      },
+      "labels": {
+        "NAME": 359,
+        "ADDRESS": 367,
+        "DATE": 359,
+        "PATIENT_ID": 225,
+        "INSURANCE_ID": 13,
+        "PHONE": 70,
+        "SSN": 11,
+        "EMAIL": 7
+      },
+      "characters": 58693,
+      "protected_characters": 12892,
+      "components": 90
+    },
+    "test": {
+      "n_records": 632,
+      "n_with_phi": 487,
+      "n_without_phi": 145,
+      "n_entities": 1942,
+      "languages": {
+        "en": 456,
+        "zh": 176
+      },
+      "labels": {
+        "NAME": 477,
+        "ADDRESS": 484,
+        "DATE": 476,
+        "PATIENT_ID": 250,
+        "EMAIL": 15,
+        "INSURANCE_ID": 54,
+        "PHONE": 175,
+        "SSN": 11
+      },
+      "characters": 87584,
+      "protected_characters": 17161,
+      "components": 463
+    }
+  }
+}

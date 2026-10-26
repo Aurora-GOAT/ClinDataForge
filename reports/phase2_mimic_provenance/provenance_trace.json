@@ -1,0 +1,471 @@
+{
+  "scope": "Existing public deidentified MIMIC-IV-ED Demo derivative provenance only; no PHI benchmark.",
+  "source_paths_resolved": true,
+  "local_artifacts": [
+    {
+      "path_relative_to_workspace": "MedDataLab/reports/full_public/public_clinical_structured.jsonl",
+      "bytes": 203719,
+      "sha256": "9ae5aa3552bb9509707e30b9c62ea4a5abe44d930a4f18f6b8401a10985e3530",
+      "aggregate": {
+        "rows": 222,
+        "unique_subject_ids": 64,
+        "unique_stay_ids": 222,
+        "diagnosis_links": 545,
+        "stays_with_diagnoses": 221
+      }
+    },
+    {
+      "path_relative_to_workspace": "MedDataLab/reports/public_demo/public_clinical_structured.jsonl",
+      "bytes": 59923,
+      "sha256": "8b7e245ab1525c3fc1b15e2f2672b76c36caaf77e80ca04c1a7d0ff0df376d21",
+      "aggregate": {
+        "rows": 85,
+        "unique_subject_ids": 40,
+        "unique_stay_ids": 85,
+        "diagnosis_links": 21,
+        "stays_with_diagnoses": 13
+      }
+    },
+    {
+      "path_relative_to_workspace": "MedDataLab_V2.11.1/reports/full_public/public_clinical_structured.jsonl",
+      "bytes": 203719,
+      "sha256": "9ae5aa3552bb9509707e30b9c62ea4a5abe44d930a4f18f6b8401a10985e3530",
+      "aggregate": {
+        "rows": 222,
+        "unique_subject_ids": 64,
+        "unique_stay_ids": 222,
+        "diagnosis_links": 545,
+        "stays_with_diagnoses": 221
+      }
+    },
+    {
+      "path_relative_to_workspace": "MedDataLab_V2.11.1/reports/public_demo/public_clinical_structured.jsonl",
+      "bytes": 59923,
+      "sha256": "8b7e245ab1525c3fc1b15e2f2672b76c36caaf77e80ca04c1a7d0ff0df376d21",
+      "aggregate": {
+        "rows": 85,
+        "unique_subject_ids": 40,
+        "unique_stay_ids": 85,
+        "diagnosis_links": 21,
+        "stays_with_diagnoses": 13
+      }
+    },
+    {
+      "path_relative_to_workspace": "MedDataLab_V2.12/reports/full_public/public_clinical_structured.jsonl",
+      "bytes": 203719,
+      "sha256": "9ae5aa3552bb9509707e30b9c62ea4a5abe44d930a4f18f6b8401a10985e3530",
+      "aggregate": {
+        "rows": 222,
+        "unique_subject_ids": 64,
+        "unique_stay_ids": 222,
+        "diagnosis_links": 545,
+        "stays_with_diagnoses": 221
+      }
+    },
+    {
+      "path_relative_to_workspace": "MedDataLab_V2.12/reports/public_demo/public_clinical_structured.jsonl",
+      "bytes": 59923,
+      "sha256": "8b7e245ab1525c3fc1b15e2f2672b76c36caaf77e80ca04c1a7d0ff0df376d21",
+      "aggregate": {
+        "rows": 85,
+        "unique_subject_ids": 40,
+        "unique_stay_ids": 85,
+        "diagnosis_links": 21,
+        "stays_with_diagnoses": 13
+      }
+    },
+    {
+      "path_relative_to_workspace": "MedDataLab_V2.15/reports/full_public/public_clinical_structured.jsonl",
+      "bytes": 203719,
+      "sha256": "9ae5aa3552bb9509707e30b9c62ea4a5abe44d930a4f18f6b8401a10985e3530",
+      "aggregate": {
+        "rows": 222,
+        "unique_subject_ids": 64,
+        "unique_stay_ids": 222,
+        "diagnosis_links": 545,
+        "stays_with_diagnoses": 221
+      }
+    },
+    {
+      "path_relative_to_workspace": "MedDataLab_V2.15/reports/public_demo/public_clinical_structured.jsonl",
+      "bytes": 59923,
+      "sha256": "8b7e245ab1525c3fc1b15e2f2672b76c36caaf77e80ca04c1a7d0ff0df376d21",
+      "aggregate": {
+        "rows": 85,
+        "unique_subject_ids": 40,
+        "unique_stay_ids": 85,
+        "diagnosis_links": 21,
+        "stays_with_diagnoses": 13
+      }
+    },
+    {
+      "path_relative_to_workspace": "MedDataLab_V2.19/reports/full_public/public_clinical_structured.jsonl",
+      "bytes": 203719,
+      "sha256": "9ae5aa3552bb9509707e30b9c62ea4a5abe44d930a4f18f6b8401a10985e3530",
+      "aggregate": {
+        "rows": 222,
+        "unique_subject_ids": 64,
+        "unique_stay_ids": 222,
+        "diagnosis_links": 545,
+        "stays_with_diagnoses": 221
+      }
+    },
+    {
+      "path_relative_to_workspace": "MedDataLab_V2.19/reports/public_demo/public_clinical_structured.jsonl",
+      "bytes": 59923,
+      "sha256": "8b7e245ab1525c3fc1b15e2f2672b76c36caaf77e80ca04c1a7d0ff0df376d21",
+      "aggregate": {
+        "rows": 85,
+        "unique_subject_ids": 40,
+        "unique_stay_ids": 85,
+        "diagnosis_links": 21,
+        "stays_with_diagnoses": 13
+      }
+    },
+    {
+      "path_relative_to_workspace": "MedDataLab_V2.9/reports/full_public/public_clinical_structured.jsonl",
+      "bytes": 203719,
+      "sha256": "9ae5aa3552bb9509707e30b9c62ea4a5abe44d930a4f18f6b8401a10985e3530",
+      "aggregate": {
+        "rows": 222,
+        "unique_subject_ids": 64,
+        "unique_stay_ids": 222,
+        "diagnosis_links": 545,
+        "stays_with_diagnoses": 221
+      }
+    },
+    {
+      "path_relative_to_workspace": "MedDataLab_V2.9/reports/public_demo/public_clinical_structured.jsonl",
+      "bytes": 59923,
+      "sha256": "8b7e245ab1525c3fc1b15e2f2672b76c36caaf77e80ca04c1a7d0ff0df376d21",
+      "aggregate": {
+        "rows": 85,
+        "unique_subject_ids": 40,
+        "unique_stay_ids": 85,
+        "diagnosis_links": 21,
+        "stays_with_diagnoses": 13
+      }
+    }
+  ],
+  "archives": [
+    {
+      "archive": "MedDataLab_Codex_%E5%AE%8C%E6%95%B4%E9%A1%B9%E7%9B%AE%E4%B8%8E%E4%BA%A4%E6%8E%A5%E6%9D%90%E6%96%99_20261025.zip",
+      "bytes": 3127286,
+      "members": [
+        {
+          "path": "MedDataLab_Codex_交接包_20261025/project/reports/full_public/public_clinical_structured.jsonl",
+          "bytes": 203719,
+          "sha256": "9ae5aa3552bb9509707e30b9c62ea4a5abe44d930a4f18f6b8401a10985e3530",
+          "aggregate": {
+            "rows": 222,
+            "unique_subject_ids": 64,
+            "unique_stay_ids": 222,
+            "diagnosis_links": 545,
+            "stays_with_diagnoses": 221
+          }
+        },
+        {
+          "path": "MedDataLab_Codex_交接包_20261025/project/reports/public_demo/public_clinical_structured.jsonl",
+          "bytes": 59923,
+          "sha256": "8b7e245ab1525c3fc1b15e2f2672b76c36caaf77e80ca04c1a7d0ff0df376d21",
+          "aggregate": {
+            "rows": 85,
+            "unique_subject_ids": 40,
+            "unique_stay_ids": 85,
+            "diagnosis_links": 21,
+            "stays_with_diagnoses": 13
+          }
+        }
+      ],
+      "sha256": "449bdde12402286efd3246852876a734784f177a4046dd1f3689268621b54498"
+    },
+    {
+      "archive": "MedDataLab_V2.11.1_502%E4%B8%8B%E8%BD%BD%E6%95%85%E9%9A%9C%E4%BF%AE%E5%A4%8D_%E8%87%AA%E5%8A%A8%E5%A4%8D%E7%94%A8%E7%BC%93%E5%AD%98.zip",
+      "bytes": 391696,
+      "members": [
+        {
+          "path": "MedDataLab_V2.11.1/reports/full_public/public_clinical_structured.jsonl",
+          "bytes": 203719,
+          "sha256": "9ae5aa3552bb9509707e30b9c62ea4a5abe44d930a4f18f6b8401a10985e3530",
+          "aggregate": {
+            "rows": 222,
+            "unique_subject_ids": 64,
+            "unique_stay_ids": 222,
+            "diagnosis_links": 545,
+            "stays_with_diagnoses": 221
+          }
+        },
+        {
+          "path": "MedDataLab_V2.11.1/reports/public_demo/public_clinical_structured.jsonl",
+          "bytes": 59923,
+          "sha256": "8b7e245ab1525c3fc1b15e2f2672b76c36caaf77e80ca04c1a7d0ff0df376d21",
+          "aggregate": {
+            "rows": 85,
+            "unique_subject_ids": 40,
+            "unique_stay_ids": 85,
+            "diagnosis_links": 21,
+            "stays_with_diagnoses": 13
+          }
+        }
+      ],
+      "sha256": "6bb820c33285e7011e09fd2abe7ae42504069ef3a40dc6eff7b203982bd841a4"
+    },
+    {
+      "archive": "MedDataLab_V2.12_%E7%9B%B2%E6%B3%95%E8%AF%81%E6%8D%AE%E7%9B%B8%E5%85%B3%E6%80%A7%E5%AE%A1%E9%98%85_%E6%97%A0%E9%9C%80Groq.zip",
+      "bytes": 404986,
+      "members": [
+        {
+          "path": "MedDataLab_V2.12/reports/full_public/public_clinical_structured.jsonl",
+          "bytes": 203719,
+          "sha256": "9ae5aa3552bb9509707e30b9c62ea4a5abe44d930a4f18f6b8401a10985e3530",
+          "aggregate": {
+            "rows": 222,
+            "unique_subject_ids": 64,
+            "unique_stay_ids": 222,
+            "diagnosis_links": 545,
+            "stays_with_diagnoses": 221
+          }
+        },
+        {
+          "path": "MedDataLab_V2.12/reports/public_demo/public_clinical_structured.jsonl",
+          "bytes": 59923,
+          "sha256": "8b7e245ab1525c3fc1b15e2f2672b76c36caaf77e80ca04c1a7d0ff0df376d21",
+          "aggregate": {
+            "rows": 85,
+            "unique_subject_ids": 40,
+            "unique_stay_ids": 85,
+            "diagnosis_links": 21,
+            "stays_with_diagnoses": 13
+          }
+        }
+      ],
+      "sha256": "2bbce29076e462190962eaefe27484e08e4109c8858b30d5004ca1ca10720783"
+    },
+    {
+      "archive": "MedDataLab_V2.15_%E5%85%A8%E6%96%B0100%E9%A2%98%E7%8B%AC%E7%AB%8B%E6%A3%80%E7%B4%A2%E9%AA%8C%E8%AF%81_%E5%85%8D%E8%B4%B9%E7%A6%BB%E7%BA%BF%E7%89%88_20261017.zip",
+      "bytes": 669675,
+      "members": [
+        {
+          "path": "MedDataLab_V2.15/reports/full_public/public_clinical_structured.jsonl",
+          "bytes": 203719,
+          "sha256": "9ae5aa3552bb9509707e30b9c62ea4a5abe44d930a4f18f6b8401a10985e3530",
+          "aggregate": {
+            "rows": 222,
+            "unique_subject_ids": 64,
+            "unique_stay_ids": 222,
+            "diagnosis_links": 545,
+            "stays_with_diagnoses": 221
+          }
+        },
+        {
+          "path": "MedDataLab_V2.15/reports/public_demo/public_clinical_structured.jsonl",
+          "bytes": 59923,
+          "sha256": "8b7e245ab1525c3fc1b15e2f2672b76c36caaf77e80ca04c1a7d0ff0df376d21",
+          "aggregate": {
+            "rows": 85,
+            "unique_subject_ids": 40,
+            "unique_stay_ids": 85,
+            "diagnosis_links": 21,
+            "stays_with_diagnoses": 13
+          }
+        }
+      ],
+      "sha256": "3b598f8b20f85450e22d9658f6adc539f5cb900e5ec73b166367207f7287851c"
+    },
+    {
+      "archive": "MedDataLab_V2.19_%E5%AE%98%E6%96%B9MedlinePlus%E7%9F%A5%E8%AF%86%E5%BA%93%E6%A3%80%E7%B4%A2%E8%AF%8A%E6%96%AD_20261020.zip",
+      "bytes": 904097,
+      "members": [
+        {
+          "path": "MedDataLab_V2.19/reports/public_demo/public_clinical_structured.jsonl",
+          "bytes": 59923,
+          "sha256": "8b7e245ab1525c3fc1b15e2f2672b76c36caaf77e80ca04c1a7d0ff0df376d21",
+          "aggregate": {
+            "rows": 85,
+            "unique_subject_ids": 40,
+            "unique_stay_ids": 85,
+            "diagnosis_links": 21,
+            "stays_with_diagnoses": 13
+          }
+        },
+        {
+          "path": "MedDataLab_V2.19/reports/full_public/public_clinical_structured.jsonl",
+          "bytes": 203719,
+          "sha256": "9ae5aa3552bb9509707e30b9c62ea4a5abe44d930a4f18f6b8401a10985e3530",
+          "aggregate": {
+            "rows": 222,
+            "unique_subject_ids": 64,
+            "unique_stay_ids": 222,
+            "diagnosis_links": 545,
+            "stays_with_diagnoses": 221
+          }
+        }
+      ],
+      "sha256": "53c10304a193b1c882ddd3ccd4a52c79875546d90418665d43271cb6afbb2861"
+    },
+    {
+      "archive": "MedDataLab_V2.9_%E5%8C%BB%E5%AD%A6%E6%A3%80%E7%B4%A2%E4%BC%98%E5%8C%96_100%E9%A2%98%E4%B8%89%E7%BB%84%E5%AF%B9%E7%85%A7_20261017.zip",
+      "bytes": 290508,
+      "members": [
+        {
+          "path": "MedDataLab_V2.9/reports/full_public/public_clinical_structured.jsonl",
+          "bytes": 203719,
+          "sha256": "9ae5aa3552bb9509707e30b9c62ea4a5abe44d930a4f18f6b8401a10985e3530",
+          "aggregate": {
+            "rows": 222,
+            "unique_subject_ids": 64,
+            "unique_stay_ids": 222,
+            "diagnosis_links": 545,
+            "stays_with_diagnoses": 221
+          }
+        },
+        {
+          "path": "MedDataLab_V2.9/reports/public_demo/public_clinical_structured.jsonl",
+          "bytes": 59923,
+          "sha256": "8b7e245ab1525c3fc1b15e2f2672b76c36caaf77e80ca04c1a7d0ff0df376d21",
+          "aggregate": {
+            "rows": 85,
+            "unique_subject_ids": 40,
+            "unique_stay_ids": 85,
+            "diagnosis_links": 21,
+            "stays_with_diagnoses": 13
+          }
+        }
+      ],
+      "sha256": "8b4efd00d98df757c6b4c51c1297bebcb4d9500e556305aa71540014fc54a748"
+    },
+    {
+      "archive": "MedDataLab_交付_20261025.zip",
+      "bytes": 3852011,
+      "members": [
+        {
+          "path": "MedDataLab/reports/full_public/public_clinical_structured.jsonl",
+          "bytes": 203719,
+          "sha256": "9ae5aa3552bb9509707e30b9c62ea4a5abe44d930a4f18f6b8401a10985e3530",
+          "aggregate": {
+            "rows": 222,
+            "unique_subject_ids": 64,
+            "unique_stay_ids": 222,
+            "diagnosis_links": 545,
+            "stays_with_diagnoses": 221
+          }
+        },
+        {
+          "path": "MedDataLab/reports/public_demo/public_clinical_structured.jsonl",
+          "bytes": 59923,
+          "sha256": "8b7e245ab1525c3fc1b15e2f2672b76c36caaf77e80ca04c1a7d0ff0df376d21",
+          "aggregate": {
+            "rows": 85,
+            "unique_subject_ids": 40,
+            "unique_stay_ids": 85,
+            "diagnosis_links": 21,
+            "stays_with_diagnoses": 13
+          }
+        }
+      ],
+      "sha256": "717bf0577b8ba41b70c7acfb2c0186c66961b9df4960a45c2b235d579bb326ba"
+    }
+  ],
+  "historical_report": {
+    "path": "reports/public_demo_aggregate.json",
+    "sha256": "6dc18924e5ea1eebac14787b0ff7dfcf66d5e6a99bcb81a9360be1e0d2a9affb",
+    "numeric_metric_differences_from_recovered_full_public": [],
+    "all_historical_numeric_metrics_reproduced": true
+  },
+  "upstream_code_fingerprints": [
+    {
+      "path_relative_to_workspace": "MedDataLab/run_full_public_data.py",
+      "sha256": "ff95cb39904e9bc7e9d3fa993511e05efad62c8a797e705bf05a61531e30a87b"
+    },
+    {
+      "path_relative_to_workspace": "MedDataLab/run_public_demo.py",
+      "sha256": "d44f1cd2091b23b50fac1e91cf08265a915bfb4efa28af32f6db30aef469c4a8"
+    },
+    {
+      "path_relative_to_workspace": "MedDataLab/src/meddatalab/realworld.py",
+      "sha256": "a3516986b87acfb83148d71008cab503b4c0cd0245aa5e825ffc01a06023f68a"
+    },
+    {
+      "path_relative_to_workspace": "MedDataLab/scripts/fetch_public_datasets.py",
+      "sha256": "3ed5dc4f8a36bb5782edd67d92815e64d55048a8fc6245319a4e66f9c8816c1f"
+    }
+  ],
+  "preview_csv_replay": {
+    "upstream_counts": {
+      "n_triage_rows": 85,
+      "n_unique_patients_in_triage": 40,
+      "n_unique_stays_in_triage": 85,
+      "n_diagnosis_rows": 28,
+      "n_stays_with_matched_diagnosis": 13
+    },
+    "replayed_derivative_sha256": "8b7e245ab1525c3fc1b15e2f2672b76c36caaf77e80ca04c1a7d0ff0df376d21",
+    "exact_lf_serialized_bytes_match_existing_derivative": true,
+    "replayed_aggregate": {
+      "rows": 85,
+      "unique_subject_ids": 40,
+      "unique_stay_ids": 85,
+      "diagnosis_links": 21,
+      "stays_with_diagnoses": 13
+    }
+  },
+  "discovery_gap": {
+    "gitignore_rules": [
+      "data/external/",
+      "reports/full_public/"
+    ],
+    "cause": "Phase-one default rg --files inventory honored upstream .gitignore and omitted reports/full_public; public_demo preview and full_public share a basename."
+  },
+  "parent_git_history": {
+    "available": false,
+    "commit_count": 0,
+    "limit": "Parent workspace has no commits; ZIP bytes and code fingerprints identify delivery snapshots."
+  },
+  "conclusion": "222/64/545 belongs to full_public and 85/40/21 belongs to the partial preview. Both named artifacts now located; old report can be cited only with recovered full_public fingerprint and scope.",
+  "no_patient_level_data_exported": true,
+  "limitations": [
+    "Historical reports and original records were not overwritten.",
+    "Source flags and clinical text are not PHI annotation or clinical quality gold.",
+    "Without --verify-official, no claim is made that archived derivatives match newly downloaded official raw CSVs."
+  ],
+  "official_source_verification": {
+    "status": "verified",
+    "source_page": "https://physionet.org/content/mimic-iv-ed-demo/2.2/",
+    "manifest_url": "https://physionet.org/files/mimic-iv-ed-demo/2.2/SHA256SUMS.txt",
+    "manifest_sha256": "0622cbe82d3fd9def18d1b910bb1082b92c025bb5c2ec60e1c6042154274cb81",
+    "license_url": "https://physionet.org/files/mimic-iv-ed-demo/2.2/LICENSE.txt",
+    "license_sha256": "bcdfcd4f31c790e30fb645dc36414907172405897adff329ad379eed85d12017",
+    "downloaded_raw_files_persisted": false,
+    "artifacts": [
+      {
+        "url": "https://physionet.org/files/mimic-iv-ed-demo/2.2/ed/triage.csv.gz",
+        "sha256": "086dadcb49adc5f24bdda0e342ec9cf0fbcb2e9595516c5c101d408434e1e09b",
+        "bytes": 5489,
+        "official_checksum_verified": true
+      },
+      {
+        "url": "https://physionet.org/files/mimic-iv-ed-demo/2.2/ed/diagnosis.csv.gz",
+        "sha256": "3a2d6bfb402d5783f1950f4729dd378e825475719f0535fb6b0209c2bc0744e9",
+        "bytes": 8992,
+        "official_checksum_verified": true
+      }
+    ],
+    "transformation_replay": {
+      "upstream_counts": {
+        "n_triage_rows": 222,
+        "n_unique_patients_in_triage": 64,
+        "n_unique_stays_in_triage": 222,
+        "n_diagnosis_rows": 545,
+        "n_stays_with_matched_diagnosis": 221
+      },
+      "replayed_derivative_sha256": "9ae5aa3552bb9509707e30b9c62ea4a5abe44d930a4f18f6b8401a10985e3530",
+      "exact_lf_serialized_bytes_match_existing_derivative": true,
+      "replayed_aggregate": {
+        "rows": 222,
+        "unique_subject_ids": 64,
+        "unique_stay_ids": 222,
+        "diagnosis_links": 545,
+        "stays_with_diagnoses": 221
+      }
+    }
+  }
+}

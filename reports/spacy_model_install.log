@@ -1,0 +1,6 @@
+Collecting en-core-web-lg==3.8.0
+  Downloading https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.8.0/en_core_web_lg-3.8.0-py3-none-any.whl (400.7 MB)
+     -------------------------------------- 400.7/400.7 MB 1.6 MB/s eta 0:00:00
+Installing collected packages: en-core-web-lg
+Successfully installed en-core-web-lg-3.8.0
+LG_EXIT=0

@@ -1,0 +1,60 @@
+{"doc_id": "SYN-00000", "spans": [["NAME", 0, 2], ["NAME", 3, 4], ["NAME", 26, 28]]}
+{"doc_id": "SYN-00001", "spans": [["NAME", 0, 11], ["NAME", 17, 34]]}
+{"doc_id": "SYN-00002", "spans": [["NAME", 3, 6], ["PATIENT_ID", 23, 31], ["PHONE", 37, 47], ["DATE", 53, 63], ["NAME", 216, 224]]}
+{"doc_id": "SYN-00003", "spans": [["NAME", 8, 12]]}
+{"doc_id": "SYN-00004", "spans": [["NAME", 0, 2], ["NAME", 3, 4]]}
+{"doc_id": "SYN-00005", "spans": [["NAME", 4, 11], ["NAME", 17, 32]]}
+{"doc_id": "SYN-00006", "spans": [["NAME", 0, 9], ["NAME", 15, 30]]}
+{"doc_id": "SYN-00007", "spans": [["NAME", 6, 18], ["PHONE", 74, 86], ["DATE", 101, 111]]}
+{"doc_id": "SYN-00008", "spans": [["NAME", 3, 6], ["PATIENT_ID", 23, 31], ["PHONE", 37, 47], ["DATE", 53, 63]]}
+{"doc_id": "SYN-00009", "spans": [["NAME", 6, 16], ["PHONE", 72, 84], ["DATE", 99, 109]]}
+{"doc_id": "SYN-00010", "spans": [["NAME", 3, 6], ["PATIENT_ID", 23, 31], ["PHONE", 37, 47], ["DATE", 53, 63], ["NAME", 72, 76], ["NAME", 208, 210], ["NAME", 257, 259]]}
+{"doc_id": "SYN-00011", "spans": [["NAME", 3, 6], ["PATIENT_ID", 23, 31], ["PHONE", 37, 47], ["DATE", 53, 63], ["NAME", 178, 180]]}
+{"doc_id": "SYN-00012", "spans": [["NAME", 4, 11], ["NAME", 17, 32]]}
+{"doc_id": "SYN-00013", "spans": [["NAME", 0, 2], ["NAME", 3, 4], ["NAME", 27, 29], ["NAME", 43, 45], ["NAME", 55, 57], ["NAME", 82, 84], ["NAME", 100, 102], ["NAME", 107, 109], ["NAME", 116, 118], ["NAME", 183, 188]]}
+{"doc_id": "SYN-00014", "spans": [["NAME", 0, 2], ["NAME", 3, 4]]}
+{"doc_id": "SYN-00015", "spans": [["NAME", 3, 7], ["PATIENT_ID", 24, 32], ["PHONE", 38, 48], ["DATE", 54, 64], ["NAME", 73, 77], ["NAME", 206, 208], ["NAME", 259, 263]]}
+{"doc_id": "SYN-00016", "spans": [["NAME", 0, 2], ["NAME", 3, 4]]}
+{"doc_id": "SYN-00017", "spans": [["NAME", 3, 6], ["PATIENT_ID", 23, 31], ["PHONE", 37, 47], ["DATE", 53, 63], ["NAME", 67, 68], ["DATE", 182, 183], ["NAME", 184, 186], ["NAME", 217, 221]]}
+{"doc_id": "SYN-00018", "spans": [["NAME", 3, 7], ["PATIENT_ID", 24, 32], ["PHONE", 38, 48], ["DATE", 54, 64], ["NAME", 73, 77]]}
+{"doc_id": "SYN-00019", "spans": [["NAME", 3, 6], ["PATIENT_ID", 23, 31], ["PHONE", 37, 47], ["DATE", 53, 63]]}
+{"doc_id": "SYN-00020", "spans": [["NAME", 0, 2], ["DATE", 110, 111], ["NAME", 112, 114], ["NAME", 157, 159], ["NAME", 171, 189]]}
+{"doc_id": "SYN-00021", "spans": [["NAME", 8, 12], ["NAME", 96, 102]]}
+{"doc_id": "SYN-00022", "spans": [["NAME", 0, 2], ["NAME", 3, 4]]}
+{"doc_id": "SYN-00023", "spans": [["NAME", 0, 11], ["NAME", 17, 34]]}
+{"doc_id": "SYN-00024", "spans": [["NAME", 4, 11], ["NAME", 17, 34]]}
+{"doc_id": "SYN-00025", "spans": [["NAME", 0, 9], ["NAME", 15, 30]]}
+{"doc_id": "SYN-00026", "spans": [["NAME", 3, 6], ["PATIENT_ID", 23, 31], ["PHONE", 37, 47], ["DATE", 53, 63]]}
+{"doc_id": "SYN-00027", "spans": [["NAME", 4, 11], ["NAME", 17, 34]]}
+{"doc_id": "SYN-00028", "spans": [["NAME", 3, 6], ["PATIENT_ID", 23, 31], ["PHONE", 37, 47], ["DATE", 53, 63]]}
+{"doc_id": "SYN-00029", "spans": [["NAME", 6, 16], ["PATIENT_ID", 52, 62], ["PHONE", 72, 84], ["DATE", 99, 109]]}
+{"doc_id": "SYN-00030", "spans": [["NAME", 0, 2], ["NAME", 3, 4]]}
+{"doc_id": "SYN-00031", "spans": [["NAME", 0, 11], ["NAME", 17, 32]]}
+{"doc_id": "SYN-00032", "spans": [["NAME", 3, 6], ["PATIENT_ID", 23, 31], ["PHONE", 37, 47], ["DATE", 53, 63], ["NAME", 72, 76], ["NAME", 177, 189]]}
+{"doc_id": "SYN-00033", "spans": [["NAME", 8, 12]]}
+{"doc_id": "SYN-00034", "spans": [["NAME", 3, 6], ["PATIENT_ID", 23, 31], ["PHONE", 37, 47], ["DATE", 53, 63], ["PATIENT_ID", 189, 199]]}
+{"doc_id": "SYN-00035", "spans": [["NAME", 5, 8], ["NAME", 23, 25]]}
+{"doc_id": "SYN-00036", "spans": [["NAME", 3, 7], ["PATIENT_ID", 24, 32], ["PHONE", 38, 48], ["DATE", 54, 64]]}
+{"doc_id": "SYN-00037", "spans": [["NAME", 6, 19], ["PATIENT_ID", 55, 65], ["PHONE", 75, 87], ["DATE", 102, 112]]}
+{"doc_id": "SYN-00038", "spans": [["NAME", 3, 6], ["PATIENT_ID", 22, 30], ["PHONE", 36, 46], ["DATE", 52, 62], ["NAME", 219, 221]]}
+{"doc_id": "SYN-00039", "spans": [["NAME", 3, 6], ["PATIENT_ID", 23, 31], ["PHONE", 37, 47], ["DATE", 53, 63]]}
+{"doc_id": "SYN-00040", "spans": [["NAME", 8, 12]]}
+{"doc_id": "SYN-00041", "spans": [["NAME", 3, 6], ["PATIENT_ID", 23, 31], ["PHONE", 37, 47], ["DATE", 53, 63], ["NAME", 67, 68], ["DATE", 190, 191], ["NAME", 192, 194]]}
+{"doc_id": "SYN-00042", "spans": [["NAME", 6, 17], ["PATIENT_ID", 53, 63], ["PHONE", 73, 85], ["DATE", 100, 110]]}
+{"doc_id": "SYN-00043", "spans": [["NAME", 6, 18], ["PATIENT_ID", 53, 63], ["PHONE", 73, 85], ["DATE", 100, 110]]}
+{"doc_id": "SYN-00044", "spans": [["NAME", 0, 2], ["NAME", 3, 4]]}
+{"doc_id": "SYN-00045", "spans": [["NAME", 3, 6], ["PATIENT_ID", 23, 31], ["PHONE", 37, 47], ["DATE", 53, 63], ["NAME", 72, 76], ["NAME", 181, 184]]}
+{"doc_id": "SYN-00046", "spans": [["NAME", 3, 6], ["PATIENT_ID", 23, 31], ["PHONE", 37, 47], ["DATE", 53, 63], ["NAME", 67, 68]]}
+{"doc_id": "SYN-00047", "spans": [["NAME", 0, 11], ["NAME", 17, 32]]}
+{"doc_id": "SYN-00048", "spans": [["NAME", 3, 6], ["PATIENT_ID", 23, 31], ["PHONE", 37, 47], ["DATE", 53, 63], ["NAME", 72, 76], ["NAME", 221, 226]]}
+{"doc_id": "SYN-00049", "spans": [["NAME", 6, 16], ["PATIENT_ID", 54, 64], ["PHONE", 74, 86], ["DATE", 101, 111]]}
+{"doc_id": "SYN-00050", "spans": [["NAME", 0, 2], ["NAME", 3, 4], ["NAME", 24, 26]]}
+{"doc_id": "SYN-00051", "spans": [["NAME", 3, 6], ["PATIENT_ID", 23, 31], ["PHONE", 37, 47], ["DATE", 53, 63], ["NAME", 258, 263]]}
+{"doc_id": "SYN-00052", "spans": [["NAME", 0, 2], ["NAME", 3, 4]]}
+{"doc_id": "SYN-00053", "spans": [["NAME", 3, 6], ["PATIENT_ID", 23, 31], ["PHONE", 37, 47], ["DATE", 53, 63], ["NAME", 72, 76], ["NAME", 229, 237]]}
+{"doc_id": "SYN-00054", "spans": [["NAME", 0, 9], ["NAME", 15, 30], ["NAME", 622, 629]]}
+{"doc_id": "SYN-00055", "spans": [["NAME", 3, 6], ["PATIENT_ID", 23, 31], ["PHONE", 37, 47], ["DATE", 53, 63], ["NAME", 72, 76], ["NAME", 188, 190], ["NAME", 225, 227]]}
+{"doc_id": "SYN-00056", "spans": [["NAME", 0, 9], ["NAME", 15, 30], ["NAME", 312, 319]]}
+{"doc_id": "SYN-00057", "spans": [["NAME", 0, 9], ["NAME", 15, 30]]}
+{"doc_id": "SYN-00058", "spans": [["NAME", 3, 7], ["PATIENT_ID", 24, 32], ["PHONE", 38, 48], ["DATE", 54, 64]]}
+{"doc_id": "SYN-00059", "spans": [["NAME", 0, 11], ["NAME", 17, 32]]}

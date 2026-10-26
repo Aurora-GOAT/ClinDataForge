@@ -1,0 +1,325 @@
+{
+  "corpus": "dev",
+  "notes_file": "data/phase3_synth/gen/notes.jsonl",
+  "n_records": 2400,
+  "n_matched_mentions": 22156,
+  "extractor_version": "medextract-1.0.1",
+  "context_scope_version": "ctxscope-1.1.0",
+  "statuses": [
+    "affirmed",
+    "suspected",
+    "history",
+    "negated"
+  ],
+  "systems": {
+    "v1": {
+      "per_class": {
+        "affirmed": {
+          "precision": 0.9433,
+          "recall": 0.9978,
+          "f1": 0.9698,
+          "support": 13382,
+          "predicted": 14154
+        },
+        "suspected": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 4349,
+          "predicted": 4349
+        },
+        "history": {
+          "precision": 1.0,
+          "recall": 0.6819,
+          "f1": 0.8109,
+          "support": 2515,
+          "predicted": 1715
+        },
+        "negated": {
+          "precision": 0.9757,
+          "recall": 0.9901,
+          "f1": 0.9828,
+          "support": 1910,
+          "predicted": 1938
+        },
+        "_overall": {
+          "n": 22156,
+          "accuracy": 0.9617,
+          "macro_f1": 0.9409
+        }
+      },
+      "confusion": {
+        "affirmed": {
+          "affirmed": 13352,
+          "suspected": 0,
+          "history": 0,
+          "negated": 30
+        },
+        "suspected": {
+          "affirmed": 0,
+          "suspected": 4349,
+          "history": 0,
+          "negated": 0
+        },
+        "history": {
+          "affirmed": 783,
+          "suspected": 0,
+          "history": 1715,
+          "negated": 17
+        },
+        "negated": {
+          "affirmed": 19,
+          "suspected": 0,
+          "history": 0,
+          "negated": 1891
+        }
+      },
+      "confusion_matrix_gold_rows": true,
+      "by_language": {
+        "zh": {
+          "n": 15080,
+          "accuracy": 0.945,
+          "macro_f1": 0.9091
+        },
+        "en": {
+          "n": 7076,
+          "accuracy": 0.9973,
+          "macro_f1": 0.9955
+        }
+      },
+      "by_family": {
+        "outpatient": {
+          "n": 4996,
+          "accuracy": 0.9796,
+          "macro_f1": 0.9691
+        },
+        "clinic": {
+          "n": 2757,
+          "accuracy": 0.9989,
+          "macro_f1": 0.998
+        },
+        "admission": {
+          "n": 7209,
+          "accuracy": 0.949,
+          "macro_f1": 0.915
+        },
+        "referral": {
+          "n": 5029,
+          "accuracy": 0.926,
+          "macro_f1": 0.8746
+        },
+        "consult": {
+          "n": 2165,
+          "accuracy": 0.9982,
+          "macro_f1": 0.9971
+        }
+      }
+    },
+    "v2_scope_v1": {
+      "per_class": {
+        "affirmed": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 13382,
+          "predicted": 13382
+        },
+        "suspected": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 4349,
+          "predicted": 4349
+        },
+        "history": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 2515,
+          "predicted": 2515
+        },
+        "negated": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1910,
+          "predicted": 1910
+        },
+        "_overall": {
+          "n": 22156,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        }
+      },
+      "confusion": {
+        "affirmed": {
+          "affirmed": 13382,
+          "suspected": 0,
+          "history": 0,
+          "negated": 0
+        },
+        "suspected": {
+          "affirmed": 0,
+          "suspected": 4349,
+          "history": 0,
+          "negated": 0
+        },
+        "history": {
+          "affirmed": 0,
+          "suspected": 0,
+          "history": 2515,
+          "negated": 0
+        },
+        "negated": {
+          "affirmed": 0,
+          "suspected": 0,
+          "history": 0,
+          "negated": 1910
+        }
+      },
+      "confusion_matrix_gold_rows": true,
+      "by_language": {
+        "zh": {
+          "n": 15080,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "en": {
+          "n": 7076,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        }
+      },
+      "by_family": {
+        "outpatient": {
+          "n": 4996,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "clinic": {
+          "n": 2757,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "admission": {
+          "n": 7209,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "referral": {
+          "n": 5029,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "consult": {
+          "n": 2165,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        }
+      }
+    },
+    "v2_scope_ng": {
+      "per_class": {
+        "affirmed": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 13382,
+          "predicted": 13382
+        },
+        "suspected": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 4349,
+          "predicted": 4349
+        },
+        "history": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 2515,
+          "predicted": 2515
+        },
+        "negated": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1910,
+          "predicted": 1910
+        },
+        "_overall": {
+          "n": 22156,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        }
+      },
+      "confusion": {
+        "affirmed": {
+          "affirmed": 13382,
+          "suspected": 0,
+          "history": 0,
+          "negated": 0
+        },
+        "suspected": {
+          "affirmed": 0,
+          "suspected": 4349,
+          "history": 0,
+          "negated": 0
+        },
+        "history": {
+          "affirmed": 0,
+          "suspected": 0,
+          "history": 2515,
+          "negated": 0
+        },
+        "negated": {
+          "affirmed": 0,
+          "suspected": 0,
+          "history": 0,
+          "negated": 1910
+        }
+      },
+      "confusion_matrix_gold_rows": true,
+      "by_language": {
+        "zh": {
+          "n": 15080,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "en": {
+          "n": 7076,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        }
+      },
+      "by_family": {
+        "outpatient": {
+          "n": 4996,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "clinic": {
+          "n": 2757,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "admission": {
+          "n": 7209,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "referral": {
+          "n": 5029,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "consult": {
+          "n": 2165,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        }
+      }
+    }
+  }
+}

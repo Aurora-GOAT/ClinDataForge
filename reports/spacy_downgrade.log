@@ -1,0 +1,57 @@
+Collecting spacy==3.8.0
+  Using cached spacy-3.8.0-cp310-cp310-win_amd64.whl (12.2 MB)
+Requirement already satisfied: murmurhash<1.1.0,>=0.28.0 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from spacy==3.8.0) (1.0.10)
+Requirement already satisfied: requests<3.0.0,>=2.13.0 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from spacy==3.8.0) (2.34.2)
+Requirement already satisfied: tqdm<5.0.0,>=4.38.0 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from spacy==3.8.0) (4.70.1)
+Requirement already satisfied: setuptools in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from spacy==3.8.0) (63.2.0)
+Requirement already satisfied: wasabi<1.2.0,>=0.9.1 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from spacy==3.8.0) (1.1.3)
+Requirement already satisfied: spacy-loggers<2.0.0,>=1.0.0 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from spacy==3.8.0) (1.0.5)
+Requirement already satisfied: numpy>=1.19.0 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from spacy==3.8.0) (1.26.4)
+Requirement already satisfied: packaging>=20.0 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from spacy==3.8.0) (26.3)
+Requirement already satisfied: cymem<2.1.0,>=2.0.2 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from spacy==3.8.0) (2.0.16)
+Collecting weasel<0.5.0,>=0.1.0
+  Using cached weasel-0.4.3-py3-none-any.whl (50 kB)
+Requirement already satisfied: langcodes<4.0.0,>=3.2.0 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from spacy==3.8.0) (3.5.1)
+Requirement already satisfied: catalogue<2.1.0,>=2.0.6 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from spacy==3.8.0) (2.0.10)
+Requirement already satisfied: pydantic!=1.8,!=1.8.1,<3.0.0,>=1.7.4 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from spacy==3.8.0) (2.14.1)
+Requirement already satisfied: srsly<3.0.0,>=2.4.3 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from spacy==3.8.0) (2.5.5)
+Requirement already satisfied: jinja2 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from spacy==3.8.0) (3.1.6)
+Requirement already satisfied: spacy-legacy<3.1.0,>=3.0.11 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from spacy==3.8.0) (3.0.12)
+Requirement already satisfied: preshed<3.1.0,>=3.0.2 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from spacy==3.8.0) (3.0.14)
+Requirement already satisfied: thinc<8.3.0,>=8.2.2 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from spacy==3.8.0) (8.2.5)
+Requirement already satisfied: typer<1.0.0,>=0.3.0 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from spacy==3.8.0) (0.27.3)
+Requirement already satisfied: annotated-types>=0.6.0 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from pydantic!=1.8,!=1.8.1,<3.0.0,>=1.7.4->spacy==3.8.0) (0.8.0)
+Requirement already satisfied: typing-extensions>=4.16.0 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from pydantic!=1.8,!=1.8.1,<3.0.0,>=1.7.4->spacy==3.8.0) (4.16.0)
+Requirement already satisfied: pydantic-core==2.50.1 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from pydantic!=1.8,!=1.8.1,<3.0.0,>=1.7.4->spacy==3.8.0) (2.50.1)
+Requirement already satisfied: typing-inspection>=0.4.4 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from pydantic!=1.8,!=1.8.1,<3.0.0,>=1.7.4->spacy==3.8.0) (0.4.4)
+Requirement already satisfied: charset_normalizer<4,>=2 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from requests<3.0.0,>=2.13.0->spacy==3.8.0) (3.5.2)
+Requirement already satisfied: certifi>=2023.5.7 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from requests<3.0.0,>=2.13.0->spacy==3.8.0) (2026.10.23)
+Requirement already satisfied: urllib3<3,>=1.26 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from requests<3.0.0,>=2.13.0->spacy==3.8.0) (2.8.0)
+Requirement already satisfied: idna<4,>=2.5 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from requests<3.0.0,>=2.13.0->spacy==3.8.0) (3.20)
+Requirement already satisfied: confection<1.0.0,>=0.0.1 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from thinc<8.3.0,>=8.2.2->spacy==3.8.0) (0.1.5)
+Requirement already satisfied: blis<0.8.0,>=0.7.8 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from thinc<8.3.0,>=8.2.2->spacy==3.8.0) (0.7.11)
+Requirement already satisfied: colorama in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from tqdm<5.0.0,>=4.38.0->spacy==3.8.0) (0.4.6)
+Requirement already satisfied: annotated-doc>=0.0.2 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from typer<1.0.0,>=0.3.0->spacy==3.8.0) (0.0.5)
+Requirement already satisfied: rich>=13.8.0 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from typer<1.0.0,>=0.3.0->spacy==3.8.0) (15.0.0)
+Requirement already satisfied: shellingham>=1.3.0 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from typer<1.0.0,>=0.3.0->spacy==3.8.0) (1.5.4)
+Requirement already satisfied: smart-open<8.0.0,>=5.2.1 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from weasel<0.5.0,>=0.1.0->spacy==3.8.0) (7.7.1)
+Requirement already satisfied: typer-slim<1.0.0,>=0.3.0 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from weasel<0.5.0,>=0.1.0->spacy==3.8.0) (0.24.0)
+Requirement already satisfied: cloudpathlib<1.0.0,>=0.7.0 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from weasel<0.5.0,>=0.1.0->spacy==3.8.0) (0.26.0)
+Requirement already satisfied: MarkupSafe>=2.0 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from jinja2->spacy==3.8.0) (3.0.4)
+Requirement already satisfied: markdown-it-py>=2.2.0 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from rich>=13.8.0->typer<1.0.0,>=0.3.0->spacy==3.8.0) (4.2.0)
+Requirement already satisfied: pygments<3.0.0,>=2.13.0 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from rich>=13.8.0->typer<1.0.0,>=0.3.0->spacy==3.8.0) (2.21.0)
+Requirement already satisfied: wrapt in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from smart-open<8.0.0,>=5.2.1->weasel<0.5.0,>=0.1.0->spacy==3.8.0) (2.5.1)
+Requirement already satisfied: mdurl~=0.1 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from markdown-it-py>=2.2.0->rich>=13.8.0->typer<1.0.0,>=0.3.0->spacy==3.8.0) (0.1.2)
+WARNING: The candidate selected for download or install is a yanked version: 'spacy' candidate (version 3.8.0 at https://files.pythonhosted.org/packages/c6/8f/32bb9f6d1e3928c3e547b4ab0a7704d2ee06feb2b35cb9b919fcd60e6044/spacy-3.8.0-cp310-cp310-win_amd64.whl (from https://pypi.org/simple/spacy/) (requires-python:>=3.7))
+Reason for being yanked: model compatibility problem
+Installing collected packages: weasel, spacy
+  Attempting uninstall: weasel
+    Found existing installation: weasel 1.0.0
+    Uninstalling weasel-1.0.0:
+      Successfully uninstalled weasel-1.0.0
+  Attempting uninstall: spacy
+    Found existing installation: spacy 3.8.16
+    Uninstalling spacy-3.8.16:
+      Successfully uninstalled spacy-3.8.16
+Successfully installed spacy-3.8.0 weasel-0.4.3
+EXIT=0

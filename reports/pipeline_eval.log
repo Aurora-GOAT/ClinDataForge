@@ -1,0 +1,160 @@
+{
+  "evaluation_scope": "template-internal self-check on generator gold labels; NOT independent clinical accuracy",
+  "n_records_evaluated": 2400,
+  "phenotype_extraction": {
+    "precision": 0.9822,
+    "recall": 1.0,
+    "f1": 0.991,
+    "tp": 22156,
+    "fp": 401,
+    "fn": 0
+  },
+  "phenotype_extraction_by_language": {
+    "zh": {
+      "precision": 0.9863,
+      "recall": 1.0,
+      "f1": 0.9931,
+      "tp": 15080,
+      "fp": 210,
+      "fn": 0
+    },
+    "en": {
+      "precision": 0.9737,
+      "recall": 1.0,
+      "f1": 0.9867,
+      "tp": 7076,
+      "fp": 191,
+      "fn": 0
+    }
+  },
+  "context_status_accuracy_on_matched": 0.9617,
+  "context_confusion_top": [
+    {
+      "gold": "affirmed",
+      "pred": "affirmed",
+      "n": 13352
+    },
+    {
+      "gold": "suspected",
+      "pred": "suspected",
+      "n": 4349
+    },
+    {
+      "gold": "negated",
+      "pred": "negated",
+      "n": 1891
+    },
+    {
+      "gold": "history",
+      "pred": "history",
+      "n": 1715
+    },
+    {
+      "gold": "history",
+      "pred": "affirmed",
+      "n": 783
+    },
+    {
+      "gold": "affirmed",
+      "pred": "negated",
+      "n": 30
+    },
+    {
+      "gold": "negated",
+      "pred": "affirmed",
+      "n": 19
+    },
+    {
+      "gold": "history",
+      "pred": "negated",
+      "n": 17
+    }
+  ],
+  "disease_mention_extraction": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "tp": 2400,
+    "fp": 0,
+    "fn": 0
+  },
+  "lab_standardisation": {
+    "n_gold": 1277,
+    "n_correct_std": 1277,
+    "std_accuracy": 1.0,
+    "n_spurious": 0,
+    "by_analyte": {
+      "ALT": {
+        "correct": 344,
+        "missed_or_wrong": 0
+      },
+      "AST": {
+        "correct": 99,
+        "missed_or_wrong": 0
+      },
+      "GLUCOSE": {
+        "correct": 488,
+        "missed_or_wrong": 0
+      },
+      "HGB": {
+        "correct": 346,
+        "missed_or_wrong": 0
+      }
+    }
+  },
+  "phi_gate_synthetic": {
+    "gold_phi_entities": 5196,
+    "gold_phi_masked_in_output": 5196,
+    "gold_phi_masking_rate": 1.0,
+    "note": "template-internal masking coverage on synthetic PHI; independent PHI metrics are in phase-2 reports"
+  },
+  "dedup_pairs": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "tp": 40,
+    "fp": 0,
+    "fn": 0,
+    "masking_protocol": "both sides masked with the deterministic phase-2 context-rule layer (find_context_phi) as a fast approximation of the production hybrid gate; GLiNER omitted for evaluation speed",
+    "mask_sources": {
+      "phase2_context_rules": 320
+    },
+    "per_kind": {
+      "duplicate": {
+        "DUPLICATE->DUPLICATE": 40
+      },
+      "same_patient_visit": {
+        "NOT_DUPLICATE->NOT_DUPLICATE": 40
+      },
+      "different_patient": {
+        "NOT_DUPLICATE->NOT_DUPLICATE": 40
+      },
+      "same_encounter_lab_update": {
+        "NOT_DUPLICATE->NOT_DUPLICATE": 40
+      }
+    },
+    "per_kind_correct": {
+      "duplicate": 1.0,
+      "same_patient_visit": 1.0,
+      "different_patient": 1.0,
+      "same_encounter_lab_update": 1.0
+    }
+  },
+  "stage_performance": {
+    "extract+context": {
+      "mean_ms": 5.575,
+      "p95_ms": 9.61,
+      "n": 2400
+    },
+    "labs": {
+      "mean_ms": 0.178,
+      "p95_ms": 0.34,
+      "n": 2400
+    },
+    "phi_gate": {
+      "mean_ms": 1971.142,
+      "p95_ms": 3367.01,
+      "n": 2400
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "export_version": "sft-export-2.0.0",
+  "source_pipeline_version": "pipeline-med-1.1.0",
+  "source_context_version": "v2",
+  "source_context_scope_version": "ctxscope-1.1.0",
+  "n_accepted_source": 2355,
+  "sft_by_split": {
+    "train": 1921,
+    "dev": 230,
+    "test": 204
+  },
+  "preference_corruption_rules": {
+    "flip_status": 574,
+    "drop_phenotype": 574,
+    "wrong_lab": 240,
+    "hallucinate_phenotype": 967
+  },
+  "disclaimer": "Candidates only. No SFT/LoRA/DPO training was executed. Preference rejected responses are programmatic corruptions, not human preference labels."
+}

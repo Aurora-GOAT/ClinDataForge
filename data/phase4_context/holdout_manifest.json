@@ -1,0 +1,11 @@
+{
+  "holdout_version": "holdout-ctx-1.0.0",
+  "seed": 20261027,
+  "n_records": 260,
+  "n_entities": 1618,
+  "span_errors": 0,
+  "sha256": "75a733fb91a94f8edea66e37fc2ff10c3a5c446411f5c65f2022bc71df11d477",
+  "file": "data/phase4_context/holdout_notes.jsonl",
+  "status": "FROZEN — must not be modified after the first evaluation run",
+  "independence": "seed + template realisations + phenotype sampling differ from the phase-3 development corpus (synthgen-1.0.0, seed 20261026); disease set and cue vocabulary are shared."
+}

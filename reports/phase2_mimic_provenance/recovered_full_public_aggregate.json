@@ -1,0 +1,107 @@
+{
+  "provenance": "User-provided previously processed MIMIC-IV-ED public demo derived JSONL; identity not established by this function",
+  "rows": 222,
+  "unique_subject_ids": 64,
+  "unique_stay_ids": 222,
+  "missing_subject_id_rows": 0,
+  "missing_stay_id_rows": 0,
+  "duplicate_stay_ids": 0,
+  "diagnosis_links": 545,
+  "stays_with_diagnoses": 221,
+  "stays_without_diagnoses": 1,
+  "diagnosis_record_coverage": 0.9955,
+  "diagnosis_code_system_counts": {
+    "ICD-10-CM": 296,
+    "ICD-9-CM": 249
+  },
+  "diagnosis_seq_unparsable": 0,
+  "missing_measurements": {
+    "acuity": {
+      "count": 15,
+      "rate": 0.0676
+    },
+    "dbp": {
+      "count": 23,
+      "rate": 0.1036
+    },
+    "heartrate": {
+      "count": 24,
+      "rate": 0.1081
+    },
+    "o2sat": {
+      "count": 24,
+      "rate": 0.1081
+    },
+    "resprate": {
+      "count": 23,
+      "rate": 0.1036
+    },
+    "sbp": {
+      "count": 23,
+      "rate": 0.1036
+    },
+    "temperature": {
+      "count": 26,
+      "rate": 0.1171
+    }
+  },
+  "invalid_measurements": {
+    "acuity": {
+      "count": 0,
+      "rate": 0.0
+    },
+    "dbp": {
+      "count": 0,
+      "rate": 0.0
+    },
+    "heartrate": {
+      "count": 0,
+      "rate": 0.0
+    },
+    "o2sat": {
+      "count": 0,
+      "rate": 0.0
+    },
+    "resprate": {
+      "count": 0,
+      "rate": 0.0
+    },
+    "sbp": {
+      "count": 0,
+      "rate": 0.0
+    },
+    "temperature": {
+      "count": 0,
+      "rate": 0.0
+    }
+  },
+  "unknown_measurement_key_occurrences": 0,
+  "temperature_f_to_c": {
+    "paired_records": 195,
+    "mean_absolute_error_in_c": 0.00248,
+    "mismatch_over_0_011_c": 0,
+    "invalid_numeric_pairs": 0,
+    "unsupported_unit_pairs": 0
+  },
+  "complaint_search_tag_counts": {
+    "cardiorespiratory": 35,
+    "gastrointestinal": 35,
+    "metabolic": 7,
+    "neurologic": 7,
+    "trauma": 15,
+    "unclassified": 125
+  },
+  "flag_counts": {
+    "blood_pressure_order": 1,
+    "broad_range_flag": 2,
+    "pain_outside_numeric_0_10": 7
+  },
+  "no_patient_level_data_exported": true,
+  "limits": [
+    "Counts reflect a prior processed file, not raw PhysioNet re-download.",
+    "Complaint tags and flags are counted from source metadata, not independently diagnosed or recomputed.",
+    "Missing means absent/non-object/null; invalid counts present non-numeric, boolean or non-finite values separately.",
+    "Unknown categories are aggregated as OTHER; no arbitrary source strings are exported.",
+    "Do not generalize to all MIMIC patients or hospitals."
+  ]
+}

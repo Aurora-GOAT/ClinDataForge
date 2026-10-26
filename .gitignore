@@ -1,0 +1,25 @@
+__pycache__/
+.pytest_cache/
+.venv/
+*.pyc
+.env
+*.key
+*.pem
+build/
+dist/
+*.egg-info/
+reports/real_data_exports/
+models/
+.phi_runtime/
+.venv-phi/
+
+# phase-3 large artefacts (provenance + SHA256 manifests are committed instead)
+data/external/hpo/*.obo
+data/external/hpo/*.hpoa
+data/phase3_synth/kb/hpo_snapshot.json
+data/phase3_synth/gen/
+data/phase3_synth/pipeline_out/
+
+# phase-4 large artefacts (audit + manifests are committed instead)
+data/phase4_synth_v2/pipeline_out/
+models/phase2_gliner_pii/onnx_fp32/*.onnx

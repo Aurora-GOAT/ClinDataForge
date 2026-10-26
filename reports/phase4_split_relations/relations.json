@@ -1,0 +1,878 @@
+{
+  "relation_version": "split-rel-1.0.0",
+  "generated_at_utc": "2026-10-26T18:04:05Z",
+  "inputs": {
+    "data/phase3_synth/gen/notes.jsonl": "a86a606bc748785e2b5126ed7bb8e74fa8b8a663df88709ee10b9be7ccdf2874",
+    "data/phase4_synth_v2/training_candidates/sft_candidates.jsonl": "a8eba1ae380194fd9aa52576c42cee080cf637d533a1511cedf54ab4e97b8d93",
+    "data/phase4_context/holdout_notes.jsonl": "75a733fb91a94f8edea66e37fc2ff10c3a5c446411f5c65f2022bc71df11d477"
+  },
+  "composition": {
+    "train": {
+      "n_records": 1921,
+      "n_diseases": 16,
+      "n_patients": 1921,
+      "languages": {
+        "en": 618,
+        "zh": 1303
+      },
+      "template_families": {
+        "admission": 619,
+        "referral": 448,
+        "outpatient": 429,
+        "clinic": 242,
+        "consult": 183
+      },
+      "complexities": {
+        "standard": 960,
+        "simple": 502,
+        "detailed": 459
+      },
+      "disease_counts": {
+        "ORPHA:550": 130,
+        "ORPHA:191": 126,
+        "ORPHA:881": 125,
+        "ORPHA:534": 125,
+        "ORPHA:64": 124,
+        "ORPHA:33364": 123,
+        "ORPHA:79318": 120,
+        "ORPHA:2162": 120,
+        "ORPHA:116": 119,
+        "ORPHA:79474": 118,
+        "ORPHA:355": 118,
+        "ORPHA:506": 118,
+        "OMIM:276700": 117,
+        "OMIM:117550": 114,
+        "ORPHA:84": 113,
+        "ORPHA:110": 111
+      }
+    },
+    "dev": {
+      "n_records": 230,
+      "n_diseases": 16,
+      "n_patients": 230,
+      "languages": {
+        "zh": 158,
+        "en": 72
+      },
+      "template_families": {
+        "admission": 74,
+        "referral": 53,
+        "outpatient": 50,
+        "consult": 29,
+        "clinic": 24
+      },
+      "complexities": {
+        "standard": 123,
+        "simple": 59,
+        "detailed": 48
+      },
+      "disease_counts": {
+        "ORPHA:84": 27,
+        "ORPHA:110": 22,
+        "ORPHA:2162": 21,
+        "ORPHA:355": 19,
+        "OMIM:117550": 14,
+        "ORPHA:79318": 14,
+        "OMIM:276700": 14,
+        "ORPHA:116": 13,
+        "ORPHA:881": 13,
+        "ORPHA:79474": 13,
+        "ORPHA:33364": 13,
+        "ORPHA:506": 11,
+        "ORPHA:534": 11,
+        "ORPHA:191": 11,
+        "ORPHA:550": 9,
+        "ORPHA:64": 5
+      }
+    },
+    "test": {
+      "n_records": 204,
+      "n_diseases": 16,
+      "n_patients": 204,
+      "languages": {
+        "zh": 133,
+        "en": 71
+      },
+      "template_families": {
+        "admission": 67,
+        "outpatient": 46,
+        "referral": 41,
+        "consult": 25,
+        "clinic": 25
+      },
+      "complexities": {
+        "standard": 104,
+        "simple": 52,
+        "detailed": 48
+      },
+      "disease_counts": {
+        "ORPHA:506": 22,
+        "ORPHA:64": 16,
+        "ORPHA:33364": 15,
+        "ORPHA:116": 15,
+        "ORPHA:534": 14,
+        "ORPHA:79318": 14,
+        "ORPHA:355": 13,
+        "ORPHA:550": 12,
+        "OMIM:117550": 12,
+        "ORPHA:110": 12,
+        "ORPHA:191": 12,
+        "OMIM:276700": 12,
+        "ORPHA:84": 11,
+        "ORPHA:881": 10,
+        "ORPHA:79474": 10,
+        "ORPHA:2162": 4
+      }
+    },
+    "holdout": {
+      "n_records": 260,
+      "n_diseases": 16,
+      "n_patients": 260,
+      "languages": {
+        "zh": 150,
+        "en": 110
+      },
+      "template_families": {
+        "zh_section_enum": 19,
+        "zh_section_bare_list": 19,
+        "zh_long_denies": 19,
+        "zh_repeated_triggers": 19,
+        "zh_contrast": 19,
+        "zh_cross_sentence": 19,
+        "en_pmh_notable": 19,
+        "en_history_lists": 19,
+        "zh_suspected_series": 18,
+        "zh_exam_list": 18,
+        "en_long_denies": 18,
+        "en_repeated_negation": 18,
+        "en_contrast": 18,
+        "en_suspected_series": 18
+      },
+      "complexities": {
+        "n/a": 260
+      },
+      "disease_counts": {
+        "ORPHA:110": 17,
+        "ORPHA:79318": 17,
+        "ORPHA:84": 17,
+        "OMIM:117550": 17,
+        "ORPHA:33364": 17,
+        "ORPHA:116": 17,
+        "ORPHA:79474": 16,
+        "ORPHA:355": 16,
+        "ORPHA:881": 16,
+        "ORPHA:506": 16,
+        "ORPHA:191": 16,
+        "ORPHA:64": 16,
+        "OMIM:276700": 16,
+        "ORPHA:534": 16,
+        "ORPHA:550": 15,
+        "ORPHA:2162": 15
+      }
+    }
+  },
+  "patient_links": {
+    "within_corpus_duplicate_patients": {
+      "train": 0,
+      "dev": 0,
+      "test": 0,
+      "holdout": 0
+    },
+    "pairwise_patient_overlap": {
+      "train|dev": 0,
+      "train|test": 0,
+      "train|holdout": 0,
+      "dev|test": 0,
+      "dev|holdout": 0,
+      "test|holdout": 0
+    },
+    "pairwise_encounter_overlap": {
+      "train|dev": 0,
+      "train|test": 0,
+      "train|holdout": 0,
+      "dev|test": 0,
+      "dev|holdout": 0,
+      "test|holdout": 0
+    }
+  },
+  "text_relations": {
+    "exact_duplicate_records_within": {
+      "train": 0,
+      "dev": 0,
+      "test": 0,
+      "holdout": 74
+    },
+    "exact_duplicate_pairs_across": {
+      "train|dev": 0,
+      "train|test": 0,
+      "train|holdout": 0,
+      "dev|test": 0,
+      "dev|holdout": 0,
+      "test|holdout": 0
+    },
+    "skeleton_collisions_across": {
+      "train|dev": 0,
+      "train|test": 1,
+      "train|holdout": 0,
+      "dev|test": 0,
+      "dev|holdout": 0,
+      "test|holdout": 0
+    },
+    "skeleton_duplicates_within": {
+      "train": 0,
+      "dev": 0,
+      "test": 0,
+      "holdout": 196
+    },
+    "test_skeletons_also_in_train": 1,
+    "test_skeleton_share": 0.0049
+  },
+  "cell_reuse": {
+    "dev": {
+      "n_records": 230,
+      "triple_seen_in_train": 228,
+      "rate": 0.9913,
+      "definition": "triple_seen_in_train"
+    },
+    "test": {
+      "n_records": 204,
+      "triple_seen_in_train": 202,
+      "rate": 0.9902,
+      "definition": "triple_seen_in_train"
+    },
+    "holdout": {
+      "n_records": 260,
+      "disease_seen_in_train": 260,
+      "rate": 1.0,
+      "definition": "disease_seen_in_train"
+    },
+    "n_distinct_cells_train_dev_test": 238,
+    "max_records_in_one_cell": 36,
+    "cells_with_at_least_5_records": 195
+  },
+  "near_duplicates": {
+    "method": "character 4-gram Jaccard, threshold 0.8, inverted index with df<=40",
+    "pairs_by_corpus_pair": {
+      "holdout|holdout": 706
+    },
+    "cross_split_pairs_excluding_holdout": 0,
+    "holdout_internal_pairs": 706,
+    "holdout_cross_pairs": 0,
+    "holdout_structure": {
+      "n_records": 260,
+      "n_distinct_normalised_texts": 186,
+      "n_exact_duplicate_copies": 74,
+      "n_near_duplicate_pairs_internal": 706,
+      "n_clusters_at_threshold": 64,
+      "largest_cluster": 10,
+      "cluster_size_histogram": {
+        "2": 34,
+        "3": 14,
+        "9": 10,
+        "10": 6
+      },
+      "n_singleton_clusters": 0,
+      "cluster_members": [
+        [
+          "HCTX-00000",
+          "HCTX-00016",
+          "HCTX-00032",
+          "HCTX-00048",
+          "HCTX-00064",
+          "HCTX-00080",
+          "HCTX-00096",
+          "HCTX-00112",
+          "HCTX-00128",
+          "HCTX-00144"
+        ],
+        [
+          "HCTX-00001",
+          "HCTX-00017",
+          "HCTX-00033",
+          "HCTX-00049",
+          "HCTX-00065",
+          "HCTX-00081",
+          "HCTX-00097",
+          "HCTX-00113",
+          "HCTX-00129",
+          "HCTX-00145"
+        ],
+        [
+          "HCTX-00002",
+          "HCTX-00018",
+          "HCTX-00034",
+          "HCTX-00050",
+          "HCTX-00066",
+          "HCTX-00082",
+          "HCTX-00098",
+          "HCTX-00114",
+          "HCTX-00130",
+          "HCTX-00146"
+        ],
+        [
+          "HCTX-00003",
+          "HCTX-00019",
+          "HCTX-00035",
+          "HCTX-00051",
+          "HCTX-00067",
+          "HCTX-00083",
+          "HCTX-00099",
+          "HCTX-00115",
+          "HCTX-00131",
+          "HCTX-00147"
+        ],
+        [
+          "HCTX-00004",
+          "HCTX-00020",
+          "HCTX-00036",
+          "HCTX-00052",
+          "HCTX-00068",
+          "HCTX-00084",
+          "HCTX-00100",
+          "HCTX-00116",
+          "HCTX-00132",
+          "HCTX-00148"
+        ],
+        [
+          "HCTX-00005",
+          "HCTX-00021",
+          "HCTX-00037",
+          "HCTX-00053",
+          "HCTX-00069",
+          "HCTX-00085",
+          "HCTX-00101",
+          "HCTX-00117",
+          "HCTX-00133",
+          "HCTX-00149"
+        ],
+        [
+          "HCTX-00006",
+          "HCTX-00022",
+          "HCTX-00038",
+          "HCTX-00054",
+          "HCTX-00070",
+          "HCTX-00086",
+          "HCTX-00102",
+          "HCTX-00118",
+          "HCTX-00134"
+        ],
+        [
+          "HCTX-00007",
+          "HCTX-00023",
+          "HCTX-00039",
+          "HCTX-00055",
+          "HCTX-00071",
+          "HCTX-00087",
+          "HCTX-00103",
+          "HCTX-00119",
+          "HCTX-00135"
+        ],
+        [
+          "HCTX-00008",
+          "HCTX-00024",
+          "HCTX-00040",
+          "HCTX-00056",
+          "HCTX-00072",
+          "HCTX-00088",
+          "HCTX-00104",
+          "HCTX-00120",
+          "HCTX-00136"
+        ],
+        [
+          "HCTX-00009",
+          "HCTX-00025",
+          "HCTX-00041",
+          "HCTX-00057",
+          "HCTX-00073",
+          "HCTX-00089",
+          "HCTX-00105",
+          "HCTX-00121",
+          "HCTX-00137"
+        ],
+        [
+          "HCTX-00010",
+          "HCTX-00026",
+          "HCTX-00042",
+          "HCTX-00058",
+          "HCTX-00074",
+          "HCTX-00090",
+          "HCTX-00106",
+          "HCTX-00122",
+          "HCTX-00138"
+        ],
+        [
+          "HCTX-00011",
+          "HCTX-00027",
+          "HCTX-00043",
+          "HCTX-00059",
+          "HCTX-00075",
+          "HCTX-00091",
+          "HCTX-00107",
+          "HCTX-00123",
+          "HCTX-00139"
+        ],
+        [
+          "HCTX-00012",
+          "HCTX-00028",
+          "HCTX-00044",
+          "HCTX-00060",
+          "HCTX-00076",
+          "HCTX-00092",
+          "HCTX-00108",
+          "HCTX-00124",
+          "HCTX-00140"
+        ],
+        [
+          "HCTX-00013",
+          "HCTX-00029",
+          "HCTX-00045",
+          "HCTX-00061",
+          "HCTX-00077",
+          "HCTX-00093",
+          "HCTX-00109",
+          "HCTX-00125",
+          "HCTX-00141"
+        ],
+        [
+          "HCTX-00014",
+          "HCTX-00030",
+          "HCTX-00046",
+          "HCTX-00062",
+          "HCTX-00078",
+          "HCTX-00094",
+          "HCTX-00110",
+          "HCTX-00126",
+          "HCTX-00142"
+        ],
+        [
+          "HCTX-00015",
+          "HCTX-00031",
+          "HCTX-00047",
+          "HCTX-00063",
+          "HCTX-00079",
+          "HCTX-00095",
+          "HCTX-00111",
+          "HCTX-00127",
+          "HCTX-00143"
+        ],
+        [
+          "HCTX-00150",
+          "HCTX-00198",
+          "HCTX-00246"
+        ],
+        [
+          "HCTX-00151",
+          "HCTX-00199",
+          "HCTX-00247"
+        ],
+        [
+          "HCTX-00152",
+          "HCTX-00200",
+          "HCTX-00248"
+        ],
+        [
+          "HCTX-00153",
+          "HCTX-00201",
+          "HCTX-00249"
+        ],
+        [
+          "HCTX-00154",
+          "HCTX-00202",
+          "HCTX-00250"
+        ],
+        [
+          "HCTX-00155",
+          "HCTX-00203",
+          "HCTX-00251"
+        ],
+        [
+          "HCTX-00156",
+          "HCTX-00204",
+          "HCTX-00252"
+        ],
+        [
+          "HCTX-00157",
+          "HCTX-00205",
+          "HCTX-00253"
+        ],
+        [
+          "HCTX-00158",
+          "HCTX-00206",
+          "HCTX-00254"
+        ],
+        [
+          "HCTX-00159",
+          "HCTX-00207",
+          "HCTX-00255"
+        ],
+        [
+          "HCTX-00160",
+          "HCTX-00208",
+          "HCTX-00256"
+        ],
+        [
+          "HCTX-00161",
+          "HCTX-00209",
+          "HCTX-00257"
+        ],
+        [
+          "HCTX-00162",
+          "HCTX-00210",
+          "HCTX-00258"
+        ],
+        [
+          "HCTX-00163",
+          "HCTX-00211",
+          "HCTX-00259"
+        ],
+        [
+          "HCTX-00164",
+          "HCTX-00212"
+        ],
+        [
+          "HCTX-00165",
+          "HCTX-00213"
+        ],
+        [
+          "HCTX-00166",
+          "HCTX-00214"
+        ],
+        [
+          "HCTX-00167",
+          "HCTX-00215"
+        ],
+        [
+          "HCTX-00168",
+          "HCTX-00216"
+        ],
+        [
+          "HCTX-00169",
+          "HCTX-00217"
+        ],
+        [
+          "HCTX-00170",
+          "HCTX-00218"
+        ],
+        [
+          "HCTX-00171",
+          "HCTX-00219"
+        ],
+        [
+          "HCTX-00172",
+          "HCTX-00220"
+        ],
+        [
+          "HCTX-00173",
+          "HCTX-00221"
+        ],
+        [
+          "HCTX-00174",
+          "HCTX-00222"
+        ],
+        [
+          "HCTX-00175",
+          "HCTX-00223"
+        ],
+        [
+          "HCTX-00176",
+          "HCTX-00224"
+        ],
+        [
+          "HCTX-00177",
+          "HCTX-00225"
+        ],
+        [
+          "HCTX-00178",
+          "HCTX-00226"
+        ],
+        [
+          "HCTX-00179",
+          "HCTX-00227"
+        ],
+        [
+          "HCTX-00180",
+          "HCTX-00228"
+        ],
+        [
+          "HCTX-00181",
+          "HCTX-00229"
+        ],
+        [
+          "HCTX-00182",
+          "HCTX-00230"
+        ],
+        [
+          "HCTX-00183",
+          "HCTX-00231"
+        ],
+        [
+          "HCTX-00184",
+          "HCTX-00232"
+        ],
+        [
+          "HCTX-00185",
+          "HCTX-00233"
+        ],
+        [
+          "HCTX-00186",
+          "HCTX-00234"
+        ],
+        [
+          "HCTX-00187",
+          "HCTX-00235"
+        ],
+        [
+          "HCTX-00188",
+          "HCTX-00236"
+        ],
+        [
+          "HCTX-00189",
+          "HCTX-00237"
+        ],
+        [
+          "HCTX-00190",
+          "HCTX-00238"
+        ],
+        [
+          "HCTX-00191",
+          "HCTX-00239"
+        ],
+        [
+          "HCTX-00192",
+          "HCTX-00240"
+        ],
+        [
+          "HCTX-00193",
+          "HCTX-00241"
+        ],
+        [
+          "HCTX-00194",
+          "HCTX-00242"
+        ],
+        [
+          "HCTX-00195",
+          "HCTX-00243"
+        ],
+        [
+          "HCTX-00196",
+          "HCTX-00244"
+        ],
+        [
+          "HCTX-00197",
+          "HCTX-00245"
+        ]
+      ],
+      "interpretation": "the nominal 260 notes contain repeated texts; mention-level counts overstate the number of independent examples"
+    },
+    "top_pairs": [
+      {
+        "a": "HCTX-00191",
+        "b": "HCTX-00239",
+        "jaccard": 1.0,
+        "corpus_a": "holdout",
+        "corpus_b": "holdout",
+        "a_text": "The patient presents with Increased circulating lactate concentration. Possible Increased CSF lactate, suspected Lactic acidosis; cannot exc",
+        "b_text": "The patient presents with Increased circulating lactate concentration. Possible Increased CSF lactate, suspected Lactic acidosis; cannot exc"
+      },
+      {
+        "a": "HCTX-00159",
+        "b": "HCTX-00255",
+        "jaccard": 1.0,
+        "corpus_a": "holdout",
+        "corpus_b": "holdout",
+        "a_text": "The patient presents with Increased circulating lactate concentration. Negative for Increased CSF lactate. Negative for Lactic acidosis. Neg",
+        "b_text": "The patient presents with Increased circulating lactate concentration. Negative for Increased CSF lactate. Negative for Lactic acidosis. Neg"
+      },
+      {
+        "a": "HCTX-00159",
+        "b": "HCTX-00207",
+        "jaccard": 1.0,
+        "corpus_a": "holdout",
+        "corpus_b": "holdout",
+        "a_text": "The patient presents with Increased circulating lactate concentration. Negative for Increased CSF lactate. Negative for Lactic acidosis. Neg",
+        "b_text": "The patient presents with Increased circulating lactate concentration. Negative for Increased CSF lactate. Negative for Lactic acidosis. Neg"
+      },
+      {
+        "a": "HCTX-00207",
+        "b": "HCTX-00255",
+        "jaccard": 1.0,
+        "corpus_a": "holdout",
+        "corpus_b": "holdout",
+        "a_text": "The patient presents with Increased circulating lactate concentration. Negative for Increased CSF lactate. Negative for Lactic acidosis. Neg",
+        "b_text": "The patient presents with Increased circulating lactate concentration. Negative for Increased CSF lactate. Negative for Lactic acidosis. Neg"
+      },
+      {
+        "a": "HCTX-00155",
+        "b": "HCTX-00251",
+        "jaccard": 1.0,
+        "corpus_a": "holdout",
+        "corpus_b": "holdout",
+        "a_text": "The patient presents with Tall stature. Possible Large for gestational age, suspected Neoplasm; cannot exclude Enlarged kidney. Previously n",
+        "b_text": "The patient presents with Tall stature. Possible Large for gestational age, suspected Neoplasm; cannot exclude Enlarged kidney. Previously n"
+      },
+      {
+        "a": "HCTX-00155",
+        "b": "HCTX-00203",
+        "jaccard": 1.0,
+        "corpus_a": "holdout",
+        "corpus_b": "holdout",
+        "a_text": "The patient presents with Tall stature. Possible Large for gestational age, suspected Neoplasm; cannot exclude Enlarged kidney. Previously n",
+        "b_text": "The patient presents with Tall stature. Possible Large for gestational age, suspected Neoplasm; cannot exclude Enlarged kidney. Previously n"
+      },
+      {
+        "a": "HCTX-00185",
+        "b": "HCTX-00233",
+        "jaccard": 1.0,
+        "corpus_a": "holdout",
+        "corpus_b": "holdout",
+        "a_text": "The patient presents with Increased body weight. Possible Large hands, suspected Hearing impairment; cannot exclude Stuttering. Previously n",
+        "b_text": "The patient presents with Increased body weight. Possible Large hands, suspected Hearing impairment; cannot exclude Stuttering. Previously n"
+      },
+      {
+        "a": "HCTX-00203",
+        "b": "HCTX-00251",
+        "jaccard": 1.0,
+        "corpus_a": "holdout",
+        "corpus_b": "holdout",
+        "a_text": "The patient presents with Tall stature. Possible Large for gestational age, suspected Neoplasm; cannot exclude Enlarged kidney. Previously n",
+        "b_text": "The patient presents with Tall stature. Possible Large for gestational age, suspected Neoplasm; cannot exclude Enlarged kidney. Previously n"
+      },
+      {
+        "a": "HCTX-00128",
+        "b": "HCTX-00144",
+        "jaccard": 1.0,
+        "corpus_a": "holdout",
+        "corpus_b": "holdout",
+        "a_text": "患者，23岁，因视网膜营养不良就诊。既往史：\n视锥-视杆细胞营养不良、肥胖、儿童期向心性肥胖。查体：神经发育迟缓，阴茎发育不良，慢性肾脏病。结合上述表现，考虑Bardet-Biedl综合征，建议完善检查。",
+        "b_text": "患者，23岁，因视网膜营养不良就诊。既往史：\n视锥-视杆细胞营养不良、肥胖、儿童期向心性肥胖。查体：神经发育迟缓，阴茎发育不良，慢性肾脏病。结合上述表现，考虑Bardet-Biedl综合征，建议完善检查。"
+      },
+      {
+        "a": "HCTX-00164",
+        "b": "HCTX-00212",
+        "jaccard": 1.0,
+        "corpus_a": "holdout",
+        "corpus_b": "holdout",
+        "a_text": "The patient presents with Dementia. The patient denies Seizure, Muscle weakness, Migraine, Increased circulating lactate concentration, EEG ",
+        "b_text": "The patient presents with Dementia. The patient denies Seizure, Muscle weakness, Migraine, Increased circulating lactate concentration, EEG "
+      }
+    ]
+  },
+  "disease_name_leakage": {
+    "train": {
+      "n_records": 1921,
+      "disease_name_verbatim_in_raw_text": 1921,
+      "raw_rate": 1.0,
+      "n_with_pipeline_masked_text": 1921,
+      "disease_name_survives_in_masked_text": 1640,
+      "masked_rate": 0.8537
+    },
+    "dev": {
+      "n_records": 230,
+      "disease_name_verbatim_in_raw_text": 230,
+      "raw_rate": 1.0,
+      "n_with_pipeline_masked_text": 230,
+      "disease_name_survives_in_masked_text": 206,
+      "masked_rate": 0.8957
+    },
+    "test": {
+      "n_records": 204,
+      "disease_name_verbatim_in_raw_text": 204,
+      "raw_rate": 1.0,
+      "n_with_pipeline_masked_text": 204,
+      "disease_name_survives_in_masked_text": 164,
+      "masked_rate": 0.8039
+    },
+    "holdout": {
+      "n_records": 260,
+      "disease_name_verbatim_in_raw_text": 119,
+      "raw_rate": 0.4577,
+      "n_with_pipeline_masked_text": 0,
+      "disease_name_survives_in_masked_text": 0,
+      "masked_rate": null
+    }
+  },
+  "holdout_vs_dev": {
+    "patient_overlap": 0,
+    "exact_text_duplicates": 0,
+    "skeleton_collisions": 0,
+    "shared_diseases": 16,
+    "holdout_diseases": 16,
+    "near_duplicate_pairs": 0,
+    "phenotype_surface_overlap": {
+      "zh": {
+        "dev_surfaces": 218,
+        "holdout_surfaces": 91,
+        "shared": 91,
+        "jaccard": 0.4174
+      },
+      "en": {
+        "dev_surfaces": 219,
+        "holdout_surfaces": 100,
+        "shared": 100,
+        "jaccard": 0.4566
+      }
+    },
+    "cue_overlap": {
+      "zh": {
+        "suspected": {
+          "n_cues": 11,
+          "cues_in_dev": 8,
+          "cues_in_holdout": 4
+        },
+        "negated": {
+          "n_cues": 9,
+          "cues_in_dev": 2,
+          "cues_in_holdout": 3
+        },
+        "history": {
+          "n_cues": 7,
+          "cues_in_dev": 3,
+          "cues_in_holdout": 3
+        }
+      },
+      "en": {
+        "suspected": {
+          "n_cues": 7,
+          "cues_in_dev": 2,
+          "cues_in_holdout": 3
+        },
+        "negated": {
+          "n_cues": 8,
+          "cues_in_dev": 2,
+          "cues_in_holdout": 4
+        },
+        "history": {
+          "n_cues": 7,
+          "cues_in_dev": 2,
+          "cues_in_holdout": 1
+        }
+      }
+    },
+    "shared_code": [
+      "clinforge.synthgen.CaseBuilder",
+      "clinforge.synthgen.CURATED_DISEASES",
+      "clinforge.synthgen._age_text",
+      "data/curated/zh_phenotype_gloss.json"
+    ],
+    "different": [
+      "seed (20261026 vs 20261027)",
+      "template family names and layouts",
+      "per-case phenotype sampling",
+      "record/patient/encounter id prefixes"
+    ]
+  },
+  "claim_boundary": {
+    "holdout_is": "a synthetic held-out template validation set, frozen before evaluation, with new seeds and new sentence layouts",
+    "holdout_is_not": "an independent clinical validation set; it shares the generator code, the 16-disease set and the Chinese gloss with dev",
+    "allowed_claims": [
+      "the scope resolver generalises to unseen sentence layouts and seeds of the same generator",
+      "history->affirmed errors drop from 221 to 0 on this frozen synthetic holdout"
+    ],
+    "forbidden_claims": [
+      "independent cross-hospital or real-patient generalisation",
+      "clinician-adjudicated accuracy",
+      "clinical safety or deployment readiness"
+    ],
+    "external_eval_status": "BLOCKED: no licensed, genuinely independent clinical corpus with context-status annotations is available in this environment; ASQ-PHI v1 is third-party but covers PHI spans only"
+  }
+}

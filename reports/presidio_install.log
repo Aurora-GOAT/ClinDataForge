@@ -1,0 +1,128 @@
+Collecting presidio-analyzer
+  Downloading presidio_analyzer-2.2.364-py3-none-any.whl (266 kB)
+     -------------------------------------- 266.3/266.3 kB 1.0 MB/s eta 0:00:00
+Collecting presidio-anonymizer
+  Downloading presidio_anonymizer-2.2.364-py3-none-any.whl (38 kB)
+Collecting spacy<3.9,>=3.7
+  Downloading spacy-3.8.16-cp310-cp310-win_amd64.whl (16.4 MB)
+     -------------------------------------- 16.4/16.4 MB 734.5 kB/s eta 0:00:00
+Requirement already satisfied: numpy<2.5.0,>=1.19.0 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from presidio-analyzer) (1.26.4)
+Collecting pydantic<3.0.0,>=2.12.5
+  Downloading pydantic-2.14.1-py3-none-any.whl (488 kB)
+     ------------------------------------ 488.1/488.1 kB 899.9 kB/s eta 0:00:00
+Collecting regex>=2023.0.0
+  Downloading regex-2026.9.29-cp310-cp310-win_amd64.whl (280 kB)
+     -------------------------------------- 280.6/280.6 kB 1.7 MB/s eta 0:00:00
+Collecting click<9.0.0,>=8.1.0
+  Using cached click-8.5.0-py3-none-any.whl (125 kB)
+Requirement already satisfied: pyyaml<7.0.0,>=6.0.3 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from presidio-analyzer) (6.0.3)
+Collecting phonenumbers<10.0.0,>=9.0.28
+  Downloading phonenumbers-9.0.41-py2.py3-none-any.whl (2.6 MB)
+     ---------------------------------------- 2.6/2.6 MB 1.1 MB/s eta 0:00:00
+Collecting tldextract<6.0.0,>=5.3.1
+  Downloading tldextract-5.4.0-py3-none-any.whl (107 kB)
+     ------------------------------------ 107.5/107.5 kB 365.6 kB/s eta 0:00:00
+Collecting cryptography<49.0.0,>=48.0.1
+  Downloading cryptography-48.0.1-cp39-abi3-win_amd64.whl (3.8 MB)
+     ---------------------------------------- 3.8/3.8 MB 1.4 MB/s eta 0:00:00
+Collecting murmurhash<1.1.0,>=0.28.0
+  Downloading murmurhash-1.0.16-cp310-cp310-win_amd64.whl (25 kB)
+Collecting spacy-loggers<2.0.0,>=1.0.0
+  Downloading spacy_loggers-1.0.5-py3-none-any.whl (22 kB)
+Collecting catalogue<2.1.0,>=2.0.6
+  Downloading catalogue-2.0.10-py3-none-any.whl (17 kB)
+Collecting weasel<2.0.0,>=1.0.0
+  Downloading weasel-1.0.0-py3-none-any.whl (50 kB)
+     -------------------------------------- 50.7/50.7 kB 235.3 kB/s eta 0:00:00
+Collecting wasabi<1.2.0,>=0.9.1
+  Downloading wasabi-1.1.3-py3-none-any.whl (27 kB)
+Requirement already satisfied: tqdm<5.0.0,>=4.38.0 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from spacy<3.9,>=3.7) (4.70.1)
+Collecting thinc<8.4.0,>=8.3.12
+  Downloading thinc-8.3.13-cp310-cp310-win_amd64.whl (1.8 MB)
+     ---------------------------------------- 1.8/1.8 MB 444.5 kB/s eta 0:00:00
+Requirement already satisfied: setuptools in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from spacy<3.9,>=3.7) (63.2.0)
+Requirement already satisfied: packaging>=20.0 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from spacy<3.9,>=3.7) (26.3)
+Collecting jinja2
+  Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+     ------------------------------------ 134.9/134.9 kB 997.3 kB/s eta 0:00:00
+Collecting preshed<3.1.0,>=3.0.2
+  Downloading preshed-3.0.14-cp310-cp310-win_amd64.whl (130 kB)
+     ------------------------------------ 130.4/130.4 kB 698.9 kB/s eta 0:00:00
+Collecting spacy-legacy<3.1.0,>=3.0.11
+  Downloading spacy_legacy-3.0.12-py2.py3-none-any.whl (29 kB)
+Collecting srsly<3.0.0,>=2.5.3
+  Downloading srsly-2.5.5-cp310-cp310-win_amd64.whl (676 kB)
+     -------------------------------------- 676.4/676.4 kB 1.1 MB/s eta 0:00:00
+Collecting typer<1.0.0,>=0.3.0
+  Downloading typer-0.27.3-py3-none-any.whl (123 kB)
+     -------------------------------------- 123.3/123.3 kB 1.0 MB/s eta 0:00:00
+Collecting cymem<2.1.0,>=2.0.2
+  Downloading cymem-2.0.16-cp310-cp310-win_amd64.whl (41 kB)
+     -------------------------------------- 41.9/41.9 kB 253.4 kB/s eta 0:00:00
+Requirement already satisfied: requests<3.0.0,>=2.13.0 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from spacy<3.9,>=3.7) (2.34.2)
+Collecting confection<2.0.0,>=1.3.2
+  Downloading confection-1.3.3-py3-none-any.whl (35 kB)
+Requirement already satisfied: typing_extensions<5.0,>=4.0 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from confection<2.0.0,>=1.3.2->spacy<3.9,>=3.7) (4.16.0)
+Collecting cffi>=2.0.0
+  Downloading cffi-2.1.1-cp310-cp310-win_amd64.whl (185 kB)
+     ------------------------------------ 185.1/185.1 kB 798.4 kB/s eta 0:00:00
+Collecting pydantic-core==2.50.1
+  Downloading pydantic_core-2.50.1-cp310-cp310-win_amd64.whl (2.2 MB)
+     ---------------------------------------- 2.2/2.2 MB 1.2 MB/s eta 0:00:00
+Collecting annotated-types>=0.6.0
+  Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+Collecting typing-inspection>=0.4.4
+  Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+Requirement already satisfied: charset_normalizer<4,>=2 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from requests<3.0.0,>=2.13.0->spacy<3.9,>=3.7) (3.5.2)
+Requirement already satisfied: certifi>=2023.5.7 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from requests<3.0.0,>=2.13.0->spacy<3.9,>=3.7) (2026.10.23)
+Requirement already satisfied: urllib3<3,>=1.26 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from requests<3.0.0,>=2.13.0->spacy<3.9,>=3.7) (2.8.0)
+Requirement already satisfied: idna<4,>=2.5 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from requests<3.0.0,>=2.13.0->spacy<3.9,>=3.7) (3.20)
+Collecting blis<1.4.0,>=1.3.0
+  Downloading blis-1.3.3-cp310-cp310-win_amd64.whl (6.2 MB)
+     ---------------------------------------- 6.2/6.2 MB 1.1 MB/s eta 0:00:00
+Collecting requests-file>=1.4
+  Downloading requests_file-3.0.1-py2.py3-none-any.whl (4.5 kB)
+Requirement already satisfied: filelock>=3.0.8 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from tldextract<6.0.0,>=5.3.1->presidio-analyzer) (4.1.0)
+Requirement already satisfied: colorama in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (from tqdm<5.0.0,>=4.38.0->spacy<3.9,>=3.7) (0.4.6)
+Collecting shellingham>=1.3.0
+  Downloading shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+Collecting rich>=13.8.0
+  Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+     -------------------------------------- 310.7/310.7 kB 1.1 MB/s eta 0:00:00
+Collecting annotated-doc>=0.0.2
+  Downloading annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+Collecting httpx>=0.24.0
+  Using cached httpx-0.28.1-py3-none-any.whl (73 kB)
+Collecting smart-open>=5.2.1
+  Downloading smart_open-8.0.4-py3-none-any.whl (73 kB)
+     -------------------------------------- 73.9/73.9 kB 583.9 kB/s eta 0:00:00
+Collecting cloudpathlib>=0.7.0
+  Downloading cloudpathlib-0.26.0-py3-none-any.whl (66 kB)
+     ---------------------------------------- 66.4/66.4 kB 1.8 MB/s eta 0:00:00
+Collecting MarkupSafe>=2.0
+  Downloading markupsafe-3.0.4-cp310-cp310-win_amd64.whl (14 kB)
+Collecting pycparser
+  Downloading pycparser-3.11-py3-none-any.whl (51 kB)
+     ---------------------------------------- 51.2/51.2 kB 1.3 MB/s eta 0:00:00
+Collecting anyio
+  Downloading anyio-4.15.1-py3-none-any.whl (132 kB)
+     -------------------------------------- 132.1/132.1 kB 1.6 MB/s eta 0:00:00
+Collecting httpcore==1.*
+  Using cached httpcore-1.0.9-py3-none-any.whl (78 kB)
+Collecting h11>=0.16
+  Using cached h11-0.16.0-py3-none-any.whl (37 kB)
+Collecting pygments<3.0.0,>=2.13.0
+  Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+     ---------------------------------------- 1.3/1.3 MB 690.0 kB/s eta 0:00:00
+Collecting markdown-it-py>=2.2.0
+  Downloading markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
+     -------------------------------------- 91.7/91.7 kB 522.1 kB/s eta 0:00:00
+Collecting wrapt
+  Downloading wrapt-2.5.1-cp310-cp310-win_amd64.whl (105 kB)
+     -------------------------------------- 105.7/105.7 kB 1.0 MB/s eta 0:00:00
+Collecting mdurl~=0.1
+  Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Collecting exceptiongroup>=1.0.2
+  Using cached exceptiongroup-1.3.1-py3-none-any.whl (16 kB)
+Installing collected packages: wrapt, wasabi, typing-inspection, spacy-loggers, spacy-legacy, shellingham, regex, pygments, pydantic-core, pycparser, phonenumbers, murmurhash, mdurl, MarkupSafe, h11, exceptiongroup, cymem, confection, cloudpathlib, click, catalogue, blis, annotated-types, annotated-doc, srsly, smart-open, requests-file, pydantic, preshed, markdown-it-py, jinja2, httpcore, cffi, anyio, tldextract, thinc, rich, httpx, cryptography, typer, presidio-anonymizer, weasel, spacy, presidio-analyzer
+Successfully installed MarkupSafe-3.0.4 annotated-doc-0.0.5 annotated-types-0.8.0 anyio-4.15.1 blis-1.3.3 catalogue-2.0.10 cffi-2.1.1 click-8.5.0 cloudpathlib-0.26.0 confection-1.3.3 cryptography-48.0.1 cymem-2.0.16 exceptiongroup-1.3.1 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 jinja2-3.1.6 markdown-it-py-4.2.0 mdurl-0.1.2 murmurhash-1.0.16 phonenumbers-9.0.41 preshed-3.0.14 presidio-analyzer-2.2.364 presidio-anonymizer-2.2.364 pycparser-3.11 pydantic-2.14.1 pydantic-core-2.50.1 pygments-2.21.0 regex-2026.9.29 requests-file-3.0.1 rich-15.0.0 shellingham-1.5.4 smart-open-8.0.4 spacy-3.8.16 spacy-legacy-3.0.12 spacy-loggers-1.0.5 srsly-2.5.5 thinc-8.3.13 tldextract-5.4.0 typer-0.27.3 typing-inspection-0.4.4 wasabi-1.1.3 weasel-1.0.0 wrapt-2.5.1

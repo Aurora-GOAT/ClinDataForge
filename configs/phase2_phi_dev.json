@@ -1,0 +1,9 @@
+{
+  "purpose": "Development-set sweep configuration. Thresholds here are starting points only; the values actually used for the frozen test are fixed afterwards in configs/phase2_phi_frozen.json.",
+  "threshold": 0.35,
+  "threads": 2,
+  "chunk_words": 160,
+  "presidio_model": "en_core_web_lg",
+  "presidio_threshold": 0.5,
+  "fusion_components": ["context_rules", "gliner"]
+}

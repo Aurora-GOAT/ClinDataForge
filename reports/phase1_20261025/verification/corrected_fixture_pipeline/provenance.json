@@ -1,0 +1,8 @@
+{
+  "source_sha256_local_only": "b2a219e44547e82569523b9e68c38ca9f0302414d6b56d007538f0d76f2b548f",
+  "synthetic_data_mode": true,
+  "version": "0.1.1",
+  "output_count": 730,
+  "raw_source_not_copied": true,
+  "export_policy": "metadata_only_no_text_or_individual_lab_values"
+}

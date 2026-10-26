@@ -1,0 +1,37 @@
+{
+  "repository": "https://github.com/JamesWeatherhead/asq-phi",
+  "revision": "fdb371ce7e3908a945d82f20411546b9876f862e",
+  "license": "MIT",
+  "files": {
+    "LICENSE": {
+      "url": "https://raw.githubusercontent.com/JamesWeatherhead/asq-phi/fdb371ce7e3908a945d82f20411546b9876f862e/LICENSE",
+      "sha256": "d3871f9165f5817a2fb37739381b3c855d610c1918902964fc3c398d3036350b",
+      "bytes": 1074
+    },
+    "README.md": {
+      "url": "https://raw.githubusercontent.com/JamesWeatherhead/asq-phi/fdb371ce7e3908a945d82f20411546b9876f862e/README.md",
+      "sha256": "c8c0c7f6b4ba1e1eb321ac5bf89133594ce1a79e2687c42ff96b9a4f045dc563",
+      "bytes": 15185
+    },
+    "CITATION.cff": {
+      "url": "https://raw.githubusercontent.com/JamesWeatherhead/asq-phi/fdb371ce7e3908a945d82f20411546b9876f862e/CITATION.cff",
+      "sha256": "05e0b9c075ad1f6520ba77ef9668a4f16fa67c2d709700a23c6da895c35dfaf1",
+      "bytes": 1112
+    },
+    "data/synthetic_clinical_queries.txt": {
+      "url": "https://raw.githubusercontent.com/JamesWeatherhead/asq-phi/fdb371ce7e3908a945d82f20411546b9876f862e/data/synthetic_clinical_queries.txt",
+      "sha256": "cf00e424b8d2347d019f9f34e2ad1510cb4d853605410f8314bef44df8021fc8",
+      "bytes": 371903
+    },
+    "data/dataset_statistics.txt": {
+      "url": "https://raw.githubusercontent.com/JamesWeatherhead/asq-phi/fdb371ce7e3908a945d82f20411546b9876f862e/data/dataset_statistics.txt",
+      "sha256": "7c002f3b4df79e659c4200109da7651b48f3f18659e6daa842499dba8eec40d8",
+      "bytes": 1659
+    },
+    "code/parse_dataset.py": {
+      "url": "https://raw.githubusercontent.com/JamesWeatherhead/asq-phi/fdb371ce7e3908a945d82f20411546b9876f862e/code/parse_dataset.py",
+      "sha256": "e6f6e88d458779e83907164f35e2922476575eb28feb4f35df994aa05d3b430b",
+      "bytes": 2696
+    }
+  }
+}

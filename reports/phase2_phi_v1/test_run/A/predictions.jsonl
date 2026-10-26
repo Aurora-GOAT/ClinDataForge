@@ -1,0 +1,632 @@
+{"doc_id": "EN-0000", "spans": []}
+{"doc_id": "EN-0001", "spans": []}
+{"doc_id": "EN-0002", "spans": []}
+{"doc_id": "EN-0003", "spans": []}
+{"doc_id": "EN-0006", "spans": []}
+{"doc_id": "EN-0008", "spans": []}
+{"doc_id": "EN-0009", "spans": []}
+{"doc_id": "EN-0010", "spans": [{"label": "PATIENT_ID", "start": 143, "end": 153}]}
+{"doc_id": "EN-0011", "spans": []}
+{"doc_id": "EN-0012", "spans": []}
+{"doc_id": "EN-0014", "spans": [{"label": "PATIENT_ID", "start": 190, "end": 199}]}
+{"doc_id": "EN-0016", "spans": []}
+{"doc_id": "EN-0017", "spans": []}
+{"doc_id": "EN-0018", "spans": []}
+{"doc_id": "EN-0022", "spans": [{"label": "PATIENT_ID", "start": 130, "end": 140}]}
+{"doc_id": "EN-0024", "spans": [{"label": "PATIENT_ID", "start": 158, "end": 169}]}
+{"doc_id": "EN-0026", "spans": []}
+{"doc_id": "EN-0027", "spans": []}
+{"doc_id": "EN-0028", "spans": []}
+{"doc_id": "EN-0029", "spans": [{"label": "PATIENT_ID", "start": 93, "end": 102}]}
+{"doc_id": "EN-0030", "spans": []}
+{"doc_id": "EN-0032", "spans": [{"label": "PATIENT_ID", "start": 153, "end": 163}]}
+{"doc_id": "EN-0034", "spans": []}
+{"doc_id": "EN-0037", "spans": []}
+{"doc_id": "EN-0038", "spans": []}
+{"doc_id": "EN-0042", "spans": []}
+{"doc_id": "EN-0043", "spans": []}
+{"doc_id": "EN-0044", "spans": []}
+{"doc_id": "EN-0047", "spans": []}
+{"doc_id": "EN-0049", "spans": []}
+{"doc_id": "EN-0052", "spans": []}
+{"doc_id": "EN-0054", "spans": []}
+{"doc_id": "EN-0056", "spans": []}
+{"doc_id": "EN-0057", "spans": []}
+{"doc_id": "EN-0059", "spans": []}
+{"doc_id": "EN-0061", "spans": []}
+{"doc_id": "EN-0063", "spans": []}
+{"doc_id": "EN-0064", "spans": []}
+{"doc_id": "EN-0066", "spans": []}
+{"doc_id": "EN-0067", "spans": []}
+{"doc_id": "EN-0069", "spans": [{"label": "PATIENT_ID", "start": 112, "end": 121}]}
+{"doc_id": "EN-0073", "spans": []}
+{"doc_id": "EN-0077", "spans": []}
+{"doc_id": "EN-0079", "spans": [{"label": "PATIENT_ID", "start": 112, "end": 123}]}
+{"doc_id": "EN-0080", "spans": []}
+{"doc_id": "EN-0082", "spans": []}
+{"doc_id": "EN-0087", "spans": []}
+{"doc_id": "EN-0088", "spans": []}
+{"doc_id": "EN-0089", "spans": []}
+{"doc_id": "EN-0092", "spans": [{"label": "PATIENT_ID", "start": 146, "end": 155}]}
+{"doc_id": "EN-0097", "spans": []}
+{"doc_id": "EN-0103", "spans": []}
+{"doc_id": "EN-0104", "spans": []}
+{"doc_id": "EN-0107", "spans": []}
+{"doc_id": "EN-0108", "spans": []}
+{"doc_id": "EN-0111", "spans": []}
+{"doc_id": "EN-0112", "spans": []}
+{"doc_id": "EN-0113", "spans": []}
+{"doc_id": "EN-0114", "spans": [{"label": "PATIENT_ID", "start": 115, "end": 126}]}
+{"doc_id": "EN-0117", "spans": []}
+{"doc_id": "EN-0118", "spans": []}
+{"doc_id": "EN-0119", "spans": []}
+{"doc_id": "EN-0121", "spans": []}
+{"doc_id": "EN-0122", "spans": []}
+{"doc_id": "EN-0126", "spans": []}
+{"doc_id": "EN-0127", "spans": []}
+{"doc_id": "EN-0128", "spans": []}
+{"doc_id": "EN-0129", "spans": []}
+{"doc_id": "EN-0132", "spans": []}
+{"doc_id": "EN-0137", "spans": []}
+{"doc_id": "EN-0141", "spans": []}
+{"doc_id": "EN-0143", "spans": []}
+{"doc_id": "EN-0146", "spans": []}
+{"doc_id": "EN-0149", "spans": []}
+{"doc_id": "EN-0151", "spans": []}
+{"doc_id": "EN-0152", "spans": []}
+{"doc_id": "EN-0154", "spans": []}
+{"doc_id": "EN-0156", "spans": []}
+{"doc_id": "EN-0158", "spans": []}
+{"doc_id": "EN-0162", "spans": []}
+{"doc_id": "EN-0164", "spans": []}
+{"doc_id": "EN-0167", "spans": []}
+{"doc_id": "EN-0177", "spans": []}
+{"doc_id": "EN-0184", "spans": []}
+{"doc_id": "EN-0186", "spans": []}
+{"doc_id": "EN-0189", "spans": []}
+{"doc_id": "EN-0194", "spans": []}
+{"doc_id": "EN-0196", "spans": []}
+{"doc_id": "EN-0197", "spans": []}
+{"doc_id": "EN-0198", "spans": []}
+{"doc_id": "EN-0199", "spans": [{"label": "PATIENT_ID", "start": 155, "end": 165}]}
+{"doc_id": "EN-0203", "spans": []}
+{"doc_id": "EN-0206", "spans": []}
+{"doc_id": "EN-0208", "spans": [{"label": "PATIENT_ID", "start": 135, "end": 145}]}
+{"doc_id": "EN-0211", "spans": []}
+{"doc_id": "EN-0213", "spans": []}
+{"doc_id": "EN-0216", "spans": []}
+{"doc_id": "EN-0219", "spans": []}
+{"doc_id": "EN-0221", "spans": []}
+{"doc_id": "EN-0223", "spans": []}
+{"doc_id": "EN-0232", "spans": []}
+{"doc_id": "EN-0233", "spans": []}
+{"doc_id": "EN-0237", "spans": []}
+{"doc_id": "EN-0238", "spans": []}
+{"doc_id": "EN-0241", "spans": [{"label": "PATIENT_ID", "start": 107, "end": 117}]}
+{"doc_id": "EN-0243", "spans": []}
+{"doc_id": "EN-0247", "spans": []}
+{"doc_id": "EN-0248", "spans": []}
+{"doc_id": "EN-0249", "spans": []}
+{"doc_id": "EN-0254", "spans": []}
+{"doc_id": "EN-0258", "spans": []}
+{"doc_id": "EN-0259", "spans": []}
+{"doc_id": "EN-0260", "spans": [{"label": "PATIENT_ID", "start": 146, "end": 154}]}
+{"doc_id": "EN-0261", "spans": []}
+{"doc_id": "EN-0264", "spans": []}
+{"doc_id": "EN-0266", "spans": []}
+{"doc_id": "EN-0267", "spans": []}
+{"doc_id": "EN-0269", "spans": []}
+{"doc_id": "EN-0272", "spans": [{"label": "PATIENT_ID", "start": 144, "end": 155}]}
+{"doc_id": "EN-0274", "spans": []}
+{"doc_id": "EN-0276", "spans": []}
+{"doc_id": "EN-0278", "spans": []}
+{"doc_id": "EN-0280", "spans": [{"label": "PATIENT_ID", "start": 153, "end": 161}]}
+{"doc_id": "EN-0286", "spans": []}
+{"doc_id": "EN-0291", "spans": []}
+{"doc_id": "EN-0292", "spans": []}
+{"doc_id": "EN-0293", "spans": []}
+{"doc_id": "EN-0296", "spans": []}
+{"doc_id": "EN-0298", "spans": []}
+{"doc_id": "EN-0301", "spans": []}
+{"doc_id": "EN-0304", "spans": []}
+{"doc_id": "EN-0306", "spans": []}
+{"doc_id": "EN-0308", "spans": []}
+{"doc_id": "EN-0309", "spans": []}
+{"doc_id": "EN-0310", "spans": []}
+{"doc_id": "EN-0311", "spans": []}
+{"doc_id": "EN-0312", "spans": []}
+{"doc_id": "EN-0313", "spans": []}
+{"doc_id": "EN-0314", "spans": []}
+{"doc_id": "EN-0315", "spans": [{"label": "PATIENT_ID", "start": 173, "end": 183}]}
+{"doc_id": "EN-0316", "spans": []}
+{"doc_id": "EN-0317", "spans": []}
+{"doc_id": "EN-0318", "spans": []}
+{"doc_id": "EN-0319", "spans": []}
+{"doc_id": "EN-0322", "spans": []}
+{"doc_id": "EN-0326", "spans": []}
+{"doc_id": "EN-0329", "spans": []}
+{"doc_id": "EN-0332", "spans": []}
+{"doc_id": "EN-0333", "spans": []}
+{"doc_id": "EN-0335", "spans": [{"label": "PATIENT_ID", "start": 172, "end": 183}]}
+{"doc_id": "EN-0337", "spans": []}
+{"doc_id": "EN-0338", "spans": []}
+{"doc_id": "EN-0343", "spans": []}
+{"doc_id": "EN-0347", "spans": []}
+{"doc_id": "EN-0348", "spans": []}
+{"doc_id": "EN-0350", "spans": [{"label": "PATIENT_ID", "start": 176, "end": 186}]}
+{"doc_id": "EN-0352", "spans": []}
+{"doc_id": "EN-0354", "spans": []}
+{"doc_id": "EN-0356", "spans": []}
+{"doc_id": "EN-0357", "spans": []}
+{"doc_id": "EN-0359", "spans": [{"label": "PATIENT_ID", "start": 137, "end": 146}]}
+{"doc_id": "EN-0370", "spans": []}
+{"doc_id": "EN-0374", "spans": []}
+{"doc_id": "EN-0378", "spans": []}
+{"doc_id": "EN-0379", "spans": []}
+{"doc_id": "EN-0382", "spans": []}
+{"doc_id": "EN-0383", "spans": []}
+{"doc_id": "EN-0384", "spans": []}
+{"doc_id": "EN-0386", "spans": [{"label": "PATIENT_ID", "start": 139, "end": 149}]}
+{"doc_id": "EN-0388", "spans": []}
+{"doc_id": "EN-0390", "spans": [{"label": "PATIENT_ID", "start": 152, "end": 162}]}
+{"doc_id": "EN-0392", "spans": [{"label": "PATIENT_ID", "start": 131, "end": 140}]}
+{"doc_id": "EN-0393", "spans": []}
+{"doc_id": "EN-0394", "spans": []}
+{"doc_id": "EN-0395", "spans": []}
+{"doc_id": "EN-0397", "spans": [{"label": "PATIENT_ID", "start": 166, "end": 175}]}
+{"doc_id": "EN-0400", "spans": [{"label": "PATIENT_ID", "start": 155, "end": 165}]}
+{"doc_id": "EN-0402", "spans": []}
+{"doc_id": "EN-0404", "spans": []}
+{"doc_id": "EN-0408", "spans": []}
+{"doc_id": "EN-0410", "spans": [{"label": "PATIENT_ID", "start": 142, "end": 151}]}
+{"doc_id": "EN-0412", "spans": []}
+{"doc_id": "EN-0415", "spans": [{"label": "PATIENT_ID", "start": 161, "end": 168}]}
+{"doc_id": "EN-0418", "spans": []}
+{"doc_id": "EN-0420", "spans": [{"label": "PATIENT_ID", "start": 142, "end": 153}]}
+{"doc_id": "EN-0422", "spans": []}
+{"doc_id": "EN-0425", "spans": []}
+{"doc_id": "EN-0428", "spans": [{"label": "PATIENT_ID", "start": 169, "end": 180}]}
+{"doc_id": "EN-0429", "spans": []}
+{"doc_id": "EN-0431", "spans": []}
+{"doc_id": "EN-0436", "spans": []}
+{"doc_id": "EN-0437", "spans": [{"label": "PATIENT_ID", "start": 117, "end": 126}]}
+{"doc_id": "EN-0438", "spans": []}
+{"doc_id": "EN-0441", "spans": []}
+{"doc_id": "EN-0447", "spans": [{"label": "PATIENT_ID", "start": 120, "end": 128}]}
+{"doc_id": "EN-0449", "spans": []}
+{"doc_id": "EN-0452", "spans": []}
+{"doc_id": "EN-0456", "spans": []}
+{"doc_id": "EN-0457", "spans": [{"label": "PATIENT_ID", "start": 130, "end": 140}]}
+{"doc_id": "EN-0458", "spans": [{"label": "PATIENT_ID", "start": 127, "end": 136}]}
+{"doc_id": "EN-0460", "spans": []}
+{"doc_id": "EN-0463", "spans": []}
+{"doc_id": "EN-0466", "spans": [{"label": "PATIENT_ID", "start": 157, "end": 165}]}
+{"doc_id": "EN-0467", "spans": []}
+{"doc_id": "EN-0473", "spans": []}
+{"doc_id": "EN-0478", "spans": []}
+{"doc_id": "EN-0479", "spans": []}
+{"doc_id": "EN-0481", "spans": []}
+{"doc_id": "EN-0482", "spans": []}
+{"doc_id": "EN-0484", "spans": []}
+{"doc_id": "EN-0486", "spans": [{"label": "PATIENT_ID", "start": 69, "end": 79}]}
+{"doc_id": "EN-0488", "spans": []}
+{"doc_id": "EN-0492", "spans": []}
+{"doc_id": "EN-0493", "spans": []}
+{"doc_id": "EN-0494", "spans": []}
+{"doc_id": "EN-0495", "spans": []}
+{"doc_id": "EN-0496", "spans": []}
+{"doc_id": "EN-0497", "spans": [{"label": "PATIENT_ID", "start": 101, "end": 110}]}
+{"doc_id": "EN-0502", "spans": []}
+{"doc_id": "EN-0504", "spans": []}
+{"doc_id": "EN-0506", "spans": []}
+{"doc_id": "EN-0511", "spans": []}
+{"doc_id": "EN-0515", "spans": [{"label": "PATIENT_ID", "start": 125, "end": 134}]}
+{"doc_id": "EN-0516", "spans": []}
+{"doc_id": "EN-0519", "spans": []}
+{"doc_id": "EN-0520", "spans": []}
+{"doc_id": "EN-0522", "spans": []}
+{"doc_id": "EN-0523", "spans": []}
+{"doc_id": "EN-0532", "spans": []}
+{"doc_id": "EN-0534", "spans": []}
+{"doc_id": "EN-0535", "spans": [{"label": "PATIENT_ID", "start": 157, "end": 168}]}
+{"doc_id": "EN-0536", "spans": []}
+{"doc_id": "EN-0538", "spans": [{"label": "PATIENT_ID", "start": 176, "end": 185}]}
+{"doc_id": "EN-0540", "spans": [{"label": "PATIENT_ID", "start": 146, "end": 157}]}
+{"doc_id": "EN-0541", "spans": []}
+{"doc_id": "EN-0542", "spans": []}
+{"doc_id": "EN-0545", "spans": [{"label": "PATIENT_ID", "start": 187, "end": 195}]}
+{"doc_id": "EN-0546", "spans": [{"label": "PATIENT_ID", "start": 128, "end": 137}]}
+{"doc_id": "EN-0547", "spans": []}
+{"doc_id": "EN-0549", "spans": []}
+{"doc_id": "EN-0551", "spans": []}
+{"doc_id": "EN-0552", "spans": []}
+{"doc_id": "EN-0554", "spans": []}
+{"doc_id": "EN-0555", "spans": []}
+{"doc_id": "EN-0558", "spans": []}
+{"doc_id": "EN-0560", "spans": [{"label": "PATIENT_ID", "start": 136, "end": 144}]}
+{"doc_id": "EN-0562", "spans": []}
+{"doc_id": "EN-0563", "spans": []}
+{"doc_id": "EN-0566", "spans": []}
+{"doc_id": "EN-0569", "spans": []}
+{"doc_id": "EN-0571", "spans": []}
+{"doc_id": "EN-0572", "spans": []}
+{"doc_id": "EN-0573", "spans": [{"label": "PATIENT_ID", "start": 143, "end": 154}]}
+{"doc_id": "EN-0578", "spans": [{"label": "PATIENT_ID", "start": 145, "end": 154}]}
+{"doc_id": "EN-0579", "spans": []}
+{"doc_id": "EN-0581", "spans": []}
+{"doc_id": "EN-0582", "spans": []}
+{"doc_id": "EN-0592", "spans": []}
+{"doc_id": "EN-0605", "spans": [{"label": "PATIENT_ID", "start": 169, "end": 178}]}
+{"doc_id": "EN-0608", "spans": []}
+{"doc_id": "EN-0609", "spans": []}
+{"doc_id": "EN-0611", "spans": []}
+{"doc_id": "EN-0612", "spans": []}
+{"doc_id": "EN-0614", "spans": []}
+{"doc_id": "EN-0618", "spans": []}
+{"doc_id": "EN-0619", "spans": []}
+{"doc_id": "EN-0621", "spans": []}
+{"doc_id": "EN-0623", "spans": []}
+{"doc_id": "EN-0632", "spans": []}
+{"doc_id": "EN-0633", "spans": [{"label": "PATIENT_ID", "start": 121, "end": 129}]}
+{"doc_id": "EN-0634", "spans": [{"label": "PATIENT_ID", "start": 188, "end": 196}]}
+{"doc_id": "EN-0636", "spans": []}
+{"doc_id": "EN-0637", "spans": []}
+{"doc_id": "EN-0638", "spans": []}
+{"doc_id": "EN-0639", "spans": []}
+{"doc_id": "EN-0640", "spans": []}
+{"doc_id": "EN-0641", "spans": []}
+{"doc_id": "EN-0642", "spans": []}
+{"doc_id": "EN-0644", "spans": []}
+{"doc_id": "EN-0646", "spans": []}
+{"doc_id": "EN-0647", "spans": []}
+{"doc_id": "EN-0648", "spans": []}
+{"doc_id": "EN-0649", "spans": []}
+{"doc_id": "EN-0652", "spans": []}
+{"doc_id": "EN-0654", "spans": []}
+{"doc_id": "EN-0657", "spans": []}
+{"doc_id": "EN-0658", "spans": []}
+{"doc_id": "EN-0659", "spans": []}
+{"doc_id": "EN-0662", "spans": []}
+{"doc_id": "EN-0665", "spans": []}
+{"doc_id": "EN-0672", "spans": []}
+{"doc_id": "EN-0673", "spans": []}
+{"doc_id": "EN-0674", "spans": []}
+{"doc_id": "EN-0675", "spans": []}
+{"doc_id": "EN-0676", "spans": []}
+{"doc_id": "EN-0677", "spans": []}
+{"doc_id": "EN-0678", "spans": []}
+{"doc_id": "EN-0682", "spans": []}
+{"doc_id": "EN-0683", "spans": []}
+{"doc_id": "EN-0685", "spans": []}
+{"doc_id": "EN-0686", "spans": []}
+{"doc_id": "EN-0687", "spans": []}
+{"doc_id": "EN-0688", "spans": []}
+{"doc_id": "EN-0695", "spans": []}
+{"doc_id": "EN-0702", "spans": [{"label": "PATIENT_ID", "start": 130, "end": 139}]}
+{"doc_id": "EN-0703", "spans": []}
+{"doc_id": "EN-0708", "spans": []}
+{"doc_id": "EN-0709", "spans": []}
+{"doc_id": "EN-0710", "spans": []}
+{"doc_id": "EN-0711", "spans": [{"label": "PATIENT_ID", "start": 138, "end": 147}]}
+{"doc_id": "EN-0715", "spans": []}
+{"doc_id": "EN-0720", "spans": []}
+{"doc_id": "EN-0724", "spans": []}
+{"doc_id": "EN-0726", "spans": []}
+{"doc_id": "EN-0727", "spans": []}
+{"doc_id": "EN-0728", "spans": []}
+{"doc_id": "EN-0730", "spans": []}
+{"doc_id": "EN-0732", "spans": []}
+{"doc_id": "EN-0737", "spans": []}
+{"doc_id": "EN-0738", "spans": []}
+{"doc_id": "EN-0740", "spans": []}
+{"doc_id": "EN-0745", "spans": []}
+{"doc_id": "EN-0747", "spans": []}
+{"doc_id": "EN-0748", "spans": []}
+{"doc_id": "EN-0749", "spans": []}
+{"doc_id": "EN-0750", "spans": []}
+{"doc_id": "EN-0756", "spans": []}
+{"doc_id": "EN-0761", "spans": []}
+{"doc_id": "EN-0762", "spans": []}
+{"doc_id": "EN-0765", "spans": []}
+{"doc_id": "EN-0768", "spans": []}
+{"doc_id": "EN-0769", "spans": []}
+{"doc_id": "EN-0770", "spans": []}
+{"doc_id": "EN-0773", "spans": []}
+{"doc_id": "EN-0777", "spans": []}
+{"doc_id": "EN-0784", "spans": []}
+{"doc_id": "EN-0785", "spans": []}
+{"doc_id": "EN-0786", "spans": []}
+{"doc_id": "EN-0788", "spans": []}
+{"doc_id": "EN-0789", "spans": []}
+{"doc_id": "EN-0791", "spans": []}
+{"doc_id": "EN-0794", "spans": []}
+{"doc_id": "EN-0799", "spans": []}
+{"doc_id": "EN-0802", "spans": []}
+{"doc_id": "EN-0805", "spans": []}
+{"doc_id": "EN-0807", "spans": []}
+{"doc_id": "EN-0809", "spans": []}
+{"doc_id": "EN-0811", "spans": []}
+{"doc_id": "EN-0815", "spans": []}
+{"doc_id": "EN-0818", "spans": []}
+{"doc_id": "EN-0819", "spans": [{"label": "PATIENT_ID", "start": 141, "end": 152}]}
+{"doc_id": "EN-0820", "spans": []}
+{"doc_id": "EN-0823", "spans": []}
+{"doc_id": "EN-0825", "spans": []}
+{"doc_id": "EN-0826", "spans": []}
+{"doc_id": "EN-0828", "spans": []}
+{"doc_id": "EN-0829", "spans": []}
+{"doc_id": "EN-0830", "spans": []}
+{"doc_id": "EN-0833", "spans": []}
+{"doc_id": "EN-0834", "spans": []}
+{"doc_id": "EN-0835", "spans": []}
+{"doc_id": "EN-0838", "spans": []}
+{"doc_id": "EN-0839", "spans": [{"label": "PATIENT_ID", "start": 131, "end": 139}]}
+{"doc_id": "EN-0842", "spans": []}
+{"doc_id": "EN-0846", "spans": []}
+{"doc_id": "EN-0848", "spans": [{"label": "PATIENT_ID", "start": 129, "end": 140}]}
+{"doc_id": "EN-0849", "spans": []}
+{"doc_id": "EN-0850", "spans": []}
+{"doc_id": "EN-0857", "spans": []}
+{"doc_id": "EN-0858", "spans": []}
+{"doc_id": "EN-0859", "spans": [{"label": "PATIENT_ID", "start": 145, "end": 154}]}
+{"doc_id": "EN-0860", "spans": []}
+{"doc_id": "EN-0862", "spans": []}
+{"doc_id": "EN-0864", "spans": []}
+{"doc_id": "EN-0865", "spans": []}
+{"doc_id": "EN-0867", "spans": []}
+{"doc_id": "EN-0869", "spans": []}
+{"doc_id": "EN-0870", "spans": []}
+{"doc_id": "EN-0873", "spans": []}
+{"doc_id": "EN-0878", "spans": []}
+{"doc_id": "EN-0879", "spans": []}
+{"doc_id": "EN-0880", "spans": [{"label": "PATIENT_ID", "start": 152, "end": 161}]}
+{"doc_id": "EN-0881", "spans": []}
+{"doc_id": "EN-0883", "spans": []}
+{"doc_id": "EN-0885", "spans": []}
+{"doc_id": "EN-0888", "spans": []}
+{"doc_id": "EN-0889", "spans": []}
+{"doc_id": "EN-0891", "spans": []}
+{"doc_id": "EN-0892", "spans": []}
+{"doc_id": "EN-0897", "spans": []}
+{"doc_id": "EN-0898", "spans": []}
+{"doc_id": "EN-0899", "spans": []}
+{"doc_id": "EN-0900", "spans": []}
+{"doc_id": "EN-0901", "spans": [{"label": "PATIENT_ID", "start": 166, "end": 175}]}
+{"doc_id": "EN-0904", "spans": []}
+{"doc_id": "EN-0909", "spans": [{"label": "PATIENT_ID", "start": 104, "end": 114}]}
+{"doc_id": "EN-0912", "spans": []}
+{"doc_id": "EN-0914", "spans": []}
+{"doc_id": "EN-0915", "spans": []}
+{"doc_id": "EN-0919", "spans": []}
+{"doc_id": "EN-0924", "spans": []}
+{"doc_id": "EN-0925", "spans": []}
+{"doc_id": "EN-0927", "spans": []}
+{"doc_id": "EN-0929", "spans": []}
+{"doc_id": "EN-0932", "spans": []}
+{"doc_id": "EN-0935", "spans": []}
+{"doc_id": "EN-0936", "spans": [{"label": "PATIENT_ID", "start": 169, "end": 180}]}
+{"doc_id": "EN-0937", "spans": []}
+{"doc_id": "EN-0939", "spans": []}
+{"doc_id": "EN-0945", "spans": []}
+{"doc_id": "EN-0946", "spans": []}
+{"doc_id": "EN-0949", "spans": []}
+{"doc_id": "EN-0952", "spans": []}
+{"doc_id": "EN-0953", "spans": []}
+{"doc_id": "EN-0955", "spans": []}
+{"doc_id": "EN-0957", "spans": []}
+{"doc_id": "EN-0958", "spans": []}
+{"doc_id": "EN-0962", "spans": []}
+{"doc_id": "EN-0964", "spans": []}
+{"doc_id": "EN-0970", "spans": []}
+{"doc_id": "EN-0971", "spans": [{"label": "PATIENT_ID", "start": 154, "end": 165}]}
+{"doc_id": "EN-0972", "spans": []}
+{"doc_id": "EN-0975", "spans": []}
+{"doc_id": "EN-0976", "spans": []}
+{"doc_id": "EN-0978", "spans": [{"label": "PATIENT_ID", "start": 159, "end": 172}]}
+{"doc_id": "EN-0981", "spans": [{"label": "PATIENT_ID", "start": 136, "end": 147}]}
+{"doc_id": "EN-0983", "spans": []}
+{"doc_id": "EN-0984", "spans": []}
+{"doc_id": "EN-0986", "spans": [{"label": "PATIENT_ID", "start": 136, "end": 145}]}
+{"doc_id": "EN-0988", "spans": []}
+{"doc_id": "EN-0991", "spans": [{"label": "PATIENT_ID", "start": 162, "end": 169}]}
+{"doc_id": "EN-0992", "spans": []}
+{"doc_id": "EN-0993", "spans": []}
+{"doc_id": "EN-0998", "spans": []}
+{"doc_id": "EN-0999", "spans": []}
+{"doc_id": "EN-1001", "spans": [{"label": "PATIENT_ID", "start": 198, "end": 207}]}
+{"doc_id": "EN-1004", "spans": []}
+{"doc_id": "EN-1010", "spans": []}
+{"doc_id": "EN-1011", "spans": [{"label": "PATIENT_ID", "start": 148, "end": 157}]}
+{"doc_id": "EN-1013", "spans": []}
+{"doc_id": "EN-1017", "spans": []}
+{"doc_id": "EN-1020", "spans": []}
+{"doc_id": "EN-1023", "spans": [{"label": "PATIENT_ID", "start": 202, "end": 213}]}
+{"doc_id": "EN-1025", "spans": []}
+{"doc_id": "EN-1026", "spans": []}
+{"doc_id": "EN-1027", "spans": []}
+{"doc_id": "EN-1029", "spans": []}
+{"doc_id": "EN-1034", "spans": []}
+{"doc_id": "EN-1036", "spans": [{"label": "PATIENT_ID", "start": 163, "end": 173}]}
+{"doc_id": "EN-1037", "spans": []}
+{"doc_id": "EN-1040", "spans": []}
+{"doc_id": "EN-1043", "spans": []}
+{"doc_id": "EN-1044", "spans": []}
+{"doc_id": "EN-1046", "spans": []}
+{"doc_id": "EN-1047", "spans": [{"label": "PATIENT_ID", "start": 169, "end": 178}]}
+{"doc_id": "EN-1048", "spans": []}
+{"doc_id": "ZH-0024", "spans": [{"label": "PHONE", "start": 104, "end": 115}]}
+{"doc_id": "ZH-0025", "spans": [{"label": "PHONE", "start": 105, "end": 118}]}
+{"doc_id": "ZH-0026", "spans": [{"label": "PHONE", "start": 108, "end": 119}]}
+{"doc_id": "ZH-0027", "spans": []}
+{"doc_id": "ZH-0028", "spans": [{"label": "PHONE", "start": 102, "end": 113}]}
+{"doc_id": "ZH-0029", "spans": [{"label": "PHONE", "start": 107, "end": 120}]}
+{"doc_id": "ZH-0030", "spans": [{"label": "PHONE", "start": 109, "end": 120}]}
+{"doc_id": "ZH-0031", "spans": []}
+{"doc_id": "ZH-0032", "spans": [{"label": "PHONE", "start": 100, "end": 111}]}
+{"doc_id": "ZH-0033", "spans": [{"label": "PHONE", "start": 102, "end": 115}]}
+{"doc_id": "ZH-0034", "spans": [{"label": "PHONE", "start": 106, "end": 117}]}
+{"doc_id": "ZH-0035", "spans": []}
+{"doc_id": "ZH-0036", "spans": [{"label": "PHONE", "start": 102, "end": 113}]}
+{"doc_id": "ZH-0037", "spans": [{"label": "PHONE", "start": 100, "end": 113}]}
+{"doc_id": "ZH-0038", "spans": [{"label": "PHONE", "start": 106, "end": 117}]}
+{"doc_id": "ZH-0039", "spans": []}
+{"doc_id": "ZH-0056", "spans": [{"label": "PHONE", "start": 91, "end": 102}]}
+{"doc_id": "ZH-0057", "spans": [{"label": "PHONE", "start": 91, "end": 104}]}
+{"doc_id": "ZH-0058", "spans": [{"label": "PHONE", "start": 101, "end": 112}]}
+{"doc_id": "ZH-0059", "spans": []}
+{"doc_id": "ZH-0060", "spans": [{"label": "PHONE", "start": 89, "end": 100}]}
+{"doc_id": "ZH-0061", "spans": [{"label": "PHONE", "start": 92, "end": 105}]}
+{"doc_id": "ZH-0062", "spans": [{"label": "PHONE", "start": 90, "end": 101}]}
+{"doc_id": "ZH-0063", "spans": []}
+{"doc_id": "ZH-0064", "spans": [{"label": "PHONE", "start": 85, "end": 96}]}
+{"doc_id": "ZH-0065", "spans": [{"label": "PHONE", "start": 85, "end": 98}]}
+{"doc_id": "ZH-0066", "spans": [{"label": "PHONE", "start": 87, "end": 98}]}
+{"doc_id": "ZH-0067", "spans": []}
+{"doc_id": "ZH-0068", "spans": [{"label": "PHONE", "start": 84, "end": 95}]}
+{"doc_id": "ZH-0069", "spans": [{"label": "PHONE", "start": 85, "end": 98}]}
+{"doc_id": "ZH-0070", "spans": [{"label": "PHONE", "start": 87, "end": 98}]}
+{"doc_id": "ZH-0071", "spans": []}
+{"doc_id": "ZH-0072", "spans": [{"label": "PHONE", "start": 97, "end": 108}]}
+{"doc_id": "ZH-0073", "spans": [{"label": "PHONE", "start": 103, "end": 116}]}
+{"doc_id": "ZH-0074", "spans": [{"label": "PHONE", "start": 104, "end": 115}]}
+{"doc_id": "ZH-0075", "spans": []}
+{"doc_id": "ZH-0076", "spans": [{"label": "PHONE", "start": 100, "end": 111}]}
+{"doc_id": "ZH-0077", "spans": [{"label": "PHONE", "start": 102, "end": 115}]}
+{"doc_id": "ZH-0078", "spans": [{"label": "PHONE", "start": 103, "end": 114}]}
+{"doc_id": "ZH-0079", "spans": []}
+{"doc_id": "ZH-0080", "spans": [{"label": "PHONE", "start": 82, "end": 93}]}
+{"doc_id": "ZH-0081", "spans": [{"label": "PHONE", "start": 85, "end": 98}]}
+{"doc_id": "ZH-0082", "spans": [{"label": "PHONE", "start": 87, "end": 98}]}
+{"doc_id": "ZH-0083", "spans": []}
+{"doc_id": "ZH-0084", "spans": [{"label": "PHONE", "start": 83, "end": 94}]}
+{"doc_id": "ZH-0085", "spans": [{"label": "PHONE", "start": 87, "end": 100}]}
+{"doc_id": "ZH-0086", "spans": [{"label": "PHONE", "start": 87, "end": 98}]}
+{"doc_id": "ZH-0087", "spans": []}
+{"doc_id": "ZH-0088", "spans": [{"label": "PHONE", "start": 47, "end": 58}]}
+{"doc_id": "ZH-0089", "spans": [{"label": "PHONE", "start": 49, "end": 62}]}
+{"doc_id": "ZH-0090", "spans": [{"label": "PHONE", "start": 52, "end": 63}]}
+{"doc_id": "ZH-0091", "spans": []}
+{"doc_id": "ZH-0092", "spans": [{"label": "PHONE", "start": 47, "end": 58}]}
+{"doc_id": "ZH-0093", "spans": [{"label": "PHONE", "start": 49, "end": 62}]}
+{"doc_id": "ZH-0094", "spans": [{"label": "PHONE", "start": 52, "end": 63}]}
+{"doc_id": "ZH-0095", "spans": []}
+{"doc_id": "ZH-0096", "spans": [{"label": "PHONE", "start": 84, "end": 95}]}
+{"doc_id": "ZH-0097", "spans": [{"label": "PHONE", "start": 82, "end": 95}]}
+{"doc_id": "ZH-0098", "spans": [{"label": "PHONE", "start": 88, "end": 99}]}
+{"doc_id": "ZH-0099", "spans": []}
+{"doc_id": "ZH-0100", "spans": [{"label": "PHONE", "start": 84, "end": 95}]}
+{"doc_id": "ZH-0101", "spans": [{"label": "PHONE", "start": 87, "end": 100}]}
+{"doc_id": "ZH-0102", "spans": [{"label": "PHONE", "start": 86, "end": 97}]}
+{"doc_id": "ZH-0103", "spans": []}
+{"doc_id": "ZH-0104", "spans": [{"label": "PHONE", "start": 25, "end": 36}]}
+{"doc_id": "ZH-0105", "spans": [{"label": "PHONE", "start": 25, "end": 38}]}
+{"doc_id": "ZH-0106", "spans": [{"label": "PHONE", "start": 29, "end": 40}]}
+{"doc_id": "ZH-0107", "spans": []}
+{"doc_id": "ZH-0108", "spans": [{"label": "PHONE", "start": 24, "end": 35}]}
+{"doc_id": "ZH-0109", "spans": [{"label": "PHONE", "start": 25, "end": 38}]}
+{"doc_id": "ZH-0110", "spans": [{"label": "PHONE", "start": 27, "end": 38}]}
+{"doc_id": "ZH-0111", "spans": []}
+{"doc_id": "ZH-0112", "spans": [{"label": "PHONE", "start": 84, "end": 95}]}
+{"doc_id": "ZH-0113", "spans": [{"label": "PHONE", "start": 95, "end": 108}]}
+{"doc_id": "ZH-0114", "spans": [{"label": "PHONE", "start": 91, "end": 102}]}
+{"doc_id": "ZH-0115", "spans": []}
+{"doc_id": "ZH-0116", "spans": [{"label": "PHONE", "start": 85, "end": 96}]}
+{"doc_id": "ZH-0117", "spans": [{"label": "PHONE", "start": 85, "end": 98}]}
+{"doc_id": "ZH-0118", "spans": [{"label": "PHONE", "start": 92, "end": 103}]}
+{"doc_id": "ZH-0119", "spans": []}
+{"doc_id": "ZH-0136", "spans": [{"label": "PHONE", "start": 86, "end": 97}]}
+{"doc_id": "ZH-0137", "spans": [{"label": "PHONE", "start": 89, "end": 102}]}
+{"doc_id": "ZH-0138", "spans": [{"label": "PHONE", "start": 89, "end": 100}]}
+{"doc_id": "ZH-0139", "spans": []}
+{"doc_id": "ZH-0140", "spans": [{"label": "PHONE", "start": 88, "end": 99}]}
+{"doc_id": "ZH-0141", "spans": [{"label": "PHONE", "start": 90, "end": 103}]}
+{"doc_id": "ZH-0142", "spans": [{"label": "PHONE", "start": 88, "end": 99}]}
+{"doc_id": "ZH-0143", "spans": []}
+{"doc_id": "ZH-0152", "spans": [{"label": "PHONE", "start": 76, "end": 87}]}
+{"doc_id": "ZH-0153", "spans": [{"label": "PHONE", "start": 82, "end": 95}]}
+{"doc_id": "ZH-0154", "spans": [{"label": "PHONE", "start": 82, "end": 93}]}
+{"doc_id": "ZH-0155", "spans": []}
+{"doc_id": "ZH-0156", "spans": [{"label": "PHONE", "start": 81, "end": 92}]}
+{"doc_id": "ZH-0157", "spans": [{"label": "PHONE", "start": 80, "end": 93}]}
+{"doc_id": "ZH-0158", "spans": [{"label": "PHONE", "start": 90, "end": 101}]}
+{"doc_id": "ZH-0159", "spans": []}
+{"doc_id": "ZH-0184", "spans": [{"label": "PHONE", "start": 81, "end": 92}]}
+{"doc_id": "ZH-0185", "spans": [{"label": "PHONE", "start": 82, "end": 95}]}
+{"doc_id": "ZH-0186", "spans": [{"label": "PHONE", "start": 85, "end": 96}]}
+{"doc_id": "ZH-0187", "spans": []}
+{"doc_id": "ZH-0188", "spans": [{"label": "PHONE", "start": 80, "end": 91}]}
+{"doc_id": "ZH-0189", "spans": [{"label": "PHONE", "start": 84, "end": 97}]}
+{"doc_id": "ZH-0190", "spans": [{"label": "PHONE", "start": 87, "end": 98}]}
+{"doc_id": "ZH-0191", "spans": []}
+{"doc_id": "ZH-0200", "spans": [{"label": "PHONE", "start": 86, "end": 97}]}
+{"doc_id": "ZH-0201", "spans": [{"label": "PHONE", "start": 87, "end": 100}]}
+{"doc_id": "ZH-0202", "spans": [{"label": "PHONE", "start": 86, "end": 97}]}
+{"doc_id": "ZH-0203", "spans": []}
+{"doc_id": "ZH-0204", "spans": [{"label": "PHONE", "start": 82, "end": 93}]}
+{"doc_id": "ZH-0205", "spans": [{"label": "PHONE", "start": 87, "end": 100}]}
+{"doc_id": "ZH-0206", "spans": [{"label": "PHONE", "start": 90, "end": 101}]}
+{"doc_id": "ZH-0207", "spans": []}
+{"doc_id": "ZH-0208", "spans": [{"label": "PHONE", "start": 89, "end": 100}]}
+{"doc_id": "ZH-0209", "spans": [{"label": "PHONE", "start": 88, "end": 101}]}
+{"doc_id": "ZH-0210", "spans": [{"label": "PHONE", "start": 93, "end": 104}]}
+{"doc_id": "ZH-0211", "spans": []}
+{"doc_id": "ZH-0212", "spans": [{"label": "PHONE", "start": 87, "end": 98}]}
+{"doc_id": "ZH-0213", "spans": [{"label": "PHONE", "start": 97, "end": 110}]}
+{"doc_id": "ZH-0214", "spans": [{"label": "PHONE", "start": 95, "end": 106}]}
+{"doc_id": "ZH-0215", "spans": []}
+{"doc_id": "ZH-0232", "spans": [{"label": "PHONE", "start": 81, "end": 92}]}
+{"doc_id": "ZH-0233", "spans": [{"label": "PHONE", "start": 87, "end": 100}]}
+{"doc_id": "ZH-0234", "spans": [{"label": "PHONE", "start": 88, "end": 99}]}
+{"doc_id": "ZH-0235", "spans": []}
+{"doc_id": "ZH-0236", "spans": [{"label": "PHONE", "start": 84, "end": 95}]}
+{"doc_id": "ZH-0237", "spans": [{"label": "PHONE", "start": 86, "end": 99}]}
+{"doc_id": "ZH-0238", "spans": [{"label": "PHONE", "start": 88, "end": 99}]}
+{"doc_id": "ZH-0239", "spans": []}
+{"doc_id": "ZH-0248", "spans": [{"label": "PHONE", "start": 86, "end": 97}]}
+{"doc_id": "ZH-0249", "spans": [{"label": "PHONE", "start": 91, "end": 104}]}
+{"doc_id": "ZH-0250", "spans": [{"label": "PHONE", "start": 94, "end": 105}]}
+{"doc_id": "ZH-0251", "spans": []}
+{"doc_id": "ZH-0252", "spans": [{"label": "PHONE", "start": 85, "end": 96}]}
+{"doc_id": "ZH-0253", "spans": [{"label": "PHONE", "start": 91, "end": 104}]}
+{"doc_id": "ZH-0254", "spans": [{"label": "PHONE", "start": 90, "end": 101}]}
+{"doc_id": "ZH-0255", "spans": []}
+{"doc_id": "ZH-0256", "spans": [{"label": "PHONE", "start": 102, "end": 113}]}
+{"doc_id": "ZH-0257", "spans": [{"label": "PHONE", "start": 100, "end": 113}]}
+{"doc_id": "ZH-0258", "spans": [{"label": "PHONE", "start": 106, "end": 117}]}
+{"doc_id": "ZH-0259", "spans": []}
+{"doc_id": "ZH-0260", "spans": [{"label": "PHONE", "start": 102, "end": 113}]}
+{"doc_id": "ZH-0261", "spans": [{"label": "PHONE", "start": 105, "end": 118}]}
+{"doc_id": "ZH-0262", "spans": [{"label": "PHONE", "start": 105, "end": 116}]}
+{"doc_id": "ZH-0263", "spans": []}
+{"doc_id": "ZH-0280", "spans": [{"label": "PHONE", "start": 81, "end": 92}]}
+{"doc_id": "ZH-0281", "spans": [{"label": "PHONE", "start": 83, "end": 96}]}
+{"doc_id": "ZH-0282", "spans": [{"label": "PHONE", "start": 82, "end": 93}]}
+{"doc_id": "ZH-0283", "spans": []}
+{"doc_id": "ZH-0284", "spans": [{"label": "PHONE", "start": 81, "end": 92}]}
+{"doc_id": "ZH-0285", "spans": [{"label": "PHONE", "start": 82, "end": 95}]}
+{"doc_id": "ZH-0286", "spans": [{"label": "PHONE", "start": 86, "end": 97}]}
+{"doc_id": "ZH-0287", "spans": []}
+{"doc_id": "ZH-0296", "spans": [{"label": "PHONE", "start": 83, "end": 94}]}
+{"doc_id": "ZH-0297", "spans": [{"label": "PHONE", "start": 85, "end": 98}]}
+{"doc_id": "ZH-0298", "spans": [{"label": "PHONE", "start": 86, "end": 97}]}
+{"doc_id": "ZH-0299", "spans": []}
+{"doc_id": "ZH-0300", "spans": [{"label": "PHONE", "start": 84, "end": 95}]}
+{"doc_id": "ZH-0301", "spans": [{"label": "PHONE", "start": 86, "end": 99}]}
+{"doc_id": "ZH-0302", "spans": [{"label": "PHONE", "start": 83, "end": 94}]}
+{"doc_id": "ZH-0303", "spans": []}
+{"doc_id": "ZH-0304", "spans": [{"label": "PHONE", "start": 80, "end": 91}]}
+{"doc_id": "ZH-0305", "spans": [{"label": "PHONE", "start": 84, "end": 97}]}
+{"doc_id": "ZH-0306", "spans": [{"label": "PHONE", "start": 85, "end": 96}]}
+{"doc_id": "ZH-0307", "spans": []}
+{"doc_id": "ZH-0308", "spans": [{"label": "PHONE", "start": 81, "end": 92}]}
+{"doc_id": "ZH-0309", "spans": [{"label": "PHONE", "start": 80, "end": 93}]}
+{"doc_id": "ZH-0310", "spans": [{"label": "PHONE", "start": 86, "end": 97}]}
+{"doc_id": "ZH-0311", "spans": []}
+{"doc_id": "ZH-0312", "spans": [{"label": "PHONE", "start": 79, "end": 90}]}
+{"doc_id": "ZH-0313", "spans": [{"label": "PHONE", "start": 85, "end": 98}]}
+{"doc_id": "ZH-0314", "spans": [{"label": "PHONE", "start": 84, "end": 95}]}
+{"doc_id": "ZH-0315", "spans": []}
+{"doc_id": "ZH-0316", "spans": [{"label": "PHONE", "start": 84, "end": 95}]}
+{"doc_id": "ZH-0317", "spans": [{"label": "PHONE", "start": 83, "end": 96}]}
+{"doc_id": "ZH-0318", "spans": [{"label": "PHONE", "start": 93, "end": 104}]}
+{"doc_id": "ZH-0319", "spans": []}

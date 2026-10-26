@@ -1,0 +1,59 @@
+{
+  "n_records": 60,
+  "n_templates": 6,
+  "per_label": {
+    "NAME": {
+      "tp": 30,
+      "fp": 0,
+      "fn": 30,
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6667
+    },
+    "PHONE": {
+      "tp": 50,
+      "fp": 0,
+      "fn": 10,
+      "precision": 1.0,
+      "recall": 0.8333,
+      "f1": 0.9091
+    },
+    "MRN": {
+      "tp": 20,
+      "fp": 0,
+      "fn": 40,
+      "precision": 1.0,
+      "recall": 0.3333,
+      "f1": 0.5
+    }
+  },
+  "records_with_all_gold_phi_covered": 10,
+  "oracle_record_coverage_rate": 0.1667,
+  "per_template": {
+    "0": {
+      "records": 10,
+      "fully_masked_records": 0
+    },
+    "1": {
+      "records": 10,
+      "fully_masked_records": 0
+    },
+    "2": {
+      "records": 10,
+      "fully_masked_records": 0
+    },
+    "3": {
+      "records": 10,
+      "fully_masked_records": 10
+    },
+    "4": {
+      "records": 10,
+      "fully_masked_records": 0
+    },
+    "5": {
+      "records": 10,
+      "fully_masked_records": 0
+    }
+  },
+  "limitations": "Reused synthetic stress diagnostics, 6 repeated templates; no claim of independent generalization or real-world zero-residue safety."
+}

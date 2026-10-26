@@ -1,0 +1,42 @@
+{
+  "standards_version": "lab-standards-1.0.0",
+  "compiled": "2026-10-27",
+  "purpose": "second, independent path for unit conversion and reference-band checks; used to audit, not to relabel, the synthetic corpus",
+  "sources": [
+    {
+      "id": "ciaaw-atomic-weights",
+      "publisher": "IUPAC Commission on Isotopic Abundances and Atomic Weights (CIAAW)",
+      "title": "Standard Atomic Weights",
+      "url": "https://www.ciaaw.org/atomic-weights.htm",
+      "used_for": "abridged atomic weights C 12.011, H 1.008, N 14.007, O 15.999; used to derive molar masses of glucose (C6H12O6) and creatinine (C4H7N3O)",
+      "verification": "molar mass recomputed from the molecular formula in clinforge/lab_standards.py; no dependence on the project's REFERENCE_INTERVALS table"
+    },
+    {
+      "id": "bipm-si-prefixes",
+      "publisher": "Bureau International des Poids et Mesures (BIPM)",
+      "title": "SI prefixes",
+      "url": "https://www.bipm.org/en/measurement-units/si-prefixes",
+      "used_for": "g/dL -> g/L (deci = 10^-1, so 1 g/dL = 10 g/L); mg/dL -> mg/L for the glucose derivation",
+      "verification": "definitional; no empirical constant involved"
+    },
+    {
+      "id": "iupac-enzyme-unit",
+      "publisher": "IUPAC",
+      "title": "Definition of the enzyme unit (U)",
+      "url": null,
+      "citation": "1 U = 1 micromole of substrate converted per minute under defined conditions; enzyme activity is reported in U/L and is not converted by molar mass",
+      "used_for": "ALT and AST are handled as activity concentrations; no mass conversion is applied",
+      "verification": "definitional; the project reports the same U/L value it displays"
+    }
+  ],
+  "reference_bands": {
+    "status": "demo values for pipeline testing; NOT a clinical reference standard",
+    "provenance": "independently transcribed into clinforge/lab_standards.py so that a transcription error in clinforge/hpo_knowledge.py can be detected; the values themselves are not traceable to a single laboratory standard",
+    "limitation": "real reference intervals depend on method, analyser, population and age/sex; no such data are available in this environment"
+  },
+  "not_claimed": [
+    "that these bands are clinically correct",
+    "that the synthetic lab values are clinically plausible",
+    "that the independent path replaces a laboratory information system or an external quality-assessment scheme"
+  ]
+}

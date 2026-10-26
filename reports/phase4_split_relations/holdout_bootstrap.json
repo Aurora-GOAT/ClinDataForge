@@ -1,0 +1,60 @@
+{
+  "analysis": "cluster bootstrap over near-duplicate connected components",
+  "why": "260 notes contain 186 distinct texts and 64 near-duplicate clusters; mention-level intervals would be too narrow",
+  "iterations": 2000,
+  "seed": 20261027,
+  "n_records": 260,
+  "n_mentions": 1618,
+  "n_clusters": 64,
+  "largest_cluster": 10,
+  "systems": {
+    "v1": {
+      "point": {
+        "accuracy": 0.7021,
+        "macro_f1": 0.684,
+        "history_to_affirmed": 221
+      },
+      "accuracy_ci95": [
+        0.6337,
+        0.7734
+      ],
+      "macro_f1_ci95": [
+        0.5872,
+        0.798
+      ],
+      "history_to_affirmed_point": 221
+    },
+    "v2_scope_v1": {
+      "point": {
+        "accuracy": 0.8869,
+        "macro_f1": 0.8482,
+        "history_to_affirmed": 57
+      },
+      "accuracy_ci95": [
+        0.8129,
+        0.946
+      ],
+      "macro_f1_ci95": [
+        0.7583,
+        0.9564
+      ],
+      "history_to_affirmed_point": 57
+    },
+    "v2_scope_ng": {
+      "point": {
+        "accuracy": 0.9778,
+        "macro_f1": 0.9567,
+        "history_to_affirmed": 0
+      },
+      "accuracy_ci95": [
+        0.9451,
+        1.0
+      ],
+      "macro_f1_ci95": [
+        0.9232,
+        1.0
+      ],
+      "history_to_affirmed_point": 0
+    }
+  }
+}

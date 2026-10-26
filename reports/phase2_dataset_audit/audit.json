@@ -1,0 +1,163 @@
+{
+  "data_directory": "data/phase2_phi_v1",
+  "benchmark_version": "phase2-phi-v1",
+  "files": {
+    "train.jsonl": {
+      "expected": "28f96dadb7f9033c2b96fa6348938fe65fdbb44a3757b0b68cdfec55f9ddbf4b",
+      "actual": "28f96dadb7f9033c2b96fa6348938fe65fdbb44a3757b0b68cdfec55f9ddbf4b",
+      "match": true
+    },
+    "dev.jsonl": {
+      "expected": "adeb9ee4ba0b9b344df2cd9cd67906dc2c4c62a6c8265dc6d4b0651ef30b417b",
+      "actual": "adeb9ee4ba0b9b344df2cd9cd67906dc2c4c62a6c8265dc6d4b0651ef30b417b",
+      "match": true
+    },
+    "test.jsonl": {
+      "expected": "96d5b2c6aa3a52f81fb79357a88f6ff86c1fde0b07b700d2f36d570745dda85d",
+      "actual": "96d5b2c6aa3a52f81fb79357a88f6ff86c1fde0b07b700d2f36d570745dda85d",
+      "match": true
+    },
+    "demo_pipeline.jsonl": {
+      "expected": "19cb12a3cca902b8f40a7dc8df6276383f899a7b983dbdb6aa1f810eff9bb67d",
+      "actual": "19cb12a3cca902b8f40a7dc8df6276383f899a7b983dbdb6aa1f810eff9bb67d",
+      "match": true
+    }
+  },
+  "asq_phi_source_verification": {
+    "LICENSE": {
+      "expected": "d3871f9165f5817a2fb37739381b3c855d610c1918902964fc3c398d3036350b",
+      "actual": "d3871f9165f5817a2fb37739381b3c855d610c1918902964fc3c398d3036350b",
+      "match": true
+    },
+    "README.md": {
+      "expected": "c8c0c7f6b4ba1e1eb321ac5bf89133594ce1a79e2687c42ff96b9a4f045dc563",
+      "actual": "c8c0c7f6b4ba1e1eb321ac5bf89133594ce1a79e2687c42ff96b9a4f045dc563",
+      "match": true
+    },
+    "CITATION.cff": {
+      "expected": "05e0b9c075ad1f6520ba77ef9668a4f16fa67c2d709700a23c6da895c35dfaf1",
+      "actual": "05e0b9c075ad1f6520ba77ef9668a4f16fa67c2d709700a23c6da895c35dfaf1",
+      "match": true
+    },
+    "data/synthetic_clinical_queries.txt": {
+      "expected": "cf00e424b8d2347d019f9f34e2ad1510cb4d853605410f8314bef44df8021fc8",
+      "actual": "cf00e424b8d2347d019f9f34e2ad1510cb4d853605410f8314bef44df8021fc8",
+      "match": true
+    },
+    "data/dataset_statistics.txt": {
+      "expected": "7c002f3b4df79e659c4200109da7651b48f3f18659e6daa842499dba8eec40d8",
+      "actual": "7c002f3b4df79e659c4200109da7651b48f3f18659e6daa842499dba8eec40d8",
+      "match": true
+    },
+    "code/parse_dataset.py": {
+      "expected": "e6f6e88d458779e83907164f35e2922476575eb28feb4f35df994aa05d3b430b",
+      "actual": "e6f6e88d458779e83907164f35e2922476575eb28feb4f35df994aa05d3b430b",
+      "match": true
+    }
+  },
+  "split_summary": {
+    "train": {
+      "n_records": 343,
+      "n_with_phi": 258,
+      "n_without_phi": 85,
+      "n_entities": 1017,
+      "languages": {
+        "en": 263,
+        "zh": 80
+      },
+      "labels": {
+        "NAME": 258,
+        "ADDRESS": 254,
+        "DATE": 251,
+        "PATIENT_ID": 128,
+        "INSURANCE_ID": 24,
+        "SSN": 11,
+        "PHONE": 82,
+        "EMAIL": 9
+      },
+      "characters": 48483,
+      "protected_characters": 9418,
+      "components": 251
+    },
+    "dev": {
+      "n_records": 396,
+      "n_with_phi": 367,
+      "n_without_phi": 29,
+      "n_entities": 1411,
+      "languages": {
+        "en": 332,
+        "zh": 64
+      },
+      "labels": {
+        "NAME": 359,
+        "ADDRESS": 367,
+        "DATE": 359,
+        "PATIENT_ID": 225,
+        "INSURANCE_ID": 13,
+        "PHONE": 70,
+        "SSN": 11,
+        "EMAIL": 7
+      },
+      "characters": 58693,
+      "protected_characters": 12892,
+      "components": 90
+    },
+    "test": {
+      "n_records": 632,
+      "n_with_phi": 487,
+      "n_without_phi": 145,
+      "n_entities": 1942,
+      "languages": {
+        "en": 456,
+        "zh": 176
+      },
+      "labels": {
+        "NAME": 477,
+        "ADDRESS": 484,
+        "DATE": 476,
+        "PATIENT_ID": 250,
+        "EMAIL": 15,
+        "INSURANCE_ID": 54,
+        "PHONE": 175,
+        "SSN": 11
+      },
+      "characters": 87584,
+      "protected_characters": 17161,
+      "components": 463
+    }
+  },
+  "leakage_checks": {
+    "duplicate_texts_total": 0,
+    "duplicate_texts_crossing_splits": 0,
+    "independent_mask_collisions_crossing_splits": 0,
+    "template_families_crossing_splits": 0,
+    "cross_split_pairs_jaccard_ge_0.50": 0,
+    "worst_cross_split_pairs": []
+  },
+  "unresolved_asq_phi_values": [
+    {
+      "doc_index": 149,
+      "identifier_type": "GEOGRAPHIC_LOCATION",
+      "value": "Children's Clinic",
+      "reason": "value not found verbatim in query"
+    },
+    {
+      "doc_index": 354,
+      "identifier_type": "CERTIFICATE_LICENSE_NUMBER",
+      "value": "CLN-112233",
+      "reason": "declared out of scope"
+    },
+    {
+      "doc_index": 509,
+      "identifier_type": "IP_ADDRESS",
+      "value": "192.168.1.1",
+      "reason": "declared out of scope"
+    }
+  ],
+  "excluded_asq_phi_types": [
+    "CERTIFICATE_LICENSE_NUMBER",
+    "IP_ADDRESS"
+  ],
+  "problems": [],
+  "verdict": "PASS"
+}

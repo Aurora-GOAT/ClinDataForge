@@ -1,0 +1,17 @@
+# Optional CPU PHI inference environment, isolated from the stdlib-only core.
+# Pinned to the exact versions used for the phase-2 experiment.
+numpy==1.26.4
+onnxruntime==1.20.1
+tokenizers==0.20.3
+psutil==6.1.1
+presidio_analyzer==2.2.364
+presidio_anonymizer==2.2.364
+spacy==3.8.0
+# spaCy 3.8.x with preshed>=3.0.10 or cymem>=2.0.9 raises
+# "OverflowError: Python int too large to convert to C ssize_t" while loading any
+# pipeline on this machine; these three pins are required, not cosmetic.
+preshed==3.0.9
+cymem==2.0.8
+murmurhash==1.0.10
+# https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.8.0/en_core_web_lg-3.8.0-py3-none-any.whl
+en_core_web_lg==3.8.0

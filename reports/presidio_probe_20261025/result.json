@@ -1,0 +1,47 @@
+{
+  "scope": "Historical synthetic diagnostic only; six repeated templates, not independent generalization.",
+  "n_records": 60,
+  "n_gold_phi": 180,
+  "cases_sha256": "e0949998bfcc37286001e8c5a4269f008eab72b3e8505c243afae39fbb90c4ce",
+  "python": "3.10.7 (tags/v3.10.7:6cc6b13, Sep  5 2022, 14:08:36) [MSC v.1933 64 bit (AMD64)]",
+  "executable": "C:\\Users\\19776\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "environment": {
+    "versions": {
+      "presidio-analyzer": null,
+      "presidio-anonymizer": null,
+      "spacy": null,
+      "en-core-web-sm": null
+    },
+    "missing_required": [
+      "presidio-analyzer",
+      "spacy",
+      "en-core-web-sm"
+    ],
+    "ready_for_initialization": false,
+    "model": "en_core_web_sm",
+    "language": "en",
+    "anonymizer_required_for_detection": false,
+    "note": "Package presence is not proof of successful native imports or inference."
+  },
+  "original_rules": {
+    "entity_span_exact": {
+      "tp": 100,
+      "fp": 0,
+      "fn": 80,
+      "precision": 1.0,
+      "recall": 0.5556,
+      "f1": 0.7143
+    },
+    "inference_seconds": 0.0026655999245122075,
+    "records_per_second": 22509.004238878693,
+    "timing_scope": "One run of 60 documents, excluding initialization and gold scoring; environment-sensitive."
+  },
+  "presidio": {
+    "status": "not_run",
+    "metrics": null,
+    "reason": "Missing local dependencies: presidio-analyzer, spacy, en-core-web-sm",
+    "initialization_attempt_seconds": 0.050758900004439056
+  },
+  "safety": "No pipeline integration or text-export permission change; no downloads or external inference."
+}

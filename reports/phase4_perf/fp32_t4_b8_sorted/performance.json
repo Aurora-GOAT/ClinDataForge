@@ -1,0 +1,81 @@
+{
+  "config_name": "fp32_t4_b8_sorted",
+  "config": {
+    "threshold": 0.2,
+    "threads": 4,
+    "chunk_words": 160,
+    "dtype": "fp32",
+    "batch_size": 8,
+    "batch_sort": true
+  },
+  "n_records": 60,
+  "n_characters": 21068,
+  "initialization_seconds": 12.45,
+  "inference_seconds": 74.9,
+  "mean_ms_per_doc": 1248.3,
+  "p95_ms_per_doc": 1420.6,
+  "docs_per_second": 0.801,
+  "peak_rss_mb": 2122.2,
+  "n_forward_calls": 15,
+  "n_chunks": 86,
+  "chunks_per_call": 5.73,
+  "detector_metadata": {
+    "model_repo": "onnx-community/gliner_multi_pii-v1",
+    "model_revision": "2e0397a7e8a250d76c37122232b3cbde42c8d629",
+    "upstream_repo": "urchade/gliner_multi_pii-v1",
+    "upstream_revision": "1fcf13e85f4eef5394e1fcd406cf2ca9ea82351d",
+    "weights_sha256": "7704865e414f24591da6aee08716a25677855bc8a84af81396d90e40df1e68d2",
+    "license": "Apache-2.0 upstream; conversion card attributes upstream",
+    "runtime": "onnxruntime",
+    "runtime_version": "1.20.1",
+    "provider": "CPUExecutionProvider",
+    "threads": 4,
+    "threshold": 0.2,
+    "precision": "fp32",
+    "batch_size": 8,
+    "quantization": "none for fp32; fp16 conversion available for the phase-2 reproduction; int8 dynamic conversion rejected after collapse probe",
+    "frontend_revision": "numpy-gliner-0.2.13-han-char-fp16-v1",
+    "prompts": [
+      [
+        "person",
+        "NAME"
+      ],
+      [
+        "phone number",
+        "PHONE"
+      ],
+      [
+        "medical record number",
+        "PATIENT_ID"
+      ],
+      [
+        "date",
+        "DATE"
+      ],
+      [
+        "address",
+        "ADDRESS"
+      ],
+      [
+        "location",
+        "ADDRESS"
+      ],
+      [
+        "social security number",
+        "SSN"
+      ],
+      [
+        "email address",
+        "EMAIL"
+      ],
+      [
+        "insurance member number",
+        "INSURANCE_ID"
+      ]
+    ],
+    "chunk_words": 160,
+    "overlap_words": 16,
+    "training_performed_here": false,
+    "limitations": "Pretrained corpus contamination cannot be ruled out. Chinese character segmentation differs from upstream whitespace splitting; no real-patient acceptance."
+  }
+}

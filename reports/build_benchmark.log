@@ -1,0 +1,84 @@
+{
+  "out": "D:\\PQY\\Five\\post\\实习、工作\\找工作\\简历合集\\蚂蚁\\ClinDataForge_AntHealth_2027\\data\\phase2_phi_v1",
+  "counts": {
+    "train": {
+      "n_records": 343,
+      "n_with_phi": 258,
+      "n_without_phi": 85,
+      "n_entities": 1017,
+      "by_language": {
+        "en": 263,
+        "zh": 80
+      },
+      "by_label": {
+        "NAME": 258,
+        "PHONE": 82,
+        "PATIENT_ID": 128,
+        "DATE": 251,
+        "ADDRESS": 254,
+        "SSN": 11,
+        "EMAIL": 9,
+        "INSURANCE_ID": 24
+      },
+      "protected_characters": 9418
+    },
+    "dev": {
+      "n_records": 396,
+      "n_with_phi": 367,
+      "n_without_phi": 29,
+      "n_entities": 1411,
+      "by_language": {
+        "en": 332,
+        "zh": 64
+      },
+      "by_label": {
+        "NAME": 359,
+        "PHONE": 70,
+        "PATIENT_ID": 225,
+        "DATE": 359,
+        "ADDRESS": 367,
+        "SSN": 11,
+        "EMAIL": 7,
+        "INSURANCE_ID": 13
+      },
+      "protected_characters": 12892
+    },
+    "test": {
+      "n_records": 632,
+      "n_with_phi": 487,
+      "n_without_phi": 145,
+      "n_entities": 1942,
+      "by_language": {
+        "en": 456,
+        "zh": 176
+      },
+      "by_label": {
+        "NAME": 477,
+        "PHONE": 175,
+        "PATIENT_ID": 250,
+        "DATE": 476,
+        "ADDRESS": 484,
+        "SSN": 11,
+        "EMAIL": 15,
+        "INSURANCE_ID": 54
+      },
+      "protected_characters": 17161
+    },
+    "all": {
+      "n_records": 1371,
+      "n_entities": 4370,
+      "by_label": {
+        "NAME": 1094,
+        "PHONE": 327,
+        "PATIENT_ID": 603,
+        "DATE": 1086,
+        "ADDRESS": 1105,
+        "SSN": 33,
+        "EMAIL": 31,
+        "INSURANCE_ID": 91
+      }
+    }
+  },
+  "unresolved": 3,
+  "components": 804
+}

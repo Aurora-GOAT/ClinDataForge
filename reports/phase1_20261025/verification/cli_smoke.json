@@ -1,0 +1,69 @@
+{
+  "results": [
+    {
+      "command": [
+        "C:\\Users\\19776\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-m",
+        "scripts.run_benchmark",
+        "--data",
+        "reports\\phase1_20261025\\verification\\corrected_fixture_v1",
+        "--out",
+        "reports\\phase1_20261025\\verification\\demo"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\19776\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-m",
+        "scripts.render_dashboard",
+        "--benchmark",
+        "reports\\phase1_20261025\\verification\\demo\\synthetic_benchmark.json",
+        "--stress",
+        "reports\\phase1_20261025\\verification\\stress_eval.json",
+        "--public-aggregate",
+        "reports/phase1_20261025/public_audit_v2/public_demo_aggregate.json",
+        "--out",
+        "reports\\phase1_20261025\\verification\\demo\\dashboard.html"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\19776\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-m",
+        "scripts.make_review_queue",
+        "--source",
+        "reports\\phase1_20261025\\verification\\demo\\quarantine.jsonl",
+        "--out",
+        "reports\\phase1_20261025\\verification\\demo\\review_queue_40.csv"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Users\\19776\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "-m",
+        "clinforge",
+        "run",
+        "--input",
+        "reports\\phase1_20261025\\verification\\corrected_fixture_v1\\synthetic_notes.jsonl",
+        "--output",
+        "reports\\phase1_20261025\\verification\\cli_pipeline",
+        "--synthetic"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "demo_file_sha256": {
+    "accepted.jsonl": "5fbcd43c810846d86d802ce3fddff55f9fbe13ffeac406a22cf2dc2a1da78efc",
+    "audit.db": "f01a71640decb2c60a3112638324d2861b4912c6028574162579d9c6e7d71934",
+    "audit.json": "ade97937b13ed3f1ffc2d9ee791548ea02e70c3b83c88c1f2e4c50ef1e76b7c8",
+    "dashboard.html": "6f33bd234401a619e9d040f843a9294677ddf3f5e77c947a6b13c78348f87323",
+    "provenance.json": "3e3bf1d24b3fa7a7627bcb414331e85c6ed74a2bb8417e90d47f34c3464844ac",
+    "quarantine.jsonl": "25bc6c44841c067bddb48bcd23d3dea21641c4feb7a1d2761644e266d054c0a5",
+    "review_queue_40.csv": "280b47b2d43b2dbcb0d9e12a4fe455d1faedb63b3edabc62737397ebfba5340b",
+    "sft_candidate_UNREVIEWED.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "synthetic_benchmark.json": "1a87b6563b61ca0e0c6e54b64f2abc586a8fc53e643b187bc60496c3b2481a06"
+  }
+}

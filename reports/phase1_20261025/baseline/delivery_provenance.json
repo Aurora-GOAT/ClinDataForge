@@ -1,0 +1,10 @@
+{
+  "archive_sha256": "5d3ee179f53d410e81aed63d7f72478c55c9152f6986580817c9bbada53732b3",
+  "baseline_git_revision": "af8a8f7",
+  "fixture_semantically_identical": {
+    "fixture_manifest.json": true,
+    "synthetic_notes.jsonl": true,
+    "gold_annotations.jsonl": true
+  },
+  "byte_difference_cause": "Windows text writes CRLF; shipped fixture uses LF. JSON objects exactly match; this is distinct from six existing gold/text defects."
+}

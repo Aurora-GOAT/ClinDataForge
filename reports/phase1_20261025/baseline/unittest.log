@@ -1,0 +1,33 @@
+test_aggregate_only_and_fahrenheit_check (test_mimic_audit.MimicAggregateTest) ... ok
+test_duplicate_stays_counted (test_mimic_audit.MimicAggregateTest) ... ok
+test_complaint (test_operators.OperatorsTest) ... ok
+test_cross_patient_not_merged (test_operators.OperatorsTest) ... ok
+test_doc_different (test_operators.OperatorsTest) ... ok
+test_doc_same_punctuation (test_operators.OperatorsTest) ... ok
+test_hmac_not_raw (test_operators.OperatorsTest) ... ok
+test_hmac_short_key_refused (test_operators.OperatorsTest) ... ok
+test_multiple_same_lab_quarantine (test_operators.OperatorsTest) ... ok
+test_norm_temp_f (test_operators.OperatorsTest) ... ok
+test_phi_chinese (test_operators.OperatorsTest) ... ok
+test_phi_conservative_scope (test_operators.OperatorsTest) ... ok
+test_phi_english (test_operators.OperatorsTest) ... ok
+test_ranges_quarantine (test_operators.OperatorsTest) ... ok
+test_same_patient_different_encounter_not_merged (test_operators.OperatorsTest) ... ok
+test_same_patient_merged (test_operators.OperatorsTest) ... ok
+test_score_nonclinical (test_operators.OperatorsTest) ... ok
+test_deterministic_generator (test_pipeline.PipelineTest) ... ok
+test_diff_seed (test_pipeline.PipelineTest) ... ok
+test_eval_has_three_metrics (test_pipeline.PipelineTest) ... ok
+test_invalid_raw_not_exported (test_pipeline.PipelineTest) ... ok
+test_malformed_jsonl_raises_without_copy (test_pipeline.PipelineTest) ... ok
+test_never_output_gold_labels (test_pipeline.PipelineTest) ... ok
+test_outputs_and_sqlite (test_pipeline.PipelineTest) ... ok
+test_real_text_refused (test_pipeline.PipelineTest) ... ok
+test_run_repeat_refuses_overwrite (test_pipeline.PipelineTest) ... ok
+test_sft_candidates_unreviewed (test_pipeline.PipelineTest) ... ok
+test_stress_lower_than_template (test_pipeline.PipelineTest) ... ok
+
+----------------------------------------------------------------------
+Ran 28 tests in 0.844s
+
+OK

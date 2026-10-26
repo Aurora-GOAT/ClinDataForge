@@ -1,0 +1,149 @@
+[
+  {
+    "archive": "MedDataLab_Codex_%E5%AE%8C%E6%95%B4%E9%A1%B9%E7%9B%AE%E4%B8%8E%E4%BA%A4%E6%8E%A5%E6%9D%90%E6%96%99_20261025.zip",
+    "code": [
+      {
+        "member": "MedDataLab_Codex_交接包_20261025/project/run_full_public_data.py",
+        "sha256": "ff95cb39904e9bc7e9d3fa993511e05efad62c8a797e705bf05a61531e30a87b"
+      },
+      {
+        "member": "MedDataLab_Codex_交接包_20261025/project/run_public_demo.py",
+        "sha256": "d44f1cd2091b23b50fac1e91cf08265a915bfb4efa28af32f6db30aef469c4a8"
+      },
+      {
+        "member": "MedDataLab_Codex_交接包_20261025/project/scripts/fetch_public_datasets.py",
+        "sha256": "3ed5dc4f8a36bb5782edd67d92815e64d55048a8fc6245319a4e66f9c8816c1f"
+      },
+      {
+        "member": "MedDataLab_Codex_交接包_20261025/project/src/meddatalab/realworld.py",
+        "sha256": "a3516986b87acfb83148d71008cab503b4c0cd0245aa5e825ffc01a06023f68a"
+      }
+    ]
+  },
+  {
+    "archive": "MedDataLab_V2.11.1_502%E4%B8%8B%E8%BD%BD%E6%95%85%E9%9A%9C%E4%BF%AE%E5%A4%8D_%E8%87%AA%E5%8A%A8%E5%A4%8D%E7%94%A8%E7%BC%93%E5%AD%98.zip",
+    "code": [
+      {
+        "member": "MedDataLab_V2.11.1/run_full_public_data.py",
+        "sha256": "ff95cb39904e9bc7e9d3fa993511e05efad62c8a797e705bf05a61531e30a87b"
+      },
+      {
+        "member": "MedDataLab_V2.11.1/run_public_demo.py",
+        "sha256": "d44f1cd2091b23b50fac1e91cf08265a915bfb4efa28af32f6db30aef469c4a8"
+      },
+      {
+        "member": "MedDataLab_V2.11.1/scripts/fetch_public_datasets.py",
+        "sha256": "3ed5dc4f8a36bb5782edd67d92815e64d55048a8fc6245319a4e66f9c8816c1f"
+      },
+      {
+        "member": "MedDataLab_V2.11.1/src/meddatalab/realworld.py",
+        "sha256": "a3516986b87acfb83148d71008cab503b4c0cd0245aa5e825ffc01a06023f68a"
+      }
+    ]
+  },
+  {
+    "archive": "MedDataLab_V2.12_%E7%9B%B2%E6%B3%95%E8%AF%81%E6%8D%AE%E7%9B%B8%E5%85%B3%E6%80%A7%E5%AE%A1%E9%98%85_%E6%97%A0%E9%9C%80Groq.zip",
+    "code": [
+      {
+        "member": "MedDataLab_V2.12/run_full_public_data.py",
+        "sha256": "ff95cb39904e9bc7e9d3fa993511e05efad62c8a797e705bf05a61531e30a87b"
+      },
+      {
+        "member": "MedDataLab_V2.12/run_public_demo.py",
+        "sha256": "d44f1cd2091b23b50fac1e91cf08265a915bfb4efa28af32f6db30aef469c4a8"
+      },
+      {
+        "member": "MedDataLab_V2.12/scripts/fetch_public_datasets.py",
+        "sha256": "3ed5dc4f8a36bb5782edd67d92815e64d55048a8fc6245319a4e66f9c8816c1f"
+      },
+      {
+        "member": "MedDataLab_V2.12/src/meddatalab/realworld.py",
+        "sha256": "a3516986b87acfb83148d71008cab503b4c0cd0245aa5e825ffc01a06023f68a"
+      }
+    ]
+  },
+  {
+    "archive": "MedDataLab_V2.15_%E5%85%A8%E6%96%B0100%E9%A2%98%E7%8B%AC%E7%AB%8B%E6%A3%80%E7%B4%A2%E9%AA%8C%E8%AF%81_%E5%85%8D%E8%B4%B9%E7%A6%BB%E7%BA%BF%E7%89%88_20261017.zip",
+    "code": [
+      {
+        "member": "MedDataLab_V2.15/run_full_public_data.py",
+        "sha256": "ff95cb39904e9bc7e9d3fa993511e05efad62c8a797e705bf05a61531e30a87b"
+      },
+      {
+        "member": "MedDataLab_V2.15/run_public_demo.py",
+        "sha256": "d44f1cd2091b23b50fac1e91cf08265a915bfb4efa28af32f6db30aef469c4a8"
+      },
+      {
+        "member": "MedDataLab_V2.15/scripts/fetch_public_datasets.py",
+        "sha256": "3ed5dc4f8a36bb5782edd67d92815e64d55048a8fc6245319a4e66f9c8816c1f"
+      },
+      {
+        "member": "MedDataLab_V2.15/src/meddatalab/realworld.py",
+        "sha256": "a3516986b87acfb83148d71008cab503b4c0cd0245aa5e825ffc01a06023f68a"
+      }
+    ]
+  },
+  {
+    "archive": "MedDataLab_V2.19_%E5%AE%98%E6%96%B9MedlinePlus%E7%9F%A5%E8%AF%86%E5%BA%93%E6%A3%80%E7%B4%A2%E8%AF%8A%E6%96%AD_20261020.zip",
+    "code": [
+      {
+        "member": "MedDataLab_V2.19/scripts/fetch_public_datasets.py",
+        "sha256": "3ed5dc4f8a36bb5782edd67d92815e64d55048a8fc6245319a4e66f9c8816c1f"
+      },
+      {
+        "member": "MedDataLab_V2.19/run_public_demo.py",
+        "sha256": "d44f1cd2091b23b50fac1e91cf08265a915bfb4efa28af32f6db30aef469c4a8"
+      },
+      {
+        "member": "MedDataLab_V2.19/src/meddatalab/realworld.py",
+        "sha256": "a3516986b87acfb83148d71008cab503b4c0cd0245aa5e825ffc01a06023f68a"
+      },
+      {
+        "member": "MedDataLab_V2.19/run_full_public_data.py",
+        "sha256": "ff95cb39904e9bc7e9d3fa993511e05efad62c8a797e705bf05a61531e30a87b"
+      }
+    ]
+  },
+  {
+    "archive": "MedDataLab_V2.9_%E5%8C%BB%E5%AD%A6%E6%A3%80%E7%B4%A2%E4%BC%98%E5%8C%96_100%E9%A2%98%E4%B8%89%E7%BB%84%E5%AF%B9%E7%85%A7_20261017.zip",
+    "code": [
+      {
+        "member": "MedDataLab_V2.9/run_full_public_data.py",
+        "sha256": "ff95cb39904e9bc7e9d3fa993511e05efad62c8a797e705bf05a61531e30a87b"
+      },
+      {
+        "member": "MedDataLab_V2.9/run_public_demo.py",
+        "sha256": "d44f1cd2091b23b50fac1e91cf08265a915bfb4efa28af32f6db30aef469c4a8"
+      },
+      {
+        "member": "MedDataLab_V2.9/scripts/fetch_public_datasets.py",
+        "sha256": "3ed5dc4f8a36bb5782edd67d92815e64d55048a8fc6245319a4e66f9c8816c1f"
+      },
+      {
+        "member": "MedDataLab_V2.9/src/meddatalab/realworld.py",
+        "sha256": "a3516986b87acfb83148d71008cab503b4c0cd0245aa5e825ffc01a06023f68a"
+      }
+    ]
+  },
+  {
+    "archive": "MedDataLab_交付_20261025.zip",
+    "code": [
+      {
+        "member": "MedDataLab/run_full_public_data.py",
+        "sha256": "ff95cb39904e9bc7e9d3fa993511e05efad62c8a797e705bf05a61531e30a87b"
+      },
+      {
+        "member": "MedDataLab/run_public_demo.py",
+        "sha256": "d44f1cd2091b23b50fac1e91cf08265a915bfb4efa28af32f6db30aef469c4a8"
+      },
+      {
+        "member": "MedDataLab/scripts/fetch_public_datasets.py",
+        "sha256": "3ed5dc4f8a36bb5782edd67d92815e64d55048a8fc6245319a4e66f9c8816c1f"
+      },
+      {
+        "member": "MedDataLab/src/meddatalab/realworld.py",
+        "sha256": "a3516986b87acfb83148d71008cab503b4c0cd0245aa5e825ffc01a06023f68a"
+      }
+    ]
+  }
+]

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ClinDataForge · 交互演示</title>
+<style>
+:root{
+  --bg:#f6f7f9; --card:#ffffff; --ink:#1f2328; --muted:#5b6570; --line:#d8dee4;
+  --accent:#2f6fed; --green:#1a7f37; --red:#c2410c; --amber:#9a6700; --purple:#6639ba;
+  --soft:#eef2f7;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.6 -apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
+header{padding:22px 28px 14px;background:linear-gradient(135deg,#eef3ff,#f7f9fc)}
+h1{margin:0 0 6px;font-size:22px;letter-spacing:.2px}
+.sub{color:var(--muted);font-size:13px;max-width:1040px}
+.badge{display:inline-block;padding:1px 8px;border-radius:12px;background:#fff;border:1px solid var(--line);font-size:12px;color:var(--muted);margin-right:6px}
+nav{display:flex;gap:6px;padding:0 28px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+nav button{border:0;background:transparent;padding:12px 14px;font-size:14px;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent}
+nav button.active{color:var(--accent);border-bottom-color:var(--accent);font-weight:600}
+main{padding:20px 28px 40px;max-width:1200px}
+section{display:none} section.active{display:block}
+.grid{display:grid;grid-template-columns:300px 1fr;gap:16px}
+@media(max-width:860px){.grid{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px}
+.card h3{margin:0 0 8px;font-size:15px}
+.list button{display:block;width:100%;text-align:left;border:1px solid var(--line);background:#fff;border-radius:8px;padding:9px 11px;margin-bottom:7px;cursor:pointer;font-size:13px}
+.list button.active{border-color:var(--accent);box-shadow:0 0 0 2px #dbe6ff}
+.list .meta{color:var(--muted);font-size:12px}
+.note{color:var(--muted);font-size:12.5px}
+.tag{display:inline-block;padding:0 6px;border-radius:10px;font-size:12px;margin-right:4px}
+.affirmed{background:#e6f4ea;color:#14532d}
+.suspected{background:#fff4ce;color:#6b4e00}
+.history{background:#e8e7fb;color:#3b2a87}
+.negated{background:#fde8e8;color:#8a1c1c}
+.other{background:#eef0f3;color:#4b5563}
+.text{font-size:15px;line-height:2;background:#fbfcfe;border:1px solid var(--line);border-radius:8px;padding:14px 16px;white-space:pre-wrap;word-break:break-word}
+.mention{border-radius:4px;padding:1px 2px;cursor:pointer;border-bottom:2px solid transparent}
+.mention:hover{filter:brightness(.96)}
+.mention.sel{outline:2px solid var(--accent);outline-offset:1px}
+table{border-collapse:collapse;width:100%;font-size:13px;background:#fff}
+th,td{border:1px solid var(--line);padding:6px 9px;text-align:left;vertical-align:top}
+th{background:#f2f5f8;font-weight:600}
+.kv{display:flex;gap:10px;flex-wrap:wrap}
+.kpi{flex:1;min-width:150px;background:#fff;border:1px solid var(--line);border-radius:8px;padding:10px 12px}
+.kpi b{display:block;font-size:20px;margin-bottom:2px}
+.kpi span{color:var(--muted);font-size:12px}
+.row{display:grid;grid-template-columns:110px 1fr;gap:8px;margin:6px 0;font-size:13px}
+.row .k{color:var(--muted)}
+.pill{display:inline-block;padding:2px 9px;border-radius:11px;font-size:12px;border:1px solid var(--line);background:#fff;margin:0 4px 4px 0}
+.pill.ok{background:#e6f4ea;border-color:#b7dfc2;color:#14532d}
+.pill.bad{background:#fde8e8;border-color:#f5c2c2;color:#8a1c1c}
+input,select{font:inherit;padding:7px 9px;border:1px solid var(--line);border-radius:7px;background:#fff}
+button.run{background:var(--accent);color:#fff;border:0;border-radius:7px;padding:8px 14px;cursor:pointer;font:inherit}
+pre{background:#0f172a;color:#e2e8f0;padding:10px 12px;border-radius:8px;overflow:auto;font-size:12px;line-height:1.55}
+footer{padding:18px 28px 36px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);background:#fff}
+.bar{height:9px;background:#e5eaf0;border-radius:6px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent)}
+.bar.green i{background:var(--green)} .bar.red i{background:var(--red)} .bar.amber i{background:var(--amber)}
+.warn{border-left:3px solid var(--amber);background:#fffbeb;padding:9px 12px;border-radius:0 7px 7px 0;font-size:13px}
+</style>
+</head>
+<body>
+<header>
+  <h1>ClinDataForge · 医疗文本数据流水线演示</h1>
+  <div class="sub">
+    <span class="badge">离线可运行</span><span class="badge">数据全部来自本仓库产物</span>
+    <span class="badge">合成数据 · 非临床系统</span><br>
+    点击上下文标注、换算检验单位、核对疾病血缘与分割关系。页内所有数字在构建时从 JSON 产物读取，
+    真实患者文本入口与正文出口保持关闭。
+  </div>
+</header>
+<nav>
+  <button class="active" data-tab="context">① 上下文状态</button>
+  <button data-tab="labs">② 检验单位</button>
+  <button data-tab="lineage">③ 疾病血缘</button>
+  <button data-tab="splits">④ 分割与近重复</button>
+</nav>
+<main>
+<section id="context" class="active">
+  <div class="grid">
+    <div class="card">
+      <h3>样例（真实产物中挑选）</h3>
+      <div class="list" id="sample-list"></div>
+      <p class="note">挑选标准：开发集中 v1 把“既往”误判为“现症”的病例；同生成器留出集中的英文否定列表与中文段头病例。</p>
+    </div>
+    <div>
+      <div class="card">
+        <h3 id="sample-title"></h3>
+        <div class="text" id="sample-text"></div>
+        <p class="note">颜色 = 金标状态；点击带下划线的表型查看三种判定。灰色是年龄/性别等非表型实体。</p>
+      </div>
+      <div class="card" id="detail"></div>
+    </div>
+  </div>
+</section>
+
+<section id="labs">
+  <div class="card">
+    <h3>独立单位换算（不依赖项目共享常数表）</h3>
+    <p class="note">换算因子由分子式与 CIAAW 标准原子量推导；参考区间是演示值，不是临床标准。</p>
+    <div class="kv" style="align-items:end">
+      <label>分析物<br><select id="lab-analyte">
+        <option value="GLUCOSE">葡萄糖</option><option value="HGB">血红蛋白</option>
+        <option value="ALT">ALT</option><option value="AST">AST</option>
+      </select></label>
+      <label>数值<br><input id="lab-value" type="number" step="any" value="92" style="width:110px"></label>
+      <label>单位<br><select id="lab-unit"></select></label>
+      <button class="run" id="lab-run">换算</button>
+    </div>
+    <div id="lab-out" style="margin-top:12px"></div>
+  </div>
+  <div class="card">
+    <h3>语料重算与注入实验</h3>
+    <div id="lab-audit"></div>
+  </div>
+</section>
+
+<section id="lineage">
+  <div class="card">
+    <h3>实际使用的 16 种疾病（as-run）</h3>
+    <div class="warn" id="stale-note"></div>
+    <div style="margin-top:12px;overflow:auto"><table id="disease-table"></table></div>
+  </div>
+</section>
+
+<section id="splits">
+  <div class="card"><h3>切分关系</h3><div class="kv" id="split-kpis"></div></div>
+  <div class="card"><h3>留出集的重复结构（不是 260 个独立样本）</h3><div id="holdout-structure"></div></div>
+  <div class="card"><h3>结论边界</h3><div id="claim-boundary"></div></div>
+</section>
+</main>
+<footer>
+  构建脚本 <code>scripts/build_demo.py</code> · 数据来源：<code>data/phase3_synth/</code>、
+  <code>data/phase4_context/</code>、<code>data/phase4_lineage/</code>、
+  <code>reports/phase4_split_relations/</code>、<code>reports/phase4_lab_independence/</code>。<br>
+  本页不构成临床验证、隐私安全证明或训练收益声明；未执行任何模型训练。
+</footer>
+<script>
+const DATA = {"samples": [{"id": "SYN-00015", "corpus": "dev（开发集）", "language": "zh", "template": "referral", "disease": "MELAS", "text": "姓名：上官思远｜性别：女｜年龄：54岁｜病历号：R5678326｜联系电话：1770198066｜就诊日期：2026-11-07\n会诊记录：兹介绍女性患者，54岁，因“卒中样发作伴乳酸酸中毒”1周就诊。目前仍有癫痫发作。此后逐渐出现肌无力。查体发现脑白质发育不良。此后逐渐出现偏头痛。此后逐渐出现失语；目前仍有痴呆。目前仍有感音神经性听力受损；尚需评估有无血乳酸升高。查体疑似肌组织线粒体异常；上述表现时轻时重，家属为进一步诊治来诊。既往史：有肌肉破碎红纤维。系统回顾：否认精神病性症状、脑电图异常等表现。家族史：否认家族成员类似疾病史。初步诊断：考虑MELAS综合征，待进一步确诊。", "entities": [{"start": 3, "end": 7, "text": "上官思远", "label": "NAME", "status": null}, {"start": 24, "end": 32, "text": "R5678326", "label": "PATIENT_ID", "status": null}, {"start": 38, "end": 48, "text": "1770198066", "label": "PHONE", "status": null}, {"start": 54, "end": 64, "text": "2026-11-07", "label": "DATE", "status": null}, {"start": 84, "end": 89, "text": "卒中样发作", "label": "PHENOTYPE", "status": "affirmed"}, {"start": 90, "end": 95, "text": "乳酸酸中毒", "label": "PHENOTYPE", "status": "affirmed"}, {"start": 96, "end": 98, "text": "1周", "label": "TEMPORAL", "status": null}, {"start": 105, "end": 109, "text": "癫痫发作", "label": "PHENOTYPE", "status": "affirmed"}, {"start": 116, "end": 119, "text": "肌无力", "label": "PHENOTYPE", "status": "affirmed"}, {"start": 124, "end": 131, "text": "脑白质发育不良", "label": "PHENOTYPE", "status": "affirmed"}, {"start": 138, "end": 141, "text": "偏头痛", "label": "PHENOTYPE", "status": "affirmed"}, {"start": 148, "end": 150, "text": "失语", "label": "PHENOTYPE", "status": "affirmed"}, {"start": 155, "end": 157, "text": "痴呆", "label": "PHENOTYPE", "status": "affirmed"}, {"start": 162, "end": 171, "text": "感音神经性听力受损", "label": "PHENOTYPE", "status": "affirmed"}, {"start": 178, "end": 183, "text": "血乳酸升高", "label": "PHENOTYPE", "status": "suspected"}, {"start": 188, "end": 196, "text": "肌组织线粒体异常", "label": "PHENOTYPE", "status": "suspected"}, {"start": 201, "end": 205, "text": "时轻时重", "label": "TEMPORAL", "status": null}, {"start": 222, "end": 229, "text": "肌肉破碎红纤维", "label": "PHENOTYPE", "status": "history"}, {"start": 237, "end": 243, "text": "精神病性症状", "label": "PHENOTYPE", "status": "negated"}, {"start": 244, "end": 249, "text": "脑电图异常", "label": "PHENOTYPE", "status": "negated"}, {"start": 276, "end": 284, "text": "MELAS综合征", "label": "DISEASE", "status": null}], "mentions": [{"start": 84, "end": 89, "text": "卒中样发作", "hp_id": "HP:0002401", "gold": "affirmed", "v1": "affirmed", "v2_scope_v1": "affirmed", "v2_scope_ng": "affirmed", "cue": null, "run": "会诊记录：兹介绍女性患者，54岁，因“"}, {"start": 90, "end": 95, "text": "乳酸酸中毒", "hp_id": "HP:0003128", "gold": "affirmed", "v1": "affirmed", "v2_scope_v1": "affirmed", "v2_scope_ng": "affirmed", "cue": null, "run": "会诊记录：兹介绍女性患者，54岁，因“▁▁▁▁▁伴"}, {"start": 105, "end": 109, "text": "癫痫发作", "hp_id": "HP:0001250", "gold": "affirmed", "v1": "affirmed", "v2_scope_v1": "affirmed", "v2_scope_ng": "affirmed", "cue": null, "run": "目前仍有"}, {"start": 116, "end": 119, "text": "肌无力", "hp_id": "HP:0001324", "gold": "affirmed", "v1": "affirmed", "v2_scope_v1": "affirmed", "v2_scope_ng": "affirmed", "cue": null, "run": "此后逐渐出现"}, {"start": 124, "end": 131, "text": "脑白质发育不良", "hp_id": "HP:0012429", "gold": "affirmed", "v1": "affirmed", "v2_scope_v1": "affirmed", "v2_scope_ng": "affirmed", "cue": null, "run": "查体发现"}, {"start": 138, "end": 141, "text": "偏头痛", "hp_id": "HP:0002076", "gold": "affirmed", "v1": "affirmed", "v2_scope_v1": "affirmed", "v2_scope_ng": "affirmed", "cue": null, "run": "此后逐渐出现"}, {"start": 148, "end": 150, "text": "失语", "hp_id": "HP:0002381", "gold": "affirmed", "v1": "affirmed", "v2_scope_v1": "affirmed", "v2_scope_ng": "affirmed", "cue": null, "run": "此后逐渐出现"}, {"start": 155, "end": 157, "text": "痴呆", "hp_id": "HP:0000726", "gold": "affirmed", "v1": "affirmed", "v2_scope_v1": "affirmed", "v2_scope_ng": "affirmed", "cue": null, "run": "目前仍有"}, {"start": 162, "end": 171, "text": "感音神经性听力受损", "hp_id": "HP:0000407", "gold": "affirmed", "v1": "affirmed", "v2_scope_v1": "affirmed", "v2_scope_ng": "affirmed", "cue": null, "run": "目前仍有"}, {"start": 178, "end": 183, "text": "血乳酸升高", "hp_id": "HP:0002151", "gold": "suspected", "v1": "suspected", "v2_scope_v1": "suspected", "v2_scope_ng": "suspected", "cue": "尚需评估有无", "run": "尚需评估有无"}, {"start": 188, "end": 196, "text": "肌组织线粒体异常", "hp_id": "HP:0008316", "gold": "suspected", "v1": "suspected", "v2_scope_v1": "suspected", "v2_scope_ng": "suspected", "cue": "疑似", "run": "查体疑似"}, {"start": 222, "end": 229, "text": "肌肉破碎红纤维", "hp_id": "HP:0003200", "gold": "history", "v1": "affirmed", "v2_scope_v1": "history", "v2_scope_ng": "history", "cue": "既往史", "run": "既往史：有"}, {"start": 237, "end": 243, "text": "精神病性症状", "hp_id": "HP:0000709", "gold": "negated", "v1": "negated", "v2_scope_v1": "negated", "v2_scope_ng": "negated", "cue": "否认", "run": "系统回顾：否认"}, {"start": 244, "end": 249, "text": "脑电图异常", "hp_id": "HP:0002353", "gold": "negated", "v1": "negated", "v2_scope_v1": "negated", "v2_scope_ng": "negated", "cue": "否认", "run": "系统回顾：否认▁▁▁▁▁▁、"}]}, {"id": "SYN-00046", "corpus": "dev（开发集）", "language": "zh", "template": "outpatient", "disease": "PMM2-CDG", "text": "姓名：寇梓萱｜性别：男｜年龄：29岁｜病历号：R9049499｜联系电话：1895197474｜就诊日期：2026-07-04\n患者，男，29岁，因“睑裂上斜伴关节过度活动”1个月就诊。病程中可见人中长；目前仍有斜视；此后逐渐出现阔口；此后逐渐出现上唇红唇薄；查体疑似眼距过宽。另疑有鼻孔前倾；上述表现时轻时重，家属为进一步诊治来诊。既往曾有高腭弓，并有长脸，并有言语语言发育迟缓。否认内眦赘皮、腹泻病史。辅助检查：空腹血糖 4.9 mmol/L，大致正常。家族史：家属叙述不详。诊断思路：PMM2先天性糖基化障碍待排。", "entities": [{"start": 3, "end": 6, "text": "寇梓萱", "label": "NAME", "status": null}, {"start": 23, "end": 31, "text": "R9049499", "label": "PATIENT_ID", "status": null}, {"start": 37, "end": 47, "text": "1895197474", "label": "PHONE", "status": null}, {"start": 53, "end": 63, "text": "2026-07-04", "label": "DATE", "status": null}, {"start": 75, "end": 79, "text": "睑裂上斜", "label": "PHENOTYPE", "status": "affirmed"}, {"start": 80, "end": 86, "text": "关节过度活动", "label": "PHENOTYPE", "status": "affirmed"}, {"start": 87, "end": 90, "text": "1个月", "label": "TEMPORAL", "status": null}, {"start": 98, "end": 101, "text": "人中长", "label": "PHENOTYPE", "status": "affirmed"}, {"start": 106, "end": 108, "text": "斜视", "label": "PHENOTYPE", "status": "affirmed"}, {"start": 115, "end": 117, "text": "阔口", "label": "PHENOTYPE", "status": "affirmed"}, {"start": 124, "end": 129, "text": "上唇红唇薄", "label": "PHENOTYPE", "status": "affirmed"}, {"start": 134, "end": 138, "text": "眼距过宽", "label": "PHENOTYPE", "status": "suspected"}, {"start": 142, "end": 146, "text": "鼻孔前倾", "label": "PHENOTYPE", "status": "suspected"}, {"start": 151, "end": 155, "text": "时轻时重", "label": "TEMPORAL", "status": null}, {"start": 171, "end": 174, "text": "高腭弓", "label": "PHENOTYPE", "status": "history"}, {"start": 177, "end": 179, "text": "长脸", "label": "PHENOTYPE", "status": "history"}, {"start": 182, "end": 190, "text": "言语语言发育迟缓", "label": "PHENOTYPE", "status": "history"}, {"start": 193, "end": 197, "text": "内眦赘皮", "label": "PHENOTYPE", "status": "negated"}, {"start": 198, "end": 200, "text": "腹泻", "label": "SYMPTOM_GENERIC", "status": "negated"}, {"start": 208, "end": 212, "text": "空腹血糖", "label": "LAB_TEST", "status": null}, {"start": 213, "end": 223, "text": "4.9 mmol/L", "label": "LAB_VALUE", "status": null}, {"start": 245, "end": 257, "text": "PMM2先天性糖基化障碍", "label": "DISEASE", "status": null}], "mentions": [{"start": 75, "end": 79, "text": "睑裂上斜", "hp_id": "HP:0000582", "gold": "affirmed", "v1": "affirmed", "v2_scope_v1": "affirmed", "v2_scope_ng": "affirmed", "cue": null, "run": "患者，男，29岁，因“"}, {"start": 80, "end": 86, "text": "关节过度活动", "hp_id": "HP:0001382", "gold": "affirmed", "v1": "affirmed", "v2_scope_v1": "affirmed", "v2_scope_ng": "affirmed", "cue": null, "run": "患者，男，29岁，因“▁▁▁▁伴"}, {"start": 98, "end": 101, "text": "人中长", "hp_id": "HP:0000343", "gold": "affirmed", "v1": "affirmed", "v2_scope_v1": "affirmed", "v2_scope_ng": "affirmed", "cue": null, "run": "病程中可见"}, {"start": 106, "end": 108, "text": "斜视", "hp_id": "HP:0000486", "gold": "affirmed", "v1": "affirmed", "v2_scope_v1": "affirmed", "v2_scope_ng": "affirmed", "cue": null, "run": "目前仍有"}, {"start": 115, "end": 117, "text": "阔口", "hp_id": "HP:0000154", "gold": "affirmed", "v1": "affirmed", "v2_scope_v1": "affirmed", "v2_scope_ng": "affirmed", "cue": null, "run": "此后逐渐出现"}, {"start": 124, "end": 129, "text": "上唇红唇薄", "hp_id": "HP:0000219", "gold": "affirmed", "v1": "affirmed", "v2_scope_v1": "affirmed", "v2_scope_ng": "affirmed", "cue": null, "run": "此后逐渐出现"}, {"start": 134, "end": 138, "text": "眼距过宽", "hp_id": "HP:0000316", "gold": "suspected", "v1": "suspected", "v2_scope_v1": "suspected", "v2_scope_ng": "suspected", "cue": "疑似", "run": "查体疑似"}, {"start": 142, "end": 146, "text": "鼻孔前倾", "hp_id": "HP:0000463", "gold": "suspected", "v1": "suspected", "v2_scope_v1": "suspected", "v2_scope_ng": "suspected", "cue": "疑有", "run": "另疑有"}, {"start": 171, "end": 174, "text": "高腭弓", "hp_id": "HP:0000218", "gold": "history", "v1": "history", "v2_scope_v1": "history", "v2_scope_ng": "history", "cue": "曾有", "run": "既往曾有"}, {"start": 177, "end": 179, "text": "长脸", "hp_id": "HP:0000276", "gold": "history", "v1": "history", "v2_scope_v1": "history", "v2_scope_ng": "history", "cue": "曾有", "run": "既往曾有▁▁▁，并有"}, {"start": 182, "end": 190, "text": "言语语言发育迟缓", "hp_id": "HP:0000750", "gold": "history", "v1": "affirmed", "v2_scope_v1": "history", "v2_scope_ng": "history", "cue": "曾有", "run": "既往曾有▁▁▁，并有▁▁，并有"}, {"start": 193, "end": 197, "text": "内眦赘皮", "hp_id": "HP:0000286", "gold": "negated", "v1": "negated", "v2_scope_v1": "negated", "v2_scope_ng": "negated", "cue": "否认", "run": "否认"}]}, {"id": "SYN-00058", "corpus": "dev（开发集）", "language": "zh", "template": "admission", "disease": "Holoprosencephaly", "text": "姓名：司马沐宸｜性别：女｜年龄：10岁｜病历号：R0819866｜联系电话：1992375896｜就诊日期：2026-05-10\n主诉：因“单枚上颌正中中切牙伴神经系统形态异常”2年余入院。\n现病史：目前仍有双侧唇裂。病程中可见低血糖；此后逐渐出现小头畸形。病程中可见正中上唇裂；尚需评估有无前脑无裂畸形。查体疑似小眼球；\n既往史：有正中腭裂，并有面部形态异常，并有嗅觉丧失史。\n入院后系统回顾：否认认知障碍病史。辅助检查：空腹血糖 1.6 mmol/L，低于参考区间。家族史：否认家族成员类似疾病史。初步印象：结合上述表现，需警惕前脑无裂畸形可能，建议完善相关检查。", "entities": [{"start": 3, "end": 7, "text": "司马沐宸", "label": "NAME", "status": null}, {"start": 24, "end": 32, "text": "R0819866", "label": "PATIENT_ID", "status": null}, {"start": 38, "end": 48, "text": "1992375896", "label": "PHONE", "status": null}, {"start": 54, "end": 64, "text": "2026-05-10", "label": "DATE", "status": null}, {"start": 70, "end": 79, "text": "单枚上颌正中中切牙", "label": "PHENOTYPE", "status": "affirmed"}, {"start": 80, "end": 88, "text": "神经系统形态异常", "label": "PHENOTYPE", "status": "affirmed"}, {"start": 89, "end": 92, "text": "2年余", "label": "TEMPORAL", "status": null}, {"start": 104, "end": 108, "text": "双侧唇裂", "label": "PHENOTYPE", "status": "affirmed"}, {"start": 114, "end": 117, "text": "低血糖", "label": "PHENOTYPE", "status": "affirmed"}, {"start": 124, "end": 128, "text": "小头畸形", "label": "PHENOTYPE", "status": "affirmed"}, {"start": 134, "end": 139, "text": "正中上唇裂", "label": "PHENOTYPE", "status": "affirmed"}, {"start": 146, "end": 152, "text": "前脑无裂畸形", "label": "PHENOTYPE", "status": "suspected"}, {"start": 157, "end": 160, "text": "小眼球", "label": "PHENOTYPE", "status": "suspected"}, {"start": 167, "end": 171, "text": "正中腭裂", "label": "PHENOTYPE", "status": "history"}, {"start": 174, "end": 180, "text": "面部形态异常", "label": "PHENOTYPE", "status": "history"}, {"start": 183, "end": 187, "text": "嗅觉丧失", "label": "PHENOTYPE", "status": "history"}, {"start": 200, "end": 204, "text": "认知障碍", "label": "PHENOTYPE", "status": "negated"}, {"start": 212, "end": 216, "text": "空腹血糖", "label": "LAB_TEST", "status": null}, {"start": 217, "end": 227, "text": "1.6 mmol/L", "label": "LAB_VALUE", "status": null}, {"start": 266, "end": 272, "text": "前脑无裂畸形", "label": "DISEASE", "status": null}], "mentions": [{"start": 70, "end": 79, "text": "单枚上颌正中中切牙", "hp_id": "HP:0006315", "gold": "affirmed", "v1": "affirmed", "v2_scope_v1": "affirmed", "v2_scope_ng": "affirmed", "cue": null, "run": "主诉：因“"}, {"start": 80, "end": 88, "text": "神经系统形态异常", "hp_id": "HP:0012639", "gold": "affirmed", "v1": "affirmed", "v2_scope_v1": "affirmed", "v2_scope_ng": "affirmed", "cue": null, "run": "主诉：因“▁▁▁▁▁▁▁▁▁伴"}, {"start": 104, "end": 108, "text": "双侧唇裂", "hp_id": "HP:0100336", "gold": "affirmed", "v1": "affirmed", "v2_scope_v1": "affirmed", "v2_scope_ng": "affirmed", "cue": null, "run": "现病史：目前仍有"}, {"start": 114, "end": 117, "text": "低血糖", "hp_id": "HP:0001943", "gold": "affirmed", "v1": "affirmed", "v2_scope_v1": "affirmed", "v2_scope_ng": "affirmed", "cue": null, "run": "病程中可见"}, {"start": 124, "end": 128, "text": "小头畸形", "hp_id": "HP:0000252", "gold": "affirmed", "v1": "affirmed", "v2_scope_v1": "affirmed", "v2_scope_ng": "affirmed", "cue": null, "run": "此后逐渐出现"}, {"start": 134, "end": 139, "text": "正中上唇裂", "hp_id": "HP:0000161", "gold": "affirmed", "v1": "affirmed", "v2_scope_v1": "affirmed", "v2_scope_ng": "affirmed", "cue": null, "run": "病程中可见"}, {"start": 146, "end": 152, "text": "前脑无裂畸形", "hp_id": "HP:0001360", "gold": "suspected", "v1": "suspected", "v2_scope_v1": "suspected", "v2_scope_ng": "suspected", "cue": "尚需评估有无", "run": "尚需评估有无"}, {"start": 157, "end": 160, "text": "小眼球", "hp_id": "HP:0000568", "gold": "suspected", "v1": "suspected", "v2_scope_v1": "suspected", "v2_scope_ng": "suspected", "cue": "疑似", "run": "查体疑似"}, {"start": 167, "end": 171, "text": "正中腭裂", "hp_id": "HP:0009099", "gold": "history", "v1": "affirmed", "v2_scope_v1": "history", "v2_scope_ng": "history", "cue": "既往史", "run": "既往史：有"}, {"start": 174, "end": 180, "text": "面部形态异常", "hp_id": "HP:0001999", "gold": "history", "v1": "affirmed", "v2_scope_v1": "history", "v2_scope_ng": "history", "cue": "既往史", "run": "既往史：有▁▁▁▁，并有"}, {"start": 183, "end": 187, "text": "嗅觉丧失", "hp_id": "HP:0000458", "gold": "history", "v1": "affirmed", "v2_scope_v1": "history", "v2_scope_ng": "history", "cue": "既往史", "run": "既往史：有▁▁▁▁，并有▁▁▁▁▁▁，并有"}, {"start": 200, "end": 204, "text": "认知障碍", "hp_id": "HP:0100543", "gold": "negated", "v1": "negated", "v2_scope_v1": "negated", "v2_scope_ng": "negated", "cue": "否认", "run": "入院后系统回顾：否认"}]}, {"id": "HCTX-00151", "corpus": "同生成器留出集（评测前冻结）", "language": "en", "template": "en_history_lists", "disease": "PMM2-CDG", "text": "The patient presents with High palate. She has a history of Strabismus, Upslanted palpebral fissure, Joint hypermobility. There is no evidence of Wide mouth or Thin upper lip vermilion or Long face. Overall this is consistent with PMM2-CDG.", "entities": [{"start": 26, "end": 37, "text": "High palate", "label": "PHENOTYPE", "status": "affirmed"}, {"start": 60, "end": 70, "text": "Strabismus", "label": "PHENOTYPE", "status": "history"}, {"start": 72, "end": 99, "text": "Upslanted palpebral fissure", "label": "PHENOTYPE", "status": "history"}, {"start": 101, "end": 120, "text": "Joint hypermobility", "label": "PHENOTYPE", "status": "history"}, {"start": 146, "end": 156, "text": "Wide mouth", "label": "PHENOTYPE", "status": "negated"}, {"start": 160, "end": 184, "text": "Thin upper lip vermilion", "label": "PHENOTYPE", "status": "negated"}, {"start": 188, "end": 197, "text": "Long face", "label": "PHENOTYPE", "status": "negated"}], "mentions": [{"start": 26, "end": 37, "text": "High palate", "hp_id": "HP:0000218", "gold": "affirmed", "v1": "affirmed", "v2_scope_v1": "affirmed", "v2_scope_ng": "affirmed", "cue": null, "run": "The patient presents with "}, {"start": 60, "end": 70, "text": "Strabismus", "hp_id": "HP:0000486", "gold": "history", "v1": "history", "v2_scope_v1": "history", "v2_scope_ng": "history", "cue": "history of", "run": " She has a history of "}, {"start": 72, "end": 99, "text": "Upslanted palpebral fissure", "hp_id": "HP:0000582", "gold": "history", "v1": "history", "v2_scope_v1": "history", "v2_scope_ng": "history", "cue": "history of", "run": " She has a history of ▁▁▁▁▁▁▁▁▁▁, "}, {"start": 101, "end": 120, "text": "Joint hypermobility", "hp_id": "HP:0001382", "gold": "history", "v1": "affirmed", "v2_scope_v1": "history", "v2_scope_ng": "history", "cue": "history of", "run": " She has a history of ▁▁▁▁▁▁▁▁▁▁, ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁, "}, {"start": 146, "end": 156, "text": "Wide mouth", "hp_id": "HP:0000154", "gold": "negated", "v1": "negated", "v2_scope_v1": "negated", "v2_scope_ng": "negated", "cue": "no evidence of", "run": " There is no evidence of "}, {"start": 160, "end": 184, "text": "Thin upper lip vermilion", "hp_id": "HP:0000219", "gold": "negated", "v1": "negated", "v2_scope_v1": "negated", "v2_scope_ng": "negated", "cue": "no evidence of", "run": " There is no evidence of ▁▁▁▁▁▁▁▁▁▁ or "}, {"start": 188, "end": 197, "text": "Long face", "hp_id": "HP:0000276", "gold": "negated", "v1": "affirmed", "v2_scope_v1": "negated", "v2_scope_ng": "negated", "cue": "no evidence of", "run": " There is no evidence of ▁▁▁▁▁▁▁▁▁▁ or ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁ or "}]}, {"id": "HCTX-00000", "corpus": "同生成器留出集（评测前冻结）", "language": "zh", "template": "zh_section_enum", "disease": "Bardet-Biedl syndrome", "text": "患者，10岁，因视网膜营养不良就诊。既往史：\n视锥-视杆细胞营养不良、肥胖、儿童期向心性肥胖。查体：神经发育迟缓，阴茎发育不良，慢性肾脏病。结合上述表现，考虑Bardet-Biedl综合征，建议完善检查。", "entities": [{"start": 8, "end": 15, "text": "视网膜营养不良", "label": "PHENOTYPE", "status": "affirmed"}, {"start": 23, "end": 34, "text": "视锥-视杆细胞营养不良", "label": "PHENOTYPE", "status": "history"}, {"start": 35, "end": 37, "text": "肥胖", "label": "PHENOTYPE", "status": "history"}, {"start": 38, "end": 46, "text": "儿童期向心性肥胖", "label": "PHENOTYPE", "status": "history"}, {"start": 50, "end": 56, "text": "神经发育迟缓", "label": "PHENOTYPE", "status": "affirmed"}, {"start": 57, "end": 63, "text": "阴茎发育不良", "label": "PHENOTYPE", "status": "affirmed"}, {"start": 64, "end": 69, "text": "慢性肾脏病", "label": "PHENOTYPE", "status": "affirmed"}], "mentions": [{"start": 8, "end": 15, "text": "视网膜营养不良", "hp_id": "HP:0000556", "gold": "affirmed", "v1": "affirmed", "v2_scope_v1": "affirmed", "v2_scope_ng": "affirmed", "cue": null, "run": "患者，10岁，因"}, {"start": 23, "end": 34, "text": "视锥-视杆细胞营养不良", "hp_id": "HP:0000548", "gold": "history", "v1": "affirmed", "v2_scope_v1": "history", "v2_scope_ng": "history", "cue": "既往史", "run": "既往史：\n"}, {"start": 35, "end": 37, "text": "肥胖", "hp_id": "HP:0001513", "gold": "history", "v1": "affirmed", "v2_scope_v1": "history", "v2_scope_ng": "history", "cue": "既往史", "run": "既往史：\n▁▁▁▁▁▁▁▁▁▁▁、"}, {"start": 38, "end": 46, "text": "儿童期向心性肥胖", "hp_id": "HP:0008915", "gold": "history", "v1": "affirmed", "v2_scope_v1": "history", "v2_scope_ng": "history", "cue": "既往史", "run": "既往史：\n▁▁▁▁▁▁▁▁▁▁▁、▁▁、"}, {"start": 50, "end": 56, "text": "神经发育迟缓", "hp_id": "HP:0012758", "gold": "affirmed", "v1": "affirmed", "v2_scope_v1": "affirmed", "v2_scope_ng": "affirmed", "cue": null, "run": "查体："}, {"start": 57, "end": 63, "text": "阴茎发育不良", "hp_id": "HP:0008736", "gold": "affirmed", "v1": "affirmed", "v2_scope_v1": "affirmed", "v2_scope_ng": "affirmed", "cue": null, "run": "查体：▁▁▁▁▁▁，"}, {"start": 64, "end": 69, "text": "慢性肾脏病", "hp_id": "HP:0012622", "gold": "affirmed", "v1": "affirmed", "v2_scope_v1": "affirmed", "v2_scope_ng": "affirmed", "cue": null, "run": "查体：▁▁▁▁▁▁，▁▁▁▁▁▁，"}]}], "diseases": [{"id": "ORPHA:64", "en": "Alström syndrome", "zh": "Alström综合征", "source": "ORPHA", "annotations": 117, "records": 149}, {"id": "ORPHA:84", "en": "Fanconi anemia", "zh": "Fanconi贫血", "source": "ORPHA", "annotations": 106, "records": 151}, {"id": "ORPHA:506", "en": "Leigh syndrome", "zh": "Leigh综合征", "source": "ORPHA", "annotations": 98, "records": 151}, {"id": "ORPHA:110", "en": "Bardet-Biedl syndrome", "zh": "Bardet-Biedl综合征", "source": "ORPHA", "annotations": 95, "records": 149}, {"id": "ORPHA:355", "en": "Gaucher disease", "zh": "戈谢病", "source": "ORPHA", "annotations": 92, "records": 150}, {"id": "ORPHA:550", "en": "MELAS", "zh": "MELAS综合征", "source": "ORPHA", "annotations": 87, "records": 151}, {"id": "ORPHA:116", "en": "Beckwith-Wiedemann syndrome", "zh": "Beckwith-Wiedemann综合征", "source": "ORPHA", "annotations": 85, "records": 149}, {"id": "OMIM:276700", "en": "Tyrosinemia, type I", "zh": "Ⅰ型酪氨酸血症", "source": "OMIM", "annotations": 38, "records": 150}, {"id": "OMIM:117550", "en": "Sotos syndrome", "zh": "Sotos综合征", "source": "OMIM", "annotations": 122, "records": 147}, {"id": "ORPHA:191", "en": "Cockayne syndrome", "zh": "Cockayne综合征", "source": "ORPHA", "annotations": 118, "records": 151}, {"id": "ORPHA:79318", "en": "PMM2-CDG", "zh": "PMM2先天性糖基化障碍", "source": "ORPHA", "annotations": 86, "records": 150}, {"id": "ORPHA:881", "en": "Turner syndrome", "zh": "Turner综合征", "source": "ORPHA", "annotations": 115, "records": 150}, {"id": "ORPHA:2162", "en": "Holoprosencephaly", "zh": "前脑无裂畸形", "source": "ORPHA", "annotations": 93, "records": 150}, {"id": "ORPHA:79474", "en": "Atypical Werner syndrome", "zh": "非典型Werner综合征", "source": "ORPHA", "annotations": 90, "records": 151}, {"id": "ORPHA:534", "en": "Oculocerebrorenal syndrome of Lowe", "zh": "Lowe眼脑肾综合征", "source": "ORPHA", "annotations": 119, "records": 150}, {"id": "ORPHA:33364", "en": "Trichothiodystrophy", "zh": "毛发硫营养不良", "source": "ORPHA", "annotations": 91, "records": 151}], "stale": {"path": "data/phase3_synth/kb/disease_selection.json", "status": "stale-but-preserved (NOT deleted, NOT overwritten)", "written_by": "an earlier build of scripts/build_hpo_kb.py using the algorithmic selector", "rule_recorded_in_file": "rank by (#lab-linked phenotypes desc, #phenotypes desc, id asc); top n-4 plus seeded sample of 4 from next 400", "n_diseases_in_file": 16, "overlap_with_actual": ["OMIM:117550", "OMIM:276700", "ORPHA:506"], "n_overlap": 3, "reproduced_exactly_by_current_selector": true, "why_they_differ": "The selection file predates the switch to a curated demo set. build_hpo_kb.py now defaults to CURATED_DISEASES and raises FileExistsError instead of overwriting the old file, so the two lists were never reconciled. The generated corpus follows CURATED_DISEASES, not this file."}, "relations": {"composition": {"train": {"n_records": 1921, "n_diseases": 16, "n_patients": 1921, "languages": {"en": 618, "zh": 1303}, "template_families": {"admission": 619, "referral": 448, "outpatient": 429, "clinic": 242, "consult": 183}, "complexities": {"standard": 960, "simple": 502, "detailed": 459}, "disease_counts": {"ORPHA:550": 130, "ORPHA:191": 126, "ORPHA:881": 125, "ORPHA:534": 125, "ORPHA:64": 124, "ORPHA:33364": 123, "ORPHA:79318": 120, "ORPHA:2162": 120, "ORPHA:116": 119, "ORPHA:79474": 118, "ORPHA:355": 118, "ORPHA:506": 118, "OMIM:276700": 117, "OMIM:117550": 114, "ORPHA:84": 113, "ORPHA:110": 111}}, "dev": {"n_records": 230, "n_diseases": 16, "n_patients": 230, "languages": {"zh": 158, "en": 72}, "template_families": {"admission": 74, "referral": 53, "outpatient": 50, "consult": 29, "clinic": 24}, "complexities": {"standard": 123, "simple": 59, "detailed": 48}, "disease_counts": {"ORPHA:84": 27, "ORPHA:110": 22, "ORPHA:2162": 21, "ORPHA:355": 19, "OMIM:117550": 14, "ORPHA:79318": 14, "OMIM:276700": 14, "ORPHA:116": 13, "ORPHA:881": 13, "ORPHA:79474": 13, "ORPHA:33364": 13, "ORPHA:506": 11, "ORPHA:534": 11, "ORPHA:191": 11, "ORPHA:550": 9, "ORPHA:64": 5}}, "test": {"n_records": 204, "n_diseases": 16, "n_patients": 204, "languages": {"zh": 133, "en": 71}, "template_families": {"admission": 67, "outpatient": 46, "referral": 41, "consult": 25, "clinic": 25}, "complexities": {"standard": 104, "simple": 52, "detailed": 48}, "disease_counts": {"ORPHA:506": 22, "ORPHA:64": 16, "ORPHA:33364": 15, "ORPHA:116": 15, "ORPHA:534": 14, "ORPHA:79318": 14, "ORPHA:355": 13, "ORPHA:550": 12, "OMIM:117550": 12, "ORPHA:110": 12, "ORPHA:191": 12, "OMIM:276700": 12, "ORPHA:84": 11, "ORPHA:881": 10, "ORPHA:79474": 10, "ORPHA:2162": 4}}, "holdout": {"n_records": 260, "n_diseases": 16, "n_patients": 260, "languages": {"zh": 150, "en": 110}, "template_families": {"zh_section_enum": 19, "zh_section_bare_list": 19, "zh_long_denies": 19, "zh_repeated_triggers": 19, "zh_contrast": 19, "zh_cross_sentence": 19, "en_pmh_notable": 19, "en_history_lists": 19, "zh_suspected_series": 18, "zh_exam_list": 18, "en_long_denies": 18, "en_repeated_negation": 18, "en_contrast": 18, "en_suspected_series": 18}, "complexities": {"n/a": 260}, "disease_counts": {"ORPHA:110": 17, "ORPHA:79318": 17, "ORPHA:84": 17, "OMIM:117550": 17, "ORPHA:33364": 17, "ORPHA:116": 17, "ORPHA:79474": 16, "ORPHA:355": 16, "ORPHA:881": 16, "ORPHA:506": 16, "ORPHA:191": 16, "ORPHA:64": 16, "OMIM:276700": 16, "ORPHA:534": 16, "ORPHA:550": 15, "ORPHA:2162": 15}}}, "patient_overlap": {"train|dev": 0, "train|test": 0, "train|holdout": 0, "dev|test": 0, "dev|holdout": 0, "test|holdout": 0}, "exact_duplicates": {"train|dev": 0, "train|test": 0, "train|holdout": 0, "dev|test": 0, "dev|holdout": 0, "test|holdout": 0}, "skeleton_collisions": {"train|dev": 0, "train|test": 1, "train|holdout": 0, "dev|test": 0, "dev|holdout": 0, "test|holdout": 0}, "cell_reuse": {"dev": {"n_records": 230, "triple_seen_in_train": 228, "rate": 0.9913, "definition": "triple_seen_in_train"}, "test": {"n_records": 204, "triple_seen_in_train": 202, "rate": 0.9902, "definition": "triple_seen_in_train"}, "holdout": {"n_records": 260, "disease_seen_in_train": 260, "rate": 1.0, "definition": "disease_seen_in_train"}, "n_distinct_cells_train_dev_test": 238, "max_records_in_one_cell": 36, "cells_with_at_least_5_records": 195}, "near_duplicates": {"method": "character 4-gram Jaccard, threshold 0.8, inverted index with df<=40", "pairs_by_corpus_pair": {"holdout|holdout": 706}, "cross_split_pairs_excluding_holdout": 0, "holdout_internal_pairs": 706, "holdout_cross_pairs": 0, "holdout_structure": {"n_records": 260, "n_distinct_normalised_texts": 186, "n_exact_duplicate_copies": 74, "n_near_duplicate_pairs_internal": 706, "n_clusters_at_threshold": 64, "largest_cluster": 10, "cluster_size_histogram": {"2": 34, "3": 14, "9": 10, "10": 6}, "n_singleton_clusters": 0, "cluster_members": [["HCTX-00000", "HCTX-00016", "HCTX-00032", "HCTX-00048", "HCTX-00064", "HCTX-00080", "HCTX-00096", "HCTX-00112", "HCTX-00128", "HCTX-00144"], ["HCTX-00001", "HCTX-00017", "HCTX-00033", "HCTX-00049", "HCTX-00065", "HCTX-00081", "HCTX-00097", "HCTX-00113", "HCTX-00129", "HCTX-00145"], ["HCTX-00002", "HCTX-00018", "HCTX-00034", "HCTX-00050", "HCTX-00066", "HCTX-00082", "HCTX-00098", "HCTX-00114", "HCTX-00130", "HCTX-00146"], ["HCTX-00003", "HCTX-00019", "HCTX-00035", "HCTX-00051", "HCTX-00067", "HCTX-00083", "HCTX-00099", "HCTX-00115", "HCTX-00131", "HCTX-00147"], ["HCTX-00004", "HCTX-00020", "HCTX-00036", "HCTX-00052", "HCTX-00068", "HCTX-00084", "HCTX-00100", "HCTX-00116", "HCTX-00132", "HCTX-00148"], ["HCTX-00005", "HCTX-00021", "HCTX-00037", "HCTX-00053", "HCTX-00069", "HCTX-00085", "HCTX-00101", "HCTX-00117", "HCTX-00133", "HCTX-00149"], ["HCTX-00006", "HCTX-00022", "HCTX-00038", "HCTX-00054", "HCTX-00070", "HCTX-00086", "HCTX-00102", "HCTX-00118", "HCTX-00134"], ["HCTX-00007", "HCTX-00023", "HCTX-00039", "HCTX-00055", "HCTX-00071", "HCTX-00087", "HCTX-00103", "HCTX-00119", "HCTX-00135"], ["HCTX-00008", "HCTX-00024", "HCTX-00040", "HCTX-00056", "HCTX-00072", "HCTX-00088", "HCTX-00104", "HCTX-00120", "HCTX-00136"], ["HCTX-00009", "HCTX-00025", "HCTX-00041", "HCTX-00057", "HCTX-00073", "HCTX-00089", "HCTX-00105", "HCTX-00121", "HCTX-00137"], ["HCTX-00010", "HCTX-00026", "HCTX-00042", "HCTX-00058", "HCTX-00074", "HCTX-00090", "HCTX-00106", "HCTX-00122", "HCTX-00138"], ["HCTX-00011", "HCTX-00027", "HCTX-00043", "HCTX-00059", "HCTX-00075", "HCTX-00091", "HCTX-00107", "HCTX-00123", "HCTX-00139"], ["HCTX-00012", "HCTX-00028", "HCTX-00044", "HCTX-00060", "HCTX-00076", "HCTX-00092", "HCTX-00108", "HCTX-00124", "HCTX-00140"], ["HCTX-00013", "HCTX-00029", "HCTX-00045", "HCTX-00061", "HCTX-00077", "HCTX-00093", "HCTX-00109", "HCTX-00125", "HCTX-00141"], ["HCTX-00014", "HCTX-00030", "HCTX-00046", "HCTX-00062", "HCTX-00078", "HCTX-00094", "HCTX-00110", "HCTX-00126", "HCTX-00142"], ["HCTX-00015", "HCTX-00031", "HCTX-00047", "HCTX-00063", "HCTX-00079", "HCTX-00095", "HCTX-00111", "HCTX-00127", "HCTX-00143"], ["HCTX-00150", "HCTX-00198", "HCTX-00246"], ["HCTX-00151", "HCTX-00199", "HCTX-00247"], ["HCTX-00152", "HCTX-00200", "HCTX-00248"], ["HCTX-00153", "HCTX-00201", "HCTX-00249"], ["HCTX-00154", "HCTX-00202", "HCTX-00250"], ["HCTX-00155", "HCTX-00203", "HCTX-00251"], ["HCTX-00156", "HCTX-00204", "HCTX-00252"], ["HCTX-00157", "HCTX-00205", "HCTX-00253"], ["HCTX-00158", "HCTX-00206", "HCTX-00254"], ["HCTX-00159", "HCTX-00207", "HCTX-00255"], ["HCTX-00160", "HCTX-00208", "HCTX-00256"], ["HCTX-00161", "HCTX-00209", "HCTX-00257"], ["HCTX-00162", "HCTX-00210", "HCTX-00258"], ["HCTX-00163", "HCTX-00211", "HCTX-00259"], ["HCTX-00164", "HCTX-00212"], ["HCTX-00165", "HCTX-00213"], ["HCTX-00166", "HCTX-00214"], ["HCTX-00167", "HCTX-00215"], ["HCTX-00168", "HCTX-00216"], ["HCTX-00169", "HCTX-00217"], ["HCTX-00170", "HCTX-00218"], ["HCTX-00171", "HCTX-00219"], ["HCTX-00172", "HCTX-00220"], ["HCTX-00173", "HCTX-00221"], ["HCTX-00174", "HCTX-00222"], ["HCTX-00175", "HCTX-00223"], ["HCTX-00176", "HCTX-00224"], ["HCTX-00177", "HCTX-00225"], ["HCTX-00178", "HCTX-00226"], ["HCTX-00179", "HCTX-00227"], ["HCTX-00180", "HCTX-00228"], ["HCTX-00181", "HCTX-00229"], ["HCTX-00182", "HCTX-00230"], ["HCTX-00183", "HCTX-00231"], ["HCTX-00184", "HCTX-00232"], ["HCTX-00185", "HCTX-00233"], ["HCTX-00186", "HCTX-00234"], ["HCTX-00187", "HCTX-00235"], ["HCTX-00188", "HCTX-00236"], ["HCTX-00189", "HCTX-00237"], ["HCTX-00190", "HCTX-00238"], ["HCTX-00191", "HCTX-00239"], ["HCTX-00192", "HCTX-00240"], ["HCTX-00193", "HCTX-00241"], ["HCTX-00194", "HCTX-00242"], ["HCTX-00195", "HCTX-00243"], ["HCTX-00196", "HCTX-00244"], ["HCTX-00197", "HCTX-00245"]], "interpretation": "the nominal 260 notes contain repeated texts; mention-level counts overstate the number of independent examples"}, "top_pairs": [{"a": "HCTX-00191", "b": "HCTX-00239", "jaccard": 1.0, "corpus_a": "holdout", "corpus_b": "holdout", "a_text": "The patient presents with Increased circulating lactate concentration. Possible Increased CSF lactate, suspected Lactic acidosis; cannot exc", "b_text": "The patient presents with Increased circulating lactate concentration. Possible Increased CSF lactate, suspected Lactic acidosis; cannot exc"}, {"a": "HCTX-00159", "b": "HCTX-00255", "jaccard": 1.0, "corpus_a": "holdout", "corpus_b": "holdout", "a_text": "The patient presents with Increased circulating lactate concentration. Negative for Increased CSF lactate. Negative for Lactic acidosis. Neg", "b_text": "The patient presents with Increased circulating lactate concentration. Negative for Increased CSF lactate. Negative for Lactic acidosis. Neg"}, {"a": "HCTX-00159", "b": "HCTX-00207", "jaccard": 1.0, "corpus_a": "holdout", "corpus_b": "holdout", "a_text": "The patient presents with Increased circulating lactate concentration. Negative for Increased CSF lactate. Negative for Lactic acidosis. Neg", "b_text": "The patient presents with Increased circulating lactate concentration. Negative for Increased CSF lactate. Negative for Lactic acidosis. Neg"}, {"a": "HCTX-00207", "b": "HCTX-00255", "jaccard": 1.0, "corpus_a": "holdout", "corpus_b": "holdout", "a_text": "The patient presents with Increased circulating lactate concentration. Negative for Increased CSF lactate. Negative for Lactic acidosis. Neg", "b_text": "The patient presents with Increased circulating lactate concentration. Negative for Increased CSF lactate. Negative for Lactic acidosis. Neg"}, {"a": "HCTX-00155", "b": "HCTX-00251", "jaccard": 1.0, "corpus_a": "holdout", "corpus_b": "holdout", "a_text": "The patient presents with Tall stature. Possible Large for gestational age, suspected Neoplasm; cannot exclude Enlarged kidney. Previously n", "b_text": "The patient presents with Tall stature. Possible Large for gestational age, suspected Neoplasm; cannot exclude Enlarged kidney. Previously n"}, {"a": "HCTX-00155", "b": "HCTX-00203", "jaccard": 1.0, "corpus_a": "holdout", "corpus_b": "holdout", "a_text": "The patient presents with Tall stature. Possible Large for gestational age, suspected Neoplasm; cannot exclude Enlarged kidney. Previously n", "b_text": "The patient presents with Tall stature. Possible Large for gestational age, suspected Neoplasm; cannot exclude Enlarged kidney. Previously n"}, {"a": "HCTX-00185", "b": "HCTX-00233", "jaccard": 1.0, "corpus_a": "holdout", "corpus_b": "holdout", "a_text": "The patient presents with Increased body weight. Possible Large hands, suspected Hearing impairment; cannot exclude Stuttering. Previously n", "b_text": "The patient presents with Increased body weight. Possible Large hands, suspected Hearing impairment; cannot exclude Stuttering. Previously n"}, {"a": "HCTX-00203", "b": "HCTX-00251", "jaccard": 1.0, "corpus_a": "holdout", "corpus_b": "holdout", "a_text": "The patient presents with Tall stature. Possible Large for gestational age, suspected Neoplasm; cannot exclude Enlarged kidney. Previously n", "b_text": "The patient presents with Tall stature. Possible Large for gestational age, suspected Neoplasm; cannot exclude Enlarged kidney. Previously n"}, {"a": "HCTX-00128", "b": "HCTX-00144", "jaccard": 1.0, "corpus_a": "holdout", "corpus_b": "holdout", "a_text": "患者，23岁，因视网膜营养不良就诊。既往史：\n视锥-视杆细胞营养不良、肥胖、儿童期向心性肥胖。查体：神经发育迟缓，阴茎发育不良，慢性肾脏病。结合上述表现，考虑Bardet-Biedl综合征，建议完善检查。", "b_text": "患者，23岁，因视网膜营养不良就诊。既往史：\n视锥-视杆细胞营养不良、肥胖、儿童期向心性肥胖。查体：神经发育迟缓，阴茎发育不良，慢性肾脏病。结合上述表现，考虑Bardet-Biedl综合征，建议完善检查。"}, {"a": "HCTX-00164", "b": "HCTX-00212", "jaccard": 1.0, "corpus_a": "holdout", "corpus_b": "holdout", "a_text": "The patient presents with Dementia. The patient denies Seizure, Muscle weakness, Migraine, Increased circulating lactate concentration, EEG ", "b_text": "The patient presents with Dementia. The patient denies Seizure, Muscle weakness, Migraine, Increased circulating lactate concentration, EEG "}]}, "disease_name_leakage": {"train": {"n_records": 1921, "disease_name_verbatim_in_raw_text": 1921, "raw_rate": 1.0, "n_with_pipeline_masked_text": 1921, "disease_name_survives_in_masked_text": 1640, "masked_rate": 0.8537}, "dev": {"n_records": 230, "disease_name_verbatim_in_raw_text": 230, "raw_rate": 1.0, "n_with_pipeline_masked_text": 230, "disease_name_survives_in_masked_text": 206, "masked_rate": 0.8957}, "test": {"n_records": 204, "disease_name_verbatim_in_raw_text": 204, "raw_rate": 1.0, "n_with_pipeline_masked_text": 204, "disease_name_survives_in_masked_text": 164, "masked_rate": 0.8039}, "holdout": {"n_records": 260, "disease_name_verbatim_in_raw_text": 119, "raw_rate": 0.4577, "n_with_pipeline_masked_text": 0, "disease_name_survives_in_masked_text": 0, "masked_rate": null}}, "claim_boundary": {"holdout_is": "a synthetic held-out template validation set, frozen before evaluation, with new seeds and new sentence layouts", "holdout_is_not": "an independent clinical validation set; it shares the generator code, the 16-disease set and the Chinese gloss with dev", "allowed_claims": ["the scope resolver generalises to unseen sentence layouts and seeds of the same generator", "history->affirmed errors drop from 221 to 0 on this frozen synthetic holdout"], "forbidden_claims": ["independent cross-hospital or real-patient generalisation", "clinician-adjudicated accuracy", "clinical safety or deployment readiness"], "external_eval_status": "BLOCKED: no licensed, genuinely independent clinical corpus with context-status annotations is available in this environment; ASQ-PHI v1 is third-party but covers PHI spans only"}}, "bootstrap": {"analysis": "cluster bootstrap over near-duplicate connected components", "why": "260 notes contain 186 distinct texts and 64 near-duplicate clusters; mention-level intervals would be too narrow", "iterations": 2000, "seed": 20261027, "n_records": 260, "n_mentions": 1618, "n_clusters": 64, "largest_cluster": 10, "systems": {"v1": {"point": {"accuracy": 0.7021, "macro_f1": 0.684, "history_to_affirmed": 221}, "accuracy_ci95": [0.6337, 0.7734], "macro_f1_ci95": [0.5872, 0.798], "history_to_affirmed_point": 221}, "v2_scope_v1": {"point": {"accuracy": 0.8869, "macro_f1": 0.8482, "history_to_affirmed": 57}, "accuracy_ci95": [0.8129, 0.946], "macro_f1_ci95": [0.7583, 0.9564], "history_to_affirmed_point": 57}, "v2_scope_ng": {"point": {"accuracy": 0.9778, "macro_f1": 0.9567, "history_to_affirmed": 0}, "accuracy_ci95": [0.9451, 1.0], "macro_f1_ci95": [0.9232, 1.0], "history_to_affirmed_point": 0}}}, "lab": {"factors": {"GLUCOSE": 0.055507449099669176, "CREATININE": 88.4016973125884, "HGB": 10.0, "ALT": 1.0, "AST": 1.0}, "bands": {"ALT": {"lo": 7.0, "hi": 40.0, "unit": "U/L"}, "AST": {"lo": 8.0, "hi": 40.0, "unit": "U/L"}, "GLUCOSE": {"lo": 3.9, "hi": 6.1, "unit": "mmol/L"}, "HGB": {"lo": 115.0, "hi": 175.0, "unit": "g/L"}}, "project_factors": {"GLUCOSE": 0.05550621669626999, "HGB": 10.0, "ALT": 1.0, "AST": 1.0}, "corpus": {"n_lab_values": 1277, "n_checked": 1277, "unparsable": 0, "conversion_mismatch": 0, "direction_mismatch": 0, "max_absolute_delta": 0.01, "by_analyte": {"HGB": 346, "GLUCOSE": 488, "ALT": 344, "AST": 99}, "by_unit": {"g/L": 244, "mmol/L": 396, "U/L": 443, "g/dL": 102, "mg/dL": 92}, "conversion_mismatch_examples": [], "direction_mismatch_examples": []}, "perturbation": {"n_cases": 300, "seed": 424242, "injected_errors": {"GLUCOSE.factor_mgdl_to_mmoll": {"used": 20.0, "correct_approx": 18.0156}, "HGB.factor_gdl_to_gl": {"used": 12.0, "correct": 10.0}, "GLUCOSE.hi": {"used": 4.5, "demo_band": 6.1}, "HGB.lo": {"used": 160.0, "demo_band": 115.0}}, "arm_shared_table": {"checked": 159, "conversion_mismatch": 0, "direction_mismatch": 0}, "arm_independent_table": {"checked": 159, "conversion_mismatch": 26, "direction_mismatch": 10}, "independent_examples": [{"text": "7.2 g/dL", "analyte": "HGB", "recorded_std": 86.4, "recorded_direction": "low", "recomputed": 72.0, "recomputed_direction": "low"}, {"text": "36 mg/dL", "analyte": "GLUCOSE", "recorded_std": 1.8, "recorded_direction": "low", "recomputed": 2.0, "recomputed_direction": "low"}, {"text": "64 mg/dL", "analyte": "GLUCOSE", "recorded_std": 3.2, "recorded_direction": "low", "recomputed": 3.55, "recomputed_direction": "low"}, {"text": "50 mg/dL", "analyte": "GLUCOSE", "recorded_std": 2.5, "recorded_direction": "low", "recomputed": 2.78, "recomputed_direction": "low"}, {"text": "41 mg/dL", "analyte": "GLUCOSE", "recorded_std": 2.05, "recorded_direction": "low", "recomputed": 2.28, "recomputed_direction": "low"}, {"text": "121 g/L", "analyte": "HGB", "recorded_std": 121, "recorded_direction": "low", "recomputed": 121.0, "recomputed_direction": "normal"}], "interpretation": "the shared-table arm passes by construction; the independent arm detects the injected factor and band errors, so the second path is sensitive to exactly the class of mistake that circular validation hides", "interpretation_zh": "共享表那一臂按构造必然通过；独立路径检出了注入的换算与区间错误，说明第二条路径恰好对循环验证会掩盖的那类错误敏感"}}};
+const STATUS_ZH = {affirmed:'现症',suspected:'疑似',history:'既往',negated:'否定'};
+const COLOR = {affirmed:'#d7f0dd',suspected:'#fff0bf',history:'#e2e0fb',negated:'#fbdcdc'};
+
+document.querySelectorAll('nav button').forEach(btn=>{
+  btn.onclick=()=>{
+    document.querySelectorAll('nav button').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('section').forEach(s=>s.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById(btn.dataset.tab).classList.add('active');
+  };
+});
+
+/* ---------- context ---------- */
+let current = 0, selected = null;
+const listEl = document.getElementById('sample-list');
+DATA.samples.forEach((s,i)=>{
+  const bad = s.mentions.filter(m=>m.gold!==m.v2_scope_ng).length;
+  const b = document.createElement('button');
+  b.innerHTML = `<b>${s.id}</b><div class="meta">${s.corpus} · ${s.template} · ${s.disease}</div>
+    <div class="meta">${s.mentions.length} 个表型 · v2 错 ${bad}</div>`;
+  b.onclick=()=>{current=i; selected=null; renderSample();};
+  listEl.appendChild(b);
+});
+function renderSample(){
+  [...listEl.children].forEach((b,i)=>b.classList.toggle('active',i===current));
+  const s = DATA.samples[current];
+  document.getElementById('sample-title').textContent = `${s.id} · ${s.corpus} · ${s.template}`;
+  const host = document.getElementById('sample-text');
+  host.innerHTML='';
+  let pos=0;
+  const ents=[...s.entities].sort((a,b)=>a.start-b.start);
+  ents.forEach((e,i)=>{
+    if(e.start<pos) return;
+    host.appendChild(document.createTextNode(s.text.slice(pos,e.start)));
+    const span=document.createElement('span');
+    span.textContent=s.text.slice(e.start,e.end);
+    const mention=s.mentions.find(m=>m.start===e.start&&m.end===e.end);
+    if(mention){
+      span.className='mention'+(selected===mention?' sel':'');
+      span.style.background=COLOR[mention.gold]||'#eef0f3';
+      span.style.borderBottomColor = mention.v2_scope_ng===mention.gold ? '#1a7f37' : '#c2410c';
+      span.onclick=()=>{selected=mention; renderSample();};
+    }else{
+      span.style.color='#9aa4af';
+    }
+    host.appendChild(span);
+    pos=e.end;
+  });
+  host.appendChild(document.createTextNode(s.text.slice(pos)));
+  const d=document.getElementById('detail');
+  if(!selected){
+    d.innerHTML='<h3>选择左侧文本中的表型</h3><p class="note">粗下划线为绿色表示 v2 与金标一致，红色表示不一致。没有下划线的灰色实体不是表型。</p>';
+    return;
+  }
+  const m=selected;
+  const ok=(a,b)=>a===b?'<span class="pill ok">一致</span>':'<span class="pill bad">不一致</span>';
+  d.innerHTML=`<h3>${escapeHtml(m.text)} <span class="tag ${m.gold}">${STATUS_ZH[m.gold]}</span> <span class="note">${m.hp_id}</span></h3>
+    <div class="row"><div class="k">v1 固定窗口</div><div><span class="tag ${m.v1}">${STATUS_ZH[m.v1]}</span>${ok(m.v1,m.gold)}</div></div>
+    <div class="row"><div class="k">v2 作用域·v1 词表</div><div><span class="tag ${m.v2_scope_v1}">${STATUS_ZH[m.v2_scope_v1]}</span>${ok(m.v2_scope_v1,m.gold)}</div></div>
+    <div class="row"><div class="k">v2 作用域·NegEx 词表</div><div><span class="tag ${m.v2_scope_ng}">${STATUS_ZH[m.v2_scope_ng]}</span>${ok(m.v2_scope_ng,m.gold)}</div></div>
+    <div class="row"><div class="k">触发词</div><div>${m.cue?('<code>'+escapeHtml(m.cue)+'</code>'):'（无，默认现症）'}</div></div>
+    <div class="row"><div class="k">判据窗口（实体已掩码）</div><div><code>${escapeHtml(m.run)}</code></div></div>
+    <p class="note">v1 只看固定字符窗口，段头、跨句与实体名内部的否定字会骗过它；v2 用硬终止符、终止词与最近触发词划定作用域。</p>`;
+}
+function escapeHtml(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+
+/* ---------- labs ---------- */
+const unitSel=document.getElementById('lab-unit');
+function fillUnits(){
+  const a=document.getElementById('lab-analyte').value;
+  const units={GLUCOSE:['mmol/L','mg/dL'],HGB:['g/L','g/dL'],ALT:['U/L'],AST:['U/L']}[a];
+  unitSel.innerHTML=units.map(u=>`<option>${u}</option>`).join('');
+  document.getElementById('lab-value').value = a==='GLUCOSE'?92 : (a==='HGB'?12.4:35);
+}
+document.getElementById('lab-analyte').onchange=()=>{fillUnits();runLab();};
+document.getElementById('lab-run').onclick=runLab;
+function convert(v,u,a){
+  const f=DATA.lab.factors[a], std={GLUCOSE:'mmol/L',HGB:'g/L',ALT:'U/L',AST:'U/L'}[a];
+  if(u===std) return v;
+  if(a==='GLUCOSE'&&u==='mg/dL') return +(v*f).toFixed(2);
+  if(a==='HGB'&&u==='g/dL') return +(v*f).toFixed(2);
+  return null;
+}
+function projectConvert(v,u,a){
+  if(a==='GLUCOSE'&&u==='mg/dL') return +(v/18.016).toFixed(2);
+  if(a==='HGB'&&u==='g/dL') return +(v*10).toFixed(2);
+  return v;
+}
+function runLab(){
+  const a=document.getElementById('lab-analyte').value;
+  const v=parseFloat(document.getElementById('lab-value').value);
+  const u=unitSel.value;
+  const ind=convert(v,u,a), proj=projectConvert(v,u,a);
+  const band=DATA.lab.bands[a];
+  let cls='—';
+  if(ind!==null){cls = ind<band.lo?'偏低':(ind>band.hi?'偏高':'正常');}
+  document.getElementById('lab-out').innerHTML=`
+    <div class="kv">
+      <div class="kpi"><b>${ind===null?'—':ind}</b><span>独立路径（${a==='GLUCOSE'?'mmol/L':a==='HGB'?'g/L':'U/L'}）</span></div>
+      <div class="kpi"><b>${proj===null?'—':proj}</b><span>项目共享表</span></div>
+      <div class="kpi"><b>${cls}</b><span>演示区间 ${band.lo}–${band.hi}</span></div>
+      <div class="kpi"><b>${ind!==null&&Math.abs(ind-proj)<=0.01?'一致':'待查'}</b><span>两条路径差 ≤0.01</span></div>
+    </div>
+    <p class="note">换算因子：${a==='GLUCOSE'?'×10/180.156':a==='HGB'?'×10（SI 词头）':'恒等（酶活性 U/L）'}。区间为演示值，不是临床标准。</p>`;
+}
+fillUnits(); runLab();
+
+document.getElementById('lab-audit').innerHTML=`
+  <div class="kv">
+    <div class="kpi"><b>${DATA.lab.corpus.n_checked.toLocaleString()}</b><span>语料检验值独立复算</span></div>
+    <div class="kpi"><b>${DATA.lab.corpus.conversion_mismatch}</b><span>换算不一致</span></div>
+    <div class="kpi"><b>${DATA.lab.corpus.direction_mismatch}</b><span>方向不一致</span></div>
+  </div>
+  <p class="note">注入实验：把共享表改成错误因子与错误区间后生成 ${DATA.lab.perturbation.n_cases} 条病例。共享表路径必然通过
+  （${DATA.lab.perturbation.arm_shared_table.conversion_mismatch} 个换算错 / ${DATA.lab.perturbation.arm_shared_table.direction_mismatch} 个方向错），
+  独立路径检出 ${DATA.lab.perturbation.arm_independent_table.conversion_mismatch} 个换算错 /
+  ${DATA.lab.perturbation.arm_independent_table.direction_mismatch} 个方向错。</p>`;
+
+/* ---------- lineage ---------- */
+document.getElementById('stale-note').innerHTML=
+  `<b>历史文件已失效但保留</b>：<code>${DATA.stale.path}</code> 与实际生成只有
+   ${DATA.stale.n_overlap}/16 个疾病重合。它由早期算法选择器写出，当前选择器可精确复现；
+   生成器已改用 <code>CURATED_DISEASES</code>。本页按实际运行口径展示，不覆盖历史文件。`;
+const dt=document.getElementById('disease-table');
+dt.innerHTML='<tr><th>#</th><th>疾病 ID</th><th>英文名</th><th>中文名</th><th>来源</th><th>HPO 注释</th><th>生成记录</th></tr>'+
+  DATA.diseases.map((d,i)=>`<tr><td>${i+1}</td><td><code>${d.id}</code></td><td>${escapeHtml(d.en)}</td>
+  <td>${escapeHtml(d.zh)}</td><td>${d.source}</td><td>${d.annotations}</td><td>${d.records}</td></tr>`).join('');
+
+/* ---------- splits ---------- */
+const rel=DATA.relations;
+document.getElementById('split-kpis').innerHTML=`
+  <div class="kpi"><b>0</b><span>跨组共享患者</span></div>
+  <div class="kpi"><b>0</b><span>跨组精确重复文本</span></div>
+  <div class="kpi"><b>0</b><span>跨组近重复（Jaccard≥0.8）</span></div>
+  <div class="kpi"><b>${(rel.cell_reuse.test.rate*100).toFixed(1)}%</b><span>test 三元组已在 train 出现</span></div>
+  <div class="kpi"><b>${(rel.disease_name_leakage.train.raw_rate*100).toFixed(0)}%</b><span>train 正文含疾病名</span></div>`;
+const hs=rel.near_duplicates.holdout_structure;
+document.getElementById('holdout-structure').innerHTML=`
+  <p>260 条留出语料中只有 <b>${hs.n_distinct_normalised_texts}</b> 种不同文本；
+  按近重复合并后是 <b>${hs.n_clusters_at_threshold}</b> 个簇，最大簇 <b>${hs.largest_cluster}</b> 条。
+  1,618 个提及不是 1,618 个独立观测。</p>
+  <div class="kv">
+    <div class="kpi"><b>${DATA.bootstrap.systems.v1.point.accuracy.toFixed(4)}</b><span>v1 准确率 [${DATA.bootstrap.systems.v1.accuracy_ci95.join(', ')}]</span></div>
+    <div class="kpi"><b>${DATA.bootstrap.systems.v2_scope_ng.point.accuracy.toFixed(4)}</b><span>v2 准确率 [${DATA.bootstrap.systems.v2_scope_ng.accuracy_ci95.join(', ')}]</span></div>
+    <div class="kpi"><b>${DATA.bootstrap.systems.v2_scope_ng.point.macro_f1.toFixed(4)}</b><span>v2 宏 F1 [${DATA.bootstrap.systems.v2_scope_ng.macro_f1_ci95.join(', ')}]</span></div>
+  </div>
+  <p class="note">区间为按 ${hs.n_clusters_at_threshold} 个近重复簇做的 cluster bootstrap（2,000 次）。</p>`;
+document.getElementById('claim-boundary').innerHTML=`
+  <p><b>可以声称</b>：${rel.claim_boundary.allowed_claims.map(x=>'<span class="pill ok">'+escapeHtml(x)+'</span>').join('')}</p>
+  <p><b>不能声称</b>：${rel.claim_boundary.forbidden_claims.map(x=>'<span class="pill bad">'+escapeHtml(x)+'</span>').join('')}</p>
+  <p class="note">${escapeHtml(rel.claim_boundary.external_eval_status)}</p>`;
+
+renderSample();
+</script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+{
+  "benchmark_version": "phase2-phi-v1",
+  "built_at_utc": "2026-10-25T16:17:38.165186+00:00",
+  "seed": 20261025,
+  "labels": [
+    "NAME",
+    "PHONE",
+    "PATIENT_ID",
+    "DATE",
+    "ADDRESS",
+    "SSN",
+    "EMAIL",
+    "INSURANCE_ID"
+  ],
+  "label_mapping_from_asq_phi": {
+    "NAME": "NAME",
+    "PHONE_NUMBER": "PHONE",
+    "FAX_NUMBER": "PHONE",
+    "MEDICAL_RECORD_NUMBER": "PATIENT_ID",
+    "UNIQUE_IDENTIFIER": "PATIENT_ID",
+    "ACCOUNT_NUMBER": "PATIENT_ID",
+    "HEALTH_PLAN_BENEFICIARY_NUMBER": "INSURANCE_ID",
+    "DATE": "DATE",
+    "GEOGRAPHIC_LOCATION": "ADDRESS",
+    "SOCIAL_SECURITY_NUMBER": "SSN",
+    "EMAIL_ADDRESS": "EMAIL"
+  },
+  "excluded_asq_phi_types": [
+    "CERTIFICATE_LICENSE_NUMBER",
+    "IP_ADDRESS"
+  ],
+  "sources": {
+    "en": {
+      "name": "ASQ-PHI v1",
+      "license": "MIT",
+      "repository": "https://github.com/JamesWeatherhead/asq-phi",
+      "revision": "fdb371ce7e3908a945d82f20411546b9876f862e",
+      "citation": "Weatherhead, Golovko & McCaffrey (2026) Data in Brief 65:112586 doi:10.1016/j.dib.2026.112586",
+      "nature": "100% synthetic clinical search queries generated upstream with GPT-4o; no real patient data",
+      "n_parsed": 1051,
+      "n_records": 1051,
+      "verified_files": {
+        "LICENSE": {
+          "sha256": "d3871f9165f5817a2fb37739381b3c855d610c1918902964fc3c398d3036350b",
+          "bytes": 1074
+        },
+        "README.md": {
+          "sha256": "c8c0c7f6b4ba1e1eb321ac5bf89133594ce1a79e2687c42ff96b9a4f045dc563",
+          "bytes": 15185
+        },
+        "CITATION.cff": {
+          "sha256": "05e0b9c075ad1f6520ba77ef9668a4f16fa67c2d709700a23c6da895c35dfaf1",
+          "bytes": 1112
+        },
+        "data/synthetic_clinical_queries.txt": {
+          "sha256": "cf00e424b8d2347d019f9f34e2ad1510cb4d853605410f8314bef44df8021fc8",
+          "bytes": 371903
+        },
+        "data/dataset_statistics.txt": {
+          "sha256": "7c002f3b4df79e659c4200109da7651b48f3f18659e6daa842499dba8eec40d8",
+          "bytes": 1659
+        },
+        "code/parse_dataset.py": {
+          "sha256": "e6f6e88d458779e83907164f35e2922476575eb28feb4f35df994aa05d3b430b",
+          "bytes": 2696
+        }
+      }
+    },
+    "zh": {
+      "name": "ClinDataForge-independent-zh-v1",
+      "license": "same repository licence (MIT)",
+      "generator": "scripts/build_phi_benchmark.py",
+      "nature": "programmatic templates authored independently of the detectors; machine labels",
+      "n_records": 320,
+      "n_template_families": 40
+    }
+  },
+  "annotation": {
+    "gold_origin": "upstream author PHI tags (en) and programmatic placeholders (zh)",
+    "human_adjudication": false,
+    "protected_span_origin": "programmatic clinical vocabulary / under-90 age / authored clinical segment",
+    "protected_span_completeness": "incomplete proxy; absence of a protected label is not evidence that text is non-clinical"
+  },
+  "unresolved_asq_phi_values": [
+    {
+      "doc_index": 149,
+      "identifier_type": "GEOGRAPHIC_LOCATION",
+      "value": "Children's Clinic",
+      "reason": "value not found verbatim in query"
+    },
+    {
+      "doc_index": 354,
+      "identifier_type": "CERTIFICATE_LICENSE_NUMBER",
+      "value": "CLN-112233",
+      "reason": "declared out of scope"
+    },
+    {
+      "doc_index": 509,
+      "identifier_type": "IP_ADDRESS",
+      "value": "192.168.1.1",
+      "reason": "declared out of scope"
+    }
+  ],
+  "split": {
+    "unit": "near-duplicate connected component (5-gram Jaccard >= 0.70 on PHI-masked skeleton, identical skeleton always joined)",
+    "quotas_by_record_share": {
+      "train": 0.25,
+      "dev": 0.2,
+      "test": 0.55
+    },
+    "seed": 20261025,
+    "components_total": 804,
+    "components_crossing_splits": 0
+  },
+  "counts": {
+    "train": {
+      "n_records": 343,
+      "n_with_phi": 258,
+      "n_without_phi": 85,
+      "n_entities": 1017,
+      "by_language": {
+        "en": 263,
+        "zh": 80
+      },
+      "by_label": {
+        "NAME": 258,
+        "PHONE": 82,
+        "PATIENT_ID": 128,
+        "DATE": 251,
+        "ADDRESS": 254,
+        "SSN": 11,
+        "EMAIL": 9,
+        "INSURANCE_ID": 24
+      },
+      "protected_characters": 9418
+    },
+    "dev": {
+      "n_records": 396,
+      "n_with_phi": 367,
+      "n_without_phi": 29,
+      "n_entities": 1411,
+      "by_language": {
+        "en": 332,
+        "zh": 64
+      },
+      "by_label": {
+        "NAME": 359,
+        "PHONE": 70,
+        "PATIENT_ID": 225,
+        "DATE": 359,
+        "ADDRESS": 367,
+        "SSN": 11,
+        "EMAIL": 7,
+        "INSURANCE_ID": 13
+      },
+      "protected_characters": 12892
+    },
+    "test": {
+      "n_records": 632,
+      "n_with_phi": 487,
+      "n_without_phi": 145,
+      "n_entities": 1942,
+      "by_language": {
+        "en": 456,
+        "zh": 176
+      },
+      "by_label": {
+        "NAME": 477,
+        "PHONE": 175,
+        "PATIENT_ID": 250,
+        "DATE": 476,
+        "ADDRESS": 484,
+        "SSN": 11,
+        "EMAIL": 15,
+        "INSURANCE_ID": 54
+      },
+      "protected_characters": 17161
+    },
+    "all": {
+      "n_records": 1371,
+      "n_entities": 4370,
+      "by_label": {
+        "NAME": 1094,
+        "PHONE": 327,
+        "PATIENT_ID": 603,
+        "DATE": 1086,
+        "ADDRESS": 1105,
+        "SSN": 33,
+        "EMAIL": 31,
+        "INSURANCE_ID": 91
+      }
+    }
+  },
+  "files": {
+    "train.jsonl": "28f96dadb7f9033c2b96fa6348938fe65fdbb44a3757b0b68cdfec55f9ddbf4b",
+    "dev.jsonl": "adeb9ee4ba0b9b344df2cd9cd67906dc2c4c62a6c8265dc6d4b0651ef30b417b",
+    "test.jsonl": "96d5b2c6aa3a52f81fb79357a88f6ff86c1fde0b07b700d2f36d570745dda85d",
+    "demo_pipeline.jsonl": "19cb12a3cca902b8f40a7dc8df6276383f899a7b983dbdb6aa1f810eff9bb67d"
+  }
+}

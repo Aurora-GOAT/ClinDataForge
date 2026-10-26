@@ -1,0 +1,632 @@
+{"doc_id": "EN-0000", "spans": [{"label": "NAME", "start": 44, "end": 62}, {"label": "NAME", "start": 86, "end": 93}, {"label": "ADDRESS", "start": 117, "end": 135}, {"label": "DATE", "start": 139, "end": 153}]}
+{"doc_id": "EN-0001", "spans": [{"label": "NAME", "start": 85, "end": 97}, {"label": "ADDRESS", "start": 111, "end": 124}, {"label": "DATE", "start": 128, "end": 142}, {"label": "PATIENT_ID", "start": 148, "end": 157}]}
+{"doc_id": "EN-0002", "spans": [{"label": "NAME", "start": 60, "end": 76}, {"label": "DATE", "start": 148, "end": 152}]}
+{"doc_id": "EN-0003", "spans": [{"label": "PATIENT_ID", "start": 12, "end": 25}, {"label": "NAME", "start": 35, "end": 46}, {"label": "ADDRESS", "start": 50, "end": 59}, {"label": "DATE", "start": 63, "end": 75}]}
+{"doc_id": "EN-0006", "spans": [{"label": "NAME", "start": 113, "end": 123}, {"label": "ADDRESS", "start": 138, "end": 149}, {"label": "DATE", "start": 153, "end": 172}]}
+{"doc_id": "EN-0008", "spans": [{"label": "NAME", "start": 54, "end": 67}, {"label": "NAME", "start": 101, "end": 108}, {"label": "ADDRESS", "start": 132, "end": 147}, {"label": "DATE", "start": 151, "end": 164}]}
+{"doc_id": "EN-0009", "spans": [{"label": "NAME", "start": 26, "end": 53}, {"label": "NAME", "start": 95, "end": 104}, {"label": "ADDRESS", "start": 117, "end": 124}, {"label": "DATE", "start": 128, "end": 146}]}
+{"doc_id": "EN-0010", "spans": [{"label": "NAME", "start": 28, "end": 44}, {"label": "NAME", "start": 72, "end": 81}, {"label": "ADDRESS", "start": 99, "end": 114}, {"label": "DATE", "start": 118, "end": 136}, {"label": "PATIENT_ID", "start": 138, "end": 153}]}
+{"doc_id": "EN-0011", "spans": [{"label": "NAME", "start": 103, "end": 115}, {"label": "ADDRESS", "start": 125, "end": 150}, {"label": "DATE", "start": 154, "end": 170}]}
+{"doc_id": "EN-0012", "spans": [{"label": "NAME", "start": 56, "end": 67}, {"label": "NAME", "start": 109, "end": 121}, {"label": "ADDRESS", "start": 127, "end": 134}, {"label": "DATE", "start": 138, "end": 153}, {"label": "EMAIL", "start": 162, "end": 181}]}
+{"doc_id": "EN-0014", "spans": [{"label": "NAME", "start": 126, "end": 133}, {"label": "ADDRESS", "start": 147, "end": 164}, {"label": "DATE", "start": 168, "end": 183}, {"label": "PATIENT_ID", "start": 185, "end": 199}]}
+{"doc_id": "EN-0016", "spans": [{"label": "NAME", "start": 78, "end": 85}, {"label": "ADDRESS", "start": 116, "end": 144}, {"label": "DATE", "start": 148, "end": 164}, {"label": "INSURANCE_ID", "start": 188, "end": 197}]}
+{"doc_id": "EN-0017", "spans": [{"label": "NAME", "start": 58, "end": 67}, {"label": "ADDRESS", "start": 101, "end": 120}, {"label": "DATE", "start": 124, "end": 140}]}
+{"doc_id": "EN-0018", "spans": [{"label": "NAME", "start": 49, "end": 56}, {"label": "ADDRESS", "start": 101, "end": 117}, {"label": "DATE", "start": 121, "end": 139}]}
+{"doc_id": "EN-0022", "spans": [{"label": "NAME", "start": 61, "end": 68}, {"label": "ADDRESS", "start": 92, "end": 96}, {"label": "DATE", "start": 110, "end": 123}, {"label": "PATIENT_ID", "start": 125, "end": 140}]}
+{"doc_id": "EN-0024", "spans": [{"label": "NAME", "start": 82, "end": 89}, {"label": "ADDRESS", "start": 102, "end": 133}, {"label": "DATE", "start": 137, "end": 151}, {"label": "PATIENT_ID", "start": 153, "end": 169}]}
+{"doc_id": "EN-0026", "spans": [{"label": "NAME", "start": 37, "end": 55}]}
+{"doc_id": "EN-0027", "spans": [{"label": "NAME", "start": 66, "end": 74}, {"label": "ADDRESS", "start": 121, "end": 137}, {"label": "DATE", "start": 141, "end": 159}, {"label": "INSURANCE_ID", "start": 172, "end": 181}]}
+{"doc_id": "EN-0028", "spans": [{"label": "NAME", "start": 90, "end": 97}, {"label": "DATE", "start": 153, "end": 157}]}
+{"doc_id": "EN-0029", "spans": [{"label": "NAME", "start": 16, "end": 25}, {"label": "NAME", "start": 35, "end": 43}, {"label": "ADDRESS", "start": 57, "end": 71}, {"label": "DATE", "start": 75, "end": 86}, {"label": "PATIENT_ID", "start": 88, "end": 102}]}
+{"doc_id": "EN-0030", "spans": [{"label": "NAME", "start": 72, "end": 80}, {"label": "ADDRESS", "start": 159, "end": 173}, {"label": "DATE", "start": 177, "end": 192}]}
+{"doc_id": "EN-0032", "spans": [{"label": "NAME", "start": 48, "end": 55}, {"label": "ADDRESS", "start": 94, "end": 97}, {"label": "ADDRESS", "start": 101, "end": 122}, {"label": "DATE", "start": 126, "end": 146}, {"label": "PATIENT_ID", "start": 148, "end": 163}]}
+{"doc_id": "EN-0034", "spans": [{"label": "NAME", "start": 66, "end": 74}, {"label": "ADDRESS", "start": 91, "end": 103}, {"label": "DATE", "start": 107, "end": 124}, {"label": "PATIENT_ID", "start": 176, "end": 185}]}
+{"doc_id": "EN-0037", "spans": [{"label": "NAME", "start": 60, "end": 76}]}
+{"doc_id": "EN-0038", "spans": [{"label": "ADDRESS", "start": 30, "end": 32}, {"label": "NAME", "start": 46, "end": 55}, {"label": "ADDRESS", "start": 59, "end": 77}, {"label": "DATE", "start": 81, "end": 93}, {"label": "EMAIL", "start": 131, "end": 155}]}
+{"doc_id": "EN-0042", "spans": [{"label": "NAME", "start": 22, "end": 38}, {"label": "DATE", "start": 78, "end": 87}]}
+{"doc_id": "EN-0043", "spans": [{"label": "NAME", "start": 55, "end": 62}, {"label": "ADDRESS", "start": 77, "end": 93}, {"label": "DATE", "start": 97, "end": 107}, {"label": "INSURANCE_ID", "start": 141, "end": 151}]}
+{"doc_id": "EN-0044", "spans": [{"label": "NAME", "start": 128, "end": 135}, {"label": "ADDRESS", "start": 178, "end": 184}, {"label": "DATE", "start": 188, "end": 201}]}
+{"doc_id": "EN-0047", "spans": [{"label": "NAME", "start": 93, "end": 102}, {"label": "ADDRESS", "start": 109, "end": 114}, {"label": "DATE", "start": 128, "end": 137}]}
+{"doc_id": "EN-0049", "spans": [{"label": "NAME", "start": 73, "end": 81}, {"label": "ADDRESS", "start": 99, "end": 118}, {"label": "DATE", "start": 122, "end": 132}]}
+{"doc_id": "EN-0052", "spans": [{"label": "NAME", "start": 62, "end": 72}, {"label": "ADDRESS", "start": 108, "end": 119}, {"label": "DATE", "start": 123, "end": 132}]}
+{"doc_id": "EN-0054", "spans": [{"label": "NAME", "start": 82, "end": 86}, {"label": "ADDRESS", "start": 96, "end": 111}, {"label": "DATE", "start": 115, "end": 127}, {"label": "INSURANCE_ID", "start": 145, "end": 155}]}
+{"doc_id": "EN-0056", "spans": [{"label": "NAME", "start": 92, "end": 99}, {"label": "ADDRESS", "start": 108, "end": 112}, {"label": "DATE", "start": 116, "end": 132}]}
+{"doc_id": "EN-0057", "spans": [{"label": "NAME", "start": 12, "end": 20}, {"label": "ADDRESS", "start": 22, "end": 40}, {"label": "PATIENT_ID", "start": 42, "end": 61}]}
+{"doc_id": "EN-0059", "spans": [{"label": "NAME", "start": 60, "end": 68}, {"label": "ADDRESS", "start": 95, "end": 111}]}
+{"doc_id": "EN-0061", "spans": [{"label": "NAME", "start": 42, "end": 60}]}
+{"doc_id": "EN-0063", "spans": [{"label": "NAME", "start": 50, "end": 61}, {"label": "DATE", "start": 133, "end": 148}, {"label": "PHONE", "start": 170, "end": 184}]}
+{"doc_id": "EN-0064", "spans": [{"label": "NAME", "start": 26, "end": 44}, {"label": "NAME", "start": 105, "end": 108}, {"label": "ADDRESS", "start": 122, "end": 126}, {"label": "DATE", "start": 130, "end": 134}]}
+{"doc_id": "EN-0066", "spans": [{"label": "NAME", "start": 50, "end": 63}, {"label": "ADDRESS", "start": 80, "end": 96}, {"label": "ADDRESS", "start": 114, "end": 124}, {"label": "DATE", "start": 128, "end": 144}]}
+{"doc_id": "EN-0067", "spans": [{"label": "NAME", "start": 28, "end": 44}]}
+{"doc_id": "EN-0069", "spans": [{"label": "NAME", "start": 48, "end": 55}, {"label": "DATE", "start": 68, "end": 78}, {"label": "ADDRESS", "start": 82, "end": 105}, {"label": "PATIENT_ID", "start": 107, "end": 121}]}
+{"doc_id": "EN-0073", "spans": [{"label": "NAME", "start": 73, "end": 86}, {"label": "ADDRESS", "start": 100, "end": 112}, {"label": "DATE", "start": 116, "end": 131}, {"label": "EMAIL", "start": 140, "end": 158}]}
+{"doc_id": "EN-0077", "spans": [{"label": "NAME", "start": 31, "end": 49}, {"label": "NAME", "start": 91, "end": 103}, {"label": "ADDRESS", "start": 107, "end": 127}, {"label": "DATE", "start": 131, "end": 146}, {"label": "PHONE", "start": 157, "end": 169}]}
+{"doc_id": "EN-0079", "spans": [{"label": "NAME", "start": 50, "end": 62}, {"label": "ADDRESS", "start": 66, "end": 86}, {"label": "DATE", "start": 90, "end": 105}, {"label": "PATIENT_ID", "start": 112, "end": 123}]}
+{"doc_id": "EN-0080", "spans": [{"label": "NAME", "start": 37, "end": 55}, {"label": "NAME", "start": 104, "end": 114}, {"label": "ADDRESS", "start": 135, "end": 146}, {"label": "DATE", "start": 150, "end": 168}]}
+{"doc_id": "EN-0082", "spans": [{"label": "NAME", "start": 68, "end": 94}, {"label": "PATIENT_ID", "start": 146, "end": 157}]}
+{"doc_id": "EN-0087", "spans": [{"label": "NAME", "start": 43, "end": 55}, {"label": "ADDRESS", "start": 98, "end": 114}, {"label": "DATE", "start": 118, "end": 133}, {"label": "PHONE", "start": 142, "end": 154}]}
+{"doc_id": "EN-0088", "spans": [{"label": "NAME", "start": 50, "end": 68}, {"label": "ADDRESS", "start": 88, "end": 105}, {"label": "DATE", "start": 109, "end": 123}, {"label": "INSURANCE_ID", "start": 153, "end": 162}]}
+{"doc_id": "EN-0089", "spans": [{"label": "NAME", "start": 68, "end": 76}, {"label": "ADDRESS", "start": 97, "end": 110}, {"label": "DATE", "start": 114, "end": 128}, {"label": "PATIENT_ID", "start": 147, "end": 156}]}
+{"doc_id": "EN-0092", "spans": [{"label": "NAME", "start": 54, "end": 70}, {"label": "ADDRESS", "start": 108, "end": 117}, {"label": "PATIENT_ID", "start": 141, "end": 155}]}
+{"doc_id": "EN-0097", "spans": [{"label": "NAME", "start": 44, "end": 51}]}
+{"doc_id": "EN-0103", "spans": [{"label": "NAME", "start": 65, "end": 77}, {"label": "ADDRESS", "start": 85, "end": 99}, {"label": "DATE", "start": 103, "end": 113}, {"label": "PATIENT_ID", "start": 126, "end": 133}]}
+{"doc_id": "EN-0104", "spans": [{"label": "NAME", "start": 53, "end": 71}]}
+{"doc_id": "EN-0107", "spans": [{"label": "NAME", "start": 53, "end": 79}, {"label": "NAME", "start": 93, "end": 107}, {"label": "DATE", "start": 124, "end": 138}]}
+{"doc_id": "EN-0108", "spans": [{"label": "NAME", "start": 78, "end": 87}, {"label": "ADDRESS", "start": 103, "end": 113}, {"label": "DATE", "start": 117, "end": 131}]}
+{"doc_id": "EN-0111", "spans": [{"label": "NAME", "start": 52, "end": 67}]}
+{"doc_id": "EN-0112", "spans": [{"label": "NAME", "start": 85, "end": 95}, {"label": "ADDRESS", "start": 102, "end": 119}, {"label": "DATE", "start": 124, "end": 139}]}
+{"doc_id": "EN-0113", "spans": [{"label": "NAME", "start": 39, "end": 63}, {"label": "DATE", "start": 121, "end": 125}]}
+{"doc_id": "EN-0114", "spans": [{"label": "NAME", "start": 45, "end": 55}, {"label": "ADDRESS", "start": 80, "end": 93}, {"label": "DATE", "start": 97, "end": 108}, {"label": "PATIENT_ID", "start": 115, "end": 126}]}
+{"doc_id": "EN-0117", "spans": [{"label": "NAME", "start": 43, "end": 56}, {"label": "ADDRESS", "start": 60, "end": 74}, {"label": "DATE", "start": 78, "end": 85}, {"label": "INSURANCE_ID", "start": 139, "end": 147}]}
+{"doc_id": "EN-0118", "spans": [{"label": "NAME", "start": 72, "end": 78}, {"label": "ADDRESS", "start": 118, "end": 133}, {"label": "DATE", "start": 143, "end": 158}]}
+{"doc_id": "EN-0119", "spans": [{"label": "NAME", "start": 50, "end": 68}, {"label": "DATE", "start": 126, "end": 136}]}
+{"doc_id": "EN-0121", "spans": [{"label": "NAME", "start": 37, "end": 55}, {"label": "NAME", "start": 80, "end": 88}, {"label": "ADDRESS", "start": 101, "end": 116}, {"label": "DATE", "start": 120, "end": 130}]}
+{"doc_id": "EN-0122", "spans": [{"label": "NAME", "start": 57, "end": 64}, {"label": "ADDRESS", "start": 125, "end": 138}, {"label": "DATE", "start": 142, "end": 157}, {"label": "INSURANCE_ID", "start": 173, "end": 182}]}
+{"doc_id": "EN-0126", "spans": [{"label": "NAME", "start": 40, "end": 56}, {"label": "DATE", "start": 105, "end": 109}]}
+{"doc_id": "EN-0127", "spans": [{"label": "NAME", "start": 48, "end": 57}, {"label": "ADDRESS", "start": 61, "end": 72}, {"label": "DATE", "start": 74, "end": 83}, {"label": "SSN", "start": 120, "end": 131}]}
+{"doc_id": "EN-0128", "spans": [{"label": "NAME", "start": 36, "end": 54}, {"label": "DATE", "start": 119, "end": 123}]}
+{"doc_id": "EN-0129", "spans": [{"label": "NAME", "start": 31, "end": 47}, {"label": "NAME", "start": 104, "end": 114}, {"label": "ADDRESS", "start": 118, "end": 122}, {"label": "DATE", "start": 126, "end": 142}, {"label": "PATIENT_ID", "start": 160, "end": 169}]}
+{"doc_id": "EN-0132", "spans": [{"label": "NAME", "start": 26, "end": 42}, {"label": "DATE", "start": 70, "end": 74}, {"label": "ADDRESS", "start": 150, "end": 166}]}
+{"doc_id": "EN-0137", "spans": [{"label": "ADDRESS", "start": 51, "end": 60}, {"label": "NAME", "start": 70, "end": 77}, {"label": "ADDRESS", "start": 87, "end": 102}, {"label": "DATE", "start": 106, "end": 119}]}
+{"doc_id": "EN-0141", "spans": [{"label": "NAME", "start": 71, "end": 83}, {"label": "ADDRESS", "start": 101, "end": 114}, {"label": "DATE", "start": 118, "end": 137}, {"label": "SSN", "start": 183, "end": 194}]}
+{"doc_id": "EN-0143", "spans": [{"label": "NAME", "start": 42, "end": 54}, {"label": "ADDRESS", "start": 64, "end": 83}, {"label": "DATE", "start": 87, "end": 99}, {"label": "INSURANCE_ID", "start": 114, "end": 123}]}
+{"doc_id": "EN-0146", "spans": [{"label": "NAME", "start": 81, "end": 89}, {"label": "ADDRESS", "start": 103, "end": 120}, {"label": "DATE", "start": 124, "end": 142}]}
+{"doc_id": "EN-0149", "spans": [{"label": "NAME", "start": 72, "end": 79}, {"label": "ADDRESS", "start": 92, "end": 109}, {"label": "DATE", "start": 113, "end": 129}, {"label": "PATIENT_ID", "start": 136, "end": 149}]}
+{"doc_id": "EN-0151", "spans": [{"label": "NAME", "start": 71, "end": 83}, {"label": "ADDRESS", "start": 97, "end": 108}, {"label": "DATE", "start": 123, "end": 141}]}
+{"doc_id": "EN-0152", "spans": [{"label": "NAME", "start": 62, "end": 78}]}
+{"doc_id": "EN-0154", "spans": [{"label": "NAME", "start": 65, "end": 73}, {"label": "ADDRESS", "start": 95, "end": 108}, {"label": "DATE", "start": 112, "end": 128}]}
+{"doc_id": "EN-0156", "spans": [{"label": "NAME", "start": 30, "end": 40}, {"label": "ADDRESS", "start": 96, "end": 113}, {"label": "DATE", "start": 114, "end": 123}]}
+{"doc_id": "EN-0158", "spans": [{"label": "NAME", "start": 96, "end": 113}, {"label": "ADDRESS", "start": 136, "end": 156}, {"label": "DATE", "start": 160, "end": 175}, {"label": "INSURANCE_ID", "start": 197, "end": 207}]}
+{"doc_id": "EN-0162", "spans": [{"label": "NAME", "start": 55, "end": 62}]}
+{"doc_id": "EN-0164", "spans": [{"label": "NAME", "start": 28, "end": 46}, {"label": "DATE", "start": 101, "end": 110}, {"label": "ADDRESS", "start": 118, "end": 123}]}
+{"doc_id": "EN-0167", "spans": [{"label": "NAME", "start": 43, "end": 61}]}
+{"doc_id": "EN-0177", "spans": [{"label": "NAME", "start": 54, "end": 63}, {"label": "ADDRESS", "start": 121, "end": 151}, {"label": "DATE", "start": 155, "end": 174}, {"label": "INSURANCE_ID", "start": 189, "end": 198}]}
+{"doc_id": "EN-0184", "spans": [{"label": "NAME", "start": 63, "end": 70}, {"label": "ADDRESS", "start": 84, "end": 95}, {"label": "DATE", "start": 99, "end": 116}, {"label": "PHONE", "start": 125, "end": 137}]}
+{"doc_id": "EN-0186", "spans": [{"label": "NAME", "start": 65, "end": 83}, {"label": "DATE", "start": 138, "end": 142}]}
+{"doc_id": "EN-0189", "spans": [{"label": "NAME", "start": 78, "end": 94}]}
+{"doc_id": "EN-0194", "spans": [{"label": "NAME", "start": 55, "end": 62}, {"label": "ADDRESS", "start": 76, "end": 90}, {"label": "DATE", "start": 91, "end": 101}, {"label": "PATIENT_ID", "start": 103, "end": 115}]}
+{"doc_id": "EN-0196", "spans": [{"label": "NAME", "start": 82, "end": 90}, {"label": "ADDRESS", "start": 110, "end": 116}, {"label": "DATE", "start": 140, "end": 160}]}
+{"doc_id": "EN-0197", "spans": [{"label": "NAME", "start": 62, "end": 80}]}
+{"doc_id": "EN-0198", "spans": [{"label": "NAME", "start": 72, "end": 82}, {"label": "ADDRESS", "start": 96, "end": 107}, {"label": "DATE", "start": 117, "end": 131}]}
+{"doc_id": "EN-0199", "spans": [{"label": "NAME", "start": 106, "end": 114}, {"label": "ADDRESS", "start": 128, "end": 132}, {"label": "DATE", "start": 136, "end": 148}, {"label": "PATIENT_ID", "start": 150, "end": 165}]}
+{"doc_id": "EN-0203", "spans": [{"label": "NAME", "start": 25, "end": 51}, {"label": "NAME", "start": 92, "end": 104}, {"label": "ADDRESS", "start": 113, "end": 136}, {"label": "DATE", "start": 140, "end": 153}]}
+{"doc_id": "EN-0206", "spans": [{"label": "NAME", "start": 44, "end": 62}, {"label": "DATE", "start": 138, "end": 142}]}
+{"doc_id": "EN-0208", "spans": [{"label": "NAME", "start": 35, "end": 42}, {"label": "ADDRESS", "start": 64, "end": 72}, {"label": "DATE", "start": 76, "end": 88}, {"label": "PATIENT_ID", "start": 135, "end": 145}]}
+{"doc_id": "EN-0211", "spans": [{"label": "NAME", "start": 50, "end": 56}, {"label": "ADDRESS", "start": 114, "end": 135}, {"label": "DATE", "start": 139, "end": 155}, {"label": "SSN", "start": 162, "end": 173}]}
+{"doc_id": "EN-0213", "spans": [{"label": "NAME", "start": 43, "end": 59}, {"label": "DATE", "start": 169, "end": 173}]}
+{"doc_id": "EN-0216", "spans": [{"label": "NAME", "start": 56, "end": 72}]}
+{"doc_id": "EN-0219", "spans": [{"label": "NAME", "start": 57, "end": 65}, {"label": "DATE", "start": 97, "end": 101}]}
+{"doc_id": "EN-0221", "spans": [{"label": "NAME", "start": 60, "end": 76}]}
+{"doc_id": "EN-0223", "spans": [{"label": "NAME", "start": 57, "end": 64}, {"label": "ADDRESS", "start": 117, "end": 135}, {"label": "DATE", "start": 136, "end": 145}, {"label": "PATIENT_ID", "start": 147, "end": 162}]}
+{"doc_id": "EN-0232", "spans": [{"label": "NAME", "start": 45, "end": 62}]}
+{"doc_id": "EN-0233", "spans": [{"label": "ADDRESS", "start": 41, "end": 59}, {"label": "NAME", "start": 67, "end": 73}, {"label": "INSURANCE_ID", "start": 113, "end": 125}]}
+{"doc_id": "EN-0237", "spans": [{"label": "NAME", "start": 50, "end": 68}, {"label": "ADDRESS", "start": 138, "end": 144}]}
+{"doc_id": "EN-0238", "spans": [{"label": "NAME", "start": 68, "end": 75}, {"label": "DATE", "start": 107, "end": 119}, {"label": "PATIENT_ID", "start": 128, "end": 138}]}
+{"doc_id": "EN-0241", "spans": [{"label": "NAME", "start": 16, "end": 26}, {"label": "ADDRESS", "start": 41, "end": 53}, {"label": "DATE", "start": 57, "end": 67}, {"label": "PATIENT_ID", "start": 107, "end": 117}]}
+{"doc_id": "EN-0243", "spans": [{"label": "NAME", "start": 47, "end": 63}, {"label": "DATE", "start": 99, "end": 103}]}
+{"doc_id": "EN-0247", "spans": [{"label": "NAME", "start": 33, "end": 52}, {"label": "DATE", "start": 112, "end": 121}]}
+{"doc_id": "EN-0248", "spans": [{"label": "NAME", "start": 43, "end": 50}, {"label": "ADDRESS", "start": 60, "end": 66}, {"label": "DATE", "start": 70, "end": 83}, {"label": "PHONE", "start": 153, "end": 165}]}
+{"doc_id": "EN-0249", "spans": [{"label": "NAME", "start": 89, "end": 98}, {"label": "DATE", "start": 113, "end": 128}, {"label": "ADDRESS", "start": 133, "end": 144}, {"label": "INSURANCE_ID", "start": 151, "end": 164}]}
+{"doc_id": "EN-0254", "spans": [{"label": "NAME", "start": 64, "end": 76}, {"label": "ADDRESS", "start": 112, "end": 129}, {"label": "DATE", "start": 133, "end": 151}]}
+{"doc_id": "EN-0258", "spans": [{"label": "NAME", "start": 75, "end": 85}, {"label": "ADDRESS", "start": 119, "end": 127}, {"label": "DATE", "start": 129, "end": 139}]}
+{"doc_id": "EN-0259", "spans": [{"label": "NAME", "start": 61, "end": 72}, {"label": "PHONE", "start": 127, "end": 139}]}
+{"doc_id": "EN-0260", "spans": [{"label": "NAME", "start": 73, "end": 86}, {"label": "ADDRESS", "start": 99, "end": 120}, {"label": "DATE", "start": 124, "end": 139}, {"label": "PATIENT_ID", "start": 141, "end": 154}]}
+{"doc_id": "EN-0261", "spans": [{"label": "NAME", "start": 68, "end": 75}, {"label": "ADDRESS", "start": 80, "end": 96}, {"label": "DATE", "start": 100, "end": 110}]}
+{"doc_id": "EN-0264", "spans": [{"label": "NAME", "start": 92, "end": 101}, {"label": "ADDRESS", "start": 109, "end": 123}, {"label": "DATE", "start": 127, "end": 134}]}
+{"doc_id": "EN-0266", "spans": [{"label": "NAME", "start": 40, "end": 56}]}
+{"doc_id": "EN-0267", "spans": [{"label": "NAME", "start": 63, "end": 76}, {"label": "ADDRESS", "start": 80, "end": 92}, {"label": "DATE", "start": 96, "end": 106}, {"label": "PATIENT_ID", "start": 115, "end": 131}]}
+{"doc_id": "EN-0269", "spans": [{"label": "NAME", "start": 41, "end": 57}, {"label": "DATE", "start": 142, "end": 146}]}
+{"doc_id": "EN-0272", "spans": [{"label": "NAME", "start": 76, "end": 84}, {"label": "ADDRESS", "start": 99, "end": 118}, {"label": "DATE", "start": 122, "end": 137}, {"label": "PATIENT_ID", "start": 139, "end": 155}]}
+{"doc_id": "EN-0274", "spans": [{"label": "NAME", "start": 62, "end": 69}, {"label": "ADDRESS", "start": 93, "end": 119}, {"label": "DATE", "start": 123, "end": 138}, {"label": "EMAIL", "start": 147, "end": 165}]}
+{"doc_id": "EN-0276", "spans": [{"label": "NAME", "start": 39, "end": 58}]}
+{"doc_id": "EN-0278", "spans": [{"label": "NAME", "start": 51, "end": 59}, {"label": "ADDRESS", "start": 72, "end": 85}, {"label": "DATE", "start": 113, "end": 129}]}
+{"doc_id": "EN-0280", "spans": [{"label": "NAME", "start": 65, "end": 76}, {"label": "ADDRESS", "start": 97, "end": 123}, {"label": "DATE", "start": 127, "end": 146}, {"label": "PATIENT_ID", "start": 148, "end": 161}]}
+{"doc_id": "EN-0286", "spans": [{"label": "NAME", "start": 61, "end": 69}, {"label": "ADDRESS", "start": 99, "end": 104}, {"label": "DATE", "start": 120, "end": 133}]}
+{"doc_id": "EN-0291", "spans": [{"label": "NAME", "start": 61, "end": 70}, {"label": "ADDRESS", "start": 89, "end": 103}, {"label": "DATE", "start": 123, "end": 143}]}
+{"doc_id": "EN-0292", "spans": [{"label": "NAME", "start": 71, "end": 79}, {"label": "ADDRESS", "start": 124, "end": 143}, {"label": "DATE", "start": 147, "end": 165}]}
+{"doc_id": "EN-0293", "spans": [{"label": "NAME", "start": 71, "end": 78}, {"label": "ADDRESS", "start": 85, "end": 92}, {"label": "DATE", "start": 137, "end": 147}]}
+{"doc_id": "EN-0296", "spans": [{"label": "NAME", "start": 28, "end": 46}, {"label": "DATE", "start": 121, "end": 125}]}
+{"doc_id": "EN-0298", "spans": [{"label": "DATE", "start": 121, "end": 132}, {"label": "ADDRESS", "start": 140, "end": 153}]}
+{"doc_id": "EN-0301", "spans": [{"label": "NAME", "start": 107, "end": 114}, {"label": "ADDRESS", "start": 118, "end": 141}, {"label": "DATE", "start": 154, "end": 169}]}
+{"doc_id": "EN-0304", "spans": [{"label": "NAME", "start": 77, "end": 86}, {"label": "DATE", "start": 119, "end": 137}]}
+{"doc_id": "EN-0306", "spans": [{"label": "NAME", "start": 26, "end": 52}, {"label": "DATE", "start": 139, "end": 143}]}
+{"doc_id": "EN-0308", "spans": [{"label": "NAME", "start": 68, "end": 74}, {"label": "ADDRESS", "start": 83, "end": 93}, {"label": "DATE", "start": 109, "end": 117}, {"label": "PHONE", "start": 134, "end": 146}]}
+{"doc_id": "EN-0309", "spans": [{"label": "NAME", "start": 51, "end": 62}, {"label": "ADDRESS", "start": 81, "end": 95}, {"label": "DATE", "start": 99, "end": 109}, {"label": "INSURANCE_ID", "start": 131, "end": 141}]}
+{"doc_id": "EN-0310", "spans": [{"label": "NAME", "start": 44, "end": 57}, {"label": "ADDRESS", "start": 110, "end": 123}, {"label": "DATE", "start": 130, "end": 145}]}
+{"doc_id": "EN-0311", "spans": [{"label": "NAME", "start": 42, "end": 58}, {"label": "DATE", "start": 120, "end": 124}]}
+{"doc_id": "EN-0312", "spans": [{"label": "NAME", "start": 75, "end": 82}, {"label": "ADDRESS", "start": 103, "end": 115}, {"label": "DATE", "start": 119, "end": 128}]}
+{"doc_id": "EN-0313", "spans": [{"label": "NAME", "start": 43, "end": 52}, {"label": "ADDRESS", "start": 84, "end": 99}, {"label": "DATE", "start": 114, "end": 133}]}
+{"doc_id": "EN-0314", "spans": [{"label": "NAME", "start": 0, "end": 10}, {"label": "NAME", "start": 16, "end": 32}, {"label": "ADDRESS", "start": 74, "end": 76}]}
+{"doc_id": "EN-0315", "spans": [{"label": "NAME", "start": 55, "end": 67}, {"label": "DATE", "start": 110, "end": 129}, {"label": "ADDRESS", "start": 139, "end": 166}, {"label": "PATIENT_ID", "start": 168, "end": 183}]}
+{"doc_id": "EN-0316", "spans": [{"label": "NAME", "start": 28, "end": 46}]}
+{"doc_id": "EN-0317", "spans": [{"label": "NAME", "start": 55, "end": 66}, {"label": "ADDRESS", "start": 70, "end": 81}, {"label": "DATE", "start": 85, "end": 97}]}
+{"doc_id": "EN-0318", "spans": [{"label": "NAME", "start": 64, "end": 76}, {"label": "ADDRESS", "start": 93, "end": 110}, {"label": "DATE", "start": 114, "end": 129}, {"label": "SSN", "start": 136, "end": 147}]}
+{"doc_id": "EN-0319", "spans": [{"label": "NAME", "start": 31, "end": 53}]}
+{"doc_id": "EN-0322", "spans": [{"label": "NAME", "start": 76, "end": 83}, {"label": "ADDRESS", "start": 89, "end": 92}, {"label": "DATE", "start": 107, "end": 119}, {"label": "SSN", "start": 126, "end": 137}]}
+{"doc_id": "EN-0326", "spans": [{"label": "NAME", "start": 41, "end": 59}, {"label": "DATE", "start": 145, "end": 154}]}
+{"doc_id": "EN-0329", "spans": [{"label": "NAME", "start": 41, "end": 59}, {"label": "DATE", "start": 141, "end": 145}]}
+{"doc_id": "EN-0332", "spans": [{"label": "NAME", "start": 53, "end": 69}]}
+{"doc_id": "EN-0333", "spans": [{"label": "NAME", "start": 72, "end": 82}, {"label": "DATE", "start": 124, "end": 143}, {"label": "EMAIL", "start": 154, "end": 176}]}
+{"doc_id": "EN-0335", "spans": [{"label": "NAME", "start": 26, "end": 42}, {"label": "NAME", "start": 95, "end": 111}, {"label": "ADDRESS", "start": 115, "end": 142}, {"label": "DATE", "start": 146, "end": 165}, {"label": "PATIENT_ID", "start": 167, "end": 183}]}
+{"doc_id": "EN-0337", "spans": [{"label": "NAME", "start": 43, "end": 52}, {"label": "NAME", "start": 79, "end": 92}, {"label": "ADDRESS", "start": 96, "end": 103}, {"label": "DATE", "start": 107, "end": 117}, {"label": "PATIENT_ID", "start": 144, "end": 150}]}
+{"doc_id": "EN-0338", "spans": [{"label": "NAME", "start": 88, "end": 101}, {"label": "ADDRESS", "start": 152, "end": 171}, {"label": "DATE", "start": 175, "end": 193}]}
+{"doc_id": "EN-0343", "spans": [{"label": "NAME", "start": 90, "end": 97}, {"label": "ADDRESS", "start": 114, "end": 129}, {"label": "DATE", "start": 133, "end": 146}, {"label": "PATIENT_ID", "start": 159, "end": 168}]}
+{"doc_id": "EN-0347", "spans": [{"label": "NAME", "start": 55, "end": 62}, {"label": "ADDRESS", "start": 71, "end": 95}, {"label": "DATE", "start": 99, "end": 114}]}
+{"doc_id": "EN-0348", "spans": [{"label": "NAME", "start": 52, "end": 70}, {"label": "NAME", "start": 82, "end": 94}, {"label": "ADDRESS", "start": 98, "end": 121}, {"label": "DATE", "start": 122, "end": 131}]}
+{"doc_id": "EN-0350", "spans": [{"label": "NAME", "start": 101, "end": 112}, {"label": "DATE", "start": 150, "end": 169}, {"label": "PATIENT_ID", "start": 171, "end": 186}]}
+{"doc_id": "EN-0352", "spans": [{"label": "NAME", "start": 60, "end": 68}, {"label": "ADDRESS", "start": 82, "end": 93}, {"label": "DATE", "start": 97, "end": 107}, {"label": "INSURANCE_ID", "start": 120, "end": 130}]}
+{"doc_id": "EN-0354", "spans": [{"label": "NAME", "start": 83, "end": 90}, {"label": "ADDRESS", "start": 111, "end": 115}, {"label": "DATE", "start": 119, "end": 134}]}
+{"doc_id": "EN-0356", "spans": [{"label": "NAME", "start": 29, "end": 36}, {"label": "ADDRESS", "start": 66, "end": 80}, {"label": "DATE", "start": 84, "end": 92}, {"label": "INSURANCE_ID", "start": 105, "end": 114}]}
+{"doc_id": "EN-0357", "spans": [{"label": "NAME", "start": 16, "end": 32}, {"label": "DATE", "start": 102, "end": 106}]}
+{"doc_id": "EN-0359", "spans": [{"label": "NAME", "start": 59, "end": 66}, {"label": "DATE", "start": 118, "end": 130}, {"label": "PATIENT_ID", "start": 132, "end": 146}]}
+{"doc_id": "EN-0370", "spans": [{"label": "NAME", "start": 44, "end": 60}, {"label": "NAME", "start": 109, "end": 118}, {"label": "ADDRESS", "start": 122, "end": 144}, {"label": "DATE", "start": 148, "end": 163}]}
+{"doc_id": "EN-0374", "spans": [{"label": "NAME", "start": 70, "end": 81}, {"label": "ADDRESS", "start": 115, "end": 127}, {"label": "DATE", "start": 131, "end": 148}]}
+{"doc_id": "EN-0378", "spans": [{"label": "NAME", "start": 73, "end": 81}, {"label": "ADDRESS", "start": 113, "end": 129}, {"label": "DATE", "start": 133, "end": 147}]}
+{"doc_id": "EN-0379", "spans": [{"label": "NAME", "start": 60, "end": 68}]}
+{"doc_id": "EN-0382", "spans": [{"label": "NAME", "start": 45, "end": 64}, {"label": "DATE", "start": 117, "end": 128}]}
+{"doc_id": "EN-0383", "spans": [{"label": "NAME", "start": 49, "end": 59}, {"label": "ADDRESS", "start": 69, "end": 73}, {"label": "DATE", "start": 77, "end": 89}, {"label": "PATIENT_ID", "start": 152, "end": 161}]}
+{"doc_id": "EN-0384", "spans": [{"label": "NAME", "start": 74, "end": 82}, {"label": "ADDRESS", "start": 97, "end": 110}, {"label": "DATE", "start": 114, "end": 129}]}
+{"doc_id": "EN-0386", "spans": [{"label": "NAME", "start": 72, "end": 80}, {"label": "ADDRESS", "start": 96, "end": 108}, {"label": "DATE", "start": 112, "end": 132}, {"label": "PATIENT_ID", "start": 134, "end": 149}]}
+{"doc_id": "EN-0388", "spans": [{"label": "NAME", "start": 103, "end": 111}, {"label": "ADDRESS", "start": 125, "end": 144}, {"label": "DATE", "start": 148, "end": 164}, {"label": "INSURANCE_ID", "start": 180, "end": 190}]}
+{"doc_id": "EN-0390", "spans": [{"label": "NAME", "start": 81, "end": 91}, {"label": "ADDRESS", "start": 107, "end": 118}, {"label": "DATE", "start": 132, "end": 145}, {"label": "PATIENT_ID", "start": 147, "end": 162}]}
+{"doc_id": "EN-0392", "spans": [{"label": "NAME", "start": 55, "end": 67}, {"label": "DATE", "start": 106, "end": 124}, {"label": "PATIENT_ID", "start": 126, "end": 140}]}
+{"doc_id": "EN-0393", "spans": [{"label": "ADDRESS", "start": 37, "end": 50}, {"label": "NAME", "start": 52, "end": 59}, {"label": "NAME", "start": 66, "end": 82}, {"label": "DATE", "start": 95, "end": 107}]}
+{"doc_id": "EN-0394", "spans": [{"label": "NAME", "start": 44, "end": 60}, {"label": "DATE", "start": 124, "end": 128}]}
+{"doc_id": "EN-0395", "spans": [{"label": "NAME", "start": 56, "end": 64}, {"label": "ADDRESS", "start": 109, "end": 126}, {"label": "DATE", "start": 130, "end": 148}, {"label": "INSURANCE_ID", "start": 164, "end": 173}]}
+{"doc_id": "EN-0397", "spans": [{"label": "NAME", "start": 46, "end": 55}, {"label": "ADDRESS", "start": 109, "end": 120}, {"label": "DATE", "start": 124, "end": 140}, {"label": "PATIENT_ID", "start": 161, "end": 175}]}
+{"doc_id": "EN-0400", "spans": [{"label": "NAME", "start": 70, "end": 77}, {"label": "ADDRESS", "start": 103, "end": 125}, {"label": "DATE", "start": 132, "end": 148}, {"label": "PATIENT_ID", "start": 150, "end": 165}]}
+{"doc_id": "EN-0402", "spans": [{"label": "NAME", "start": 45, "end": 53}, {"label": "DATE", "start": 108, "end": 112}]}
+{"doc_id": "EN-0404", "spans": [{"label": "NAME", "start": 32, "end": 48}, {"label": "DATE", "start": 134, "end": 138}]}
+{"doc_id": "EN-0408", "spans": [{"label": "NAME", "start": 91, "end": 99}, {"label": "ADDRESS", "start": 121, "end": 141}, {"label": "DATE", "start": 163, "end": 179}]}
+{"doc_id": "EN-0410", "spans": [{"label": "NAME", "start": 52, "end": 67}, {"label": "DATE", "start": 85, "end": 95}, {"label": "ADDRESS", "start": 116, "end": 135}, {"label": "PATIENT_ID", "start": 137, "end": 151}]}
+{"doc_id": "EN-0412", "spans": [{"label": "NAME", "start": 46, "end": 54}, {"label": "ADDRESS", "start": 105, "end": 115}, {"label": "DATE", "start": 119, "end": 132}, {"label": "INSURANCE_ID", "start": 150, "end": 159}]}
+{"doc_id": "EN-0415", "spans": [{"label": "NAME", "start": 90, "end": 100}, {"label": "DATE", "start": 138, "end": 154}, {"label": "PATIENT_ID", "start": 156, "end": 168}]}
+{"doc_id": "EN-0418", "spans": [{"label": "NAME", "start": 26, "end": 33}, {"label": "ADDRESS", "start": 43, "end": 54}, {"label": "DATE", "start": 58, "end": 70}, {"label": "INSURANCE_ID", "start": 128, "end": 137}]}
+{"doc_id": "EN-0420", "spans": [{"label": "NAME", "start": 50, "end": 63}, {"label": "DATE", "start": 92, "end": 110}, {"label": "ADDRESS", "start": 115, "end": 135}, {"label": "PATIENT_ID", "start": 137, "end": 153}]}
+{"doc_id": "EN-0422", "spans": [{"label": "NAME", "start": 45, "end": 53}, {"label": "ADDRESS", "start": 68, "end": 80}, {"label": "DATE", "start": 84, "end": 94}, {"label": "SSN", "start": 101, "end": 112}]}
+{"doc_id": "EN-0425", "spans": [{"label": "NAME", "start": 50, "end": 60}, {"label": "DATE", "start": 132, "end": 146}]}
+{"doc_id": "EN-0428", "spans": [{"label": "NAME", "start": 52, "end": 61}, {"label": "ADDRESS", "start": 122, "end": 145}, {"label": "DATE", "start": 149, "end": 162}, {"label": "PATIENT_ID", "start": 164, "end": 180}]}
+{"doc_id": "EN-0429", "spans": [{"label": "NAME", "start": 42, "end": 58}]}
+{"doc_id": "EN-0431", "spans": [{"label": "NAME", "start": 62, "end": 95}]}
+{"doc_id": "EN-0436", "spans": [{"label": "NAME", "start": 40, "end": 58}, {"label": "DATE", "start": 107, "end": 111}]}
+{"doc_id": "EN-0437", "spans": [{"label": "NAME", "start": 49, "end": 58}, {"label": "ADDRESS", "start": 73, "end": 91}, {"label": "DATE", "start": 95, "end": 110}, {"label": "PATIENT_ID", "start": 117, "end": 126}]}
+{"doc_id": "EN-0438", "spans": [{"label": "NAME", "start": 59, "end": 67}, {"label": "ADDRESS", "start": 89, "end": 100}, {"label": "DATE", "start": 104, "end": 117}, {"label": "PHONE", "start": 124, "end": 135}]}
+{"doc_id": "EN-0441", "spans": [{"label": "NAME", "start": 49, "end": 67}]}
+{"doc_id": "EN-0447", "spans": [{"label": "NAME", "start": 47, "end": 55}, {"label": "ADDRESS", "start": 70, "end": 82}, {"label": "DATE", "start": 103, "end": 113}, {"label": "PATIENT_ID", "start": 115, "end": 128}]}
+{"doc_id": "EN-0449", "spans": [{"label": "NAME", "start": 75, "end": 86}, {"label": "ADDRESS", "start": 116, "end": 129}, {"label": "DATE", "start": 133, "end": 143}, {"label": "EMAIL", "start": 152, "end": 174}]}
+{"doc_id": "EN-0452", "spans": [{"label": "NAME", "start": 28, "end": 54}, {"label": "DATE", "start": 94, "end": 98}]}
+{"doc_id": "EN-0456", "spans": [{"label": "NAME", "start": 67, "end": 75}, {"label": "ADDRESS", "start": 97, "end": 113}, {"label": "DATE", "start": 117, "end": 131}, {"label": "PATIENT_ID", "start": 161, "end": 170}]}
+{"doc_id": "EN-0457", "spans": [{"label": "NAME", "start": 67, "end": 74}, {"label": "ADDRESS", "start": 89, "end": 105}, {"label": "DATE", "start": 109, "end": 123}, {"label": "PATIENT_ID", "start": 130, "end": 140}]}
+{"doc_id": "EN-0458", "spans": [{"label": "NAME", "start": 61, "end": 69}, {"label": "ADDRESS", "start": 83, "end": 101}, {"label": "DATE", "start": 105, "end": 120}, {"label": "PATIENT_ID", "start": 122, "end": 136}]}
+{"doc_id": "EN-0460", "spans": [{"label": "NAME", "start": 68, "end": 75}, {"label": "ADDRESS", "start": 139, "end": 146}, {"label": "DATE", "start": 153, "end": 167}, {"label": "PATIENT_ID", "start": 189, "end": 198}]}
+{"doc_id": "EN-0463", "spans": [{"label": "NAME", "start": 67, "end": 76}, {"label": "ADDRESS", "start": 95, "end": 109}, {"label": "DATE", "start": 113, "end": 129}, {"label": "PATIENT_ID", "start": 169, "end": 180}]}
+{"doc_id": "EN-0466", "spans": [{"label": "NAME", "start": 88, "end": 98}, {"label": "ADDRESS", "start": 108, "end": 128}, {"label": "DATE", "start": 132, "end": 150}, {"label": "PATIENT_ID", "start": 152, "end": 165}]}
+{"doc_id": "EN-0467", "spans": [{"label": "NAME", "start": 28, "end": 35}]}
+{"doc_id": "EN-0473", "spans": [{"label": "NAME", "start": 44, "end": 53}, {"label": "NAME", "start": 79, "end": 90}, {"label": "ADDRESS", "start": 108, "end": 123}, {"label": "DATE", "start": 127, "end": 141}]}
+{"doc_id": "EN-0478", "spans": [{"label": "NAME", "start": 41, "end": 57}, {"label": "NAME", "start": 92, "end": 107}, {"label": "DATE", "start": 146, "end": 150}]}
+{"doc_id": "EN-0479", "spans": [{"label": "NAME", "start": 90, "end": 108}, {"label": "NAME", "start": 128, "end": 141}, {"label": "ADDRESS", "start": 145, "end": 164}, {"label": "DATE", "start": 168, "end": 178}]}
+{"doc_id": "EN-0481", "spans": [{"label": "NAME", "start": 110, "end": 123}, {"label": "ADDRESS", "start": 144, "end": 179}, {"label": "DATE", "start": 183, "end": 198}]}
+{"doc_id": "EN-0482", "spans": [{"label": "NAME", "start": 41, "end": 50}, {"label": "ADDRESS", "start": 106, "end": 131}, {"label": "DATE", "start": 141, "end": 156}]}
+{"doc_id": "EN-0484", "spans": [{"label": "NAME", "start": 58, "end": 74}, {"label": "ADDRESS", "start": 92, "end": 109}, {"label": "DATE", "start": 113, "end": 131}, {"label": "PATIENT_ID", "start": 162, "end": 174}]}
+{"doc_id": "EN-0486", "spans": [{"label": "NAME", "start": 50, "end": 62}, {"label": "PATIENT_ID", "start": 64, "end": 79}, {"label": "ADDRESS", "start": 139, "end": 153}]}
+{"doc_id": "EN-0488", "spans": [{"label": "NAME", "start": 49, "end": 57}, {"label": "ADDRESS", "start": 76, "end": 96}, {"label": "DATE", "start": 100, "end": 113}, {"label": "PHONE", "start": 130, "end": 142}]}
+{"doc_id": "EN-0492", "spans": [{"label": "NAME", "start": 48, "end": 55}, {"label": "DATE", "start": 78, "end": 88}, {"label": "ADDRESS", "start": 92, "end": 103}, {"label": "INSURANCE_ID", "start": 138, "end": 146}]}
+{"doc_id": "EN-0493", "spans": [{"label": "NAME", "start": 30, "end": 48}, {"label": "NAME", "start": 94, "end": 103}, {"label": "DATE", "start": 107, "end": 119}, {"label": "ADDRESS", "start": 124, "end": 128}, {"label": "PHONE", "start": 137, "end": 149}]}
+{"doc_id": "EN-0494", "spans": [{"label": "NAME", "start": 80, "end": 88}, {"label": "ADDRESS", "start": 106, "end": 124}, {"label": "DATE", "start": 128, "end": 146}, {"label": "EMAIL", "start": 155, "end": 174}]}
+{"doc_id": "EN-0495", "spans": [{"label": "NAME", "start": 89, "end": 101}, {"label": "ADDRESS", "start": 120, "end": 139}, {"label": "DATE", "start": 143, "end": 159}]}
+{"doc_id": "EN-0496", "spans": [{"label": "NAME", "start": 26, "end": 33}]}
+{"doc_id": "EN-0497", "spans": [{"label": "ADDRESS", "start": 62, "end": 76}, {"label": "DATE", "start": 80, "end": 94}, {"label": "PATIENT_ID", "start": 101, "end": 110}]}
+{"doc_id": "EN-0502", "spans": [{"label": "NAME", "start": 27, "end": 54}, {"label": "DATE", "start": 100, "end": 104}]}
+{"doc_id": "EN-0504", "spans": [{"label": "NAME", "start": 39, "end": 48}, {"label": "DATE", "start": 78, "end": 91}, {"label": "ADDRESS", "start": 95, "end": 125}, {"label": "INSURANCE_ID", "start": 145, "end": 158}]}
+{"doc_id": "EN-0506", "spans": [{"label": "NAME", "start": 30, "end": 41}, {"label": "NAME", "start": 117, "end": 129}, {"label": "ADDRESS", "start": 156, "end": 168}]}
+{"doc_id": "EN-0511", "spans": [{"label": "NAME", "start": 52, "end": 62}, {"label": "ADDRESS", "start": 75, "end": 86}, {"label": "DATE", "start": 120, "end": 130}, {"label": "INSURANCE_ID", "start": 146, "end": 160}]}
+{"doc_id": "EN-0515", "spans": [{"label": "NAME", "start": 54, "end": 69}, {"label": "DATE", "start": 108, "end": 118}, {"label": "PATIENT_ID", "start": 125, "end": 134}]}
+{"doc_id": "EN-0516", "spans": [{"label": "NAME", "start": 40, "end": 58}, {"label": "DATE", "start": 132, "end": 141}]}
+{"doc_id": "EN-0519", "spans": [{"label": "NAME", "start": 47, "end": 58}]}
+{"doc_id": "EN-0520", "spans": [{"label": "NAME", "start": 56, "end": 66}, {"label": "ADDRESS", "start": 107, "end": 120}, {"label": "DATE", "start": 124, "end": 141}]}
+{"doc_id": "EN-0522", "spans": [{"label": "NAME", "start": 64, "end": 88}]}
+{"doc_id": "EN-0523", "spans": [{"label": "NAME", "start": 29, "end": 35}, {"label": "ADDRESS", "start": 39, "end": 47}, {"label": "DATE", "start": 48, "end": 57}]}
+{"doc_id": "EN-0532", "spans": [{"label": "NAME", "start": 60, "end": 78}]}
+{"doc_id": "EN-0534", "spans": [{"label": "NAME", "start": 52, "end": 59}, {"label": "DATE", "start": 63, "end": 76}, {"label": "EMAIL", "start": 130, "end": 150}]}
+{"doc_id": "EN-0535", "spans": [{"label": "NAME", "start": 30, "end": 48}, {"label": "NAME", "start": 96, "end": 112}, {"label": "ADDRESS", "start": 116, "end": 127}, {"label": "DATE", "start": 131, "end": 150}, {"label": "PATIENT_ID", "start": 152, "end": 168}]}
+{"doc_id": "EN-0536", "spans": [{"label": "NAME", "start": 54, "end": 78}, {"label": "ADDRESS", "start": 88, "end": 105}, {"label": "DATE", "start": 124, "end": 133}]}
+{"doc_id": "EN-0538", "spans": [{"label": "NAME", "start": 35, "end": 53}, {"label": "NAME", "start": 118, "end": 126}, {"label": "ADDRESS", "start": 139, "end": 150}, {"label": "DATE", "start": 154, "end": 169}, {"label": "PATIENT_ID", "start": 171, "end": 185}]}
+{"doc_id": "EN-0540", "spans": [{"label": "NAME", "start": 45, "end": 57}, {"label": "DATE", "start": 92, "end": 108}, {"label": "ADDRESS", "start": 112, "end": 139}, {"label": "PATIENT_ID", "start": 141, "end": 157}]}
+{"doc_id": "EN-0541", "spans": [{"label": "NAME", "start": 41, "end": 49}, {"label": "ADDRESS", "start": 59, "end": 78}, {"label": "DATE", "start": 82, "end": 101}]}
+{"doc_id": "EN-0542", "spans": [{"label": "NAME", "start": 43, "end": 51}, {"label": "ADDRESS", "start": 102, "end": 121}, {"label": "DATE", "start": 125, "end": 135}]}
+{"doc_id": "EN-0545", "spans": [{"label": "NAME", "start": 116, "end": 126}, {"label": "ADDRESS", "start": 130, "end": 149}, {"label": "DATE", "start": 163, "end": 180}, {"label": "PATIENT_ID", "start": 182, "end": 195}]}
+{"doc_id": "EN-0546", "spans": [{"label": "NAME", "start": 59, "end": 67}, {"label": "ADDRESS", "start": 88, "end": 105}, {"label": "DATE", "start": 109, "end": 121}, {"label": "PATIENT_ID", "start": 123, "end": 137}]}
+{"doc_id": "EN-0547", "spans": [{"label": "NAME", "start": 78, "end": 90}, {"label": "ADDRESS", "start": 94, "end": 111}, {"label": "DATE", "start": 113, "end": 128}]}
+{"doc_id": "EN-0549", "spans": [{"label": "NAME", "start": 73, "end": 83}, {"label": "ADDRESS", "start": 93, "end": 104}, {"label": "DATE", "start": 108, "end": 118}, {"label": "PATIENT_ID", "start": 131, "end": 141}]}
+{"doc_id": "EN-0551", "spans": [{"label": "NAME", "start": 98, "end": 105}, {"label": "ADDRESS", "start": 144, "end": 157}, {"label": "DATE", "start": 162, "end": 179}]}
+{"doc_id": "EN-0552", "spans": [{"label": "NAME", "start": 76, "end": 94}]}
+{"doc_id": "EN-0554", "spans": [{"label": "NAME", "start": 94, "end": 101}, {"label": "ADDRESS", "start": 123, "end": 139}, {"label": "DATE", "start": 143, "end": 159}]}
+{"doc_id": "EN-0555", "spans": [{"label": "NAME", "start": 77, "end": 87}, {"label": "ADDRESS", "start": 109, "end": 121}, {"label": "DATE", "start": 125, "end": 142}]}
+{"doc_id": "EN-0558", "spans": [{"label": "NAME", "start": 25, "end": 32}, {"label": "ADDRESS", "start": 73, "end": 89}, {"label": "DATE", "start": 93, "end": 105}]}
+{"doc_id": "EN-0560", "spans": [{"label": "NAME", "start": 69, "end": 76}, {"label": "ADDRESS", "start": 90, "end": 109}, {"label": "DATE", "start": 113, "end": 129}, {"label": "PATIENT_ID", "start": 131, "end": 144}]}
+{"doc_id": "EN-0562", "spans": [{"label": "NAME", "start": 43, "end": 76}]}
+{"doc_id": "EN-0563", "spans": [{"label": "NAME", "start": 63, "end": 71}, {"label": "ADDRESS", "start": 86, "end": 97}, {"label": "DATE", "start": 101, "end": 112}, {"label": "INSURANCE_ID", "start": 138, "end": 147}]}
+{"doc_id": "EN-0566", "spans": [{"label": "NAME", "start": 58, "end": 70}, {"label": "ADDRESS", "start": 107, "end": 129}, {"label": "DATE", "start": 133, "end": 147}]}
+{"doc_id": "EN-0569", "spans": [{"label": "NAME", "start": 45, "end": 67}]}
+{"doc_id": "EN-0571", "spans": [{"label": "NAME", "start": 68, "end": 76}, {"label": "ADDRESS", "start": 98, "end": 121}, {"label": "DATE", "start": 125, "end": 143}]}
+{"doc_id": "EN-0572", "spans": [{"label": "NAME", "start": 88, "end": 96}, {"label": "ADDRESS", "start": 111, "end": 123}, {"label": "DATE", "start": 146, "end": 160}]}
+{"doc_id": "EN-0573", "spans": [{"label": "NAME", "start": 74, "end": 81}, {"label": "ADDRESS", "start": 100, "end": 119}, {"label": "DATE", "start": 123, "end": 136}, {"label": "PATIENT_ID", "start": 138, "end": 154}]}
+{"doc_id": "EN-0578", "spans": [{"label": "NAME", "start": 52, "end": 85}, {"label": "ADDRESS", "start": 95, "end": 117}, {"label": "DATE", "start": 121, "end": 138}, {"label": "PATIENT_ID", "start": 140, "end": 154}]}
+{"doc_id": "EN-0579", "spans": [{"label": "NAME", "start": 65, "end": 71}, {"label": "ADDRESS", "start": 83, "end": 100}, {"label": "DATE", "start": 132, "end": 148}]}
+{"doc_id": "EN-0581", "spans": [{"label": "NAME", "start": 28, "end": 44}, {"label": "NAME", "start": 81, "end": 90}, {"label": "ADDRESS", "start": 97, "end": 103}, {"label": "DATE", "start": 113, "end": 129}]}
+{"doc_id": "EN-0582", "spans": [{"label": "NAME", "start": 16, "end": 32}]}
+{"doc_id": "EN-0592", "spans": [{"label": "ADDRESS", "start": 57, "end": 73}, {"label": "NAME", "start": 80, "end": 93}, {"label": "DATE", "start": 97, "end": 108}, {"label": "PATIENT_ID", "start": 115, "end": 124}]}
+{"doc_id": "EN-0605", "spans": [{"label": "NAME", "start": 67, "end": 80}, {"label": "DATE", "start": 125, "end": 144}, {"label": "PATIENT_ID", "start": 164, "end": 178}]}
+{"doc_id": "EN-0608", "spans": [{"label": "NAME", "start": 83, "end": 91}, {"label": "ADDRESS", "start": 119, "end": 126}, {"label": "DATE", "start": 130, "end": 149}]}
+{"doc_id": "EN-0609", "spans": [{"label": "NAME", "start": 61, "end": 68}, {"label": "INSURANCE_ID", "start": 112, "end": 124}]}
+{"doc_id": "EN-0611", "spans": [{"label": "NAME", "start": 57, "end": 64}, {"label": "ADDRESS", "start": 83, "end": 118}, {"label": "DATE", "start": 122, "end": 140}]}
+{"doc_id": "EN-0612", "spans": [{"label": "NAME", "start": 46, "end": 62}]}
+{"doc_id": "EN-0614", "spans": [{"label": "NAME", "start": 0, "end": 10}, {"label": "NAME", "start": 16, "end": 34}]}
+{"doc_id": "EN-0618", "spans": [{"label": "ADDRESS", "start": 66, "end": 76}, {"label": "DATE", "start": 97, "end": 110}, {"label": "NAME", "start": 115, "end": 126}]}
+{"doc_id": "EN-0619", "spans": [{"label": "NAME", "start": 80, "end": 119}, {"label": "DATE", "start": 130, "end": 139}]}
+{"doc_id": "EN-0621", "spans": [{"label": "NAME", "start": 103, "end": 111}, {"label": "ADDRESS", "start": 139, "end": 152}, {"label": "DATE", "start": 156, "end": 172}]}
+{"doc_id": "EN-0623", "spans": [{"label": "NAME", "start": 151, "end": 160}, {"label": "ADDRESS", "start": 170, "end": 183}, {"label": "DATE", "start": 193, "end": 206}]}
+{"doc_id": "EN-0632", "spans": [{"label": "NAME", "start": 58, "end": 74}]}
+{"doc_id": "EN-0633", "spans": [{"label": "NAME", "start": 11, "end": 24}, {"label": "ADDRESS", "start": 28, "end": 39}, {"label": "DATE", "start": 43, "end": 53}, {"label": "PATIENT_ID", "start": 121, "end": 129}]}
+{"doc_id": "EN-0634", "spans": [{"label": "NAME", "start": 83, "end": 93}, {"label": "ADDRESS", "start": 133, "end": 167}, {"label": "DATE", "start": 171, "end": 181}, {"label": "PATIENT_ID", "start": 183, "end": 196}]}
+{"doc_id": "EN-0636", "spans": [{"label": "NAME", "start": 16, "end": 32}, {"label": "DATE", "start": 104, "end": 108}]}
+{"doc_id": "EN-0637", "spans": [{"label": "NAME", "start": 29, "end": 35}, {"label": "ADDRESS", "start": 62, "end": 89}, {"label": "DATE", "start": 94, "end": 104}, {"label": "NAME", "start": 106, "end": 108}]}
+{"doc_id": "EN-0638", "spans": [{"label": "NAME", "start": 74, "end": 86}, {"label": "DATE", "start": 104, "end": 115}, {"label": "ADDRESS", "start": 119, "end": 134}]}
+{"doc_id": "EN-0639", "spans": [{"label": "NAME", "start": 26, "end": 44}]}
+{"doc_id": "EN-0640", "spans": [{"label": "NAME", "start": 79, "end": 87}, {"label": "ADDRESS", "start": 109, "end": 132}, {"label": "DATE", "start": 136, "end": 151}]}
+{"doc_id": "EN-0641", "spans": [{"label": "NAME", "start": 93, "end": 100}, {"label": "ADDRESS", "start": 114, "end": 127}, {"label": "DATE", "start": 131, "end": 146}]}
+{"doc_id": "EN-0642", "spans": [{"label": "NAME", "start": 28, "end": 46}, {"label": "DATE", "start": 83, "end": 93}]}
+{"doc_id": "EN-0644", "spans": [{"label": "NAME", "start": 97, "end": 107}, {"label": "DATE", "start": 121, "end": 135}, {"label": "ADDRESS", "start": 139, "end": 158}]}
+{"doc_id": "EN-0646", "spans": [{"label": "NAME", "start": 57, "end": 67}, {"label": "ADDRESS", "start": 78, "end": 90}, {"label": "DATE", "start": 96, "end": 106}, {"label": "INSURANCE_ID", "start": 150, "end": 159}]}
+{"doc_id": "EN-0647", "spans": [{"label": "NAME", "start": 44, "end": 62}]}
+{"doc_id": "EN-0648", "spans": [{"label": "NAME", "start": 73, "end": 87}, {"label": "ADDRESS", "start": 99, "end": 106}, {"label": "DATE", "start": 121, "end": 134}]}
+{"doc_id": "EN-0649", "spans": [{"label": "NAME", "start": 45, "end": 52}, {"label": "ADDRESS", "start": 58, "end": 69}, {"label": "DATE", "start": 103, "end": 113}]}
+{"doc_id": "EN-0652", "spans": [{"label": "NAME", "start": 45, "end": 54}, {"label": "ADDRESS", "start": 68, "end": 79}, {"label": "DATE", "start": 91, "end": 101}]}
+{"doc_id": "EN-0654", "spans": [{"label": "NAME", "start": 27, "end": 56}]}
+{"doc_id": "EN-0657", "spans": [{"label": "NAME", "start": 61, "end": 87}]}
+{"doc_id": "EN-0658", "spans": [{"label": "NAME", "start": 64, "end": 71}, {"label": "DATE", "start": 117, "end": 126}, {"label": "ADDRESS", "start": 130, "end": 150}, {"label": "PHONE", "start": 172, "end": 186}]}
+{"doc_id": "EN-0659", "spans": [{"label": "NAME", "start": 98, "end": 106}, {"label": "ADDRESS", "start": 119, "end": 134}, {"label": "DATE", "start": 138, "end": 149}, {"label": "PHONE", "start": 166, "end": 178}]}
+{"doc_id": "EN-0662", "spans": [{"label": "NAME", "start": 89, "end": 97}, {"label": "ADDRESS", "start": 123, "end": 144}, {"label": "DATE", "start": 148, "end": 164}]}
+{"doc_id": "EN-0665", "spans": [{"label": "NAME", "start": 44, "end": 51}, {"label": "PATIENT_ID", "start": 76, "end": 86}, {"label": "DATE", "start": 112, "end": 122}, {"label": "ADDRESS", "start": 126, "end": 148}]}
+{"doc_id": "EN-0672", "spans": [{"label": "NAME", "start": 75, "end": 87}, {"label": "ADDRESS", "start": 106, "end": 122}, {"label": "DATE", "start": 126, "end": 145}, {"label": "PATIENT_ID", "start": 171, "end": 180}]}
+{"doc_id": "EN-0673", "spans": [{"label": "NAME", "start": 43, "end": 60}, {"label": "DATE", "start": 124, "end": 134}]}
+{"doc_id": "EN-0674", "spans": [{"label": "NAME", "start": 44, "end": 52}, {"label": "ADDRESS", "start": 56, "end": 63}, {"label": "ADDRESS", "start": 67, "end": 77}, {"label": "DATE", "start": 87, "end": 100}, {"label": "PATIENT_ID", "start": 102, "end": 116}]}
+{"doc_id": "EN-0675", "spans": [{"label": "NAME", "start": 47, "end": 62}, {"label": "NAME", "start": 72, "end": 90}, {"label": "ADDRESS", "start": 95, "end": 104}, {"label": "DATE", "start": 108, "end": 123}, {"label": "INSURANCE_ID", "start": 147, "end": 156}]}
+{"doc_id": "EN-0676", "spans": [{"label": "NAME", "start": 57, "end": 65}, {"label": "DATE", "start": 83, "end": 102}, {"label": "ADDRESS", "start": 106, "end": 133}]}
+{"doc_id": "EN-0677", "spans": [{"label": "NAME", "start": 78, "end": 88}, {"label": "ADDRESS", "start": 105, "end": 112}, {"label": "DATE", "start": 142, "end": 154}]}
+{"doc_id": "EN-0678", "spans": [{"label": "NAME", "start": 43, "end": 51}, {"label": "ADDRESS", "start": 73, "end": 85}, {"label": "DATE", "start": 89, "end": 99}]}
+{"doc_id": "EN-0682", "spans": [{"label": "NAME", "start": 37, "end": 47}, {"label": "ADDRESS", "start": 97, "end": 107}, {"label": "DATE", "start": 111, "end": 121}, {"label": "INSURANCE_ID", "start": 142, "end": 151}]}
+{"doc_id": "EN-0683", "spans": [{"label": "NAME", "start": 48, "end": 75}]}
+{"doc_id": "EN-0685", "spans": [{"label": "NAME", "start": 69, "end": 76}, {"label": "DATE", "start": 147, "end": 162}, {"label": "ADDRESS", "start": 166, "end": 187}]}
+{"doc_id": "EN-0686", "spans": [{"label": "NAME", "start": 73, "end": 88}, {"label": "ADDRESS", "start": 130, "end": 143}, {"label": "DATE", "start": 147, "end": 161}]}
+{"doc_id": "EN-0687", "spans": [{"label": "NAME", "start": 44, "end": 72}]}
+{"doc_id": "EN-0688", "spans": [{"label": "ADDRESS", "start": 53, "end": 55}, {"label": "NAME", "start": 75, "end": 82}, {"label": "DATE", "start": 96, "end": 106}, {"label": "ADDRESS", "start": 110, "end": 129}, {"label": "INSURANCE_ID", "start": 196, "end": 205}]}
+{"doc_id": "EN-0695", "spans": [{"label": "NAME", "start": 105, "end": 115}, {"label": "DATE", "start": 146, "end": 162}]}
+{"doc_id": "EN-0702", "spans": [{"label": "NAME", "start": 71, "end": 79}, {"label": "DATE", "start": 105, "end": 123}, {"label": "PATIENT_ID", "start": 125, "end": 139}]}
+{"doc_id": "EN-0703", "spans": [{"label": "NAME", "start": 37, "end": 53}, {"label": "DATE", "start": 98, "end": 114}]}
+{"doc_id": "EN-0708", "spans": [{"label": "NAME", "start": 28, "end": 47}, {"label": "DATE", "start": 117, "end": 128}]}
+{"doc_id": "EN-0709", "spans": [{"label": "ADDRESS", "start": 65, "end": 77}, {"label": "DATE", "start": 81, "end": 94}, {"label": "NAME", "start": 122, "end": 131}, {"label": "INSURANCE_ID", "start": 145, "end": 154}]}
+{"doc_id": "EN-0710", "spans": [{"label": "NAME", "start": 108, "end": 115}, {"label": "ADDRESS", "start": 143, "end": 149}, {"label": "DATE", "start": 153, "end": 165}]}
+{"doc_id": "EN-0711", "spans": [{"label": "NAME", "start": 55, "end": 64}, {"label": "ADDRESS", "start": 92, "end": 112}, {"label": "DATE", "start": 116, "end": 131}, {"label": "PATIENT_ID", "start": 133, "end": 147}]}
+{"doc_id": "EN-0715", "spans": [{"label": "NAME", "start": 69, "end": 76}, {"label": "ADDRESS", "start": 90, "end": 106}, {"label": "DATE", "start": 110, "end": 126}, {"label": "PHONE", "start": 137, "end": 151}]}
+{"doc_id": "EN-0720", "spans": [{"label": "NAME", "start": 31, "end": 47}]}
+{"doc_id": "EN-0724", "spans": [{"label": "NAME", "start": 45, "end": 52}, {"label": "ADDRESS", "start": 62, "end": 88}, {"label": "DATE", "start": 92, "end": 100}, {"label": "INSURANCE_ID", "start": 120, "end": 129}]}
+{"doc_id": "EN-0726", "spans": [{"label": "NAME", "start": 59, "end": 71}, {"label": "ADDRESS", "start": 106, "end": 125}, {"label": "DATE", "start": 129, "end": 145}, {"label": "PATIENT_ID", "start": 147, "end": 156}]}
+{"doc_id": "EN-0727", "spans": [{"label": "NAME", "start": 43, "end": 59}]}
+{"doc_id": "EN-0728", "spans": [{"label": "NAME", "start": 49, "end": 58}, {"label": "ADDRESS", "start": 68, "end": 100}, {"label": "DATE", "start": 104, "end": 116}, {"label": "PHONE", "start": 137, "end": 149}]}
+{"doc_id": "EN-0730", "spans": [{"label": "NAME", "start": 46, "end": 72}]}
+{"doc_id": "EN-0732", "spans": [{"label": "NAME", "start": 37, "end": 53}]}
+{"doc_id": "EN-0737", "spans": [{"label": "NAME", "start": 44, "end": 51}, {"label": "DATE", "start": 152, "end": 170}]}
+{"doc_id": "EN-0738", "spans": [{"label": "NAME", "start": 16, "end": 40}, {"label": "ADDRESS", "start": 95, "end": 100}, {"label": "DATE", "start": 115, "end": 119}]}
+{"doc_id": "EN-0740", "spans": [{"label": "NAME", "start": 77, "end": 87}, {"label": "ADDRESS", "start": 105, "end": 132}, {"label": "DATE", "start": 133, "end": 143}]}
+{"doc_id": "EN-0745", "spans": [{"label": "NAME", "start": 78, "end": 88}, {"label": "ADDRESS", "start": 104, "end": 110}, {"label": "DATE", "start": 122, "end": 134}, {"label": "INSURANCE_ID", "start": 156, "end": 164}]}
+{"doc_id": "EN-0747", "spans": [{"label": "NAME", "start": 42, "end": 50}]}
+{"doc_id": "EN-0748", "spans": [{"label": "NAME", "start": 40, "end": 48}, {"label": "ADDRESS", "start": 58, "end": 70}, {"label": "DATE", "start": 74, "end": 84}, {"label": "INSURANCE_ID", "start": 144, "end": 153}]}
+{"doc_id": "EN-0749", "spans": [{"label": "NAME", "start": 50, "end": 58}, {"label": "ADDRESS", "start": 68, "end": 82}, {"label": "DATE", "start": 86, "end": 102}, {"label": "PATIENT_ID", "start": 109, "end": 123}]}
+{"doc_id": "EN-0750", "spans": [{"label": "NAME", "start": 40, "end": 56}]}
+{"doc_id": "EN-0756", "spans": [{"label": "NAME", "start": 64, "end": 76}, {"label": "ADDRESS", "start": 93, "end": 104}, {"label": "DATE", "start": 132, "end": 148}, {"label": "SSN", "start": 155, "end": 166}]}
+{"doc_id": "EN-0761", "spans": [{"label": "NAME", "start": 64, "end": 74}, {"label": "DATE", "start": 104, "end": 118}]}
+{"doc_id": "EN-0762", "spans": [{"label": "NAME", "start": 69, "end": 83}, {"label": "ADDRESS", "start": 154, "end": 163}]}
+{"doc_id": "EN-0765", "spans": [{"label": "NAME", "start": 43, "end": 56}, {"label": "ADDRESS", "start": 138, "end": 149}, {"label": "DATE", "start": 153, "end": 168}]}
+{"doc_id": "EN-0768", "spans": [{"label": "NAME", "start": 69, "end": 79}, {"label": "ADDRESS", "start": 99, "end": 129}, {"label": "DATE", "start": 133, "end": 150}]}
+{"doc_id": "EN-0769", "spans": [{"label": "NAME", "start": 94, "end": 102}, {"label": "ADDRESS", "start": 116, "end": 132}, {"label": "DATE", "start": 136, "end": 153}, {"label": "INSURANCE_ID", "start": 175, "end": 186}]}
+{"doc_id": "EN-0770", "spans": [{"label": "NAME", "start": 82, "end": 88}, {"label": "ADDRESS", "start": 102, "end": 127}, {"label": "DATE", "start": 138, "end": 154}, {"label": "PHONE", "start": 165, "end": 179}]}
+{"doc_id": "EN-0773", "spans": [{"label": "NAME", "start": 36, "end": 52}, {"label": "NAME", "start": 108, "end": 123}, {"label": "ADDRESS", "start": 127, "end": 157}, {"label": "DATE", "start": 162, "end": 176}]}
+{"doc_id": "EN-0777", "spans": [{"label": "NAME", "start": 79, "end": 88}, {"label": "ADDRESS", "start": 103, "end": 110}, {"label": "DATE", "start": 127, "end": 140}, {"label": "INSURANCE_ID", "start": 153, "end": 163}]}
+{"doc_id": "EN-0784", "spans": [{"label": "NAME", "start": 42, "end": 60}, {"label": "DATE", "start": 153, "end": 157}]}
+{"doc_id": "EN-0785", "spans": [{"label": "NAME", "start": 52, "end": 59}, {"label": "ADDRESS", "start": 69, "end": 84}, {"label": "DATE", "start": 88, "end": 100}, {"label": "INSURANCE_ID", "start": 120, "end": 129}]}
+{"doc_id": "EN-0786", "spans": [{"label": "NAME", "start": 69, "end": 79}, {"label": "ADDRESS", "start": 126, "end": 139}, {"label": "DATE", "start": 143, "end": 158}]}
+{"doc_id": "EN-0788", "spans": [{"label": "NAME", "start": 28, "end": 44}]}
+{"doc_id": "EN-0789", "spans": [{"label": "NAME", "start": 65, "end": 74}, {"label": "ADDRESS", "start": 78, "end": 94}, {"label": "DATE", "start": 98, "end": 116}, {"label": "PATIENT_ID", "start": 125, "end": 133}]}
+{"doc_id": "EN-0791", "spans": [{"label": "NAME", "start": 79, "end": 92}, {"label": "ADDRESS", "start": 114, "end": 128}, {"label": "DATE", "start": 132, "end": 149}]}
+{"doc_id": "EN-0794", "spans": [{"label": "NAME", "start": 70, "end": 84}, {"label": "ADDRESS", "start": 105, "end": 129}, {"label": "DATE", "start": 133, "end": 149}]}
+{"doc_id": "EN-0799", "spans": [{"label": "NAME", "start": 59, "end": 70}, {"label": "ADDRESS", "start": 83, "end": 99}, {"label": "DATE", "start": 103, "end": 115}, {"label": "EMAIL", "start": 130, "end": 153}]}
+{"doc_id": "EN-0802", "spans": [{"label": "NAME", "start": 96, "end": 104}, {"label": "DATE", "start": 119, "end": 133}]}
+{"doc_id": "EN-0805", "spans": [{"label": "NAME", "start": 56, "end": 62}, {"label": "ADDRESS", "start": 98, "end": 109}, {"label": "DATE", "start": 113, "end": 129}, {"label": "INSURANCE_ID", "start": 145, "end": 156}]}
+{"doc_id": "EN-0807", "spans": [{"label": "NAME", "start": 18, "end": 26}, {"label": "ADDRESS", "start": 54, "end": 67}, {"label": "DATE", "start": 71, "end": 84}]}
+{"doc_id": "EN-0809", "spans": [{"label": "NAME", "start": 41, "end": 49}, {"label": "ADDRESS", "start": 86, "end": 115}, {"label": "DATE", "start": 119, "end": 135}]}
+{"doc_id": "EN-0811", "spans": [{"label": "NAME", "start": 25, "end": 41}, {"label": "NAME", "start": 96, "end": 106}, {"label": "DATE", "start": 155, "end": 170}]}
+{"doc_id": "EN-0815", "spans": [{"label": "NAME", "start": 24, "end": 42}, {"label": "NAME", "start": 85, "end": 98}, {"label": "DATE", "start": 151, "end": 168}]}
+{"doc_id": "EN-0818", "spans": [{"label": "NAME", "start": 48, "end": 74}, {"label": "NAME", "start": 76, "end": 84}, {"label": "ADDRESS", "start": 102, "end": 122}, {"label": "DATE", "start": 126, "end": 140}]}
+{"doc_id": "EN-0819", "spans": [{"label": "NAME", "start": 31, "end": 47}, {"label": "ADDRESS", "start": 82, "end": 95}, {"label": "DATE", "start": 99, "end": 114}, {"label": "NAME", "start": 127, "end": 134}, {"label": "PATIENT_ID", "start": 136, "end": 152}]}
+{"doc_id": "EN-0820", "spans": [{"label": "NAME", "start": 82, "end": 91}, {"label": "ADDRESS", "start": 110, "end": 127}, {"label": "DATE", "start": 131, "end": 145}]}
+{"doc_id": "EN-0823", "spans": [{"label": "ADDRESS", "start": 53, "end": 71}, {"label": "NAME", "start": 79, "end": 87}, {"label": "DATE", "start": 94, "end": 104}]}
+{"doc_id": "EN-0825", "spans": [{"label": "NAME", "start": 33, "end": 55}]}
+{"doc_id": "EN-0826", "spans": [{"label": "NAME", "start": 36, "end": 52}, {"label": "NAME", "start": 104, "end": 119}, {"label": "ADDRESS", "start": 123, "end": 143}, {"label": "DATE", "start": 147, "end": 163}]}
+{"doc_id": "EN-0828", "spans": [{"label": "NAME", "start": 43, "end": 61}]}
+{"doc_id": "EN-0829", "spans": [{"label": "NAME", "start": 65, "end": 72}, {"label": "ADDRESS", "start": 76, "end": 83}, {"label": "DATE", "start": 87, "end": 98}, {"label": "PATIENT_ID", "start": 108, "end": 127}]}
+{"doc_id": "EN-0830", "spans": [{"label": "NAME", "start": 66, "end": 79}, {"label": "DATE", "start": 117, "end": 136}, {"label": "PATIENT_ID", "start": 167, "end": 178}]}
+{"doc_id": "EN-0833", "spans": [{"label": "NAME", "start": 97, "end": 105}, {"label": "ADDRESS", "start": 123, "end": 150}, {"label": "DATE", "start": 154, "end": 173}]}
+{"doc_id": "EN-0834", "spans": [{"label": "NAME", "start": 79, "end": 86}, {"label": "ADDRESS", "start": 112, "end": 128}, {"label": "DATE", "start": 132, "end": 148}]}
+{"doc_id": "EN-0835", "spans": [{"label": "NAME", "start": 71, "end": 82}, {"label": "ADDRESS", "start": 108, "end": 128}, {"label": "DATE", "start": 135, "end": 150}]}
+{"doc_id": "EN-0838", "spans": [{"label": "NAME", "start": 35, "end": 53}]}
+{"doc_id": "EN-0839", "spans": [{"label": "NAME", "start": 37, "end": 55}, {"label": "NAME", "start": 70, "end": 85}, {"label": "ADDRESS", "start": 89, "end": 112}, {"label": "DATE", "start": 116, "end": 124}, {"label": "PATIENT_ID", "start": 126, "end": 139}]}
+{"doc_id": "EN-0842", "spans": [{"label": "NAME", "start": 71, "end": 78}, {"label": "DATE", "start": 93, "end": 111}, {"label": "ADDRESS", "start": 115, "end": 134}]}
+{"doc_id": "EN-0846", "spans": [{"label": "NAME", "start": 135, "end": 145}, {"label": "ADDRESS", "start": 160, "end": 174}, {"label": "DATE", "start": 178, "end": 193}, {"label": "SSN", "start": 200, "end": 211}]}
+{"doc_id": "EN-0848", "spans": [{"label": "ADDRESS", "start": 76, "end": 95}, {"label": "NAME", "start": 100, "end": 107}, {"label": "DATE", "start": 111, "end": 122}, {"label": "PATIENT_ID", "start": 124, "end": 140}]}
+{"doc_id": "EN-0849", "spans": [{"label": "NAME", "start": 36, "end": 52}, {"label": "DATE", "start": 114, "end": 134}]}
+{"doc_id": "EN-0850", "spans": [{"label": "NAME", "start": 28, "end": 46}, {"label": "NAME", "start": 100, "end": 117}, {"label": "ADDRESS", "start": 121, "end": 134}, {"label": "DATE", "start": 138, "end": 158}, {"label": "PATIENT_ID", "start": 176, "end": 186}]}
+{"doc_id": "EN-0857", "spans": [{"label": "NAME", "start": 88, "end": 117}, {"label": "DATE", "start": 131, "end": 135}]}
+{"doc_id": "EN-0858", "spans": [{"label": "NAME", "start": 35, "end": 45}, {"label": "ADDRESS", "start": 55, "end": 63}, {"label": "DATE", "start": 67, "end": 78}, {"label": "PATIENT_ID", "start": 128, "end": 137}]}
+{"doc_id": "EN-0859", "spans": [{"label": "NAME", "start": 75, "end": 86}, {"label": "ADDRESS", "start": 101, "end": 118}, {"label": "DATE", "start": 122, "end": 138}, {"label": "PATIENT_ID", "start": 140, "end": 154}]}
+{"doc_id": "EN-0860", "spans": [{"label": "NAME", "start": 39, "end": 61}, {"label": "DATE", "start": 110, "end": 114}]}
+{"doc_id": "EN-0862", "spans": [{"label": "NAME", "start": 27, "end": 45}]}
+{"doc_id": "EN-0864", "spans": [{"label": "NAME", "start": 30, "end": 63}]}
+{"doc_id": "EN-0865", "spans": [{"label": "NAME", "start": 49, "end": 61}, {"label": "ADDRESS", "start": 77, "end": 96}, {"label": "DATE", "start": 100, "end": 110}, {"label": "PATIENT_ID", "start": 112, "end": 125}]}
+{"doc_id": "EN-0867", "spans": [{"label": "NAME", "start": 78, "end": 111}]}
+{"doc_id": "EN-0869", "spans": [{"label": "NAME", "start": 83, "end": 93}, {"label": "ADDRESS", "start": 107, "end": 127}, {"label": "DATE", "start": 131, "end": 143}]}
+{"doc_id": "EN-0870", "spans": [{"label": "DATE", "start": 75, "end": 79}]}
+{"doc_id": "EN-0873", "spans": [{"label": "NAME", "start": 33, "end": 50}, {"label": "DATE", "start": 129, "end": 138}]}
+{"doc_id": "EN-0878", "spans": [{"label": "NAME", "start": 39, "end": 57}, {"label": "DATE", "start": 119, "end": 123}]}
+{"doc_id": "EN-0879", "spans": [{"label": "NAME", "start": 98, "end": 105}, {"label": "ADDRESS", "start": 115, "end": 136}, {"label": "DATE", "start": 140, "end": 150}]}
+{"doc_id": "EN-0880", "spans": [{"label": "NAME", "start": 48, "end": 57}, {"label": "ADDRESS", "start": 61, "end": 80}, {"label": "DATE", "start": 84, "end": 94}, {"label": "PATIENT_ID", "start": 152, "end": 161}]}
+{"doc_id": "EN-0881", "spans": [{"label": "NAME", "start": 36, "end": 52}, {"label": "NAME", "start": 98, "end": 107}, {"label": "ADDRESS", "start": 122, "end": 147}, {"label": "DATE", "start": 148, "end": 157}]}
+{"doc_id": "EN-0883", "spans": [{"label": "NAME", "start": 49, "end": 76}, {"label": "DATE", "start": 95, "end": 99}]}
+{"doc_id": "EN-0885", "spans": [{"label": "NAME", "start": 86, "end": 97}, {"label": "ADDRESS", "start": 115, "end": 129}, {"label": "DATE", "start": 133, "end": 148}]}
+{"doc_id": "EN-0888", "spans": [{"label": "NAME", "start": 33, "end": 51}, {"label": "NAME", "start": 102, "end": 117}, {"label": "DATE", "start": 130, "end": 148}, {"label": "ADDRESS", "start": 153, "end": 169}]}
+{"doc_id": "EN-0889", "spans": [{"label": "NAME", "start": 71, "end": 78}, {"label": "ADDRESS", "start": 115, "end": 134}, {"label": "DATE", "start": 138, "end": 151}]}
+{"doc_id": "EN-0891", "spans": [{"label": "NAME", "start": 32, "end": 48}, {"label": "NAME", "start": 96, "end": 110}, {"label": "ADDRESS", "start": 114, "end": 137}, {"label": "PATIENT_ID", "start": 144, "end": 156}]}
+{"doc_id": "EN-0892", "spans": [{"label": "NAME", "start": 35, "end": 45}, {"label": "ADDRESS", "start": 59, "end": 71}, {"label": "DATE", "start": 75, "end": 85}]}
+{"doc_id": "EN-0897", "spans": [{"label": "NAME", "start": 37, "end": 55}]}
+{"doc_id": "EN-0898", "spans": [{"label": "NAME", "start": 65, "end": 76}, {"label": "ADDRESS", "start": 151, "end": 158}, {"label": "DATE", "start": 162, "end": 176}]}
+{"doc_id": "EN-0899", "spans": [{"label": "ADDRESS", "start": 43, "end": 61}, {"label": "DATE", "start": 65, "end": 76}, {"label": "NAME", "start": 86, "end": 92}, {"label": "INSURANCE_ID", "start": 120, "end": 130}]}
+{"doc_id": "EN-0900", "spans": [{"label": "NAME", "start": 61, "end": 79}, {"label": "DATE", "start": 139, "end": 148}]}
+{"doc_id": "EN-0901", "spans": [{"label": "NAME", "start": 40, "end": 56}, {"label": "ADDRESS", "start": 96, "end": 126}, {"label": "DATE", "start": 130, "end": 146}, {"label": "NAME", "start": 148, "end": 159}, {"label": "PATIENT_ID", "start": 161, "end": 175}]}
+{"doc_id": "EN-0904", "spans": [{"label": "PATIENT_ID", "start": 22, "end": 34}, {"label": "NAME", "start": 36, "end": 43}, {"label": "ADDRESS", "start": 53, "end": 66}, {"label": "DATE", "start": 70, "end": 81}]}
+{"doc_id": "EN-0909", "spans": [{"label": "NAME", "start": 0, "end": 34}, {"label": "ADDRESS", "start": 59, "end": 83}, {"label": "DATE", "start": 87, "end": 97}, {"label": "PATIENT_ID", "start": 104, "end": 114}]}
+{"doc_id": "EN-0912", "spans": [{"label": "NAME", "start": 66, "end": 76}, {"label": "ADDRESS", "start": 142, "end": 159}, {"label": "DATE", "start": 163, "end": 178}, {"label": "PHONE", "start": 187, "end": 199}]}
+{"doc_id": "EN-0914", "spans": [{"label": "NAME", "start": 62, "end": 73}, {"label": "ADDRESS", "start": 83, "end": 98}, {"label": "DATE", "start": 102, "end": 117}, {"label": "EMAIL", "start": 126, "end": 144}]}
+{"doc_id": "EN-0915", "spans": [{"label": "NAME", "start": 66, "end": 75}, {"label": "ADDRESS", "start": 79, "end": 94}, {"label": "DATE", "start": 98, "end": 108}, {"label": "PATIENT_ID", "start": 117, "end": 126}]}
+{"doc_id": "EN-0919", "spans": [{"label": "NAME", "start": 90, "end": 99}, {"label": "DATE", "start": 103, "end": 115}, {"label": "ADDRESS", "start": 119, "end": 134}, {"label": "NAME", "start": 151, "end": 159}]}
+{"doc_id": "EN-0924", "spans": [{"label": "NAME", "start": 82, "end": 89}, {"label": "DATE", "start": 123, "end": 141}, {"label": "PHONE", "start": 143, "end": 160}]}
+{"doc_id": "EN-0925", "spans": [{"label": "NAME", "start": 61, "end": 71}, {"label": "NAME", "start": 91, "end": 109}, {"label": "ADDRESS", "start": 119, "end": 140}, {"label": "DATE", "start": 144, "end": 159}, {"label": "EMAIL", "start": 168, "end": 189}]}
+{"doc_id": "EN-0927", "spans": [{"label": "NAME", "start": 102, "end": 109}, {"label": "ADDRESS", "start": 115, "end": 122}, {"label": "DATE", "start": 143, "end": 160}]}
+{"doc_id": "EN-0929", "spans": [{"label": "NAME", "start": 98, "end": 106}, {"label": "ADDRESS", "start": 127, "end": 143}, {"label": "DATE", "start": 147, "end": 165}]}
+{"doc_id": "EN-0932", "spans": [{"label": "NAME", "start": 71, "end": 82}, {"label": "ADDRESS", "start": 117, "end": 144}, {"label": "DATE", "start": 148, "end": 164}, {"label": "INSURANCE_ID", "start": 180, "end": 188}]}
+{"doc_id": "EN-0935", "spans": [{"label": "NAME", "start": 46, "end": 54}, {"label": "ADDRESS", "start": 100, "end": 107}, {"label": "DATE", "start": 111, "end": 127}, {"label": "PHONE", "start": 136, "end": 148}]}
+{"doc_id": "EN-0936", "spans": [{"label": "NAME", "start": 28, "end": 44}, {"label": "NAME", "start": 103, "end": 120}, {"label": "ADDRESS", "start": 124, "end": 135}, {"label": "DATE", "start": 148, "end": 162}, {"label": "PATIENT_ID", "start": 169, "end": 180}]}
+{"doc_id": "EN-0937", "spans": [{"label": "NAME", "start": 61, "end": 72}, {"label": "ADDRESS", "start": 76, "end": 97}, {"label": "DATE", "start": 113, "end": 124}]}
+{"doc_id": "EN-0939", "spans": [{"label": "NAME", "start": 38, "end": 47}, {"label": "NAME", "start": 68, "end": 79}, {"label": "ADDRESS", "start": 103, "end": 107}, {"label": "DATE", "start": 119, "end": 131}, {"label": "DATE", "start": 166, "end": 176}, {"label": "PATIENT_ID", "start": 196, "end": 205}]}
+{"doc_id": "EN-0945", "spans": [{"label": "NAME", "start": 75, "end": 91}]}
+{"doc_id": "EN-0946", "spans": [{"label": "NAME", "start": 35, "end": 52}, {"label": "NAME", "start": 54, "end": 64}, {"label": "DATE", "start": 154, "end": 170}]}
+{"doc_id": "EN-0949", "spans": [{"label": "NAME", "start": 65, "end": 79}, {"label": "DATE", "start": 128, "end": 142}]}
+{"doc_id": "EN-0952", "spans": [{"label": "NAME", "start": 42, "end": 70}]}
+{"doc_id": "EN-0953", "spans": [{"label": "NAME", "start": 56, "end": 64}, {"label": "ADDRESS", "start": 78, "end": 97}, {"label": "DATE", "start": 101, "end": 116}, {"label": "SSN", "start": 123, "end": 134}]}
+{"doc_id": "EN-0955", "spans": [{"label": "NAME", "start": 90, "end": 106}]}
+{"doc_id": "EN-0957", "spans": [{"label": "NAME", "start": 63, "end": 75}, {"label": "ADDRESS", "start": 90, "end": 119}, {"label": "DATE", "start": 123, "end": 142}]}
+{"doc_id": "EN-0958", "spans": [{"label": "NAME", "start": 91, "end": 100}, {"label": "ADDRESS", "start": 114, "end": 125}, {"label": "DATE", "start": 129, "end": 144}]}
+{"doc_id": "EN-0962", "spans": [{"label": "NAME", "start": 35, "end": 53}]}
+{"doc_id": "EN-0964", "spans": [{"label": "NAME", "start": 37, "end": 53}]}
+{"doc_id": "EN-0970", "spans": [{"label": "NAME", "start": 0, "end": 8}, {"label": "NAME", "start": 14, "end": 25}]}
+{"doc_id": "EN-0971", "spans": [{"label": "NAME", "start": 30, "end": 46}, {"label": "NAME", "start": 97, "end": 106}, {"label": "ADDRESS", "start": 114, "end": 130}, {"label": "DATE", "start": 134, "end": 147}, {"label": "PATIENT_ID", "start": 149, "end": 165}]}
+{"doc_id": "EN-0972", "spans": [{"label": "NAME", "start": 14, "end": 25}, {"label": "NAME", "start": 61, "end": 70}, {"label": "ADDRESS", "start": 74, "end": 101}, {"label": "DATE", "start": 116, "end": 126}, {"label": "INSURANCE_ID", "start": 146, "end": 154}]}
+{"doc_id": "EN-0975", "spans": [{"label": "NAME", "start": 98, "end": 109}, {"label": "NAME", "start": 111, "end": 122}, {"label": "ADDRESS", "start": 136, "end": 154}, {"label": "DATE", "start": 158, "end": 168}, {"label": "NAME", "start": 191, "end": 198}]}
+{"doc_id": "EN-0976", "spans": [{"label": "NAME", "start": 78, "end": 89}, {"label": "DATE", "start": 134, "end": 146}, {"label": "PATIENT_ID", "start": 180, "end": 190}]}
+{"doc_id": "EN-0978", "spans": [{"label": "NAME", "start": 106, "end": 114}, {"label": "ADDRESS", "start": 129, "end": 148}, {"label": "PATIENT_ID", "start": 154, "end": 172}]}
+{"doc_id": "EN-0981", "spans": [{"label": "NAME", "start": 63, "end": 73}, {"label": "ADDRESS", "start": 87, "end": 109}, {"label": "DATE", "start": 113, "end": 129}, {"label": "PATIENT_ID", "start": 131, "end": 147}]}
+{"doc_id": "EN-0983", "spans": [{"label": "NAME", "start": 38, "end": 54}]}
+{"doc_id": "EN-0984", "spans": [{"label": "NAME", "start": 52, "end": 60}, {"label": "ADDRESS", "start": 70, "end": 88}, {"label": "DATE", "start": 90, "end": 103}, {"label": "INSURANCE_ID", "start": 140, "end": 150}]}
+{"doc_id": "EN-0986", "spans": [{"label": "NAME", "start": 79, "end": 88}, {"label": "ADDRESS", "start": 102, "end": 118}, {"label": "DATE", "start": 119, "end": 129}, {"label": "PATIENT_ID", "start": 131, "end": 145}]}
+{"doc_id": "EN-0988", "spans": [{"label": "NAME", "start": 39, "end": 58}, {"label": "DATE", "start": 124, "end": 128}]}
+{"doc_id": "EN-0991", "spans": [{"label": "NAME", "start": 44, "end": 51}, {"label": "ADDRESS", "start": 116, "end": 136}, {"label": "DATE", "start": 140, "end": 155}, {"label": "PATIENT_ID", "start": 157, "end": 169}]}
+{"doc_id": "EN-0992", "spans": [{"label": "NAME", "start": 66, "end": 74}, {"label": "ADDRESS", "start": 87, "end": 110}, {"label": "DATE", "start": 114, "end": 130}, {"label": "SSN", "start": 137, "end": 148}]}
+{"doc_id": "EN-0993", "spans": [{"label": "NAME", "start": 28, "end": 35}, {"label": "NAME", "start": 83, "end": 90}, {"label": "DATE", "start": 115, "end": 119}]}
+{"doc_id": "EN-0998", "spans": [{"label": "NAME", "start": 37, "end": 62}, {"label": "ADDRESS", "start": 107, "end": 113}, {"label": "DATE", "start": 114, "end": 124}]}
+{"doc_id": "EN-0999", "spans": [{"label": "NAME", "start": 73, "end": 80}, {"label": "ADDRESS", "start": 84, "end": 99}, {"label": "DATE", "start": 103, "end": 114}, {"label": "EMAIL", "start": 175, "end": 190}]}
+{"doc_id": "EN-1001", "spans": [{"label": "NAME", "start": 112, "end": 123}, {"label": "ADDRESS", "start": 143, "end": 173}, {"label": "DATE", "start": 177, "end": 191}, {"label": "PATIENT_ID", "start": 193, "end": 207}]}
+{"doc_id": "EN-1004", "spans": [{"label": "NAME", "start": 68, "end": 76}, {"label": "ADDRESS", "start": 92, "end": 109}, {"label": "DATE", "start": 114, "end": 126}, {"label": "PATIENT_ID", "start": 128, "end": 142}]}
+{"doc_id": "EN-1010", "spans": [{"label": "NAME", "start": 51, "end": 69}]}
+{"doc_id": "EN-1011", "spans": [{"label": "NAME", "start": 26, "end": 42}, {"label": "DATE", "start": 104, "end": 116}, {"label": "NAME", "start": 124, "end": 141}, {"label": "PATIENT_ID", "start": 143, "end": 157}]}
+{"doc_id": "EN-1013", "spans": [{"label": "NAME", "start": 48, "end": 58}, {"label": "ADDRESS", "start": 72, "end": 76}, {"label": "DATE", "start": 80, "end": 100}, {"label": "PHONE", "start": 111, "end": 123}]}
+{"doc_id": "EN-1017", "spans": [{"label": "NAME", "start": 41, "end": 60}, {"label": "PATIENT_ID", "start": 91, "end": 107}, {"label": "DATE", "start": 122, "end": 126}]}
+{"doc_id": "EN-1020", "spans": [{"label": "NAME", "start": 39, "end": 57}, {"label": "DATE", "start": 133, "end": 137}]}
+{"doc_id": "EN-1023", "spans": [{"label": "NAME", "start": 67, "end": 76}, {"label": "DATE", "start": 149, "end": 165}, {"label": "ADDRESS", "start": 169, "end": 195}, {"label": "PATIENT_ID", "start": 197, "end": 213}]}
+{"doc_id": "EN-1025", "spans": [{"label": "NAME", "start": 98, "end": 111}, {"label": "NAME", "start": 125, "end": 138}, {"label": "ADDRESS", "start": 142, "end": 169}, {"label": "DATE", "start": 173, "end": 185}]}
+{"doc_id": "EN-1026", "spans": [{"label": "NAME", "start": 78, "end": 85}, {"label": "ADDRESS", "start": 99, "end": 106}, {"label": "DATE", "start": 121, "end": 135}, {"label": "SSN", "start": 142, "end": 153}]}
+{"doc_id": "EN-1027", "spans": [{"label": "NAME", "start": 61, "end": 77}]}
+{"doc_id": "EN-1029", "spans": [{"label": "NAME", "start": 97, "end": 104}, {"label": "ADDRESS", "start": 114, "end": 136}, {"label": "DATE", "start": 140, "end": 158}, {"label": "EMAIL", "start": 167, "end": 185}]}
+{"doc_id": "EN-1034", "spans": [{"label": "NAME", "start": 61, "end": 71}, {"label": "ADDRESS", "start": 95, "end": 129}, {"label": "PHONE", "start": 148, "end": 160}]}
+{"doc_id": "EN-1036", "spans": [{"label": "NAME", "start": 46, "end": 58}, {"label": "DATE", "start": 106, "end": 125}, {"label": "ADDRESS", "start": 129, "end": 156}, {"label": "PATIENT_ID", "start": 158, "end": 173}]}
+{"doc_id": "EN-1037", "spans": [{"label": "NAME", "start": 69, "end": 77}, {"label": "ADDRESS", "start": 81, "end": 96}, {"label": "DATE", "start": 108, "end": 122}, {"label": "PHONE", "start": 132, "end": 144}]}
+{"doc_id": "EN-1040", "spans": [{"label": "NAME", "start": 77, "end": 84}, {"label": "ADDRESS", "start": 97, "end": 105}, {"label": "DATE", "start": 109, "end": 120}, {"label": "EMAIL", "start": 128, "end": 148}]}
+{"doc_id": "EN-1043", "spans": [{"label": "NAME", "start": 63, "end": 74}, {"label": "ADDRESS", "start": 87, "end": 103}, {"label": "DATE", "start": 107, "end": 119}, {"label": "PHONE", "start": 128, "end": 140}]}
+{"doc_id": "EN-1044", "spans": [{"label": "NAME", "start": 71, "end": 79}, {"label": "ADDRESS", "start": 114, "end": 125}, {"label": "DATE", "start": 129, "end": 136}]}
+{"doc_id": "EN-1046", "spans": [{"label": "NAME", "start": 51, "end": 63}, {"label": "ADDRESS", "start": 107, "end": 124}, {"label": "DATE", "start": 128, "end": 144}, {"label": "INSURANCE_ID", "start": 170, "end": 179}]}
+{"doc_id": "EN-1047", "spans": [{"label": "NAME", "start": 97, "end": 110}, {"label": "ADDRESS", "start": 123, "end": 140}, {"label": "DATE", "start": 144, "end": 162}, {"label": "PATIENT_ID", "start": 164, "end": 178}]}
+{"doc_id": "EN-1048", "spans": [{"label": "NAME", "start": 44, "end": 57}, {"label": "ADDRESS", "start": 102, "end": 126}, {"label": "DATE", "start": 136, "end": 155}]}
+{"doc_id": "ZH-0024", "spans": [{"label": "DATE", "start": 9, "end": 19}, {"label": "NAME", "start": 24, "end": 27}, {"label": "PATIENT_ID", "start": 32, "end": 40}, {"label": "ADDRESS", "start": 89, "end": 98}, {"label": "PHONE", "start": 104, "end": 115}]}
+{"doc_id": "ZH-0025", "spans": [{"label": "DATE", "start": 9, "end": 19}, {"label": "NAME", "start": 24, "end": 27}, {"label": "PATIENT_ID", "start": 32, "end": 42}, {"label": "ADDRESS", "start": 90, "end": 102}, {"label": "PHONE", "start": 105, "end": 118}]}
+{"doc_id": "ZH-0026", "spans": [{"label": "DATE", "start": 9, "end": 18}, {"label": "NAME", "start": 23, "end": 26}, {"label": "PATIENT_ID", "start": 31, "end": 40}, {"label": "ADDRESS", "start": 89, "end": 101}, {"label": "PHONE", "start": 104, "end": 119}]}
+{"doc_id": "ZH-0027", "spans": [{"label": "DATE", "start": 9, "end": 19}, {"label": "NAME", "start": 24, "end": 27}, {"label": "PATIENT_ID", "start": 32, "end": 43}, {"label": "ADDRESS", "start": 92, "end": 104}, {"label": "PHONE", "start": 107, "end": 122}]}
+{"doc_id": "ZH-0028", "spans": [{"label": "DATE", "start": 9, "end": 18}, {"label": "NAME", "start": 23, "end": 26}, {"label": "PATIENT_ID", "start": 31, "end": 39}, {"label": "ADDRESS", "start": 87, "end": 96}, {"label": "PHONE", "start": 102, "end": 113}]}
+{"doc_id": "ZH-0029", "spans": [{"label": "DATE", "start": 9, "end": 19}, {"label": "NAME", "start": 24, "end": 27}, {"label": "PATIENT_ID", "start": 32, "end": 42}, {"label": "ADDRESS", "start": 92, "end": 101}, {"label": "PHONE", "start": 107, "end": 120}]}
+{"doc_id": "ZH-0030", "spans": [{"label": "DATE", "start": 9, "end": 17}, {"label": "NAME", "start": 22, "end": 25}, {"label": "PATIENT_ID", "start": 30, "end": 39}, {"label": "ADDRESS", "start": 90, "end": 99}, {"label": "PHONE", "start": 105, "end": 120}]}
+{"doc_id": "ZH-0031", "spans": [{"label": "ADDRESS", "start": 23, "end": 26}]}
+{"doc_id": "ZH-0032", "spans": [{"label": "NAME", "start": 7, "end": 10}, {"label": "DATE", "start": 12, "end": 21}, {"label": "PATIENT_ID", "start": 30, "end": 38}, {"label": "ADDRESS", "start": 81, "end": 93}, {"label": "PHONE", "start": 100, "end": 111}]}
+{"doc_id": "ZH-0033", "spans": [{"label": "NAME", "start": 7, "end": 10}, {"label": "DATE", "start": 12, "end": 22}, {"label": "PATIENT_ID", "start": 31, "end": 41}, {"label": "ADDRESS", "start": 83, "end": 92}, {"label": "PHONE", "start": 102, "end": 115}]}
+{"doc_id": "ZH-0034", "spans": [{"label": "NAME", "start": 7, "end": 10}, {"label": "DATE", "start": 12, "end": 21}, {"label": "PATIENT_ID", "start": 30, "end": 39}, {"label": "ADDRESS", "start": 83, "end": 92}, {"label": "PHONE", "start": 102, "end": 117}]}
+{"doc_id": "ZH-0035", "spans": [{"label": "NAME", "start": 7, "end": 10}, {"label": "DATE", "start": 12, "end": 22}, {"label": "PATIENT_ID", "start": 31, "end": 42}, {"label": "ADDRESS", "start": 87, "end": 96}, {"label": "PHONE", "start": 106, "end": 121}]}
+{"doc_id": "ZH-0036", "spans": [{"label": "NAME", "start": 7, "end": 10}, {"label": "DATE", "start": 12, "end": 22}, {"label": "PATIENT_ID", "start": 31, "end": 39}, {"label": "ADDRESS", "start": 83, "end": 95}, {"label": "PHONE", "start": 102, "end": 113}]}
+{"doc_id": "ZH-0037", "spans": [{"label": "NAME", "start": 7, "end": 10}, {"label": "DATE", "start": 12, "end": 22}, {"label": "PATIENT_ID", "start": 31, "end": 41}, {"label": "ADDRESS", "start": 81, "end": 90}, {"label": "PHONE", "start": 100, "end": 113}]}
+{"doc_id": "ZH-0038", "spans": [{"label": "NAME", "start": 7, "end": 10}, {"label": "DATE", "start": 12, "end": 21}, {"label": "PATIENT_ID", "start": 30, "end": 39}, {"label": "ADDRESS", "start": 83, "end": 92}, {"label": "PHONE", "start": 102, "end": 117}]}
+{"doc_id": "ZH-0039", "spans": [{"label": "ADDRESS", "start": 0, "end": 5}, {"label": "NAME", "start": 33, "end": 35}]}
+{"doc_id": "ZH-0056", "spans": [{"label": "NAME", "start": 8, "end": 11}, {"label": "DATE", "start": 73, "end": 82}, {"label": "PHONE", "start": 91, "end": 102}, {"label": "ADDRESS", "start": 106, "end": 118}]}
+{"doc_id": "ZH-0057", "spans": [{"label": "NAME", "start": 8, "end": 11}, {"label": "PATIENT_ID", "start": 18, "end": 28}, {"label": "DATE", "start": 72, "end": 82}, {"label": "PHONE", "start": 91, "end": 104}, {"label": "ADDRESS", "start": 108, "end": 117}]}
+{"doc_id": "ZH-0058", "spans": [{"label": "NAME", "start": 8, "end": 11}, {"label": "PATIENT_ID", "start": 18, "end": 27}, {"label": "DATE", "start": 79, "end": 88}, {"label": "PHONE", "start": 97, "end": 112}, {"label": "ADDRESS", "start": 116, "end": 128}]}
+{"doc_id": "ZH-0059", "spans": [{"label": "NAME", "start": 8, "end": 11}, {"label": "PATIENT_ID", "start": 18, "end": 29}, {"label": "DATE", "start": 76, "end": 86}, {"label": "PHONE", "start": 95, "end": 110}, {"label": "ADDRESS", "start": 114, "end": 123}]}
+{"doc_id": "ZH-0060", "spans": [{"label": "NAME", "start": 8, "end": 11}, {"label": "PATIENT_ID", "start": 18, "end": 26}, {"label": "DATE", "start": 71, "end": 80}, {"label": "PHONE", "start": 89, "end": 100}, {"label": "ADDRESS", "start": 104, "end": 113}]}
+{"doc_id": "ZH-0061", "spans": [{"label": "NAME", "start": 8, "end": 11}, {"label": "DATE", "start": 73, "end": 83}, {"label": "PHONE", "start": 92, "end": 105}, {"label": "ADDRESS", "start": 109, "end": 118}]}
+{"doc_id": "ZH-0062", "spans": [{"label": "NAME", "start": 8, "end": 11}, {"label": "DATE", "start": 69, "end": 77}, {"label": "PHONE", "start": 86, "end": 101}, {"label": "ADDRESS", "start": 105, "end": 117}]}
+{"doc_id": "ZH-0063", "spans": [{"label": "DATE", "start": 24, "end": 27}, {"label": "NAME", "start": 31, "end": 33}]}
+{"doc_id": "ZH-0064", "spans": [{"label": "PATIENT_ID", "start": 10, "end": 18}, {"label": "NAME", "start": 21, "end": 24}, {"label": "DATE", "start": 65, "end": 75}, {"label": "PATIENT_ID", "start": 85, "end": 96}, {"label": "ADDRESS", "start": 102, "end": 111}]}
+{"doc_id": "ZH-0065", "spans": [{"label": "PATIENT_ID", "start": 10, "end": 20}, {"label": "NAME", "start": 23, "end": 26}, {"label": "DATE", "start": 65, "end": 75}, {"label": "PATIENT_ID", "start": 85, "end": 98}, {"label": "ADDRESS", "start": 104, "end": 113}]}
+{"doc_id": "ZH-0066", "spans": [{"label": "PATIENT_ID", "start": 10, "end": 19}, {"label": "NAME", "start": 22, "end": 25}, {"label": "DATE", "start": 64, "end": 73}, {"label": "PHONE", "start": 83, "end": 98}, {"label": "ADDRESS", "start": 104, "end": 113}]}
+{"doc_id": "ZH-0067", "spans": [{"label": "PATIENT_ID", "start": 10, "end": 21}, {"label": "NAME", "start": 24, "end": 27}, {"label": "DATE", "start": 63, "end": 73}, {"label": "PHONE", "start": 83, "end": 98}, {"label": "ADDRESS", "start": 104, "end": 113}]}
+{"doc_id": "ZH-0068", "spans": [{"label": "PATIENT_ID", "start": 10, "end": 18}, {"label": "NAME", "start": 21, "end": 24}, {"label": "DATE", "start": 64, "end": 74}, {"label": "PATIENT_ID", "start": 84, "end": 95}, {"label": "ADDRESS", "start": 101, "end": 110}]}
+{"doc_id": "ZH-0069", "spans": [{"label": "PATIENT_ID", "start": 10, "end": 20}, {"label": "NAME", "start": 23, "end": 26}, {"label": "DATE", "start": 65, "end": 75}, {"label": "ADDRESS", "start": 104, "end": 114}]}
+{"doc_id": "ZH-0070", "spans": [{"label": "PATIENT_ID", "start": 10, "end": 19}, {"label": "NAME", "start": 22, "end": 25}, {"label": "DATE", "start": 63, "end": 73}, {"label": "PHONE", "start": 83, "end": 98}, {"label": "ADDRESS", "start": 104, "end": 114}]}
+{"doc_id": "ZH-0071", "spans": [{"label": "ADDRESS", "start": 0, "end": 3}, {"label": "NAME", "start": 33, "end": 35}]}
+{"doc_id": "ZH-0072", "spans": [{"label": "NAME", "start": 7, "end": 10}, {"label": "PATIENT_ID", "start": 15, "end": 23}, {"label": "DATE", "start": 25, "end": 35}, {"label": "ADDRESS", "start": 78, "end": 88}, {"label": "PATIENT_ID", "start": 97, "end": 108}]}
+{"doc_id": "ZH-0073", "spans": [{"label": "NAME", "start": 7, "end": 10}, {"label": "PATIENT_ID", "start": 15, "end": 25}, {"label": "DATE", "start": 27, "end": 37}, {"label": "ADDRESS", "start": 84, "end": 94}, {"label": "PATIENT_ID", "start": 103, "end": 116}]}
+{"doc_id": "ZH-0074", "spans": [{"label": "NAME", "start": 7, "end": 10}, {"label": "PATIENT_ID", "start": 15, "end": 24}, {"label": "DATE", "start": 26, "end": 35}, {"label": "ADDRESS", "start": 81, "end": 91}, {"label": "PHONE", "start": 100, "end": 115}]}
+{"doc_id": "ZH-0075", "spans": [{"label": "NAME", "start": 7, "end": 10}, {"label": "PATIENT_ID", "start": 15, "end": 26}, {"label": "DATE", "start": 28, "end": 38}, {"label": "ADDRESS", "start": 83, "end": 93}, {"label": "PHONE", "start": 102, "end": 117}]}
+{"doc_id": "ZH-0076", "spans": [{"label": "NAME", "start": 7, "end": 10}, {"label": "PATIENT_ID", "start": 15, "end": 23}, {"label": "DATE", "start": 25, "end": 35}, {"label": "ADDRESS", "start": 81, "end": 91}, {"label": "PATIENT_ID", "start": 100, "end": 111}]}
+{"doc_id": "ZH-0077", "spans": [{"label": "NAME", "start": 7, "end": 10}, {"label": "PATIENT_ID", "start": 15, "end": 25}, {"label": "DATE", "start": 27, "end": 37}, {"label": "ADDRESS", "start": 83, "end": 93}, {"label": "PATIENT_ID", "start": 102, "end": 115}]}
+{"doc_id": "ZH-0078", "spans": [{"label": "NAME", "start": 7, "end": 10}, {"label": "PATIENT_ID", "start": 15, "end": 24}, {"label": "DATE", "start": 26, "end": 35}, {"label": "ADDRESS", "start": 80, "end": 90}, {"label": "PHONE", "start": 99, "end": 114}]}
+{"doc_id": "ZH-0079", "spans": [{"label": "NAME", "start": 30, "end": 32}]}
+{"doc_id": "ZH-0080", "spans": [{"label": "DATE", "start": 7, "end": 17}, {"label": "NAME", "start": 26, "end": 29}, {"label": "PATIENT_ID", "start": 33, "end": 41}, {"label": "PHONE", "start": 82, "end": 93}, {"label": "ADDRESS", "start": 99, "end": 109}]}
+{"doc_id": "ZH-0081", "spans": [{"label": "DATE", "start": 7, "end": 17}, {"label": "NAME", "start": 26, "end": 29}, {"label": "PATIENT_ID", "start": 33, "end": 43}, {"label": "PHONE", "start": 85, "end": 98}, {"label": "ADDRESS", "start": 104, "end": 114}]}
+{"doc_id": "ZH-0082", "spans": [{"label": "DATE", "start": 7, "end": 16}, {"label": "NAME", "start": 25, "end": 28}, {"label": "PATIENT_ID", "start": 32, "end": 41}, {"label": "PHONE", "start": 83, "end": 98}, {"label": "ADDRESS", "start": 104, "end": 114}]}
+{"doc_id": "ZH-0083", "spans": [{"label": "DATE", "start": 7, "end": 17}, {"label": "NAME", "start": 26, "end": 29}, {"label": "PHONE", "start": 85, "end": 100}, {"label": "ADDRESS", "start": 106, "end": 116}]}
+{"doc_id": "ZH-0084", "spans": [{"label": "DATE", "start": 7, "end": 16}, {"label": "NAME", "start": 25, "end": 28}, {"label": "PATIENT_ID", "start": 32, "end": 40}, {"label": "PHONE", "start": 83, "end": 94}, {"label": "ADDRESS", "start": 100, "end": 110}]}
+{"doc_id": "ZH-0085", "spans": [{"label": "DATE", "start": 7, "end": 17}, {"label": "NAME", "start": 26, "end": 29}, {"label": "PATIENT_ID", "start": 33, "end": 43}, {"label": "PHONE", "start": 87, "end": 100}, {"label": "ADDRESS", "start": 106, "end": 116}]}
+{"doc_id": "ZH-0086", "spans": [{"label": "DATE", "start": 7, "end": 15}, {"label": "NAME", "start": 24, "end": 27}, {"label": "PATIENT_ID", "start": 31, "end": 40}, {"label": "PHONE", "start": 83, "end": 98}, {"label": "ADDRESS", "start": 104, "end": 114}]}
+{"doc_id": "ZH-0087", "spans": [{"label": "NAME", "start": 31, "end": 33}]}
+{"doc_id": "ZH-0088", "spans": [{"label": "NAME", "start": 9, "end": 12}, {"label": "ADDRESS", "start": 18, "end": 28}, {"label": "PHONE", "start": 47, "end": 58}, {"label": "DATE", "start": 59, "end": 68}]}
+{"doc_id": "ZH-0089", "spans": [{"label": "NAME", "start": 9, "end": 12}, {"label": "ADDRESS", "start": 18, "end": 31}, {"label": "PHONE", "start": 49, "end": 62}, {"label": "DATE", "start": 63, "end": 73}]}
+{"doc_id": "ZH-0090", "spans": [{"label": "NAME", "start": 9, "end": 12}, {"label": "ADDRESS", "start": 18, "end": 31}, {"label": "PATIENT_ID", "start": 36, "end": 45}, {"label": "PHONE", "start": 48, "end": 63}, {"label": "DATE", "start": 64, "end": 73}]}
+{"doc_id": "ZH-0091", "spans": [{"label": "NAME", "start": 9, "end": 12}, {"label": "ADDRESS", "start": 18, "end": 31}, {"label": "PHONE", "start": 50, "end": 65}, {"label": "DATE", "start": 66, "end": 76}]}
+{"doc_id": "ZH-0092", "spans": [{"label": "NAME", "start": 9, "end": 12}, {"label": "ADDRESS", "start": 18, "end": 31}, {"label": "PHONE", "start": 47, "end": 58}, {"label": "DATE", "start": 59, "end": 69}]}
+{"doc_id": "ZH-0093", "spans": [{"label": "NAME", "start": 9, "end": 12}, {"label": "ADDRESS", "start": 18, "end": 31}, {"label": "PHONE", "start": 49, "end": 62}, {"label": "DATE", "start": 63, "end": 73}]}
+{"doc_id": "ZH-0094", "spans": [{"label": "NAME", "start": 9, "end": 12}, {"label": "ADDRESS", "start": 18, "end": 28}, {"label": "PATIENT_ID", "start": 36, "end": 45}, {"label": "PHONE", "start": 48, "end": 63}, {"label": "DATE", "start": 64, "end": 74}]}
+{"doc_id": "ZH-0095", "spans": [{"label": "NAME", "start": 31, "end": 33}]}
+{"doc_id": "ZH-0096", "spans": [{"label": "DATE", "start": 7, "end": 17}, {"label": "NAME", "start": 18, "end": 21}, {"label": "PATIENT_ID", "start": 28, "end": 36}, {"label": "ADDRESS", "start": 100, "end": 113}]}
+{"doc_id": "ZH-0097", "spans": [{"label": "ADDRESS", "start": 0, "end": 2}, {"label": "DATE", "start": 7, "end": 17}, {"label": "NAME", "start": 18, "end": 21}, {"label": "ADDRESS", "start": 100, "end": 110}]}
+{"doc_id": "ZH-0098", "spans": [{"label": "DATE", "start": 7, "end": 16}, {"label": "NAME", "start": 17, "end": 20}, {"label": "PATIENT_ID", "start": 27, "end": 36}, {"label": "PHONE", "start": 84, "end": 99}, {"label": "ADDRESS", "start": 104, "end": 117}]}
+{"doc_id": "ZH-0099", "spans": [{"label": "ADDRESS", "start": 0, "end": 2}, {"label": "DATE", "start": 7, "end": 17}, {"label": "NAME", "start": 18, "end": 21}, {"label": "PATIENT_ID", "start": 28, "end": 39}, {"label": "PHONE", "start": 84, "end": 99}, {"label": "ADDRESS", "start": 104, "end": 114}]}
+{"doc_id": "ZH-0100", "spans": [{"label": "ADDRESS", "start": 0, "end": 2}, {"label": "DATE", "start": 7, "end": 17}, {"label": "NAME", "start": 18, "end": 21}, {"label": "PATIENT_ID", "start": 28, "end": 36}, {"label": "ADDRESS", "start": 100, "end": 110}]}
+{"doc_id": "ZH-0101", "spans": [{"label": "ADDRESS", "start": 0, "end": 2}, {"label": "DATE", "start": 7, "end": 17}, {"label": "NAME", "start": 18, "end": 21}, {"label": "PATIENT_ID", "start": 28, "end": 38}, {"label": "PHONE", "start": 87, "end": 100}, {"label": "ADDRESS", "start": 105, "end": 118}]}
+{"doc_id": "ZH-0102", "spans": [{"label": "ADDRESS", "start": 0, "end": 2}, {"label": "DATE", "start": 7, "end": 16}, {"label": "NAME", "start": 17, "end": 20}, {"label": "PATIENT_ID", "start": 27, "end": 36}, {"label": "PHONE", "start": 82, "end": 97}, {"label": "ADDRESS", "start": 102, "end": 112}]}
+{"doc_id": "ZH-0103", "spans": []}
+{"doc_id": "ZH-0104", "spans": [{"label": "DATE", "start": 9, "end": 19}, {"label": "NAME", "start": 20, "end": 23}, {"label": "PHONE", "start": 25, "end": 36}, {"label": "PATIENT_ID", "start": 43, "end": 51}, {"label": "ADDRESS", "start": 92, "end": 105}]}
+{"doc_id": "ZH-0105", "spans": [{"label": "DATE", "start": 9, "end": 19}, {"label": "NAME", "start": 20, "end": 23}, {"label": "PHONE", "start": 25, "end": 38}, {"label": "PATIENT_ID", "start": 45, "end": 55}, {"label": "ADDRESS", "start": 99, "end": 112}]}
+{"doc_id": "ZH-0106", "spans": [{"label": "DATE", "start": 9, "end": 19}, {"label": "NAME", "start": 20, "end": 23}, {"label": "PHONE", "start": 25, "end": 40}, {"label": "PATIENT_ID", "start": 47, "end": 56}, {"label": "ADDRESS", "start": 101, "end": 114}]}
+{"doc_id": "ZH-0107", "spans": [{"label": "DATE", "start": 9, "end": 19}, {"label": "NAME", "start": 20, "end": 23}, {"label": "PHONE", "start": 25, "end": 40}, {"label": "PATIENT_ID", "start": 47, "end": 58}, {"label": "ADDRESS", "start": 100, "end": 113}]}
+{"doc_id": "ZH-0108", "spans": [{"label": "DATE", "start": 9, "end": 18}, {"label": "NAME", "start": 19, "end": 22}, {"label": "PHONE", "start": 24, "end": 35}, {"label": "PATIENT_ID", "start": 42, "end": 50}, {"label": "ADDRESS", "start": 100, "end": 113}]}
+{"doc_id": "ZH-0109", "spans": [{"label": "DATE", "start": 9, "end": 19}, {"label": "NAME", "start": 20, "end": 23}, {"label": "PHONE", "start": 25, "end": 38}, {"label": "PATIENT_ID", "start": 45, "end": 55}, {"label": "ADDRESS", "start": 100, "end": 113}]}
+{"doc_id": "ZH-0110", "spans": [{"label": "DATE", "start": 9, "end": 17}, {"label": "NAME", "start": 18, "end": 21}, {"label": "PHONE", "start": 23, "end": 38}, {"label": "PATIENT_ID", "start": 45, "end": 54}, {"label": "ADDRESS", "start": 97, "end": 110}]}
+{"doc_id": "ZH-0111", "spans": [{"label": "ADDRESS", "start": 20, "end": 24}]}
+{"doc_id": "ZH-0112", "spans": [{"label": "PATIENT_ID", "start": 9, "end": 17}, {"label": "NAME", "start": 19, "end": 22}, {"label": "DATE", "start": 27, "end": 36}, {"label": "PHONE", "start": 84, "end": 95}, {"label": "ADDRESS", "start": 101, "end": 111}]}
+{"doc_id": "ZH-0113", "spans": [{"label": "PATIENT_ID", "start": 9, "end": 19}, {"label": "NAME", "start": 21, "end": 24}, {"label": "DATE", "start": 29, "end": 39}, {"label": "PHONE", "start": 95, "end": 108}, {"label": "ADDRESS", "start": 114, "end": 124}]}
+{"doc_id": "ZH-0114", "spans": [{"label": "PATIENT_ID", "start": 9, "end": 18}, {"label": "NAME", "start": 20, "end": 23}, {"label": "DATE", "start": 28, "end": 36}, {"label": "PHONE", "start": 87, "end": 102}, {"label": "ADDRESS", "start": 108, "end": 118}]}
+{"doc_id": "ZH-0115", "spans": [{"label": "PATIENT_ID", "start": 7, "end": 20}, {"label": "NAME", "start": 22, "end": 25}, {"label": "DATE", "start": 30, "end": 40}, {"label": "PHONE", "start": 89, "end": 104}, {"label": "ADDRESS", "start": 110, "end": 120}]}
+{"doc_id": "ZH-0116", "spans": [{"label": "PATIENT_ID", "start": 9, "end": 17}, {"label": "ADDRESS", "start": 19, "end": 22}, {"label": "DATE", "start": 27, "end": 36}, {"label": "PHONE", "start": 85, "end": 96}, {"label": "ADDRESS", "start": 102, "end": 112}]}
+{"doc_id": "ZH-0117", "spans": [{"label": "PATIENT_ID", "start": 9, "end": 19}, {"label": "NAME", "start": 21, "end": 24}, {"label": "DATE", "start": 29, "end": 39}, {"label": "PHONE", "start": 85, "end": 98}, {"label": "ADDRESS", "start": 104, "end": 114}]}
+{"doc_id": "ZH-0118", "spans": [{"label": "PATIENT_ID", "start": 9, "end": 18}, {"label": "NAME", "start": 20, "end": 23}, {"label": "DATE", "start": 28, "end": 38}, {"label": "PHONE", "start": 88, "end": 103}, {"label": "ADDRESS", "start": 109, "end": 119}]}
+{"doc_id": "ZH-0119", "spans": [{"label": "NAME", "start": 23, "end": 25}, {"label": "NAME", "start": 30, "end": 32}]}
+{"doc_id": "ZH-0136", "spans": [{"label": "NAME", "start": 11, "end": 14}, {"label": "PATIENT_ID", "start": 20, "end": 28}, {"label": "DATE", "start": 33, "end": 42}, {"label": "ADDRESS", "start": 98, "end": 108}]}
+{"doc_id": "ZH-0137", "spans": [{"label": "NAME", "start": 11, "end": 14}, {"label": "PATIENT_ID", "start": 20, "end": 30}, {"label": "DATE", "start": 35, "end": 45}, {"label": "PHONE", "start": 89, "end": 102}, {"label": "ADDRESS", "start": 103, "end": 113}]}
+{"doc_id": "ZH-0138", "spans": [{"label": "NAME", "start": 11, "end": 14}, {"label": "PATIENT_ID", "start": 20, "end": 29}, {"label": "DATE", "start": 34, "end": 42}, {"label": "PHONE", "start": 85, "end": 100}, {"label": "ADDRESS", "start": 101, "end": 111}]}
+{"doc_id": "ZH-0139", "spans": [{"label": "NAME", "start": 11, "end": 14}, {"label": "PATIENT_ID", "start": 20, "end": 31}, {"label": "DATE", "start": 36, "end": 46}, {"label": "PHONE", "start": 91, "end": 106}, {"label": "ADDRESS", "start": 107, "end": 117}]}
+{"doc_id": "ZH-0140", "spans": [{"label": "NAME", "start": 11, "end": 14}, {"label": "PATIENT_ID", "start": 20, "end": 28}, {"label": "DATE", "start": 33, "end": 42}, {"label": "ADDRESS", "start": 100, "end": 110}]}
+{"doc_id": "ZH-0141", "spans": [{"label": "NAME", "start": 11, "end": 14}, {"label": "PATIENT_ID", "start": 20, "end": 30}, {"label": "DATE", "start": 35, "end": 45}, {"label": "ADDRESS", "start": 104, "end": 114}]}
+{"doc_id": "ZH-0142", "spans": [{"label": "NAME", "start": 11, "end": 14}, {"label": "PATIENT_ID", "start": 20, "end": 29}, {"label": "DATE", "start": 34, "end": 43}, {"label": "PHONE", "start": 84, "end": 99}]}
+{"doc_id": "ZH-0143", "spans": [{"label": "ADDRESS", "start": 7, "end": 13}]}
+{"doc_id": "ZH-0152", "spans": [{"label": "NAME", "start": 8, "end": 11}, {"label": "DATE", "start": 29, "end": 39}, {"label": "PHONE", "start": 76, "end": 87}, {"label": "ADDRESS", "start": 99, "end": 112}]}
+{"doc_id": "ZH-0153", "spans": [{"label": "NAME", "start": 8, "end": 11}, {"label": "DATE", "start": 31, "end": 41}, {"label": "PHONE", "start": 82, "end": 95}, {"label": "ADDRESS", "start": 107, "end": 120}]}
+{"doc_id": "ZH-0154", "spans": [{"label": "NAME", "start": 8, "end": 11}, {"label": "DATE", "start": 30, "end": 40}, {"label": "PHONE", "start": 78, "end": 93}, {"label": "ADDRESS", "start": 105, "end": 115}]}
+{"doc_id": "ZH-0155", "spans": [{"label": "NAME", "start": 8, "end": 11}, {"label": "DATE", "start": 32, "end": 42}, {"label": "PHONE", "start": 83, "end": 98}, {"label": "ADDRESS", "start": 110, "end": 120}]}
+{"doc_id": "ZH-0156", "spans": [{"label": "NAME", "start": 8, "end": 11}, {"label": "DATE", "start": 29, "end": 39}, {"label": "ADDRESS", "start": 104, "end": 114}]}
+{"doc_id": "ZH-0157", "spans": [{"label": "NAME", "start": 8, "end": 11}, {"label": "PATIENT_ID", "start": 16, "end": 26}, {"label": "DATE", "start": 31, "end": 41}, {"label": "PHONE", "start": 80, "end": 93}, {"label": "ADDRESS", "start": 105, "end": 115}]}
+{"doc_id": "ZH-0158", "spans": [{"label": "NAME", "start": 8, "end": 11}, {"label": "DATE", "start": 30, "end": 39}, {"label": "PHONE", "start": 86, "end": 101}, {"label": "ADDRESS", "start": 113, "end": 123}]}
+{"doc_id": "ZH-0159", "spans": [{"label": "NAME", "start": 5, "end": 7}]}
+{"doc_id": "ZH-0184", "spans": [{"label": "NAME", "start": 8, "end": 11}, {"label": "PATIENT_ID", "start": 15, "end": 23}, {"label": "DATE", "start": 25, "end": 35}, {"label": "ADDRESS", "start": 101, "end": 111}]}
+{"doc_id": "ZH-0185", "spans": [{"label": "NAME", "start": 6, "end": 11}, {"label": "PATIENT_ID", "start": 15, "end": 25}, {"label": "DATE", "start": 27, "end": 37}, {"label": "PATIENT_ID", "start": 82, "end": 95}, {"label": "ADDRESS", "start": 104, "end": 114}]}
+{"doc_id": "ZH-0186", "spans": [{"label": "NAME", "start": 8, "end": 11}, {"label": "PATIENT_ID", "start": 15, "end": 24}, {"label": "DATE", "start": 26, "end": 35}, {"label": "PHONE", "start": 81, "end": 96}, {"label": "ADDRESS", "start": 105, "end": 115}]}
+{"doc_id": "ZH-0187", "spans": [{"label": "NAME", "start": 8, "end": 11}, {"label": "DATE", "start": 28, "end": 38}, {"label": "PHONE", "start": 84, "end": 99}, {"label": "ADDRESS", "start": 108, "end": 118}]}
+{"doc_id": "ZH-0188", "spans": [{"label": "NAME", "start": 8, "end": 11}, {"label": "PATIENT_ID", "start": 15, "end": 23}, {"label": "DATE", "start": 25, "end": 35}, {"label": "ADDRESS", "start": 100, "end": 110}]}
+{"doc_id": "ZH-0189", "spans": [{"label": "NAME", "start": 8, "end": 11}, {"label": "PATIENT_ID", "start": 15, "end": 25}, {"label": "DATE", "start": 27, "end": 37}, {"label": "PATIENT_ID", "start": 84, "end": 97}, {"label": "ADDRESS", "start": 106, "end": 116}]}
+{"doc_id": "ZH-0190", "spans": [{"label": "ADDRESS", "start": 0, "end": 4}, {"label": "NAME", "start": 8, "end": 11}, {"label": "PATIENT_ID", "start": 15, "end": 24}, {"label": "DATE", "start": 26, "end": 35}, {"label": "PHONE", "start": 83, "end": 98}, {"label": "ADDRESS", "start": 107, "end": 117}]}
+{"doc_id": "ZH-0191", "spans": []}
+{"doc_id": "ZH-0200", "spans": [{"label": "NAME", "start": 8, "end": 11}, {"label": "PATIENT_ID", "start": 18, "end": 26}, {"label": "DATE", "start": 70, "end": 80}, {"label": "PHONE", "start": 86, "end": 97}, {"label": "ADDRESS", "start": 104, "end": 117}]}
+{"doc_id": "ZH-0201", "spans": [{"label": "NAME", "start": 8, "end": 11}, {"label": "PATIENT_ID", "start": 18, "end": 28}, {"label": "DATE", "start": 71, "end": 81}, {"label": "PHONE", "start": 87, "end": 100}, {"label": "ADDRESS", "start": 107, "end": 120}]}
+{"doc_id": "ZH-0202", "spans": [{"label": "NAME", "start": 8, "end": 11}, {"label": "PATIENT_ID", "start": 18, "end": 27}, {"label": "DATE", "start": 66, "end": 76}, {"label": "PHONE", "start": 82, "end": 97}, {"label": "ADDRESS", "start": 104, "end": 117}]}
+{"doc_id": "ZH-0203", "spans": [{"label": "NAME", "start": 8, "end": 11}, {"label": "PATIENT_ID", "start": 18, "end": 29}, {"label": "DATE", "start": 72, "end": 82}, {"label": "PHONE", "start": 88, "end": 103}, {"label": "ADDRESS", "start": 110, "end": 123}]}
+{"doc_id": "ZH-0204", "spans": [{"label": "NAME", "start": 8, "end": 11}, {"label": "PATIENT_ID", "start": 18, "end": 26}, {"label": "DATE", "start": 66, "end": 76}, {"label": "PHONE", "start": 82, "end": 93}, {"label": "ADDRESS", "start": 100, "end": 113}]}
+{"doc_id": "ZH-0205", "spans": [{"label": "NAME", "start": 8, "end": 11}, {"label": "PATIENT_ID", "start": 18, "end": 28}, {"label": "DATE", "start": 71, "end": 81}, {"label": "PHONE", "start": 87, "end": 100}, {"label": "ADDRESS", "start": 107, "end": 120}]}
+{"doc_id": "ZH-0206", "spans": [{"label": "NAME", "start": 8, "end": 11}, {"label": "PATIENT_ID", "start": 18, "end": 27}, {"label": "DATE", "start": 71, "end": 80}, {"label": "PHONE", "start": 86, "end": 101}, {"label": "ADDRESS", "start": 108, "end": 121}]}
+{"doc_id": "ZH-0207", "spans": []}
+{"doc_id": "ZH-0208", "spans": [{"label": "PATIENT_ID", "start": 9, "end": 17}, {"label": "NAME", "start": 22, "end": 25}, {"label": "DATE", "start": 26, "end": 36}, {"label": "PHONE", "start": 89, "end": 100}, {"label": "ADDRESS", "start": 105, "end": 115}]}
+{"doc_id": "ZH-0209", "spans": [{"label": "PATIENT_ID", "start": 9, "end": 19}, {"label": "NAME", "start": 24, "end": 27}, {"label": "DATE", "start": 28, "end": 38}, {"label": "PHONE", "start": 88, "end": 101}, {"label": "ADDRESS", "start": 106, "end": 119}]}
+{"doc_id": "ZH-0210", "spans": [{"label": "PATIENT_ID", "start": 9, "end": 18}, {"label": "NAME", "start": 23, "end": 26}, {"label": "DATE", "start": 27, "end": 36}, {"label": "PHONE", "start": 89, "end": 104}, {"label": "ADDRESS", "start": 109, "end": 119}]}
+{"doc_id": "ZH-0211", "spans": [{"label": "PATIENT_ID", "start": 9, "end": 20}, {"label": "NAME", "start": 25, "end": 28}, {"label": "DATE", "start": 29, "end": 39}, {"label": "PHONE", "start": 93, "end": 108}, {"label": "ADDRESS", "start": 113, "end": 123}]}
+{"doc_id": "ZH-0212", "spans": [{"label": "PATIENT_ID", "start": 9, "end": 17}, {"label": "NAME", "start": 22, "end": 25}, {"label": "DATE", "start": 26, "end": 36}, {"label": "PHONE", "start": 87, "end": 98}, {"label": "ADDRESS", "start": 103, "end": 116}]}
+{"doc_id": "ZH-0213", "spans": [{"label": "PATIENT_ID", "start": 9, "end": 19}, {"label": "NAME", "start": 24, "end": 27}, {"label": "DATE", "start": 28, "end": 38}, {"label": "PHONE", "start": 97, "end": 110}, {"label": "ADDRESS", "start": 115, "end": 128}]}
+{"doc_id": "ZH-0214", "spans": [{"label": "PATIENT_ID", "start": 9, "end": 18}, {"label": "NAME", "start": 23, "end": 26}, {"label": "DATE", "start": 27, "end": 37}, {"label": "PHONE", "start": 91, "end": 106}, {"label": "ADDRESS", "start": 111, "end": 121}]}
+{"doc_id": "ZH-0215", "spans": [{"label": "NAME", "start": 27, "end": 29}]}
+{"doc_id": "ZH-0232", "spans": [{"label": "NAME", "start": 9, "end": 12}, {"label": "DATE", "start": 13, "end": 23}, {"label": "PATIENT_ID", "start": 33, "end": 41}, {"label": "ADDRESS", "start": 102, "end": 112}]}
+{"doc_id": "ZH-0233", "spans": [{"label": "NAME", "start": 9, "end": 12}, {"label": "DATE", "start": 13, "end": 23}, {"label": "PATIENT_ID", "start": 33, "end": 43}, {"label": "ADDRESS", "start": 110, "end": 120}]}
+{"doc_id": "ZH-0234", "spans": [{"label": "NAME", "start": 9, "end": 12}, {"label": "DATE", "start": 13, "end": 22}, {"label": "PATIENT_ID", "start": 32, "end": 41}, {"label": "PHONE", "start": 84, "end": 99}, {"label": "ADDRESS", "start": 109, "end": 119}]}
+{"doc_id": "ZH-0235", "spans": [{"label": "NAME", "start": 9, "end": 12}, {"label": "DATE", "start": 13, "end": 23}, {"label": "PATIENT_ID", "start": 33, "end": 44}, {"label": "PHONE", "start": 86, "end": 101}, {"label": "ADDRESS", "start": 111, "end": 121}]}
+{"doc_id": "ZH-0236", "spans": [{"label": "NAME", "start": 9, "end": 12}, {"label": "DATE", "start": 13, "end": 23}, {"label": "PATIENT_ID", "start": 33, "end": 41}, {"label": "ADDRESS", "start": 105, "end": 115}]}
+{"doc_id": "ZH-0237", "spans": [{"label": "NAME", "start": 9, "end": 12}, {"label": "DATE", "start": 13, "end": 23}, {"label": "PATIENT_ID", "start": 33, "end": 43}, {"label": "ADDRESS", "start": 109, "end": 122}]}
+{"doc_id": "ZH-0238", "spans": [{"label": "NAME", "start": 9, "end": 12}, {"label": "DATE", "start": 13, "end": 23}, {"label": "PATIENT_ID", "start": 33, "end": 42}, {"label": "PHONE", "start": 84, "end": 99}, {"label": "ADDRESS", "start": 109, "end": 119}]}
+{"doc_id": "ZH-0239", "spans": []}
+{"doc_id": "ZH-0248", "spans": [{"label": "DATE", "start": 8, "end": 17}, {"label": "NAME", "start": 19, "end": 22}, {"label": "ADDRESS", "start": 102, "end": 115}]}
+{"doc_id": "ZH-0249", "spans": [{"label": "DATE", "start": 8, "end": 18}, {"label": "NAME", "start": 20, "end": 23}, {"label": "PATIENT_ID", "start": 91, "end": 104}, {"label": "ADDRESS", "start": 109, "end": 122}]}
+{"doc_id": "ZH-0250", "spans": [{"label": "DATE", "start": 8, "end": 17}, {"label": "NAME", "start": 19, "end": 22}, {"label": "PATIENT_ID", "start": 30, "end": 39}, {"label": "PHONE", "start": 90, "end": 105}, {"label": "ADDRESS", "start": 110, "end": 123}]}
+{"doc_id": "ZH-0251", "spans": [{"label": "DATE", "start": 8, "end": 18}, {"label": "NAME", "start": 20, "end": 23}, {"label": "PHONE", "start": 92, "end": 107}, {"label": "ADDRESS", "start": 112, "end": 125}]}
+{"doc_id": "ZH-0252", "spans": [{"label": "DATE", "start": 8, "end": 18}, {"label": "NAME", "start": 20, "end": 23}, {"label": "ADDRESS", "start": 101, "end": 114}]}
+{"doc_id": "ZH-0253", "spans": [{"label": "DATE", "start": 8, "end": 18}, {"label": "NAME", "start": 20, "end": 23}, {"label": "PATIENT_ID", "start": 91, "end": 104}, {"label": "ADDRESS", "start": 109, "end": 122}]}
+{"doc_id": "ZH-0254", "spans": [{"label": "DATE", "start": 8, "end": 17}, {"label": "NAME", "start": 19, "end": 22}, {"label": "PATIENT_ID", "start": 30, "end": 39}, {"label": "PHONE", "start": 86, "end": 101}, {"label": "ADDRESS", "start": 106, "end": 119}]}
+{"doc_id": "ZH-0255", "spans": [{"label": "NAME", "start": 27, "end": 29}]}
+{"doc_id": "ZH-0256", "spans": [{"label": "NAME", "start": 9, "end": 12}, {"label": "PATIENT_ID", "start": 17, "end": 25}, {"label": "DATE", "start": 26, "end": 36}, {"label": "ADDRESS", "start": 82, "end": 92}, {"label": "PHONE", "start": 102, "end": 113}]}
+{"doc_id": "ZH-0257", "spans": [{"label": "NAME", "start": 9, "end": 12}, {"label": "PATIENT_ID", "start": 17, "end": 27}, {"label": "DATE", "start": 28, "end": 38}, {"label": "ADDRESS", "start": 80, "end": 90}, {"label": "PHONE", "start": 100, "end": 113}]}
+{"doc_id": "ZH-0258", "spans": [{"label": "NAME", "start": 9, "end": 12}, {"label": "PATIENT_ID", "start": 17, "end": 26}, {"label": "DATE", "start": 27, "end": 36}, {"label": "ADDRESS", "start": 82, "end": 92}, {"label": "PHONE", "start": 102, "end": 117}]}
+{"doc_id": "ZH-0259", "spans": [{"label": "NAME", "start": 9, "end": 12}, {"label": "PATIENT_ID", "start": 17, "end": 28}, {"label": "DATE", "start": 29, "end": 39}, {"label": "ADDRESS", "start": 82, "end": 92}, {"label": "PHONE", "start": 102, "end": 117}]}
+{"doc_id": "ZH-0260", "spans": [{"label": "NAME", "start": 9, "end": 12}, {"label": "PATIENT_ID", "start": 17, "end": 25}, {"label": "DATE", "start": 26, "end": 36}, {"label": "ADDRESS", "start": 82, "end": 92}, {"label": "PHONE", "start": 102, "end": 113}]}
+{"doc_id": "ZH-0261", "spans": [{"label": "NAME", "start": 9, "end": 12}, {"label": "PATIENT_ID", "start": 17, "end": 27}, {"label": "DATE", "start": 28, "end": 38}, {"label": "ADDRESS", "start": 85, "end": 95}, {"label": "PHONE", "start": 105, "end": 118}]}
+{"doc_id": "ZH-0262", "spans": [{"label": "NAME", "start": 9, "end": 12}, {"label": "PATIENT_ID", "start": 17, "end": 26}, {"label": "DATE", "start": 27, "end": 37}, {"label": "ADDRESS", "start": 81, "end": 91}, {"label": "PHONE", "start": 101, "end": 116}]}
+{"doc_id": "ZH-0263", "spans": [{"label": "PATIENT_ID", "start": 0, "end": 5}, {"label": "PATIENT_ID", "start": 6, "end": 17}, {"label": "NAME", "start": 25, "end": 27}]}
+{"doc_id": "ZH-0280", "spans": [{"label": "NAME", "start": 9, "end": 12}, {"label": "DATE", "start": 13, "end": 23}, {"label": "PATIENT_ID", "start": 30, "end": 38}, {"label": "ADDRESS", "start": 103, "end": 113}]}
+{"doc_id": "ZH-0281", "spans": [{"label": "NAME", "start": 9, "end": 12}, {"label": "DATE", "start": 13, "end": 23}, {"label": "PATIENT_ID", "start": 30, "end": 40}, {"label": "ADDRESS", "start": 107, "end": 120}]}
+{"doc_id": "ZH-0282", "spans": [{"label": "NAME", "start": 9, "end": 12}, {"label": "DATE", "start": 13, "end": 22}, {"label": "PATIENT_ID", "start": 29, "end": 38}, {"label": "PHONE", "start": 78, "end": 93}, {"label": "ADDRESS", "start": 104, "end": 114}]}
+{"doc_id": "ZH-0283", "spans": [{"label": "NAME", "start": 9, "end": 12}, {"label": "DATE", "start": 13, "end": 23}, {"label": "PATIENT_ID", "start": 30, "end": 41}, {"label": "PHONE", "start": 85, "end": 100}, {"label": "ADDRESS", "start": 111, "end": 121}]}
+{"doc_id": "ZH-0284", "spans": [{"label": "NAME", "start": 9, "end": 12}, {"label": "DATE", "start": 13, "end": 23}, {"label": "PATIENT_ID", "start": 30, "end": 38}, {"label": "ADDRESS", "start": 103, "end": 116}]}
+{"doc_id": "ZH-0285", "spans": [{"label": "NAME", "start": 9, "end": 12}, {"label": "DATE", "start": 13, "end": 23}, {"label": "PATIENT_ID", "start": 30, "end": 40}, {"label": "ADDRESS", "start": 106, "end": 116}]}
+{"doc_id": "ZH-0286", "spans": [{"label": "NAME", "start": 9, "end": 12}, {"label": "DATE", "start": 13, "end": 23}, {"label": "PATIENT_ID", "start": 30, "end": 39}, {"label": "PHONE", "start": 82, "end": 97}, {"label": "ADDRESS", "start": 108, "end": 118}]}
+{"doc_id": "ZH-0287", "spans": [{"label": "PATIENT_ID", "start": 0, "end": 6}, {"label": "PATIENT_ID", "start": 7, "end": 12}, {"label": "NAME", "start": 25, "end": 27}, {"label": "NAME", "start": 28, "end": 32}]}
+{"doc_id": "ZH-0296", "spans": [{"label": "PATIENT_ID", "start": 12, "end": 20}, {"label": "NAME", "start": 22, "end": 25}, {"label": "DATE", "start": 31, "end": 41}, {"label": "PHONE", "start": 83, "end": 94}, {"label": "ADDRESS", "start": 100, "end": 113}]}
+{"doc_id": "ZH-0297", "spans": [{"label": "PATIENT_ID", "start": 12, "end": 22}, {"label": "NAME", "start": 24, "end": 27}, {"label": "DATE", "start": 33, "end": 43}, {"label": "PHONE", "start": 85, "end": 98}, {"label": "ADDRESS", "start": 104, "end": 117}]}
+{"doc_id": "ZH-0298", "spans": [{"label": "PATIENT_ID", "start": 12, "end": 21}, {"label": "NAME", "start": 23, "end": 26}, {"label": "DATE", "start": 32, "end": 41}, {"label": "PHONE", "start": 82, "end": 97}, {"label": "ADDRESS", "start": 103, "end": 113}]}
+{"doc_id": "ZH-0299", "spans": [{"label": "PATIENT_ID", "start": 12, "end": 23}, {"label": "NAME", "start": 25, "end": 28}, {"label": "DATE", "start": 34, "end": 44}, {"label": "PHONE", "start": 87, "end": 102}, {"label": "ADDRESS", "start": 108, "end": 121}]}
+{"doc_id": "ZH-0300", "spans": [{"label": "PATIENT_ID", "start": 12, "end": 20}, {"label": "NAME", "start": 22, "end": 25}, {"label": "DATE", "start": 31, "end": 40}, {"label": "PHONE", "start": 84, "end": 95}, {"label": "ADDRESS", "start": 101, "end": 114}]}
+{"doc_id": "ZH-0301", "spans": [{"label": "PATIENT_ID", "start": 12, "end": 22}, {"label": "NAME", "start": 24, "end": 27}, {"label": "DATE", "start": 33, "end": 43}, {"label": "PHONE", "start": 86, "end": 99}, {"label": "ADDRESS", "start": 105, "end": 115}]}
+{"doc_id": "ZH-0302", "spans": [{"label": "PATIENT_ID", "start": 12, "end": 21}, {"label": "NAME", "start": 23, "end": 26}, {"label": "DATE", "start": 32, "end": 40}, {"label": "PHONE", "start": 79, "end": 94}, {"label": "ADDRESS", "start": 100, "end": 113}]}
+{"doc_id": "ZH-0303", "spans": []}
+{"doc_id": "ZH-0304", "spans": [{"label": "DATE", "start": 10, "end": 19}, {"label": "NAME", "start": 20, "end": 23}, {"label": "PATIENT_ID", "start": 29, "end": 37}, {"label": "PHONE", "start": 80, "end": 91}, {"label": "ADDRESS", "start": 102, "end": 112}]}
+{"doc_id": "ZH-0305", "spans": [{"label": "DATE", "start": 10, "end": 20}, {"label": "NAME", "start": 21, "end": 24}, {"label": "PATIENT_ID", "start": 30, "end": 40}, {"label": "PHONE", "start": 84, "end": 97}, {"label": "ADDRESS", "start": 108, "end": 118}]}
+{"doc_id": "ZH-0306", "spans": [{"label": "DATE", "start": 10, "end": 19}, {"label": "NAME", "start": 20, "end": 23}, {"label": "PATIENT_ID", "start": 29, "end": 38}, {"label": "PHONE", "start": 81, "end": 96}, {"label": "ADDRESS", "start": 107, "end": 117}]}
+{"doc_id": "ZH-0307", "spans": [{"label": "DATE", "start": 10, "end": 20}, {"label": "NAME", "start": 21, "end": 24}, {"label": "PATIENT_ID", "start": 30, "end": 41}, {"label": "PHONE", "start": 80, "end": 95}, {"label": "ADDRESS", "start": 106, "end": 116}]}
+{"doc_id": "ZH-0308", "spans": [{"label": "DATE", "start": 10, "end": 20}, {"label": "NAME", "start": 21, "end": 24}, {"label": "PATIENT_ID", "start": 30, "end": 38}, {"label": "PHONE", "start": 81, "end": 92}, {"label": "ADDRESS", "start": 103, "end": 113}]}
+{"doc_id": "ZH-0309", "spans": [{"label": "DATE", "start": 10, "end": 20}, {"label": "NAME", "start": 21, "end": 24}, {"label": "PATIENT_ID", "start": 30, "end": 40}, {"label": "PHONE", "start": 80, "end": 93}, {"label": "ADDRESS", "start": 104, "end": 114}]}
+{"doc_id": "ZH-0310", "spans": [{"label": "DATE", "start": 10, "end": 20}, {"label": "NAME", "start": 21, "end": 24}, {"label": "PATIENT_ID", "start": 30, "end": 39}, {"label": "PHONE", "start": 82, "end": 97}, {"label": "ADDRESS", "start": 108, "end": 118}]}
+{"doc_id": "ZH-0311", "spans": [{"label": "NAME", "start": 9, "end": 12}]}
+{"doc_id": "ZH-0312", "spans": [{"label": "DATE", "start": 9, "end": 19}, {"label": "NAME", "start": 22, "end": 25}, {"label": "PATIENT_ID", "start": 31, "end": 39}, {"label": "PHONE", "start": 79, "end": 90}, {"label": "ADDRESS", "start": 100, "end": 110}]}
+{"doc_id": "ZH-0313", "spans": [{"label": "DATE", "start": 9, "end": 19}, {"label": "NAME", "start": 22, "end": 25}, {"label": "PATIENT_ID", "start": 31, "end": 41}, {"label": "PHONE", "start": 85, "end": 98}, {"label": "ADDRESS", "start": 108, "end": 118}]}
+{"doc_id": "ZH-0314", "spans": [{"label": "DATE", "start": 9, "end": 18}, {"label": "NAME", "start": 21, "end": 24}, {"label": "PATIENT_ID", "start": 30, "end": 39}, {"label": "PHONE", "start": 80, "end": 95}, {"label": "ADDRESS", "start": 105, "end": 115}]}
+{"doc_id": "ZH-0315", "spans": [{"label": "DATE", "start": 9, "end": 19}, {"label": "NAME", "start": 22, "end": 25}, {"label": "PATIENT_ID", "start": 31, "end": 42}, {"label": "PHONE", "start": 86, "end": 101}, {"label": "ADDRESS", "start": 111, "end": 121}]}
+{"doc_id": "ZH-0316", "spans": [{"label": "DATE", "start": 9, "end": 19}, {"label": "NAME", "start": 22, "end": 25}, {"label": "PATIENT_ID", "start": 31, "end": 39}, {"label": "ADDRESS", "start": 105, "end": 115}]}
+{"doc_id": "ZH-0317", "spans": [{"label": "DATE", "start": 9, "end": 19}, {"label": "NAME", "start": 22, "end": 25}, {"label": "PATIENT_ID", "start": 31, "end": 41}, {"label": "PHONE", "start": 83, "end": 96}, {"label": "ADDRESS", "start": 106, "end": 116}]}
+{"doc_id": "ZH-0318", "spans": [{"label": "DATE", "start": 9, "end": 18}, {"label": "NAME", "start": 21, "end": 24}, {"label": "PATIENT_ID", "start": 30, "end": 39}, {"label": "PHONE", "start": 89, "end": 104}, {"label": "ADDRESS", "start": 114, "end": 124}]}
+{"doc_id": "ZH-0319", "spans": [{"label": "NAME", "start": 27, "end": 29}]}

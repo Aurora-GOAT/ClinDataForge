@@ -1,0 +1,16 @@
+{
+  "export_version": "sft-export-1.0.0",
+  "n_accepted_source": 2332,
+  "sft_by_split": {
+    "train": 1904,
+    "dev": 227,
+    "test": 201
+  },
+  "preference_corruption_rules": {
+    "flip_status": 591,
+    "drop_phenotype": 561,
+    "wrong_lab": 271,
+    "hallucinate_phenotype": 909
+  },
+  "disclaimer": "Candidates only. No SFT/LoRA/DPO training was executed. Preference rejected responses are programmatic corruptions, not human preference labels."
+}

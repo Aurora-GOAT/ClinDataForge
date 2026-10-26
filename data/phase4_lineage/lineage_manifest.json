@@ -1,0 +1,676 @@
+{
+  "lineage_version": "lineage-1.0.0",
+  "generated_at_utc": "2026-10-26T17:57:11Z",
+  "purpose": "as-run disease lineage for the 2,400-record synthetic corpus",
+  "source_of_truth": {
+    "generator": "clinforge/synthgen.py::CURATED_DISEASES",
+    "rationale": "Curated rare-disease demo set: all entries are Orphanet/OMIM registered rare diseases with >=8 HPO phenotype annotations in the verified snapshot; jointly covering neurologic, metabolic, hematologic, endocrine, hepatic, renal, ophthalmologic and chromosomal systems; every disease contributes at least one curated lab-linked phenotype (ALT/AST, glucose, hemoglobin) where available so the lab-standardisation stage has material. Sex-limited diseases (Turner syndrome: female; Lowe syndrome: X-linked male) use the documented sex constraint only.",
+    "n_diseases": 16
+  },
+  "superseded_artifact": {
+    "path": "data/phase3_synth/kb/disease_selection.json",
+    "status": "stale-but-preserved (NOT deleted, NOT overwritten)",
+    "written_by": "an earlier build of scripts/build_hpo_kb.py using the algorithmic selector",
+    "rule_recorded_in_file": "rank by (#lab-linked phenotypes desc, #phenotypes desc, id asc); top n-4 plus seeded sample of 4 from next 400",
+    "n_diseases_in_file": 16,
+    "overlap_with_actual": [
+      "OMIM:117550",
+      "OMIM:276700",
+      "ORPHA:506"
+    ],
+    "n_overlap": 3,
+    "reproduced_exactly_by_current_selector": true,
+    "why_they_differ": "The selection file predates the switch to a curated demo set. build_hpo_kb.py now defaults to CURATED_DISEASES and raises FileExistsError instead of overwriting the old file, so the two lists were never reconciled. The generated corpus follows CURATED_DISEASES, not this file."
+  },
+  "hpo_provenance": {
+    "ontology_file": {
+      "name": "hp.obo",
+      "data_version": "hp/releases/2026-09-01",
+      "sha256": "93dace952fcb3ec4728818857f6ba76bc2d5312f4d83266519b8694b8e798f22",
+      "url": "https://purl.obolibrary.org/obo/hp.obo"
+    },
+    "annotation_file": {
+      "name": "phenotype.hpoa",
+      "version": "2026-09-02",
+      "sha256": "e89aa39c8f97bf5a52c5d160f9250a603681d630ade8ec2679d84ac5aece1f72",
+      "url": "https://purl.obolibrary.org/obo/hp/hpoa/phenotype.hpoa"
+    },
+    "ontology": "Human Phenotype Ontology",
+    "license": "https://hpo.jax.org/app/license (free to use; citation + version display required; content unmodified)",
+    "credit": "This product uses the Human Phenotype Ontology (version recorded in manifest). Find out more at http://www.human-phenotype-ontology.org"
+  },
+  "hpo_snapshot_stats": {
+    "n_terms": 20482,
+    "n_diseases": 12867,
+    "dropped_obsolete_or_unknown_annotations": 0
+  },
+  "diseases": [
+    {
+      "disease_id": "ORPHA:64",
+      "disease_name": "Alström syndrome",
+      "disease_name_zh": "Alström综合征",
+      "source": "ORPHA",
+      "n_phenotype_annotations_in_snapshot": 117,
+      "onsets_in_snapshot": [],
+      "n_records": 149,
+      "n_zh": 107,
+      "n_en": 42,
+      "n_with_phi": 83,
+      "template_families": {
+        "admission": 52,
+        "clinic": 18,
+        "consult": 13,
+        "outpatient": 33,
+        "referral": 33
+      },
+      "complexities": {
+        "detailed": 34,
+        "simple": 45,
+        "standard": 70
+      },
+      "status_counts": {
+        "affirmed": 838,
+        "suspected": 309,
+        "history": 178,
+        "negated": 133
+      },
+      "distinct_phenotypes_emitted": 17,
+      "evidence_codes": {
+        "TAS": 1458
+      },
+      "record_ids_sha256": "47002853c0ced5e251be07a9efcae8e98f1cdb38fefd617c12cc3b8194a4d8ec"
+    },
+    {
+      "disease_id": "ORPHA:84",
+      "disease_name": "Fanconi anemia",
+      "disease_name_zh": "Fanconi贫血",
+      "source": "ORPHA",
+      "n_phenotype_annotations_in_snapshot": 106,
+      "onsets_in_snapshot": [],
+      "n_records": 151,
+      "n_zh": 98,
+      "n_en": 53,
+      "n_with_phi": 77,
+      "template_families": {
+        "admission": 47,
+        "clinic": 26,
+        "consult": 13,
+        "outpatient": 38,
+        "referral": 27
+      },
+      "complexities": {
+        "detailed": 38,
+        "simple": 41,
+        "standard": 72
+      },
+      "status_counts": {
+        "affirmed": 870,
+        "suspected": 292,
+        "history": 177,
+        "negated": 117
+      },
+      "distinct_phenotypes_emitted": 16,
+      "evidence_codes": {
+        "TAS": 1456
+      },
+      "record_ids_sha256": "9525b34b8e669ecef27f401d1613303eda9cfb1f80043969234975a982f4e625"
+    },
+    {
+      "disease_id": "ORPHA:506",
+      "disease_name": "Leigh syndrome",
+      "disease_name_zh": "Leigh综合征",
+      "source": "ORPHA",
+      "n_phenotype_annotations_in_snapshot": 98,
+      "onsets_in_snapshot": [],
+      "n_records": 151,
+      "n_zh": 105,
+      "n_en": 46,
+      "n_with_phi": 73,
+      "template_families": {
+        "admission": 55,
+        "clinic": 16,
+        "consult": 9,
+        "outpatient": 26,
+        "referral": 45
+      },
+      "complexities": {
+        "detailed": 27,
+        "simple": 45,
+        "standard": 79
+      },
+      "status_counts": {
+        "affirmed": 814,
+        "suspected": 275,
+        "history": 140,
+        "negated": 113
+      },
+      "distinct_phenotypes_emitted": 18,
+      "evidence_codes": {
+        "TAS": 1342
+      },
+      "record_ids_sha256": "b553355e1ff568970feaebf566823791171a2499a9407fcaae762f034d28a967"
+    },
+    {
+      "disease_id": "ORPHA:110",
+      "disease_name": "Bardet-Biedl syndrome",
+      "disease_name_zh": "Bardet-Biedl综合征",
+      "source": "ORPHA",
+      "n_phenotype_annotations_in_snapshot": 95,
+      "onsets_in_snapshot": [],
+      "n_records": 149,
+      "n_zh": 114,
+      "n_en": 35,
+      "n_with_phi": 76,
+      "template_families": {
+        "admission": 44,
+        "clinic": 17,
+        "consult": 13,
+        "outpatient": 44,
+        "referral": 31
+      },
+      "complexities": {
+        "detailed": 38,
+        "simple": 41,
+        "standard": 70
+      },
+      "status_counts": {
+        "affirmed": 828,
+        "suspected": 243,
+        "history": 138,
+        "negated": 123
+      },
+      "distinct_phenotypes_emitted": 17,
+      "evidence_codes": {
+        "TAS": 1332
+      },
+      "record_ids_sha256": "2471a9396e5e2a0b255dd9d99040a728c060403368cf124586583dbf95caedeb"
+    },
+    {
+      "disease_id": "ORPHA:355",
+      "disease_name": "Gaucher disease",
+      "disease_name_zh": "戈谢病",
+      "source": "ORPHA",
+      "n_phenotype_annotations_in_snapshot": 92,
+      "onsets_in_snapshot": [],
+      "n_records": 150,
+      "n_zh": 96,
+      "n_en": 54,
+      "n_with_phi": 70,
+      "template_families": {
+        "admission": 52,
+        "clinic": 19,
+        "consult": 16,
+        "outpatient": 35,
+        "referral": 28
+      },
+      "complexities": {
+        "detailed": 37,
+        "simple": 40,
+        "standard": 73
+      },
+      "status_counts": {
+        "affirmed": 828,
+        "suspected": 234,
+        "history": 148,
+        "negated": 144
+      },
+      "distinct_phenotypes_emitted": 16,
+      "evidence_codes": {
+        "TAS": 1354
+      },
+      "record_ids_sha256": "ce4574569d6fe95b74364163a0c3ffd3b185e4f3cd240b4aa7b9d232d27f8d15"
+    },
+    {
+      "disease_id": "ORPHA:550",
+      "disease_name": "MELAS",
+      "disease_name_zh": "MELAS综合征",
+      "source": "ORPHA",
+      "n_phenotype_annotations_in_snapshot": 87,
+      "onsets_in_snapshot": [],
+      "n_records": 151,
+      "n_zh": 96,
+      "n_en": 55,
+      "n_with_phi": 90,
+      "template_families": {
+        "admission": 61,
+        "clinic": 22,
+        "consult": 10,
+        "outpatient": 29,
+        "referral": 29
+      },
+      "complexities": {
+        "detailed": 34,
+        "simple": 33,
+        "standard": 84
+      },
+      "status_counts": {
+        "affirmed": 894,
+        "suspected": 281,
+        "history": 193,
+        "negated": 127
+      },
+      "distinct_phenotypes_emitted": 17,
+      "evidence_codes": {
+        "TAS": 1495
+      },
+      "record_ids_sha256": "eeedeefe4ef4f95d66997a480e94b350261d84e7a7433c3466c1fcd0b3a6d291"
+    },
+    {
+      "disease_id": "ORPHA:116",
+      "disease_name": "Beckwith-Wiedemann syndrome",
+      "disease_name_zh": "Beckwith-Wiedemann综合征",
+      "source": "ORPHA",
+      "n_phenotype_annotations_in_snapshot": 85,
+      "onsets_in_snapshot": [],
+      "n_records": 149,
+      "n_zh": 99,
+      "n_en": 50,
+      "n_with_phi": 72,
+      "template_families": {
+        "admission": 45,
+        "clinic": 23,
+        "consult": 14,
+        "outpatient": 29,
+        "referral": 38
+      },
+      "complexities": {
+        "detailed": 35,
+        "simple": 39,
+        "standard": 75
+      },
+      "status_counts": {
+        "affirmed": 811,
+        "suspected": 224,
+        "history": 124,
+        "negated": 128
+      },
+      "distinct_phenotypes_emitted": 17,
+      "evidence_codes": {
+        "TAS": 1287
+      },
+      "record_ids_sha256": "af39a7d344d005e36fb4c265def342411d4ae9af517cb7e39e43ae2eab8bf16a"
+    },
+    {
+      "disease_id": "OMIM:276700",
+      "disease_name": "Tyrosinemia, type I",
+      "disease_name_zh": "Ⅰ型酪氨酸血症",
+      "source": "OMIM",
+      "n_phenotype_annotations_in_snapshot": 38,
+      "onsets_in_snapshot": [],
+      "n_records": 150,
+      "n_zh": 103,
+      "n_en": 47,
+      "n_with_phi": 90,
+      "template_families": {
+        "admission": 46,
+        "clinic": 14,
+        "consult": 18,
+        "outpatient": 30,
+        "referral": 42
+      },
+      "complexities": {
+        "detailed": 31,
+        "simple": 45,
+        "standard": 74
+      },
+      "status_counts": {
+        "affirmed": 740,
+        "suspected": 225,
+        "history": 109,
+        "negated": 126
+      },
+      "distinct_phenotypes_emitted": 17,
+      "evidence_codes": {
+        "IEA": 66,
+        "PCS": 1134
+      },
+      "record_ids_sha256": "5b35add3ba54a8f7686f372ed1ebeeb210fcdf24576f224057fc85a6e52cbe8a"
+    },
+    {
+      "disease_id": "OMIM:117550",
+      "disease_name": "Sotos syndrome",
+      "disease_name_zh": "Sotos综合征",
+      "source": "OMIM",
+      "n_phenotype_annotations_in_snapshot": 122,
+      "onsets_in_snapshot": [
+        "HP:0003577"
+      ],
+      "n_records": 147,
+      "n_zh": 99,
+      "n_en": 48,
+      "n_with_phi": 74,
+      "template_families": {
+        "admission": 49,
+        "clinic": 13,
+        "consult": 16,
+        "outpatient": 30,
+        "referral": 39
+      },
+      "complexities": {
+        "detailed": 37,
+        "simple": 37,
+        "standard": 73
+      },
+      "status_counts": {
+        "affirmed": 879,
+        "suspected": 381,
+        "history": 224,
+        "negated": 121
+      },
+      "distinct_phenotypes_emitted": 18,
+      "evidence_codes": {
+        "PCS": 1605
+      },
+      "record_ids_sha256": "b0b88df1c02bda91a4bebc63815b203c160503c1a8d230570407d52138c31d62"
+    },
+    {
+      "disease_id": "ORPHA:191",
+      "disease_name": "Cockayne syndrome",
+      "disease_name_zh": "Cockayne综合征",
+      "source": "ORPHA",
+      "n_phenotype_annotations_in_snapshot": 118,
+      "onsets_in_snapshot": [],
+      "n_records": 151,
+      "n_zh": 102,
+      "n_en": 49,
+      "n_with_phi": 87,
+      "template_families": {
+        "admission": 43,
+        "clinic": 17,
+        "consult": 19,
+        "outpatient": 35,
+        "referral": 37
+      },
+      "complexities": {
+        "detailed": 46,
+        "simple": 39,
+        "standard": 66
+      },
+      "status_counts": {
+        "affirmed": 902,
+        "suspected": 290,
+        "history": 168,
+        "negated": 119
+      },
+      "distinct_phenotypes_emitted": 17,
+      "evidence_codes": {
+        "TAS": 1479
+      },
+      "record_ids_sha256": "6859103726b5693f1ae85658d2fac979af8ac6f0918356d7e89efb42657f8440"
+    },
+    {
+      "disease_id": "ORPHA:79318",
+      "disease_name": "PMM2-CDG",
+      "disease_name_zh": "PMM2先天性糖基化障碍",
+      "source": "ORPHA",
+      "n_phenotype_annotations_in_snapshot": 86,
+      "onsets_in_snapshot": [],
+      "n_records": 150,
+      "n_zh": 105,
+      "n_en": 45,
+      "n_with_phi": 84,
+      "template_families": {
+        "admission": 54,
+        "clinic": 17,
+        "consult": 10,
+        "outpatient": 36,
+        "referral": 33
+      },
+      "complexities": {
+        "detailed": 43,
+        "simple": 28,
+        "standard": 79
+      },
+      "status_counts": {
+        "affirmed": 846,
+        "suspected": 247,
+        "history": 139,
+        "negated": 137
+      },
+      "distinct_phenotypes_emitted": 17,
+      "evidence_codes": {
+        "TAS": 1369
+      },
+      "record_ids_sha256": "2902a180129c6763ba87ed87db7012363430c805dee63309f3992963d9ac62d0"
+    },
+    {
+      "disease_id": "ORPHA:881",
+      "disease_name": "Turner syndrome",
+      "disease_name_zh": "Turner综合征",
+      "source": "ORPHA",
+      "n_phenotype_annotations_in_snapshot": 115,
+      "onsets_in_snapshot": [],
+      "n_records": 150,
+      "n_zh": 107,
+      "n_en": 43,
+      "n_with_phi": 92,
+      "template_families": {
+        "admission": 43,
+        "clinic": 18,
+        "consult": 14,
+        "outpatient": 40,
+        "referral": 35
+      },
+      "complexities": {
+        "detailed": 31,
+        "simple": 41,
+        "standard": 78
+      },
+      "status_counts": {
+        "affirmed": 860,
+        "suspected": 332,
+        "history": 209,
+        "negated": 129
+      },
+      "distinct_phenotypes_emitted": 17,
+      "evidence_codes": {
+        "TAS": 1530
+      },
+      "record_ids_sha256": "6a194b04ab93ee4e9b590e3058dad5f4dfb17b28a043a0f884c2ccf8a161bd37"
+    },
+    {
+      "disease_id": "ORPHA:2162",
+      "disease_name": "Holoprosencephaly",
+      "disease_name_zh": "前脑无裂畸形",
+      "source": "ORPHA",
+      "n_phenotype_annotations_in_snapshot": 93,
+      "onsets_in_snapshot": [],
+      "n_records": 150,
+      "n_zh": 94,
+      "n_en": 56,
+      "n_with_phi": 83,
+      "template_families": {
+        "admission": 44,
+        "clinic": 16,
+        "consult": 26,
+        "outpatient": 27,
+        "referral": 37
+      },
+      "complexities": {
+        "detailed": 38,
+        "simple": 35,
+        "standard": 77
+      },
+      "status_counts": {
+        "affirmed": 874,
+        "suspected": 271,
+        "history": 154,
+        "negated": 142
+      },
+      "distinct_phenotypes_emitted": 17,
+      "evidence_codes": {
+        "TAS": 1441
+      },
+      "record_ids_sha256": "a3102d743d25152a554e3cdc48e58bac48b8f224bc255e03c996e1d107753c15"
+    },
+    {
+      "disease_id": "ORPHA:79474",
+      "disease_name": "Atypical Werner syndrome",
+      "disease_name_zh": "非典型Werner综合征",
+      "source": "ORPHA",
+      "n_phenotype_annotations_in_snapshot": 90,
+      "onsets_in_snapshot": [],
+      "n_records": 151,
+      "n_zh": 107,
+      "n_en": 44,
+      "n_with_phi": 79,
+      "template_families": {
+        "admission": 51,
+        "clinic": 18,
+        "consult": 16,
+        "outpatient": 38,
+        "referral": 28
+      },
+      "complexities": {
+        "detailed": 29,
+        "simple": 40,
+        "standard": 82
+      },
+      "status_counts": {
+        "affirmed": 862,
+        "suspected": 361,
+        "history": 181,
+        "negated": 129
+      },
+      "distinct_phenotypes_emitted": 16,
+      "evidence_codes": {
+        "TAS": 1533
+      },
+      "record_ids_sha256": "3bd498805d92299b6ff65460a43489bfd6560d2a5a3eda0b2e730edd9d44fef9"
+    },
+    {
+      "disease_id": "ORPHA:534",
+      "disease_name": "Oculocerebrorenal syndrome of Lowe",
+      "disease_name_zh": "Lowe眼脑肾综合征",
+      "source": "ORPHA",
+      "n_phenotype_annotations_in_snapshot": 119,
+      "onsets_in_snapshot": [],
+      "n_records": 150,
+      "n_zh": 100,
+      "n_en": 50,
+      "n_with_phi": 88,
+      "template_families": {
+        "admission": 48,
+        "clinic": 20,
+        "consult": 14,
+        "outpatient": 34,
+        "referral": 34
+      },
+      "complexities": {
+        "detailed": 28,
+        "simple": 31,
+        "standard": 91
+      },
+      "status_counts": {
+        "affirmed": 886,
+        "suspected": 307,
+        "history": 198,
+        "negated": 122
+      },
+      "distinct_phenotypes_emitted": 17,
+      "evidence_codes": {
+        "TAS": 1513
+      },
+      "record_ids_sha256": "46a4d49496184c959555dcbe8c2b4e333b78b5c26f8b561efc6e7c4436d612c1"
+    },
+    {
+      "disease_id": "ORPHA:33364",
+      "disease_name": "Trichothiodystrophy",
+      "disease_name_zh": "毛发硫营养不良",
+      "source": "ORPHA",
+      "n_phenotype_annotations_in_snapshot": 91,
+      "onsets_in_snapshot": [],
+      "n_records": 151,
+      "n_zh": 107,
+      "n_en": 44,
+      "n_with_phi": 81,
+      "template_families": {
+        "admission": 42,
+        "clinic": 17,
+        "consult": 16,
+        "outpatient": 37,
+        "referral": 39
+      },
+      "complexities": {
+        "detailed": 45,
+        "simple": 33,
+        "standard": 73
+      },
+      "status_counts": {
+        "affirmed": 650,
+        "suspected": 77,
+        "history": 35,
+        "negated": 0
+      },
+      "distinct_phenotypes_emitted": 17,
+      "evidence_codes": {
+        "TAS": 762
+      },
+      "record_ids_sha256": "2845a4eeec1a15c9741217d9480c19c37f5b963be3e1af2a316fef53fdd8d6ac"
+    }
+  ],
+  "checks": {
+    "records": 2400,
+    "disease_in_curated": 2400,
+    "disease_name_matches_snapshot": 2400,
+    "disease_name_zh_matches_gloss": 2400,
+    "hpo_provenance_equals_snapshot": 2400,
+    "onset_resolvable": 147,
+    "phenotype_entities": 22156,
+    "phenotype_hp_in_annotation": 22156,
+    "phenotype_generic_allowlisted": 0,
+    "phenotype_evidence_and_reference": 22156,
+    "offset_roundtrip_ok": 36713,
+    "status_counts_consistent": 2400,
+    "violations": {},
+    "violation_samples": {}
+  },
+  "downstream_coverage": {
+    "records_in_corpus": 2400,
+    "records_reaching_pipeline_output": 2400,
+    "records_accepted": 2355,
+    "records_quarantined": 45,
+    "records_in_sft_export": 2355,
+    "sft_by_split": {
+      "dev": 230,
+      "test": 204,
+      "train": 1921
+    },
+    "export_ids_not_in_corpus": 0,
+    "accepted_not_in_export": 0
+  },
+  "artifacts": {
+    "data/phase3_synth/gen/notes.jsonl": {
+      "sha256": "a86a606bc748785e2b5126ed7bb8e74fa8b8a663df88709ee10b9be7ccdf2874",
+      "bytes": 11289560
+    },
+    "data/phase3_synth/kb/hpo_snapshot.json": {
+      "sha256": "7e6e62729447824603cd93ee41ebf02b19c9fd3abfbb64a09df060cfec2a1844",
+      "bytes": 50037377
+    },
+    "data/phase3_synth/kb/disease_selection.json": {
+      "sha256": "0f87be50fe340fbeb1ec69349edf5981dee27027b0be2909709b2eddf15f45df",
+      "bytes": 3396
+    },
+    "data/curated/zh_phenotype_gloss.json": {
+      "sha256": "6eaecee473d615703ee1c318e46e0cd6d52c7bbf0369619b565612f0366e4bb3",
+      "bytes": 8926
+    },
+    "data/phase4_synth_v2/pipeline_out/structured.jsonl": {
+      "sha256": "077571861e771ca216bf4b4e62a6913774577fdd6deedb9c8d346c8112f7c375",
+      "bytes": 6945392
+    },
+    "data/phase4_synth_v2/pipeline_out/quarantine.jsonl": {
+      "sha256": "271b5a7841b4496354910c07cd0e78cd190b25a4070302713536912228a1a177",
+      "bytes": 168659
+    },
+    "data/phase4_synth_v2/training_candidates/sft_candidates.jsonl": {
+      "sha256": "a8eba1ae380194fd9aa52576c42cee080cf637d533a1511cedf54ab4e97b8d93",
+      "bytes": 3719549
+    }
+  },
+  "claim_boundary": {
+    "this_manifest_proves": "every generated record resolves to one curated disease id, and every phenotype entity resolves to that disease's HPO annotation set or a documented generic-symptom allowlist; file hashes pin the exact inputs",
+    "this_manifest_does_not_prove": "that the HPO annotations are clinically complete, that the Chinese disease names are official translations, or that the synthetic cases resemble any real hospital population"
+  }
+}

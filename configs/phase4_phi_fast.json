@@ -1,0 +1,38 @@
+{
+  "frozen_from": "reports/phase2_dev_selection/selection.json (threshold only)",
+  "selection_rule": "threshold inherited unchanged from phase 2 (0.2, max dev F1); dtype/threads/batch varied for throughput only, chosen on reports/phase4_perf/comparison.json",
+  "threshold": 0.2,
+  "threads": 4,
+  "chunk_words": 160,
+  "dtype": "fp32",
+  "batch_size": 1,
+  "batch_sort": true,
+  "presidio_model": "en_core_web_lg",
+  "presidio_threshold": 0.1,
+  "fusion_components": ["context_rules", "gliner"],
+  "change_scope": "performance only: same weights revision, same prompts, same chunking, same threshold, same fusion; no safety check was disabled",
+  "measured": {
+    "baseline_fp16_t2_b1_ms_per_doc": 2778.3,
+    "this_config_ms_per_doc": 994.8,
+    "speedup": 2.79,
+    "batch_8_sorted_ms_per_doc": 1248.3,
+    "batch_8_unsorted_ms_per_doc": 1785.4,
+    "threads_8_ms_per_doc": 1246.6,
+    "probe_set": "60 synthetic notes, span sets identical for all five configs (agreement 1.0)",
+    "frozen_test_regression": {
+      "source": "reports/phase4_perf/test_run_fast/comparison.json",
+      "documents": 632,
+      "C_doc_identity_rate": 0.9968,
+      "D_doc_identity_rate": 0.9984,
+      "spans_missing_vs_frozen": 0,
+      "spans_added_vs_frozen": {"C": 2, "D": 1},
+      "D_recall_frozen": 0.9042,
+      "D_recall_optimized": 0.9042,
+      "D_precision_frozen": 0.7566,
+      "D_precision_optimized": 0.7562,
+      "reading": "fp32 vs fp16 changes three borderline decisions across 632 documents. Every difference is an ADDED span: ZH-0140 phone 88-99 is a correct recovery (+1 TP for C), the other two are new false positives (EN-0554 '50-year-old male' labelled NAME in a document with no gold entities). Recall is unchanged for the deployed method D; precision moves by 0.0004. The threshold was NOT re-tuned after seeing this."
+    }
+  },
+  "why_not_batching": "batched chunks pad to the longest chunk in the batch; the encoder is compute-bound on this CPU, so padding waste exceeds the per-call overhead saving. Length-sorted batching recovers part of the loss but still loses to one document at a time.",
+  "notes": "fp16 on this CPU has no fast GEMM kernel; onnxruntime inserted Cast nodes taking 24.5% of runtime. fp32 conversion is the official onnx/model.onnx of the same repository revision, sha256 7704865e414f24591da6aee08716a25677855bc8a84af81396d90e40df1e68d2"
+}

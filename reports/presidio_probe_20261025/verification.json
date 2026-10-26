@@ -1,0 +1,17 @@
+{
+  "code_sha256": {
+    "clinforge/presidio_adapter.py": "d730b11174047b1a8e0b44cbfa00d9f16d8df3512ae2bc8879782ac4fc6abb4e",
+    "scripts/benchmark_presidio.py": "8bb19838f633d9bec0fd6b58ebb656deeba91bcb4e12ad69c01709337a253346",
+    "tests/test_presidio_adapter.py": "c679dd9946bba8b7668506bd77ea7ca90c43b2e13dd718f18ffd1fec2889df5a",
+    "clinforge/operators.py": "c59d5ae3b74d78ad2fbcf0f1c565026640985a4b4e25c24e17ec01e6c8bcecaa",
+    "clinforge/stress.py": "94d55d1e4f15e465872a9d6560fd748303d9fd0cc1c291a9185322bce8611210"
+  },
+  "existing_isolated_environment_versions": {
+    "presidio-analyzer": null,
+    "presidio-anonymizer": null,
+    "spacy": null,
+    "en-core-web-sm": null
+  },
+  "no_installation_or_model_download_for_presidio_probe": true,
+  "presidio_results_are_null_not_simulated": true
+}

@@ -1,0 +1,460 @@
+{
+  "corpus": "holdout",
+  "notes_file": "data/phase4_context/holdout_notes.jsonl",
+  "n_records": 260,
+  "n_matched_mentions": 1618,
+  "extractor_version": "medextract-1.0.1",
+  "context_scope_version": "ctxscope-1.1.0",
+  "statuses": [
+    "affirmed",
+    "suspected",
+    "history",
+    "negated"
+  ],
+  "systems": {
+    "v1": {
+      "per_class": {
+        "affirmed": {
+          "precision": 0.5468,
+          "recall": 0.9619,
+          "f1": 0.6972,
+          "support": 577,
+          "predicted": 1015
+        },
+        "suspected": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6667,
+          "support": 144,
+          "predicted": 72
+        },
+        "history": {
+          "precision": 1.0,
+          "recall": 0.4107,
+          "f1": 0.5822,
+          "support": 375,
+          "predicted": 154
+        },
+        "negated": {
+          "precision": 0.9416,
+          "recall": 0.6801,
+          "f1": 0.7898,
+          "support": 522,
+          "predicted": 377
+        },
+        "_overall": {
+          "n": 1618,
+          "accuracy": 0.7021,
+          "macro_f1": 0.684
+        }
+      },
+      "confusion": {
+        "affirmed": {
+          "affirmed": 555,
+          "suspected": 0,
+          "history": 0,
+          "negated": 22
+        },
+        "suspected": {
+          "affirmed": 72,
+          "suspected": 72,
+          "history": 0,
+          "negated": 0
+        },
+        "history": {
+          "affirmed": 221,
+          "suspected": 0,
+          "history": 154,
+          "negated": 0
+        },
+        "negated": {
+          "affirmed": 167,
+          "suspected": 0,
+          "history": 0,
+          "negated": 355
+        }
+      },
+      "confusion_matrix_gold_rows": true,
+      "by_language": {
+        "zh": {
+          "n": 938,
+          "accuracy": 0.694,
+          "macro_f1": 0.6748
+        },
+        "en": {
+          "n": 680,
+          "accuracy": 0.7132,
+          "macro_f1": 0.7642
+        }
+      },
+      "by_family": {
+        "zh_section_enum": {
+          "n": 133,
+          "accuracy": 0.5714,
+          "macro_f1": 0.7273
+        },
+        "zh_section_bare_list": {
+          "n": 133,
+          "accuracy": 0.5714,
+          "macro_f1": 0.7
+        },
+        "zh_long_denies": {
+          "n": 133,
+          "accuracy": 0.7143,
+          "macro_f1": 0.7084
+        },
+        "zh_repeated_triggers": {
+          "n": 114,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "zh_contrast": {
+          "n": 114,
+          "accuracy": 0.9211,
+          "macro_f1": 0.9361
+        },
+        "zh_cross_sentence": {
+          "n": 95,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "zh_suspected_series": {
+          "n": 90,
+          "accuracy": 0.2,
+          "macro_f1": 0.3333
+        },
+        "zh_exam_list": {
+          "n": 126,
+          "accuracy": 0.5714,
+          "macro_f1": 0.7273
+        },
+        "en_pmh_notable": {
+          "n": 133,
+          "accuracy": 0.5714,
+          "macro_f1": 0.7273
+        },
+        "en_history_lists": {
+          "n": 133,
+          "accuracy": 0.7744,
+          "macro_f1": 0.7518
+        },
+        "en_long_denies": {
+          "n": 126,
+          "accuracy": 0.6429,
+          "macro_f1": 0.641
+        },
+        "en_repeated_negation": {
+          "n": 108,
+          "accuracy": 0.5,
+          "macro_f1": 0.8
+        },
+        "en_contrast": {
+          "n": 90,
+          "accuracy": 0.9,
+          "macro_f1": 0.9166
+        },
+        "en_suspected_series": {
+          "n": 90,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        }
+      }
+    },
+    "v2_scope_v1": {
+      "per_class": {
+        "affirmed": {
+          "precision": 0.7592,
+          "recall": 1.0,
+          "f1": 0.8631,
+          "support": 577,
+          "predicted": 760
+        },
+        "suspected": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6667,
+          "support": 144,
+          "predicted": 72
+        },
+        "history": {
+          "precision": 1.0,
+          "recall": 0.848,
+          "f1": 0.9177,
+          "support": 375,
+          "predicted": 318
+        },
+        "negated": {
+          "precision": 1.0,
+          "recall": 0.8966,
+          "f1": 0.9455,
+          "support": 522,
+          "predicted": 468
+        },
+        "_overall": {
+          "n": 1618,
+          "accuracy": 0.8869,
+          "macro_f1": 0.8482
+        }
+      },
+      "confusion": {
+        "affirmed": {
+          "affirmed": 577,
+          "suspected": 0,
+          "history": 0,
+          "negated": 0
+        },
+        "suspected": {
+          "affirmed": 72,
+          "suspected": 72,
+          "history": 0,
+          "negated": 0
+        },
+        "history": {
+          "affirmed": 57,
+          "suspected": 0,
+          "history": 318,
+          "negated": 0
+        },
+        "negated": {
+          "affirmed": 54,
+          "suspected": 0,
+          "history": 0,
+          "negated": 468
+        }
+      },
+      "confusion_matrix_gold_rows": true,
+      "by_language": {
+        "zh": {
+          "n": 938,
+          "accuracy": 0.9232,
+          "macro_f1": 0.9707
+        },
+        "en": {
+          "n": 680,
+          "accuracy": 0.8368,
+          "macro_f1": 0.8631
+        }
+      },
+      "by_family": {
+        "zh_section_enum": {
+          "n": 133,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "zh_section_bare_list": {
+          "n": 133,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "zh_long_denies": {
+          "n": 133,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "zh_repeated_triggers": {
+          "n": 114,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "zh_contrast": {
+          "n": 114,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "zh_cross_sentence": {
+          "n": 95,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "zh_suspected_series": {
+          "n": 90,
+          "accuracy": 0.2,
+          "macro_f1": 0.3333
+        },
+        "zh_exam_list": {
+          "n": 126,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "en_pmh_notable": {
+          "n": 133,
+          "accuracy": 0.5714,
+          "macro_f1": 0.7273
+        },
+        "en_history_lists": {
+          "n": 133,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "en_long_denies": {
+          "n": 126,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "en_repeated_negation": {
+          "n": 108,
+          "accuracy": 0.5,
+          "macro_f1": 0.8
+        },
+        "en_contrast": {
+          "n": 90,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "en_suspected_series": {
+          "n": 90,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        }
+      }
+    },
+    "v2_scope_ng": {
+      "per_class": {
+        "affirmed": {
+          "precision": 0.9413,
+          "recall": 1.0,
+          "f1": 0.9697,
+          "support": 577,
+          "predicted": 613
+        },
+        "suspected": {
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1": 0.8571,
+          "support": 144,
+          "predicted": 108
+        },
+        "history": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 375,
+          "predicted": 375
+        },
+        "negated": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 522,
+          "predicted": 522
+        },
+        "_overall": {
+          "n": 1618,
+          "accuracy": 0.9778,
+          "macro_f1": 0.9567
+        }
+      },
+      "confusion": {
+        "affirmed": {
+          "affirmed": 577,
+          "suspected": 0,
+          "history": 0,
+          "negated": 0
+        },
+        "suspected": {
+          "affirmed": 36,
+          "suspected": 108,
+          "history": 0,
+          "negated": 0
+        },
+        "history": {
+          "affirmed": 0,
+          "suspected": 0,
+          "history": 375,
+          "negated": 0
+        },
+        "negated": {
+          "affirmed": 0,
+          "suspected": 0,
+          "history": 0,
+          "negated": 522
+        }
+      },
+      "confusion_matrix_gold_rows": true,
+      "by_language": {
+        "zh": {
+          "n": 938,
+          "accuracy": 0.9616,
+          "macro_f1": 0.9052
+        },
+        "en": {
+          "n": 680,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        }
+      },
+      "by_family": {
+        "zh_section_enum": {
+          "n": 133,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "zh_section_bare_list": {
+          "n": 133,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "zh_long_denies": {
+          "n": 133,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "zh_repeated_triggers": {
+          "n": 114,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "zh_contrast": {
+          "n": 114,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "zh_cross_sentence": {
+          "n": 95,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "zh_suspected_series": {
+          "n": 90,
+          "accuracy": 0.6,
+          "macro_f1": 0.5834
+        },
+        "zh_exam_list": {
+          "n": 126,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "en_pmh_notable": {
+          "n": 133,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "en_history_lists": {
+          "n": 133,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "en_long_denies": {
+          "n": 126,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "en_repeated_negation": {
+          "n": 108,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "en_contrast": {
+          "n": 90,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        },
+        "en_suspected_series": {
+          "n": 90,
+          "accuracy": 1.0,
+          "macro_f1": 1.0
+        }
+      }
+    }
+  }
+}

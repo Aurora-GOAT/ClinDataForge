@@ -1,0 +1,18 @@
+{
+  "repetitions": 5,
+  "rows_per_repetition": 730,
+  "wall_seconds_each": [
+    0.065,
+    0.0632,
+    0.0632,
+    0.0631,
+    0.0632
+  ],
+  "median_wall_seconds": 0.0632,
+  "median_rows_per_second": 11555.5,
+  "includes": "read JSONL, parse, mask, within-encounter dedup, output JSONL+SQLite+audit",
+  "limitations": [
+    "Small synthetic input fits RAM; do not extrapolate to distributed or TB-scale data.",
+    "Local single-process benchmark, environment and disk specific."
+  ]
+}

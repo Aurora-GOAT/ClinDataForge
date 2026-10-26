@@ -1,0 +1,30 @@
+{
+  "resource": "Human Phenotype Ontology (HPO)",
+  "accessed": "2026-10-26",
+  "license": {
+    "url": "https://hpo.jax.org/app/license",
+    "summary": "HPO vocabularies/annotation files are freely available; conditions: (1) acknowledge and cite the HPO Consortium; (2) publicly displayed HPO files must carry their date/version; (3) ontology content and its logical relationships must not be altered. This project uses the files unmodified, records versions+SHA256, and displays the credit line in generated documentation.",
+    "credit_line": "This product uses the Human Phenotype Ontology (hp.obo data-version hp/releases/2026-09-01; phenotype.hpoa version 2026-09-02). Find out more at http://www.human-phenotype-ontology.org",
+    "caution": "phenotype.hpoa aggregates OMIM- and Orphanet-derived annotations; downstream commercial use may require separate OMIM/Orphanet terms. This project uses the associations for non-commercial portfolio research only."
+  },
+  "files": {
+    "hp.obo": {
+      "url": "https://purl.obolibrary.org/obo/hp.obo",
+      "data_version": "hp/releases/2026-09-01",
+      "format_version": "1.2",
+      "sha256": "93dace952fcb3ec4728818857f6ba76bc2d5312f4d83266519b8694b8e798f22",
+      "size_bytes": 10863613
+    },
+    "phenotype.hpoa": {
+      "url": "https://purl.obolibrary.org/obo/hp/hpoa/phenotype.hpoa",
+      "version": "2026-09-02",
+      "description": "HPO annotations for rare diseases [8478: OMIM; 47: DECIPHER; 4357 ORPHANET]",
+      "sha256": "e89aa39c8f97bf5a52c5d160f9250a603681d630ade8ec2679d84ac5aece1f72",
+      "size_bytes": 35816037
+    }
+  },
+  "alternatives_considered": {
+    "MONDO": "CC-BY 4.0 disease ontology; not needed this round because phenotype.hpoa already carries disease identifiers and names used for selection; may be added later for disease hierarchy.",
+    "medSpaCy": "evaluated for context detection (ConText); deferred: adds heavy dependency chain for the same cue-window behaviour implemented transparently in clinforge.med_extract with documented cue lists."
+  }
+}

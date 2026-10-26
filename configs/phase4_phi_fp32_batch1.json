@@ -1,0 +1,13 @@
+{
+  "frozen_from": "reports/phase2_dev_selection/selection.json (threshold only)",
+  "selection_rule": "isolates the dtype change: fp32 weights, one document at a time",
+  "threshold": 0.2,
+  "threads": 4,
+  "chunk_words": 160,
+  "dtype": "fp32",
+  "batch_size": 1,
+  "presidio_model": "en_core_web_lg",
+  "presidio_threshold": 0.1,
+  "fusion_components": ["context_rules", "gliner"],
+  "change_scope": "precision only, to separate the effect of removing fp16 emulation from the effect of batching"
+}

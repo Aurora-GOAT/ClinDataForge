@@ -1,0 +1,51 @@
+{
+  "rule": "max recall; then max F1 within 0.01 recall; then lowest protected-clinical deletion",
+  "best_recall_observed": 0.9270021261516654,
+  "shortlist_size_after_recall": 2,
+  "chosen": {
+    "method": "D",
+    "gliner_threshold": 0.05,
+    "presidio_threshold": null,
+    "components": [
+      "context_rules",
+      "gliner"
+    ],
+    "recall": 0.9220411055988661,
+    "precision": 0.7268156424581006,
+    "f1": 0.8128709778194314,
+    "all_gold_phi_masked_positive_rate": 0.8147138964577657,
+    "all_entities_exact_positive_rate": 0.7111716621253406,
+    "protected_deletion_rate": 0.2276605646912814,
+    "non_phi_deletion_rate": 0.11367844182774198,
+    "negative_record_any_redaction_rate": 1.0
+  },
+  "method_A_dev": {
+    "recall": 0.10772501771793054,
+    "precision": 0.9047619047619048,
+    "f1": 0.19252691576947434,
+    "all_gold_phi_masked_positive_rate": 0.0,
+    "all_entities_exact_positive_rate": 0.0,
+    "protected_deletion_rate": 0.0,
+    "non_phi_deletion_rate": 0.0,
+    "negative_record_any_redaction_rate": 0.0
+  },
+  "timing_seconds": {
+    "A_inference_seconds": 0.009975500055588782,
+    "C_initialization_seconds": 7.533886500052176,
+    "C_inference_seconds": 309.5895765000023,
+    "B_initialization_seconds": 12.286976700066589,
+    "B_inference_seconds": 12.872614899999462
+  },
+  "config": {
+    "purpose": "Development-set sweep configuration. Thresholds here are starting points only; the values actually used for the frozen test are fixed afterwards in configs/phase2_phi_frozen.json.",
+    "threshold": 0.35,
+    "threads": 2,
+    "chunk_words": 160,
+    "presidio_model": "en_core_web_lg",
+    "presidio_threshold": 0.5,
+    "fusion_components": [
+      "context_rules",
+      "gliner"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "original_base_records": 600,
+  "total_records_including_duplicates": 730,
+  "gold_duplicate_extra_records": 130,
+  "synthetic": true,
+  "seed": 20261025,
+  "generator_revision": "phase1-temperature-token-fix",
+  "annotation_origin": "programmatically derived from generator; NOT human/clinical gold",
+  "template_families": 5
+}

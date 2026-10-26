@@ -1,0 +1,650 @@
+{
+  "package_version": "final-package-1.0.0",
+  "generated_at_utc": "2026-10-26T18:34:49Z",
+  "claim_levels": {
+    "template_self_check": "模板内自检：金标由生成器构造，模板与金标同源，不能当独立评测",
+    "synthetic_holdout": "同生成器的留出合成语料：评测前冻结，新种子/新句式，但共享代码与疾病集",
+    "third_party_frozen": "第三方合成数据上的冻结评测：ASQ-PHI v1（MIT），一次性测试",
+    "engineering_measurement": "同机同数据的工程测量：可以声称加速比，不能外推到其他硬件",
+    "audit_finding": "审计结论：对产物做静态/重算检查，不是模型指标"
+  },
+  "metrics": [
+    {
+      "section": "context_dev",
+      "metric": "开发集匹配提及数",
+      "value": 22156,
+      "unit": "mentions",
+      "claim_level": "template_self_check",
+      "source": "reports/phase4_context/dev_eval.json",
+      "pointer": "systems.v1.per_class._overall.n",
+      "note": ""
+    },
+    {
+      "section": "context_dev",
+      "metric": "v1 固定窗口准确率",
+      "value": "96.17%",
+      "unit": "%",
+      "claim_level": "template_self_check",
+      "source": "reports/phase4_context/dev_eval.json",
+      "pointer": "systems.v1.per_class._overall.accuracy",
+      "note": ""
+    },
+    {
+      "section": "context_dev",
+      "metric": "v2 作用域准确率",
+      "value": "100.00%",
+      "unit": "%",
+      "claim_level": "template_self_check",
+      "source": "reports/phase4_context/dev_eval.json",
+      "pointer": "systems.v2_scope_ng.per_class._overall.accuracy",
+      "note": ""
+    },
+    {
+      "section": "context_dev",
+      "metric": "history→affirmed（v1）",
+      "value": 783,
+      "unit": "mentions",
+      "claim_level": "template_self_check",
+      "source": "reports/phase4_context/dev_eval.json",
+      "pointer": "systems.v1.confusion.history.affirmed",
+      "note": ""
+    },
+    {
+      "section": "context_dev",
+      "metric": "history→affirmed（v2）",
+      "value": 0,
+      "unit": "mentions",
+      "claim_level": "template_self_check",
+      "source": "reports/phase4_context/dev_eval.json",
+      "pointer": "systems.v2_scope_ng.confusion.history.affirmed",
+      "note": ""
+    },
+    {
+      "section": "context_holdout",
+      "metric": "留出语料记录数",
+      "value": 260,
+      "unit": "notes",
+      "claim_level": "synthetic_holdout",
+      "source": "reports/phase4_context/holdout_eval.json",
+      "pointer": "n_records",
+      "note": ""
+    },
+    {
+      "section": "context_holdout",
+      "metric": "留出语料匹配提及数",
+      "value": 1618,
+      "unit": "mentions",
+      "claim_level": "synthetic_holdout",
+      "source": "reports/phase4_context/holdout_eval.json",
+      "pointer": "n_matched_mentions",
+      "note": ""
+    },
+    {
+      "section": "context_holdout",
+      "metric": "不同规范化文本数",
+      "value": 186,
+      "unit": "texts",
+      "claim_level": "audit_finding",
+      "source": "reports/phase4_split_relations/relations.json",
+      "pointer": "near_duplicates.holdout_structure.n_distinct_normalised_texts",
+      "note": "260 条中存在重复副本"
+    },
+    {
+      "section": "context_holdout",
+      "metric": "近重复簇数（Jaccard≥0.8）",
+      "value": 64,
+      "unit": "clusters",
+      "claim_level": "audit_finding",
+      "source": "reports/phase4_split_relations/relations.json",
+      "pointer": "near_duplicates.holdout_structure.n_clusters_at_threshold",
+      "note": "有效独立单位远少于 260"
+    },
+    {
+      "section": "context_holdout",
+      "metric": "v1 固定窗口准确率",
+      "value": "70.21%",
+      "unit": "%",
+      "claim_level": "synthetic_holdout",
+      "source": "reports/phase4_split_relations/holdout_bootstrap.json",
+      "pointer": "systems.v1.point.accuracy",
+      "note": "簇自助 95% CI [0.6337, 0.7734]"
+    },
+    {
+      "section": "context_holdout",
+      "metric": "v1 固定窗口宏 F1",
+      "value": "0.6840",
+      "unit": "F1",
+      "claim_level": "synthetic_holdout",
+      "source": "reports/phase4_split_relations/holdout_bootstrap.json",
+      "pointer": "systems.v1.point.macro_f1",
+      "note": "簇自助 95% CI [0.5872, 0.7980]"
+    },
+    {
+      "section": "context_holdout",
+      "metric": "v1 固定窗口history→affirmed",
+      "value": 221,
+      "unit": "mentions",
+      "claim_level": "synthetic_holdout",
+      "source": "reports/phase4_split_relations/holdout_bootstrap.json",
+      "pointer": "systems.v1.history_to_affirmed_point",
+      "note": ""
+    },
+    {
+      "section": "context_holdout",
+      "metric": "v2 作用域 + v1 词表准确率",
+      "value": "88.69%",
+      "unit": "%",
+      "claim_level": "synthetic_holdout",
+      "source": "reports/phase4_split_relations/holdout_bootstrap.json",
+      "pointer": "systems.v2_scope_v1.point.accuracy",
+      "note": "簇自助 95% CI [0.8129, 0.9460]"
+    },
+    {
+      "section": "context_holdout",
+      "metric": "v2 作用域 + v1 词表宏 F1",
+      "value": "0.8482",
+      "unit": "F1",
+      "claim_level": "synthetic_holdout",
+      "source": "reports/phase4_split_relations/holdout_bootstrap.json",
+      "pointer": "systems.v2_scope_v1.point.macro_f1",
+      "note": "簇自助 95% CI [0.7583, 0.9564]"
+    },
+    {
+      "section": "context_holdout",
+      "metric": "v2 作用域 + v1 词表history→affirmed",
+      "value": 57,
+      "unit": "mentions",
+      "claim_level": "synthetic_holdout",
+      "source": "reports/phase4_split_relations/holdout_bootstrap.json",
+      "pointer": "systems.v2_scope_v1.history_to_affirmed_point",
+      "note": ""
+    },
+    {
+      "section": "context_holdout",
+      "metric": "v2 作用域 + NegEx 词表准确率",
+      "value": "97.78%",
+      "unit": "%",
+      "claim_level": "synthetic_holdout",
+      "source": "reports/phase4_split_relations/holdout_bootstrap.json",
+      "pointer": "systems.v2_scope_ng.point.accuracy",
+      "note": "簇自助 95% CI [0.9451, 1.0000]"
+    },
+    {
+      "section": "context_holdout",
+      "metric": "v2 作用域 + NegEx 词表宏 F1",
+      "value": "0.9567",
+      "unit": "F1",
+      "claim_level": "synthetic_holdout",
+      "source": "reports/phase4_split_relations/holdout_bootstrap.json",
+      "pointer": "systems.v2_scope_ng.point.macro_f1",
+      "note": "簇自助 95% CI [0.9232, 1.0000]"
+    },
+    {
+      "section": "context_holdout",
+      "metric": "v2 作用域 + NegEx 词表history→affirmed",
+      "value": 0,
+      "unit": "mentions",
+      "claim_level": "synthetic_holdout",
+      "source": "reports/phase4_split_relations/holdout_bootstrap.json",
+      "pointer": "systems.v2_scope_ng.history_to_affirmed_point",
+      "note": ""
+    },
+    {
+      "section": "phi_detection",
+      "metric": "方法 A 实体级 P/R/F1",
+      "value": "0.7800 / 0.0803 / 0.1457",
+      "unit": "ratio",
+      "claim_level": "third_party_frozen",
+      "source": "reports/phase2_phi_v1/test_run/results.json",
+      "pointer": "methods.A.overall.entity_exact",
+      "note": ""
+    },
+    {
+      "section": "phi_detection",
+      "metric": "方法 B 实体级 P/R/F1",
+      "value": "0.3905 / 0.3084 / 0.3446",
+      "unit": "ratio",
+      "claim_level": "third_party_frozen",
+      "source": "reports/phase2_phi_v1/test_run/results.json",
+      "pointer": "methods.B.overall.entity_exact",
+      "note": ""
+    },
+    {
+      "section": "phi_detection",
+      "metric": "方法 C 实体级 P/R/F1",
+      "value": "0.7522 / 0.8363 / 0.7920",
+      "unit": "ratio",
+      "claim_level": "third_party_frozen",
+      "source": "reports/phase2_phi_v1/test_run/results.json",
+      "pointer": "methods.C.overall.entity_exact",
+      "note": ""
+    },
+    {
+      "section": "phi_detection",
+      "metric": "方法 D 实体级 P/R/F1",
+      "value": "0.7566 / 0.9042 / 0.8238",
+      "unit": "ratio",
+      "claim_level": "third_party_frozen",
+      "source": "reports/phase2_phi_v1/test_run/results.json",
+      "pointer": "methods.D.overall.entity_exact",
+      "note": ""
+    },
+    {
+      "section": "phi_detection",
+      "metric": "冻结测试集文档数",
+      "value": 632,
+      "unit": "docs",
+      "claim_level": "third_party_frozen",
+      "source": "reports/phase2_phi_v1/test_run/results.json",
+      "pointer": "methods.D.overall.n_records",
+      "note": ""
+    },
+    {
+      "section": "phi_detection",
+      "metric": "数据 SHA256",
+      "value": "96d5b2c6aa3a52f8…",
+      "unit": "sha256",
+      "claim_level": "third_party_frozen",
+      "source": "reports/phase2_phi_v1/test_run/results.json",
+      "pointer": "dataset_sha256",
+      "note": ""
+    },
+    {
+      "section": "phi_throughput",
+      "metric": "基线 ms/条",
+      "value": 2778.3,
+      "unit": "ms/doc",
+      "claim_level": "engineering_measurement",
+      "source": "reports/phase4_perf/comparison.json",
+      "pointer": "table[baseline_fp16_t2_b1].mean_ms_per_doc",
+      "note": ""
+    },
+    {
+      "section": "phi_throughput",
+      "metric": "优化后 ms/条",
+      "value": 994.8,
+      "unit": "ms/doc",
+      "claim_level": "engineering_measurement",
+      "source": "reports/phase4_perf/comparison.json",
+      "pointer": "table[fp32_t4_b1].mean_ms_per_doc",
+      "note": ""
+    },
+    {
+      "section": "phi_throughput",
+      "metric": "单条加速比",
+      "value": 2.79,
+      "unit": "×",
+      "claim_level": "engineering_measurement",
+      "source": "reports/phase4_perf/comparison.json",
+      "pointer": "derived from table[].mean_ms_per_doc",
+      "note": ""
+    },
+    {
+      "section": "phi_throughput",
+      "metric": "p95 基线→优化",
+      "value": "4787.4 → 1747.9",
+      "unit": "ms",
+      "claim_level": "engineering_measurement",
+      "source": "reports/phase4_perf/comparison.json",
+      "pointer": "table[].p95_ms_per_doc",
+      "note": ""
+    },
+    {
+      "section": "phi_throughput",
+      "metric": "吞吐 基线→优化",
+      "value": "0.36 → 1.00",
+      "unit": "docs/s",
+      "claim_level": "engineering_measurement",
+      "source": "reports/phase4_perf/comparison.json",
+      "pointer": "table[].docs_per_second",
+      "note": ""
+    },
+    {
+      "section": "phi_throughput",
+      "metric": "峰值内存 基线→优化",
+      "value": "1349.5 → 2128.6",
+      "unit": "MB",
+      "claim_level": "engineering_measurement",
+      "source": "reports/phase4_perf/comparison.json",
+      "pointer": "table[].peak_rss_mb",
+      "note": ""
+    },
+    {
+      "section": "phi_throughput",
+      "metric": "九段流水线端到端 2,400 条",
+      "value": "79.1 → 42.0 分钟（1.89×）",
+      "unit": "min",
+      "claim_level": "engineering_measurement",
+      "source": "data/phase3_synth/pipeline_out/audit.json; data/phase4_synth_v2/pipeline_out/audit.json",
+      "pointer": "wall_seconds",
+      "note": ""
+    },
+    {
+      "section": "phi_regression",
+      "metric": "冻结集重算文档数",
+      "value": 632,
+      "unit": "docs",
+      "claim_level": "third_party_frozen",
+      "source": "reports/phase4_perf/test_run_fast/comparison.json",
+      "pointer": "methods.D.documents",
+      "note": ""
+    },
+    {
+      "section": "phi_regression",
+      "metric": "方法 D 跨度一致率",
+      "value": "0.9984",
+      "unit": "ratio",
+      "claim_level": "third_party_frozen",
+      "source": "reports/phase4_perf/test_run_fast/comparison.json",
+      "pointer": "methods.D.doc_identity_rate",
+      "note": ""
+    },
+    {
+      "section": "phi_regression",
+      "metric": "新增 / 缺失跨度",
+      "value": "1 / 0",
+      "unit": "spans",
+      "claim_level": "third_party_frozen",
+      "source": "reports/phase4_perf/test_run_fast/comparison.json",
+      "pointer": "methods.D.spans_added_vs_frozen, spans_missing_vs_frozen",
+      "note": ""
+    },
+    {
+      "section": "phi_regression",
+      "metric": "方法 D 召回 冻结→重算",
+      "value": "0.9042 → 0.9042",
+      "unit": "ratio",
+      "claim_level": "third_party_frozen",
+      "source": "reports/phase4_perf/test_run_fast/comparison.json",
+      "pointer": "methods.D.metrics_frozen/optimized.entity_exact.recall",
+      "note": ""
+    },
+    {
+      "section": "phi_regression",
+      "metric": "方法 D 精确率 冻结→重算",
+      "value": "0.7566 → 0.7562",
+      "unit": "ratio",
+      "claim_level": "third_party_frozen",
+      "source": "reports/phase4_perf/test_run_fast/comparison.json",
+      "pointer": "methods.D.metrics_frozen/optimized.entity_exact.precision",
+      "note": ""
+    },
+    {
+      "section": "pipeline",
+      "metric": "输入 / 接受 / 隔离",
+      "value": "2400 / 2355 / 45",
+      "unit": "records",
+      "claim_level": "template_self_check",
+      "source": "data/phase4_synth_v2/pipeline_out/audit.json",
+      "pointer": "input_rows, accepted_rows, quarantined_rows",
+      "note": ""
+    },
+    {
+      "section": "pipeline",
+      "metric": "表型抽取 F1",
+      "value": "0.9910",
+      "unit": "F1",
+      "claim_level": "template_self_check",
+      "source": "reports/phase4_pipeline_eval/pipeline_eval.json",
+      "pointer": "phenotype_extraction",
+      "note": ""
+    },
+    {
+      "section": "pipeline",
+      "metric": "上下文状态准确率",
+      "value": "100.00%",
+      "unit": "%",
+      "claim_level": "template_self_check",
+      "source": "reports/phase4_pipeline_eval/pipeline_eval.json",
+      "pointer": "context_status_accuracy_on_matched",
+      "note": ""
+    },
+    {
+      "section": "pipeline",
+      "metric": "检验标准化",
+      "value": "1277/1277",
+      "unit": "values",
+      "claim_level": "template_self_check",
+      "source": "reports/phase4_pipeline_eval/pipeline_eval.json",
+      "pointer": "lab_standardisation",
+      "note": ""
+    },
+    {
+      "section": "pipeline",
+      "metric": "PHI 掩码覆盖（合成）",
+      "value": "5196/5196",
+      "unit": "entities",
+      "claim_level": "template_self_check",
+      "source": "reports/phase4_pipeline_eval/pipeline_eval.json",
+      "pointer": "phi_gate_synthetic",
+      "note": ""
+    },
+    {
+      "section": "pipeline",
+      "metric": "近重复判定 F1",
+      "value": "1.0000",
+      "unit": "F1",
+      "claim_level": "template_self_check",
+      "source": "reports/phase4_pipeline_eval/pipeline_eval.json",
+      "pointer": "dedup_pairs",
+      "note": ""
+    },
+    {
+      "section": "data_quality",
+      "metric": "疾病血缘记录数",
+      "value": "2400/2400",
+      "unit": "records",
+      "claim_level": "audit_finding",
+      "source": "data/phase4_lineage/lineage_manifest.json",
+      "pointer": "checks.records",
+      "note": ""
+    },
+    {
+      "section": "data_quality",
+      "metric": "表型 HP 编码属于疾病注释集",
+      "value": "22,156/22,156",
+      "unit": "entities",
+      "claim_level": "audit_finding",
+      "source": "data/phase4_lineage/lineage_manifest.json",
+      "pointer": "checks.phenotype_hp_in_annotation",
+      "note": ""
+    },
+    {
+      "section": "data_quality",
+      "metric": "记录级 HPO 溯源 = 快照",
+      "value": "2400/2400",
+      "unit": "records",
+      "claim_level": "audit_finding",
+      "source": "data/phase4_lineage/lineage_manifest.json",
+      "pointer": "checks.hpo_provenance_equals_snapshot",
+      "note": ""
+    },
+    {
+      "section": "data_quality",
+      "metric": "历史疾病清单与实际重合",
+      "value": "3/16",
+      "unit": "diseases",
+      "claim_level": "audit_finding",
+      "source": "data/phase4_lineage/lineage_manifest.json",
+      "pointer": "superseded_artifact.n_overlap",
+      "note": ""
+    },
+    {
+      "section": "data_quality",
+      "metric": "SFT 划分 train/dev/test",
+      "value": "1921/230/204",
+      "unit": "records",
+      "claim_level": "audit_finding",
+      "source": "reports/phase4_data_quality/audit.json",
+      "pointer": "split_leakage.split_sizes",
+      "note": ""
+    },
+    {
+      "section": "data_quality",
+      "metric": "跨划分患者 / 精确重复 / 近重复",
+      "value": "0 / 0 / 0",
+      "unit": "counts",
+      "claim_level": "audit_finding",
+      "source": "reports/phase4_data_quality/audit.json; reports/phase4_split_relations/relations.json",
+      "pointer": "split_leakage.patients_shared_across_splits / exact_duplicate_inputs_across_splits",
+      "note": ""
+    },
+    {
+      "section": "data_quality",
+      "metric": "test 记录三元组已在 train 出现",
+      "value": "99.02%",
+      "unit": "%",
+      "claim_level": "audit_finding",
+      "source": "reports/phase4_split_relations/relations.json",
+      "pointer": "cell_reuse.test.rate",
+      "note": ""
+    },
+    {
+      "section": "data_quality",
+      "metric": "疾病名出现在正文（train）",
+      "value": "100.00% / 85.37%（脱敏后）",
+      "unit": "%",
+      "claim_level": "audit_finding",
+      "source": "reports/phase4_split_relations/relations.json",
+      "pointer": "disease_name_leakage.train.raw_rate / masked_rate",
+      "note": ""
+    },
+    {
+      "section": "data_quality",
+      "metric": "上下文标签污染",
+      "value": "0/21640",
+      "unit": "mentions",
+      "claim_level": "audit_finding",
+      "source": "reports/phase4_data_quality/audit.json",
+      "pointer": "context_contamination.exported_status_mismatches",
+      "note": ""
+    },
+    {
+      "section": "data_quality",
+      "metric": "偏好对标签噪声",
+      "value": "0/2355",
+      "unit": "pairs",
+      "claim_level": "audit_finding",
+      "source": "reports/phase4_data_quality/audit.json",
+      "pointer": "preference_labels.pairs_where_rejected_is_not_actually_wrong",
+      "note": ""
+    },
+    {
+      "section": "data_quality",
+      "metric": "中文术语与专家审核",
+      "value": "214 表型 + 16 疾病；无专家审核",
+      "unit": "terms",
+      "claim_level": "audit_finding",
+      "source": "reports/phase4_data_quality/audit.json",
+      "pointer": "translation",
+      "note": ""
+    },
+    {
+      "section": "lab_independence",
+      "metric": "语料检验值独立复算",
+      "value": "1277",
+      "unit": "values",
+      "claim_level": "audit_finding",
+      "source": "reports/phase4_lab_independence/audit.json",
+      "pointer": "corpus_recomputation.n_checked",
+      "note": ""
+    },
+    {
+      "section": "lab_independence",
+      "metric": "换算 / 方向不一致",
+      "value": "0 / 0",
+      "unit": "values",
+      "claim_level": "audit_finding",
+      "source": "reports/phase4_lab_independence/audit.json",
+      "pointer": "corpus_recomputation",
+      "note": ""
+    },
+    {
+      "section": "lab_independence",
+      "metric": "注入实验：共享表 / 独立路径 检出",
+      "value": "0 + 0 错 / 26 + 10 错",
+      "unit": "errors",
+      "claim_level": "audit_finding",
+      "source": "reports/phase4_lab_independence/audit.json",
+      "pointer": "perturbation_experiment",
+      "note": ""
+    },
+    {
+      "section": "engineering",
+      "metric": "自动化测试",
+      "value": 170,
+      "unit": "tests",
+      "claim_level": "engineering_measurement",
+      "source": "reports/final/test_summary.json",
+      "pointer": "n_tests",
+      "note": "OK"
+    }
+  ],
+  "artefacts": {
+    "reports/phase4_context/dev_eval.json": {
+      "sha256": "a17dfc4e4932700d101197780648599f39c90a1216f1e90df4993cc98f8b164c",
+      "bytes": 7357
+    },
+    "reports/phase4_context/holdout_eval.json": {
+      "sha256": "34e2d7c9922588c232ecba691e74f7b91d3fd6f4a056a6cac6dd44808097cb6b",
+      "bytes": 10708
+    },
+    "reports/phase4_split_relations/relations.json": {
+      "sha256": "52f572f6a7b6fc11b0636346088b408af7125c78390fdbb2e2e4fe451fe654d6",
+      "bytes": 23928
+    },
+    "reports/phase4_split_relations/holdout_bootstrap.json": {
+      "sha256": "4c862a7e7ede2031af0758c7b9e4e1a72971a3286ad3bbe8650b9d9aeeeb41fe",
+      "bytes": 1328
+    },
+    "reports/phase2_phi_v1/test_run/results.json": {
+      "sha256": "9fb69a9e14adedbe4dfe6bc057765a4b309c7d4d5ca37ca9afef5e410ab325c5",
+      "bytes": 136083
+    },
+    "reports/phase4_perf/comparison.json": {
+      "sha256": "6d507b30a90814eb28d50482507bbe65e26b167ed5b50775bc9f7a92ca7f8eb8",
+      "bytes": 15021
+    },
+    "data/phase3_synth/pipeline_out/audit.json": {
+      "sha256": "dab8b63a34e73a2912bd2bc507bcbc741d47eb6dfaec011fcc06343b13279a48",
+      "bytes": 2433
+    },
+    "data/phase4_synth_v2/pipeline_out/audit.json": {
+      "sha256": "11ec6ce270446003b1d185c612aa70edd60fff08dd5919b992c6ecc2454369fb",
+      "bytes": 2618
+    },
+    "reports/phase4_perf/test_run_fast/comparison.json": {
+      "sha256": "75be6490343b26a056eba5fd306b12f5bbc15fe5b473dd2e2bbd2cb89992b819",
+      "bytes": 19872
+    },
+    "reports/phase4_pipeline_eval/pipeline_eval.json": {
+      "sha256": "d394f0eb61e3322c05184ceca02254a48844df99fe15fdc59a4fbdb5eb4d9121",
+      "bytes": 3171
+    },
+    "data/phase4_lineage/lineage_manifest.json": {
+      "sha256": "29c8e85062a84c99eafc7c01357952681b8c076dbd16f1fc20893975b1e2c7b5",
+      "bytes": 20527
+    },
+    "reports/phase4_data_quality/audit.json": {
+      "sha256": "34bcbf21de1890e43c98829c3e554d5cf7cca8011df807019c04530e0d1937c2",
+      "bytes": 6878
+    },
+    "reports/phase4_lab_independence/audit.json": {
+      "sha256": "f3e85ff96226a50bdb1caca5494c855b95c5e73d766ff372f3edab8a56c32b0c",
+      "bytes": 7931
+    },
+    "reports/final/test_summary.json": {
+      "sha256": "9c31542b3f21706748590d1f71d22c3a20414bc80eaa47a0ffb26261dbc904af",
+      "bytes": 438
+    },
+    "demo/index.html": {
+      "sha256": "a744e4f75da1f466a66a862e68de3167965940d17e086baf6253c6bd95961e7d",
+      "bytes": 60771
+    },
+    "reports/final/experiment_table.md": {
+      "sha256": "3c7280caa2ac78f2c891b330e784dfce8f907965f4604d7599507b155eabea68",
+      "bytes": 11749
+    }
+  },
+  "note": "every value is read from an existing artefact; no number here is recomputed or estimated"
+}

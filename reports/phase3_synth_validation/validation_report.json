@@ -1,0 +1,316 @@
+{
+  "n_records": 2400,
+  "span_integrity_errors": 0,
+  "knowledge_violations": 0,
+  "knowledge_violation_rate_per_record": 0.0,
+  "lab_errors": 0,
+  "coverage": {
+    "OMIM:117550": {
+      "disease_name": "Sotos syndrome",
+      "n_annotated": 122,
+      "n_used": 18,
+      "coverage_of_annotation": 0.1475
+    },
+    "OMIM:276700": {
+      "disease_name": "Tyrosinemia, type I",
+      "n_annotated": 38,
+      "n_used": 17,
+      "coverage_of_annotation": 0.4474
+    },
+    "ORPHA:110": {
+      "disease_name": "Bardet-Biedl syndrome",
+      "n_annotated": 95,
+      "n_used": 17,
+      "coverage_of_annotation": 0.1789
+    },
+    "ORPHA:116": {
+      "disease_name": "Beckwith-Wiedemann syndrome",
+      "n_annotated": 85,
+      "n_used": 17,
+      "coverage_of_annotation": 0.2
+    },
+    "ORPHA:191": {
+      "disease_name": "Cockayne syndrome",
+      "n_annotated": 118,
+      "n_used": 17,
+      "coverage_of_annotation": 0.1441
+    },
+    "ORPHA:2162": {
+      "disease_name": "Holoprosencephaly",
+      "n_annotated": 93,
+      "n_used": 17,
+      "coverage_of_annotation": 0.1828
+    },
+    "ORPHA:33364": {
+      "disease_name": "Trichothiodystrophy",
+      "n_annotated": 91,
+      "n_used": 17,
+      "coverage_of_annotation": 0.1868
+    },
+    "ORPHA:355": {
+      "disease_name": "Gaucher disease",
+      "n_annotated": 92,
+      "n_used": 16,
+      "coverage_of_annotation": 0.1739
+    },
+    "ORPHA:506": {
+      "disease_name": "Leigh syndrome",
+      "n_annotated": 98,
+      "n_used": 18,
+      "coverage_of_annotation": 0.1837
+    },
+    "ORPHA:534": {
+      "disease_name": "Oculocerebrorenal syndrome of Lowe",
+      "n_annotated": 119,
+      "n_used": 17,
+      "coverage_of_annotation": 0.1429
+    },
+    "ORPHA:550": {
+      "disease_name": "MELAS",
+      "n_annotated": 87,
+      "n_used": 17,
+      "coverage_of_annotation": 0.1954
+    },
+    "ORPHA:64": {
+      "disease_name": "Alström syndrome",
+      "n_annotated": 117,
+      "n_used": 17,
+      "coverage_of_annotation": 0.1453
+    },
+    "ORPHA:79318": {
+      "disease_name": "PMM2-CDG",
+      "n_annotated": 86,
+      "n_used": 17,
+      "coverage_of_annotation": 0.1977
+    },
+    "ORPHA:79474": {
+      "disease_name": "Atypical Werner syndrome",
+      "n_annotated": 90,
+      "n_used": 16,
+      "coverage_of_annotation": 0.1778
+    },
+    "ORPHA:84": {
+      "disease_name": "Fanconi anemia",
+      "n_annotated": 106,
+      "n_used": 16,
+      "coverage_of_annotation": 0.1509
+    },
+    "ORPHA:881": {
+      "disease_name": "Turner syndrome",
+      "n_annotated": 115,
+      "n_used": 17,
+      "coverage_of_annotation": 0.1478
+    }
+  },
+  "phenotype_use": {
+    "distinct_hp_used": 214,
+    "by_disease": {
+      "OMIM:117550": 18,
+      "OMIM:276700": 17,
+      "ORPHA:110": 17,
+      "ORPHA:116": 17,
+      "ORPHA:191": 17,
+      "ORPHA:2162": 17,
+      "ORPHA:33364": 17,
+      "ORPHA:355": 16,
+      "ORPHA:506": 18,
+      "ORPHA:534": 17,
+      "ORPHA:550": 17,
+      "ORPHA:64": 17,
+      "ORPHA:79318": 17,
+      "ORPHA:79474": 16,
+      "ORPHA:84": 16,
+      "ORPHA:881": 17
+    }
+  },
+  "evidence_distribution": {
+    "PCS": 2739,
+    "TAS": 19351,
+    "IEA": 66
+  },
+  "language_template_mix": {
+    "en|admission|detailed": 49,
+    "en|admission|simple": 59,
+    "en|admission|standard": 125,
+    "en|clinic|detailed": 74,
+    "en|clinic|simple": 68,
+    "en|clinic|standard": 149,
+    "en|consult|detailed": 58,
+    "en|consult|simple": 60,
+    "en|consult|standard": 119,
+    "zh|admission|detailed": 122,
+    "zh|admission|simple": 134,
+    "zh|admission|standard": 287,
+    "zh|outpatient|detailed": 133,
+    "zh|outpatient|simple": 145,
+    "zh|outpatient|standard": 263,
+    "zh|referral|detailed": 135,
+    "zh|referral|simple": 147,
+    "zh|referral|standard": 273
+  },
+  "length_chars": {
+    "min": 62,
+    "p50": 239,
+    "p95": 824,
+    "max": 1080
+  },
+  "diversity": {
+    "distinct_char3gram_ratio": 0.026731,
+    "n_distinct_char3grams": 17936,
+    "mean_tokens": 127.18
+  },
+  "near_duplicate": {
+    "overall_mean": 0.2054,
+    "overall_p95": 0.4937,
+    "overall_max": 0.9083,
+    "overall_share_ge_0_7": 0.0018,
+    "by_disease": {
+      "OMIM:117550": {
+        "n_cases": 147,
+        "n_pairs": 3000,
+        "mean": 0.2332,
+        "p95": 0.5567,
+        "max": 0.8116,
+        "share_ge_0_7": 0.0063
+      },
+      "OMIM:276700": {
+        "n_cases": 150,
+        "n_pairs": 3000,
+        "mean": 0.2051,
+        "p95": 0.4659,
+        "max": 0.6941,
+        "share_ge_0_7": 0.0
+      },
+      "ORPHA:110": {
+        "n_cases": 149,
+        "n_pairs": 3000,
+        "mean": 0.2079,
+        "p95": 0.462,
+        "max": 0.7682,
+        "share_ge_0_7": 0.0007
+      },
+      "ORPHA:116": {
+        "n_cases": 149,
+        "n_pairs": 3000,
+        "mean": 0.1926,
+        "p95": 0.4729,
+        "max": 0.7669,
+        "share_ge_0_7": 0.001
+      },
+      "ORPHA:191": {
+        "n_cases": 151,
+        "n_pairs": 3000,
+        "mean": 0.2066,
+        "p95": 0.5053,
+        "max": 0.7904,
+        "share_ge_0_7": 0.0013
+      },
+      "ORPHA:2162": {
+        "n_cases": 150,
+        "n_pairs": 3000,
+        "mean": 0.2019,
+        "p95": 0.5058,
+        "max": 0.803,
+        "share_ge_0_7": 0.0013
+      },
+      "ORPHA:33364": {
+        "n_cases": 151,
+        "n_pairs": 3000,
+        "mean": 0.1933,
+        "p95": 0.4632,
+        "max": 0.9083,
+        "share_ge_0_7": 0.0017
+      },
+      "ORPHA:355": {
+        "n_cases": 150,
+        "n_pairs": 3000,
+        "mean": 0.1991,
+        "p95": 0.4973,
+        "max": 0.8253,
+        "share_ge_0_7": 0.002
+      },
+      "ORPHA:506": {
+        "n_cases": 151,
+        "n_pairs": 3000,
+        "mean": 0.1961,
+        "p95": 0.4664,
+        "max": 0.7833,
+        "share_ge_0_7": 0.0003
+      },
+      "ORPHA:534": {
+        "n_cases": 150,
+        "n_pairs": 3000,
+        "mean": 0.2072,
+        "p95": 0.5142,
+        "max": 0.7982,
+        "share_ge_0_7": 0.0033
+      },
+      "ORPHA:550": {
+        "n_cases": 151,
+        "n_pairs": 3000,
+        "mean": 0.1971,
+        "p95": 0.5021,
+        "max": 0.752,
+        "share_ge_0_7": 0.0017
+      },
+      "ORPHA:64": {
+        "n_cases": 149,
+        "n_pairs": 3000,
+        "mean": 0.203,
+        "p95": 0.487,
+        "max": 0.7646,
+        "share_ge_0_7": 0.0007
+      },
+      "ORPHA:79318": {
+        "n_cases": 150,
+        "n_pairs": 3000,
+        "mean": 0.2039,
+        "p95": 0.484,
+        "max": 0.8,
+        "share_ge_0_7": 0.0017
+      },
+      "ORPHA:79474": {
+        "n_cases": 151,
+        "n_pairs": 3000,
+        "mean": 0.2148,
+        "p95": 0.4805,
+        "max": 0.769,
+        "share_ge_0_7": 0.0017
+      },
+      "ORPHA:84": {
+        "n_cases": 151,
+        "n_pairs": 3000,
+        "mean": 0.2073,
+        "p95": 0.4928,
+        "max": 0.7398,
+        "share_ge_0_7": 0.001
+      },
+      "ORPHA:881": {
+        "n_cases": 150,
+        "n_pairs": 3000,
+        "mean": 0.2169,
+        "p95": 0.5044,
+        "max": 0.7877,
+        "share_ge_0_7": 0.0037
+      }
+    }
+  },
+  "provenance": {
+    "ontology_file": {
+      "name": "hp.obo",
+      "data_version": "hp/releases/2026-09-01",
+      "sha256": "93dace952fcb3ec4728818857f6ba76bc2d5312f4d83266519b8694b8e798f22",
+      "url": "https://purl.obolibrary.org/obo/hp.obo"
+    },
+    "annotation_file": {
+      "name": "phenotype.hpoa",
+      "version": "2026-09-02",
+      "sha256": "e89aa39c8f97bf5a52c5d160f9250a603681d630ade8ec2679d84ac5aece1f72",
+      "url": "https://purl.obolibrary.org/obo/hp/hpoa/phenotype.hpoa"
+    },
+    "ontology": "Human Phenotype Ontology",
+    "license": "https://hpo.jax.org/app/license (free to use; citation + version display required; content unmodified)",
+    "credit": "This product uses the Human Phenotype Ontology (version recorded in manifest). Find out more at http://www.human-phenotype-ontology.org"
+  },
+  "human_review_queue_size": 199
+}

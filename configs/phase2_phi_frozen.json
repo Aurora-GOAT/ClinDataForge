@@ -1,0 +1,10 @@
+{
+  "frozen_from": "reports/phase2_dev_selection/selection.json",
+  "selection_rule": "max dev F1 per method; ties by higher recall then lower protected-clinical deletion",
+  "threshold": 0.2,
+  "threads": 2,
+  "chunk_words": 160,
+  "presidio_model": "en_core_web_lg",
+  "presidio_threshold": 0.1,
+  "fusion_components": ["context_rules", "gliner"]
+}

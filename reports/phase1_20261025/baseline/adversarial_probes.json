@@ -1,0 +1,17 @@
+{
+  "revision": "delivery-v0.1",
+  "probe_scope": "Local synthetic adversarial diagnostics, not an independent PHI benchmark.",
+  "observations": {
+    "unknown_phi_accepted": true,
+    "unknown_phi_persisted": true,
+    "untrusted_source_type_persisted": true,
+    "raw_input_basename_persisted": true,
+    "bad_key_reported_successful_zero_processed": true,
+    "duplicate_id_failure_type": "IntegrityError",
+    "duplicate_failure_left_text_artifacts": true,
+    "false_lab_alias_count": 4,
+    "changed_clinical_value_falsely_deduplicated": true,
+    "patient_split_leak_falsely_verified": true,
+    "aggregate_dynamic_categories_persisted": true
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "source_relative_path": "..\\MedDataLab\\reports\\public_demo\\public_clinical_structured.jsonl",
+  "source_sha256": "8b7e245ab1525c3fc1b15e2f2672b76c36caaf77e80ca04c1a7d0ff0df376d21",
+  "source_size_bytes": 59923,
+  "independent_direct_counts": {
+    "rows": 85,
+    "unique_subject_ids": 40,
+    "unique_stay_ids": 85,
+    "diagnosis_links": 21,
+    "stays_with_diagnoses": 13
+  },
+  "independent_counts_match_current_audit": true,
+  "historical_counts": {
+    "rows": 222,
+    "unique_subject_ids": 64,
+    "unique_stay_ids": 222,
+    "diagnosis_links": 545,
+    "stays_with_diagnoses": 221
+  },
+  "historical_report_sha256": "6dc18924e5ea1eebac14787b0ff7dfcf66d5e6a99bcb81a9360be1e0d2a9affb",
+  "historical_counts_reproduced": false,
+  "conclusion": "Historical 222/64/545 counts cannot be reproduced from the available 85-row derivative; preserve historical report as unverified source-specific evidence.",
+  "limits": [
+    "No raw PhysioNet download or upstream transformation audit performed.",
+    "Flags and complaint tags are inherited aggregate metadata, not independently recomputed clinical checks.",
+    "No patient-level records or identifiers were exported."
+  ]
+}

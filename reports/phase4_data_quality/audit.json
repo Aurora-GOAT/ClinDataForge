@@ -1,0 +1,158 @@
+{
+  "audit_version": "dq-audit-1.0.0",
+  "generated_at_note": "all numbers recomputed from the artefacts on disk",
+  "corpus": "data/phase3_synth/gen/notes.jsonl",
+  "provenance": {
+    "n_cases": 2400,
+    "cases_with_complete_provenance": 2400,
+    "missing_fields": {},
+    "ontology_sha256_recorded": "93dace952fcb3ec4728818857f6ba76bc2d5312f4d83266519b8694b8e798f22",
+    "ontology_sha256_on_disk": "93dace952fcb3ec4728818857f6ba76bc2d5312f4d83266519b8694b8e798f22",
+    "ontology_sha_matches_disk": true,
+    "annotation_sha256_recorded": "e89aa39c8f97bf5a52c5d160f9250a603681d630ade8ec2679d84ac5aece1f72",
+    "annotation_sha256_on_disk": "e89aa39c8f97bf5a52c5d160f9250a603681d630ade8ec2679d84ac5aece1f72",
+    "annotation_sha_matches_disk": true,
+    "span_errors": 0,
+    "entities_missing_hp_id_or_evidence": 0,
+    "knowledge_violations_affirmed_suspected_history": 0,
+    "evidence_code_counts": {
+      "TAS": 19351,
+      "PCS": 2739,
+      "IEA": 66
+    },
+    "traceability": "per-entity evidence code + reference (PMID/ORPHA) + HPO release + phenotype.hpoa version, recorded inside every case"
+  },
+  "circularity": {
+    "validator_imports_project_constants": [
+      "REFERENCE_INTERVALS",
+      "GENERIC_NEGATABLE_ZH",
+      "GENERIC_NEGATABLE_EN"
+    ],
+    "validator_imports_generator_markup": false,
+    "shared_interval_module": "clinforge/hpo_knowledge.py",
+    "conversion_factor_in_project": {
+      "glucose": 18.016,
+      "hemoglobin": 10.0
+    },
+    "conversion_factor_independent_literal": {
+      "glucose": 18.016,
+      "hemoglobin": 10.0
+    },
+    "conversion_factors_agree": true,
+    "checks_that_are_independent": [
+      "span integrity (entity text vs recorded offsets)",
+      "hp_id existence in the HPO snapshot",
+      "affirmed/suspected/history membership in the disease annotation set (verifies the emitter honours its own sampling contract, NOT medical truth)",
+      "unit conversion arithmetic, re-derived in the validator",
+      "near-duplicate statistics over the generated text"
+    ],
+    "checks_that_are_tautological_by_construction": [
+      "knowledge consistency: the generator samples phenotypes FROM the annotation set, so a violation would indicate an implementation bug, not a medical claim",
+      "lab direction: direction and interval come from the same table the sampler used; an error in the table would pass both sides",
+      "reference intervals themselves are demonstration values, not institutional standards"
+    ],
+    "known_shared_failure_mode": "the g/dL->g/L direction bug was invisible until the two code paths diverged; constant-level circularity remains"
+  },
+  "split_leakage": {
+    "n_exported": 2355,
+    "split_sizes": {
+      "dev": 230,
+      "test": 204,
+      "train": 1921
+    },
+    "exact_duplicate_inputs_across_splits": 0,
+    "template_skeleton_collisions": {
+      "dev|test": {
+        "distinct_skeletons_in_both": 0,
+        "records_in_second_split_affected": 0,
+        "rate": 0.0
+      },
+      "dev|train": {
+        "distinct_skeletons_in_both": 0,
+        "records_in_second_split_affected": 0,
+        "rate": 0.0
+      },
+      "test|train": {
+        "distinct_skeletons_in_both": 0,
+        "records_in_second_split_affected": 0,
+        "rate": 0.0
+      }
+    },
+    "template_complexity_disease_triple_collisions": {
+      "dev|test": {
+        "distinct_triples_in_both": 82,
+        "records_in_second_split_affected": 133,
+        "rate": 0.652
+      },
+      "dev|train": {
+        "distinct_triples_in_both": 136,
+        "records_in_second_split_affected": 1264,
+        "rate": 0.658
+      },
+      "test|train": {
+        "distinct_triples_in_both": 129,
+        "records_in_second_split_affected": 1237,
+        "rate": 0.6439
+      }
+    },
+    "patients_shared_across_splits": 0,
+    "near_duplicate_pairs_jaccard_ge_0.8_across_splits": 0,
+    "near_duplicate_examples": [],
+    "disease_overlap": {
+      "dev|test": 16,
+      "dev|train": 16,
+      "test|train": 16
+    },
+    "answer_leakage": {
+      "disease_id_present_in_all_splits": true,
+      "note": "the disease label is also stated in the note text; a record whose template skeleton and disease coincide with a training record lets the model copy the answer. The triple-collision rate above is the relevant quantity."
+    },
+    "verdict": "NOT a generalisation benchmark: splits share templates and diseases. They are usable as a formatting / schema-compliance training set, not as evidence of transfer."
+  },
+  "translation": {
+    "n_phenotype_terms": 214,
+    "n_disease_terms": 16,
+    "same_surface_different_hp_id": {},
+    "substring_pairs": 10,
+    "terms_containing_latin_letters": [],
+    "n_terms_containing_latin_letters": 0,
+    "review_status": "single-author machine-assisted translation, spot-checked; NO clinician or professional translator review",
+    "allowed_claims": [
+      "curated Chinese gloss",
+      "author-translated terminology"
+    ],
+    "forbidden_claims": [
+      "clinical expert gold standard",
+      "clinician-validated terminology",
+      "expert-reviewed translation"
+    ],
+    "residual_risk": "HPO publishes no official Chinese release; synonym coverage in Chinese is limited to 214 curated surfaces, so recall on unseen Chinese phrasings is not measurable here."
+  },
+  "preference_labels": {
+    "n_pairs": 2355,
+    "pairs_where_rejected_equals_chosen": 0,
+    "pairs_where_rejected_is_not_actually_wrong": 0,
+    "hallucinate_pairs_checked": 967,
+    "hallucinated_phenotype_was_actually_annotated": 0,
+    "hallucinated_phenotype_duplicated_an_existing_one": 0,
+    "hallucinate_check_note": "the appended (last) hp_id is compared against the record-level gold annotation set; the constant HP:0001945 check used before sft-export-2.0.0 was retired because the rule no longer always samples Fever, which made 22/2,332 rejected answers defensible",
+    "rule_counts": {
+      "hallucinate_phenotype": 967,
+      "flip_status": 574,
+      "drop_phenotype": 574,
+      "wrong_lab": 240
+    },
+    "fallback_to_hallucination_rule": 0,
+    "label_status": "programmatic corruption, NOT human preference annotation",
+    "usable_for": "DPO/RLHF plumbing tests and format-supervision experiments only",
+    "not_usable_for": "any claim about human preference quality or reward-model accuracy"
+  },
+  "context_contamination": {
+    "pipeline_dir": "data/phase4_synth_v2/pipeline_out",
+    "matched_mentions": 21640,
+    "exported_status_mismatches": 0,
+    "mismatch_rate": 0.0,
+    "mismatches_by_transition": {},
+    "gate": "SFT/preference export must not be used for training while this number is non-zero for context status; the corrected pipeline run is pipeline-med-1.1.0."
+  }
+}

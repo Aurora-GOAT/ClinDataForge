@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="820" viewBox="0 0 1240 820" font-family="'Segoe UI','Microsoft YaHei',system-ui,sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#57606a"/>
+    </marker>
+    <marker id="arrowStrong" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1a7f37"/>
+    </marker>
+  </defs>
+
+  <rect width="1240" height="820" fill="#f6f8fa"/>
+  <text x="28" y="40" font-size="21" font-weight="700" fill="#1f2328">ClinDataForge · 医疗数据九段流水线（pipeline-med-1.1.0）</text>
+  <text x="28" y="64" font-size="12.5" fill="#57606a">输入仅限合成病历（synthetic=True 硬校验）；真实患者文本入口与正文出口保持关闭。每个阶段向该记录的 lineage 追加一条带耗时与版本号的审计记录。</text>
+
+  <!-- input -->
+  <rect x="28" y="92" width="176" height="96" rx="8" fill="#ddf4ff" stroke="#4c9aff"/>
+  <text x="44" y="118" font-size="13" font-weight="700" fill="#0a3069">输入</text>
+  <text x="44" y="140" font-size="12" fill="#1f2328">HPO 知识约束合成</text>
+  <text x="44" y="158" font-size="12" fill="#1f2328">2,400 条 / zh 70%</text>
+  <text x="44" y="176" font-size="11.5" fill="#57606a">金标 entities 先被剥离</text>
+
+  <!-- stage column 1 -->
+  <g>
+    <rect x="240" y="92" width="300" height="60" rx="7" fill="#ffffff" stroke="#d0d7de"/>
+    <text x="256" y="116" font-size="13" font-weight="600" fill="#1f2328">① Schema 校验</text>
+    <text x="256" y="136" font-size="11.5" fill="#57606a">必填字段 / 类型 / 非空 → SCHEMA_MISSING_*</text>
+
+    <rect x="240" y="166" width="300" height="74" rx="7" fill="#ffffff" stroke="#d0d7de"/>
+    <text x="256" y="190" font-size="13" font-weight="600" fill="#1f2328">② HPO 词典表型抽取</text>
+    <text x="256" y="210" font-size="11.5" fill="#57606a">最长匹配 + 中文按字切分 + 英文词边界</text>
+    <text x="256" y="228" font-size="11.5" fill="#57606a">输出精确字符跨度 → HP 编码</text>
+
+    <rect x="240" y="254" width="300" height="86" rx="7" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.6"/>
+    <text x="256" y="278" font-size="13" font-weight="700" fill="#0a3622">③ 上下文状态判定（本轮重写）</text>
+    <text x="256" y="298" font-size="11.5" fill="#1f2328">NegEx/ConText 作用域 + 终止词</text>
+    <text x="256" y="316" font-size="11.5" fill="#1f2328">提及掩码 + 段头续行 + 就近优先</text>
+    <text x="256" y="333" font-size="11.5" fill="#0a3622">留出（同生成器）history 221 → 0</text>
+
+    <rect x="240" y="354" width="300" height="60" rx="7" fill="#ffffff" stroke="#d0d7de"/>
+    <text x="256" y="378" font-size="13" font-weight="600" fill="#1f2328">④ 检验单位标准化</text>
+    <text x="256" y="398" font-size="11.5" fill="#57606a">ALT/AST · Glucose 18.016 · Hgb ×10</text>
+  </g>
+
+  <!-- stage column 2 -->
+  <g>
+    <rect x="596" y="92" width="300" height="86" rx="7" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.6"/>
+    <text x="612" y="116" font-size="13" font-weight="700" fill="#0a3622">⑤ PHI 安全门控（本轮提速）</text>
+    <text x="612" y="136" font-size="11.5" fill="#1f2328">规则 ∪ GLiNER fp32（同版本官方转换）</text>
+    <text x="612" y="154" font-size="11.5" fill="#1f2328">阈值 0.2 冻结不动 · 全文掩码后才落盘</text>
+    <text x="612" y="171" font-size="11.5" fill="#0a3622">2778 → 995 ms/条（2.79×）· 零缺失 / 新增 3 跨度</text>
+
+    <rect x="596" y="192" width="300" height="74" rx="7" fill="#ffffff" stroke="#d0d7de"/>
+    <text x="612" y="216" font-size="13" font-weight="600" fill="#1f2328">⑥ 近重复检测</text>
+    <text x="612" y="236" font-size="11.5" fill="#57606a">患者组 / 就诊组内 · 检验冲突保护</text>
+    <text x="612" y="254" font-size="11.5" fill="#57606a">在脱敏文本上判定（生产口径）</text>
+
+    <rect x="596" y="280" width="300" height="74" rx="7" fill="#ffffff" stroke="#d0d7de"/>
+    <text x="612" y="304" font-size="13" font-weight="600" fill="#1f2328">⑦ 知识一致性</text>
+    <text x="612" y="324" font-size="11.5" fill="#57606a">affirmed/suspected 表型 ∉ 疾病注释集</text>
+    <text x="612" y="342" font-size="11.5" fill="#57606a">→ KNOWLEDGE_INCONSISTENT_PHENOTYPE</text>
+
+    <rect x="596" y="368" width="300" height="60" rx="7" fill="#ffffff" stroke="#d0d7de"/>
+    <text x="612" y="392" font-size="13" font-weight="600" fill="#1f2328">⑧ 质量评分与路由</text>
+    <text x="612" y="412" font-size="11.5" fill="#57606a">分数 + 问题码 → 接受 / 隔离 / 复核</text>
+  </g>
+
+  <!-- output -->
+  <rect x="952" y="92" width="260" height="336" rx="8" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="968" y="118" font-size="13" font-weight="700" fill="#1f2328">⑨ 输出与血缘</text>
+  <line x1="968" y1="128" x2="1196" y2="128" stroke="#d0d7de"/>
+  <text x="968" y="150" font-size="12" fill="#1f2328">structured.jsonl</text>
+  <text x="968" y="168" font-size="11" fill="#57606a">2,355 条接受（实体级投影）</text>
+  <text x="968" y="192" font-size="12" fill="#1f2328">quarantine.jsonl</text>
+  <text x="968" y="210" font-size="11" fill="#57606a">45 条隔离 + 原因码</text>
+  <text x="968" y="234" font-size="12" fill="#1f2328">review_queue.csv</text>
+  <text x="968" y="252" font-size="11" fill="#57606a">PENDING_HUMAN 标注</text>
+  <text x="968" y="276" font-size="12" fill="#1f2328">lineage.jsonl</text>
+  <text x="968" y="294" font-size="11" fill="#57606a">逐阶段耗时 / 版本 / 问题码</text>
+  <text x="968" y="318" font-size="12" fill="#1f2328">audit.json</text>
+  <text x="968" y="336" font-size="11" fill="#57606a">运行级 provenance</text>
+  <text x="968" y="362" font-size="11.5" fill="#9a6700">SFT/偏好候选：未训练</text>
+  <text x="968" y="380" font-size="11" fill="#57606a">sft-export-2.0.0，标注非人类偏好</text>
+  <text x="968" y="404" font-size="11.5" fill="#cf222e">正文出口：关闭</text>
+
+  <!-- arrows column1 chain -->
+  <g stroke="#57606a" stroke-width="1.4" fill="none" marker-end="url(#arrow)">
+    <line x1="204" y1="140" x2="236" y2="122"/>
+    <line x1="390" y1="152" x2="390" y2="166"/>
+    <line x1="390" y1="240" x2="390" y2="254"/>
+    <line x1="390" y1="340" x2="390" y2="354"/>
+    <line x1="540" y1="384" x2="592" y2="200"/>
+    <line x1="746" y1="178" x2="746" y2="192"/>
+    <line x1="746" y1="266" x2="746" y2="280"/>
+    <line x1="746" y1="354" x2="746" y2="368"/>
+    <line x1="896" y1="398" x2="948" y2="300"/>
+  </g>
+
+  <!-- gates -->
+  <rect x="28" y="470" width="582" height="130" rx="8" fill="#fff8c5" stroke="#d4a72c"/>
+  <text x="44" y="494" font-size="13" font-weight="700" fill="#7d4e00">安全与诚实约束（写在代码里，不是写在 PPT 里）</text>
+  <text x="44" y="516" font-size="12" fill="#1f2328">· 非合成输入直接拒绝；金标 entities 任何阶段都不读取</text>
+  <text x="44" y="536" font-size="12" fill="#1f2328">· 落盘文本一律先经 PHI 门控掩码；结构化字段是实体级投影</text>
+  <text x="44" y="556" font-size="12" fill="#1f2328">· 模板内自检 / 同生成器留出 / 冻结第三方 PHI 基准 / 真实临床验证 四者分开报告</text>
+  <text x="44" y="576" font-size="12" fill="#1f2328">· 无 API 授权的评测标 BLOCKED，不编造数字</text>
+
+  <rect x="630" y="470" width="582" height="130" rx="8" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="646" y="494" font-size="13" font-weight="700" fill="#1f2328">评测证据链（每层效力不同，不可互相替代）</text>
+  <text x="646" y="516" font-size="12" fill="#1f2328">① 模板内自检 — 金标来自同一生成器，只能证明实现与规格一致</text>
+  <text x="646" y="536" font-size="12" fill="#1f2328">② 同生成器留出 — 换模板/seed 并冻结，证明机制可迁移；非独立来源</text>
+  <text x="646" y="556" font-size="12" fill="#1f2328">③ 冻结 PHI 基准（ASQ-PHI + 中文模板，独立审计 PASS）</text>
+  <text x="646" y="576" font-size="12" fill="#cf222e">④ 真实临床验证 — 未进行，需 DUA/IRB，本图不宣称</text>
+
+  <!-- artifact row -->
+  <text x="28" y="646" font-size="13" font-weight="700" fill="#1f2328">可复现产物</text>
+  <g font-size="11.5" fill="#1f2328">
+    <rect x="28" y="660" width="286" height="58" rx="7" fill="#ffffff" stroke="#d0d7de"/>
+    <text x="42" y="682">clinforge/context_scope.py · ctxscope-1.1.0</text>
+    <text x="42" y="702" fill="#57606a">NegEx/ConText 作用域判定器</text>
+
+    <rect x="326" y="660" width="286" height="58" rx="7" fill="#ffffff" stroke="#d0d7de"/>
+    <text x="340" y="682">data/phase4_context/holdout_notes.jsonl</text>
+    <text x="340" y="702" fill="#57606a">SHA256 75a733fb… 评测前冻结</text>
+
+    <rect x="624" y="660" width="286" height="58" rx="7" fill="#ffffff" stroke="#d0d7de"/>
+    <text x="638" y="682">configs/phase4_phi_fast.json</text>
+    <text x="638" y="702" fill="#57606a">fp32 / 4 线程 / batch 1（含负结论）</text>
+
+    <rect x="922" y="660" width="290" height="58" rx="7" fill="#ffffff" stroke="#d0d7de"/>
+    <text x="936" y="682">reports/phase4_*.json · phase4_dashboard.html</text>
+    <text x="936" y="702" fill="#57606a">全部数字由脚本从产物渲染</text>
+  </g>
+
+  <text x="28" y="756" font-size="11.5" fill="#57606a">外部资源：Human Phenotype Ontology（hp.obo 2026-09-01 / phenotype.hpoa 2026-09-02，SHA256 与许可已核验）；GLiNER multi PII 权重为公共 ONNX 转换，SHA256 与 Hugging Face LFS oid 逐位核对。</text>
+  <text x="28" y="776" font-size="11.5" fill="#57606a">本图描述的是一条合成数据流水线；它没有被任何真实患者数据验证过，也不构成临床有效性或隐私安全证明。</text>
+</svg>

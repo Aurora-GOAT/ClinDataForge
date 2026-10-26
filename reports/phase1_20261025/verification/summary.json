@@ -1,0 +1,117 @@
+{
+  "tests_passed": true,
+  "test_exit_code": 0,
+  "legacy_metric_counts_match_historical": true,
+  "stress_matches_historical": true,
+  "historical_reports_and_examples_preserved": true,
+  "experiments": {
+    "legacy_fixture": {
+      "source_sha256": "7d43470260ec317f2480f35499a22d835e4e91a4f2b9e85e7d46967bfe1f5e19",
+      "gold_sha256": "2f5a3e44edc6c3560bb091523bc00e1975dd7ed3957762da1ea7bf2c980b450a",
+      "n_records": 730,
+      "metrics": {
+        "baseline_phi_span_exact": {
+          "tp": 438,
+          "fp": 0,
+          "fn": 1752,
+          "precision": 1.0,
+          "recall": 0.2,
+          "f1": 0.3333
+        },
+        "pipeline_phi_span_exact": {
+          "tp": 2190,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "baseline_lab_field_exact_with_numeric_tolerance": {
+          "tp": 430,
+          "fp": 0,
+          "fn": 2456,
+          "precision": 1.0,
+          "recall": 0.149,
+          "f1": 0.2593
+        },
+        "pipeline_lab_field_exact_with_numeric_tolerance": {
+          "tp": 2880,
+          "fp": 6,
+          "fn": 6,
+          "precision": 0.9979,
+          "recall": 0.9979,
+          "f1": 0.9979
+        },
+        "pipeline_duplicate_record_detection": {
+          "tp": 130,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "lab_mismatch_count": 6,
+      "accepted_rows": 573,
+      "quarantined_rows": 157
+    },
+    "corrected_fixture": {
+      "source_sha256": "b2a219e44547e82569523b9e68c38ca9f0302414d6b56d007538f0d76f2b548f",
+      "gold_sha256": "2f5a3e44edc6c3560bb091523bc00e1975dd7ed3957762da1ea7bf2c980b450a",
+      "n_records": 730,
+      "metrics": {
+        "baseline_phi_span_exact": {
+          "tp": 438,
+          "fp": 0,
+          "fn": 1752,
+          "precision": 1.0,
+          "recall": 0.2,
+          "f1": 0.3333
+        },
+        "pipeline_phi_span_exact": {
+          "tp": 2190,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "baseline_lab_field_exact_with_numeric_tolerance": {
+          "tp": 430,
+          "fp": 0,
+          "fn": 2456,
+          "precision": 1.0,
+          "recall": 0.149,
+          "f1": 0.2593
+        },
+        "pipeline_lab_field_exact_with_numeric_tolerance": {
+          "tp": 2886,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "pipeline_duplicate_record_detection": {
+          "tp": 130,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "lab_mismatch_count": 0,
+      "accepted_rows": 573,
+      "quarantined_rows": 157
+    }
+  },
+  "privacy_release": "All pipeline record exports are metadata only; text and SFT candidates withheld. Separately saved fixture inputs are explicitly synthetic research data.",
+  "independent_phi_acceptance_complete": false,
+  "limits": [
+    "Both fixtures have generator-derived gold.",
+    "No model baseline, medical training, external PHI dataset or real patient input was used.",
+    "Legacy stress set is diagnostic only; do not tune and call it held-out.",
+    "Public MIMIC historical provenance discrepancy is documented separately in public_audit."
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "n_notes": 8,
+  "avg_chars": 421.6,
+  "rss_after_import_mb": 28.9,
+  "thread_sweep": [
+    {
+      "threads": 2,
+      "init_s": 10.73,
+      "mean_ms_per_doc": 3196.8,
+      "p95_ms_per_doc": 5134.9,
+      "mean_ms_per_160word_chunk": 3117.1,
+      "rss_mb": 1350.5
+    },
+    {
+      "threads": 4,
+      "init_s": 13.78,
+      "mean_ms_per_doc": 3099.7,
+      "p95_ms_per_doc": 4354.3,
+      "mean_ms_per_160word_chunk": 4155.2,
+      "rss_mb": 1214.9
+    },
+    {
+      "threads": 8,
+      "init_s": 14.16,
+      "mean_ms_per_doc": 4969.1,
+      "p95_ms_per_doc": 7999.6,
+      "mean_ms_per_160word_chunk": 4575.0,
+      "rss_mb": 1217.7
+    }
+  ],
+  "batch_probe": [
+    {
+      "batch": 1,
+      "ok": false,
+      "shape": "[ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Invalid rank for input: span_mask Got: 3 Expected: 2 Please fix either the inputs/outputs or the model.",
+      "ms_total": 29.6,
+      "ms_per_doc": 29.6
+    },
+    {
+      "batch": 2,
+      "ok": false,
+      "shape": "all input arrays must have the same shape",
+      "ms_total": 17.1,
+      "ms_per_doc": 8.6
+    },
+    {
+      "batch": 4,
+      "ok": false,
+      "shape": "all input arrays must have the same shape",
+      "ms_total": 34.3,
+      "ms_per_doc": 8.6
+    },
+    {
+      "batch": 8,
+      "ok": false,
+      "shape": "all input arrays must have the same shape",
+      "ms_total": 63.2,
+      "ms_per_doc": 7.9
+    }
+  ]
+}

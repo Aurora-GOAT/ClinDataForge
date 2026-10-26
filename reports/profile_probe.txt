@@ -1,0 +1,5 @@
+inputs {'input_ids': ((1, 345), 'int64'), 'attention_mask': ((1, 345), 'int64'), 'words_mask': ((1, 345), 'int64'), 'text_lengths': ((1, 1), 'int64'), 'span_idx': ((1, 1920, 2), 'int64'), 'span_mask': ((1, 1920), 'bool')}
+out shape (1, 160, 12, 9)
+cold 3.43s
+warm 2.78s
+PROFILE onnxruntime_profile__2026-10-26_20-06-13.json

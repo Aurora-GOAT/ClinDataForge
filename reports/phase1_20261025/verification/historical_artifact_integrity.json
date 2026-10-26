@@ -1,0 +1,18 @@
+{
+  "examples/generated_fixture/fixture_manifest.json": true,
+  "examples/generated_fixture/gold_annotations.jsonl": true,
+  "examples/generated_fixture/synthetic_notes.jsonl": true,
+  "reports/local_speed.json": true,
+  "reports/public_demo_aggregate.json": true,
+  "reports/stress_eval.json": true,
+  "reports/unittest_stdout.log": true,
+  "reports/demo_run/accepted.jsonl": true,
+  "reports/demo_run/audit.db": true,
+  "reports/demo_run/audit.json": true,
+  "reports/demo_run/dashboard.html": true,
+  "reports/demo_run/provenance.json": true,
+  "reports/demo_run/quarantine.jsonl": true,
+  "reports/demo_run/review_queue_40.csv": true,
+  "reports/demo_run/sft_candidate_UNREVIEWED.jsonl": true,
+  "reports/demo_run/synthetic_benchmark.json": true
+}

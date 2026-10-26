@@ -1,0 +1,48 @@
+{
+  "protocol": "docs/PHI_EVALUATION_PROTOCOL_CN.md",
+  "frozen_at_utc": "2026-10-25T16:34:36.891921+00:00",
+  "dataset_sha256": {
+    "train.jsonl": "28f96dadb7f9033c2b96fa6348938fe65fdbb44a3757b0b68cdfec55f9ddbf4b",
+    "dev.jsonl": "adeb9ee4ba0b9b344df2cd9cd67906dc2c4c62a6c8265dc6d4b0651ef30b417b",
+    "test.jsonl": "96d5b2c6aa3a52f81fb79357a88f6ff86c1fde0b07b700d2f36d570745dda85d",
+    "demo_pipeline.jsonl": "19cb12a3cca902b8f40a7dc8df6276383f899a7b983dbdb6aa1f810eff9bb67d",
+    "manifest.json": "edba184f0d9cfa96f197ef063883fc9e939bca02f0a81ce01c7d20d520decc33"
+  },
+  "config_sha256": "21fb5ce907d93034707830d3ce93712488b8b2db3f0288c75a11fe0f7d7323c4",
+  "protocol_sha256": "b7a17503bb0ee8ac431cf715ea2d71906424c4324d3e3fd3ac23e9552026ecad",
+  "code_sha256": {
+    "clinforge/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "clinforge/__main__.py": "cf7390a2508a0fcad4777a4a629fc5212ab655cb45845975995f835676a834e3",
+    "clinforge/artifacts.py": "79309e65e4e10df9e0509cbb0a8c7a8665ab59e9b45b713f7653163410855e07",
+    "clinforge/cli.py": "4fe84e6b66dc151ad59847b4b66bc33911febccea20638d36a06c1ed8fc78300",
+    "clinforge/evaluate.py": "7b2bb890caf32c3d9c26368fe61c2cd448273a8bcd2c166ea39ee2a294548b0b",
+    "clinforge/mimic_audit.py": "315022fe17ea02a92407b16e7640e4e973e3523084c3a74b144069b01e743c1f",
+    "clinforge/operators.py": "c59d5ae3b74d78ad2fbcf0f1c565026640985a4b4e25c24e17ec01e6c8bcecaa",
+    "clinforge/phi_evaluation.py": "88cf6c30bf12a79312fa3c1efd5548e94b8fbb8c9a13eddd1ee633678535f763",
+    "clinforge/phi_experiment.py": "e41291459a8bf288569861f3336778db1b4c8971ada938d047e9eb49778816a2",
+    "clinforge/phi_models.py": "862033b8641e101e3dbdc91d2af0e1232ac05a4b9b356deb2111888310d44482",
+    "clinforge/phi_rules.py": "57ac7dfa7eaf3f32b1e7cd1d7e593e3030a2b8373ffe5acf30cfda036945d81a",
+    "clinforge/pipeline.py": "be5f201caf0bbe532cfc45199e85174b19a54ea7ef625bcdffad63bd1b8f68dd",
+    "clinforge/presidio_adapter.py": "e27ba867e0d401e214734697ca04361f9f1b5fafb8494d0b77d71a15ccf3bc9e",
+    "clinforge/stress.py": "94d55d1e4f15e465872a9d6560fd748303d9fd0cc1c291a9185322bce8611210",
+    "clinforge/synthetic.py": "3f99022314341ba2ca3f54692ad1b393db88892a8a14fc369171727c5779649e",
+    "requirements-phi.txt": "55ac7cf364666bdbb68e191118b77ea8c4106556e9f43b21e9ca1c3d84f6a802",
+    "scripts/audit_phi_dataset.py": "b22c4db928f94c615c1aa03639e1564d0dc21bb3fa81a41d63fced6e28565c4a",
+    "scripts/build_phi_benchmark.py": "a4e9fa5a884dbb5d9aa3fe3d216473908881eb186aa1563460b3a280e909e560",
+    "scripts/evaluate_phi.py": "84ba6fa80540b38ddcc1d615747194f238118abbd3dbec78ade097583e45029a",
+    "scripts/freeze_phi_experiment.py": "b1ebc71bd31ade50c03f355c904ab4ab6e2381d2528709153b43a3c3bea7735f",
+    "scripts/phi_worker.py": "60a88040d991679c62a036e3fb88150ea4f25ed995ea83c66fb5f13f40a9e6a9",
+    "scripts/sweep_phi_dev.py": "67556f01332d61eab47e82d0d99e7c04905c58604a777610fe115f9f01faf574"
+  },
+  "model_sha256": {
+    "gliner_config.json": "69e141f7fe1864e0d81ab0e542c68387d588db62393bcd93b471d54dcf0f5c16",
+    "onnx/model_quantized.onnx": "3efb3b91aef91ae11cd781126133063a33a2ffd7787ec73057bbd57a9781a7ab",
+    "onnx_fp16/model_fp16.onnx": "e756837e13d16ef832f6cd9fca473c2c3dd1eb232cab13e6443d958d608e797b",
+    "onnx_fp16/SHA256.txt": "ccb38b2669e87762163ecd7d2ccbaa210dd3e9c57667bc920c349ae4c05d155d",
+    "tokenizer.json": "914bd3c8fb7b525af9e23b60d0ec7b1248ddb2b99014efd9c02ebeb022f8cab7",
+    "tokenizer_config.json": "78f866883daf7ee2bc400200a155cdbe9116ed0a6ed597ff573ea2c9862a89a6"
+  },
+  "bootstrap_reps": 2000,
+  "bootstrap_seed": 20261025,
+  "formal_test_policy": "One first formal run; identical frozen replays require explicit replay flag, new output directory, no method changes."
+}

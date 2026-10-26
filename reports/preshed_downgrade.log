@@ -1,0 +1,16 @@
+Collecting preshed==3.0.9
+  Downloading preshed-3.0.9-cp310-cp310-win_amd64.whl (122 kB)
+     ------------------------------------ 122.2/122.2 kB 595.7 kB/s eta 0:00:00
+Collecting cymem==2.0.8
+  Downloading cymem-2.0.8-cp310-cp310-win_amd64.whl (39 kB)
+Requirement already satisfied: murmurhash==1.0.10 in d:\pqy\five\post\实习、工作\找工作\简历合集\蚂蚁\clindataforge_anthealth_2027\.venv-phi\lib\site-packages (1.0.10)
+Installing collected packages: cymem, preshed
+  Attempting uninstall: cymem
+    Found existing installation: cymem 2.0.16
+    Uninstalling cymem-2.0.16:
+      Successfully uninstalled cymem-2.0.16
+  Attempting uninstall: preshed
+    Found existing installation: preshed 3.0.14
+    Uninstalling preshed-3.0.14:
+      Successfully uninstalled preshed-3.0.14
+Successfully installed cymem-2.0.8 preshed-3.0.9

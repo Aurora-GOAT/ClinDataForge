@@ -1,0 +1,87 @@
+{
+  "rule": "max F1; ties by higher recall, then lower protected-clinical deletion",
+  "source": "reports/phase2_dev_sweep",
+  "per_method": {
+    "B": {
+      "rule": "max F1; ties by higher recall then lower protected-clinical deletion",
+      "n_candidates": 10,
+      "chosen": {
+        "method": "B",
+        "gliner_threshold": null,
+        "presidio_threshold": 0.1,
+        "components": [
+          "presidio"
+        ],
+        "recall": 0.3621545003543586,
+        "precision": 0.40555555555555556,
+        "f1": 0.38262822912766753,
+        "all_gold_phi_masked_positive_rate": 0.043596730245231606,
+        "all_entities_exact_positive_rate": 0.0326975476839237,
+        "protected_deletion_rate": 0.2541110766366739,
+        "non_phi_deletion_rate": 0.08951097287022637,
+        "negative_record_any_redaction_rate": 0.6896551724137931
+      }
+    },
+    "C": {
+      "rule": "max F1; ties by higher recall then lower protected-clinical deletion",
+      "n_candidates": 18,
+      "chosen": {
+        "method": "C",
+        "gliner_threshold": 0.2,
+        "presidio_threshold": null,
+        "components": [
+          "gliner"
+        ],
+        "recall": 0.8008504606661941,
+        "precision": 0.7913165266106442,
+        "f1": 0.7960549489256781,
+        "all_gold_phi_masked_positive_rate": 0.7002724795640327,
+        "all_entities_exact_positive_rate": 0.3896457765667575,
+        "protected_deletion_rate": 0.06926776295376978,
+        "non_phi_deletion_rate": 0.049322372806043104,
+        "negative_record_any_redaction_rate": 0.9655172413793104
+      }
+    },
+    "D": {
+      "rule": "max F1; ties by higher recall then lower protected-clinical deletion",
+      "n_candidates": 198,
+      "chosen": {
+        "method": "D",
+        "gliner_threshold": 0.2,
+        "presidio_threshold": null,
+        "components": [
+          "context_rules",
+          "gliner"
+        ],
+        "recall": 0.9000708717221828,
+        "precision": 0.7888198757763976,
+        "f1": 0.8407811982787157,
+        "all_gold_phi_masked_positive_rate": 0.7384196185286104,
+        "all_entities_exact_positive_rate": 0.6403269754768393,
+        "protected_deletion_rate": 0.06926776295376978,
+        "non_phi_deletion_rate": 0.05080352514256091,
+        "negative_record_any_redaction_rate": 0.9655172413793104
+      }
+    }
+  },
+  "recall_first_alternative": {
+    "rule": "recall first (v2 rule, retained for reporting only)",
+    "chosen": {
+      "method": "D",
+      "gliner_threshold": 0.05,
+      "presidio_threshold": null,
+      "components": [
+        "context_rules",
+        "gliner"
+      ],
+      "recall": 0.9220411055988661,
+      "precision": 0.7268156424581006,
+      "f1": 0.8128709778194314,
+      "all_gold_phi_masked_positive_rate": 0.8147138964577657,
+      "all_entities_exact_positive_rate": 0.7111716621253406,
+      "protected_deletion_rate": 0.2276605646912814,
+      "non_phi_deletion_rate": 0.11367844182774198,
+      "negative_record_any_redaction_rate": 1.0
+    }
+  }
+}

@@ -1,0 +1,83 @@
+﻿record_key,masked_excerpt,quality_score,issues,annotator_reject,annotator_reason,reviewer_id
+700fc749884a48d83c4c,姓名：[NAME];电话：[PHONE];病历号：[MRN];主诉：咳嗽五天;体温：280℃;血糖：13.24mmol/L;血红蛋白：100.5g/L;ALT：127.7U/L,0.71,OUT_OF_BROAD_RANGE_TEMP_C;DUPLICATE_WITHIN_PATIENT,,,
+5b17e70e3ad76da64a38,"姓名：[NAME]
+电话：[PHONE]
+病历号：[MRN]
+主诉：近期口渴
+体温：280°C
+血糖：15.23 mmol/L
+Hb：160.0 g/L
+ALT：38.6 U/L",0.711,OUT_OF_BROAD_RANGE_TEMP_C;DUPLICATE_WITHIN_PATIENT,,,
+ad9650487ca22f883721,姓名：[NAME]；电话：[PHONE]；病历号：[MRN]；主诉：咳嗽五天；体温：280℃；血糖：13.24mmol/L；血红蛋白：100.5g/L；ALT：127.7U/L。,0.711,OUT_OF_BROAD_RANGE_TEMP_C;DUPLICATE_WITHIN_PATIENT,,,
+ede201ea0b88e105a0b0,姓名：[NAME];联系电话：[PHONE];病历号：[MRN];主诉：腹痛一天;体温：700°F;血糖：258.561mg/dL;HGB：15.9g/dL;ALT：104.3 U/L,0.715,OUT_OF_BROAD_RANGE_TEMP_C;DUPLICATE_WITHIN_PATIENT,,,
+2d78b5291c8d821159ce,姓名：[NAME]；联系电话：[PHONE]；病历号：[MRN]；主诉：乏力三周；体温：700°F；血糖：268.832mg/dL；HGB：12.53g/dL；ALT：107.4 U/L。,0.718,OUT_OF_BROAD_RANGE_TEMP_C;DUPLICATE_WITHIN_PATIENT,,,
+f796c0e84c28519a9fd8,患者姓名：[NAME]|手机：[PHONE]|病历号：[MRN]|症状描述：夜间胸闷|T=700 °F|GLU=171.353 mg/dL|Hb=10.67 g/dL|ALT=700 U/L,0.719,OUT_OF_BROAD_RANGE_TEMP_C;DUPLICATE_WITHIN_PATIENT,,,
+463d0112465b24f097c1,Patient: [NAME] | Tel: [PHONE] | MRN: [MRN] | Complaint: five days of cough | temperature: 280 °C | blood glucose: 103.244 mg/dL | hemoglobin: 140.3 g/L | alanine aminotransferase: 89.8 U/L,0.75,OUT_OF_BROAD_RANGE_TEMP_C;DUPLICATE_WITHIN_PATIENT,,,
+305d36e0afbcb57ea157,姓名：[NAME]；电话：[PHONE]；病历号：[MRN]；主诉：乏力三周；体温：280℃；血糖：7.23mmol/L；血红蛋白：90.5g/L；ALT：42.1U/L。,0.708,OUT_OF_BROAD_RANGE_TEMP_C,,,
+d36e4f0dc9137dbcc7be,姓名：[NAME]；电话：[PHONE]；病历号：[MRN]；主诉：乏力三周；体温：280℃；血糖：5.54mmol/L；血红蛋白：99.1g/L；ALT：127.1U/L。,0.709,OUT_OF_BROAD_RANGE_TEMP_C,,,
+f2e704ec1a141b1daccf,姓名：[NAME]；电话：[PHONE]；病历号：[MRN]；主诉：夜间胸闷；体温：280℃；血糖：14.01mmol/L；血红蛋白：87.3g/L；ALT：52.4U/L。,0.709,OUT_OF_BROAD_RANGE_TEMP_C,,,
+68c61d01a34ede72f9b6,姓名：[NAME]；电话：[PHONE]；病历号：[MRN]；主诉：头晕两天；体温：280℃；血糖：10.32mmol/L；血红蛋白：148.9g/L；ALT：71.5U/L。,0.71,OUT_OF_BROAD_RANGE_TEMP_C,,,
+80914b19c91d155bb732,姓名：[NAME]；电话：[PHONE]；病历号：[MRN]；主诉：近期口渴；体温：280℃；血糖：12.99mmol/L；血红蛋白：98.2g/L；ALT：111.1U/L。,0.71,OUT_OF_BROAD_RANGE_TEMP_C,,,
+f0c85202d0cea432e1f9,"姓名：[NAME]
+电话：[PHONE]
+病历号：[MRN]
+主诉：腹痛一天
+体温：280°C
+血糖：7.41 mmol/L
+Hb：99.8 g/L
+ALT：170.7 U/L",0.71,OUT_OF_BROAD_RANGE_TEMP_C,,,
+10fa9437777d138a4bb5,"姓名：[NAME]
+电话：[PHONE]
+病历号：[MRN]
+主诉：咳嗽五天
+体温：280°C
+血糖：7.49 mmol/L
+Hb：116.1 g/L
+ALT：138.3 U/L",0.711,OUT_OF_BROAD_RANGE_TEMP_C,,,
+3edd95dc5b27219225d1,"姓名：[NAME]
+电话：[PHONE]
+病历号：[MRN]
+主诉：近期口渴
+体温：280°C
+血糖：15.23 mmol/L
+Hb：160.0 g/L
+ALT：38.6 U/L",0.711,OUT_OF_BROAD_RANGE_TEMP_C,,,
+668dc17027ebb2bd7d58,姓名：[NAME]；电话：[PHONE]；病历号：[MRN]；主诉：咳嗽五天；体温：280℃；血糖：13.24mmol/L；血红蛋白：100.5g/L；ALT：127.7U/L。,0.711,OUT_OF_BROAD_RANGE_TEMP_C,,,
+76edecad7937a2de5559,"姓名：[NAME]
+电话：[PHONE]
+病历号：[MRN]
+主诉：腹痛一天
+体温：280°C
+血糖：5.36 mmol/L
+Hb：150.8 g/L
+ALT：145.9 U/L",0.711,OUT_OF_BROAD_RANGE_TEMP_C,,,
+7c4d21a449777a81453c,"姓名：[NAME]
+电话：[PHONE]
+病历号：[MRN]
+主诉：夜间胸闷
+体温：280°C
+血糖：4.63 mmol/L
+Hb：110.7 g/L
+ALT：131.9 U/L",0.711,OUT_OF_BROAD_RANGE_TEMP_C,,,
+1aabc5f182ae9710467f,姓名：[NAME]；联系电话：[PHONE]；病历号：[MRN]；主诉：咳嗽五天；体温：700°F；血糖：286.309mg/dL；HGB：13.04g/dL；ALT：58.0 U/L。,0.716,OUT_OF_BROAD_RANGE_TEMP_C,,,
+2a58b6ad841fa29d7f52,姓名：[NAME]；联系电话：[PHONE]；病历号：[MRN]；主诉：咳嗽五天；体温：700°F；血糖：277.12mg/dL；HGB：11.22g/dL；ALT：158.3 U/L。,0.716,OUT_OF_BROAD_RANGE_TEMP_C,,,
+a4afac75216df2aefffb,姓名：[NAME]；联系电话：[PHONE]；病历号：[MRN]；主诉：腹痛一天；体温：700°F；血糖：258.561mg/dL；HGB：15.9g/dL；ALT：104.3 U/L。,0.716,OUT_OF_BROAD_RANGE_TEMP_C,,,
+86ed5eef255b04194dda,姓名：[NAME]；联系电话：[PHONE]；病历号：[MRN]；主诉：乏力三周；体温：700°F；血糖：268.832mg/dL；HGB：12.53g/dL；ALT：107.4 U/L。,0.718,OUT_OF_BROAD_RANGE_TEMP_C,,,
+b4255b292d247334173d,姓名：[NAME]；联系电话：[PHONE]；病历号：[MRN]；主诉：夜间胸闷；体温：700°F；血糖：137.299mg/dL；HGB：15.48g/dL；ALT：121.0 U/L。,0.718,OUT_OF_BROAD_RANGE_TEMP_C,,,
+f2bba92351f73a70aa8c,姓名：[NAME]；联系电话：[PHONE]；病历号：[MRN]；主诉：咳嗽五天；体温：700°F；血糖：229.192mg/dL；HGB：14.87g/dL；ALT：151.9 U/L。,0.718,OUT_OF_BROAD_RANGE_TEMP_C,,,
+550398b610ea1379f9bd,患者姓名：[NAME] | 手机：[PHONE] | 病历号：[MRN] | 症状描述：乏力三周 | T=700 °F | GLU=78.199 mg/dL | Hb=13.65 g/dL | ALT=700 U/L,0.735,OUT_OF_BROAD_RANGE_TEMP_C,,,
+cbe93b26f1fdf634561a,患者姓名：[NAME] | 手机：[PHONE] | 病历号：[MRN] | 症状描述：咳嗽五天 | T=700 °F | GLU=263.426 mg/dL | Hb=9.91 g/dL | ALT=700 U/L,0.735,OUT_OF_BROAD_RANGE_TEMP_C,,,
+a0337be5a3b4a72773fc,患者姓名：[NAME] | 手机：[PHONE] | 病历号：[MRN] | 症状描述：近期口渴 | T=700 °F | GLU=240.903 mg/dL | Hb=12.56 g/dL | ALT=700 U/L,0.736,OUT_OF_BROAD_RANGE_TEMP_C,,,
+d8e9b3c1c2deaf690b2a,患者姓名：[NAME] | 手机：[PHONE] | 病历号：[MRN] | 症状描述：夜间胸闷 | T=700 °F | GLU=171.353 mg/dL | Hb=10.67 g/dL | ALT=700 U/L,0.736,OUT_OF_BROAD_RANGE_TEMP_C,,,
+ed21172e802adf734a77,患者姓名：[NAME] | 手机：[PHONE] | 病历号：[MRN] | 症状描述：咳嗽五天 | T=700 °F | GLU=137.119 mg/dL | Hb=10.75 g/dL | ALT=700 U/L,0.736,OUT_OF_BROAD_RANGE_TEMP_C,,,
+824f16cbe362c473375b,Patient: [NAME] | Tel: [PHONE] | MRN: [MRN] | Complaint: fatigue for three days | temperature: 280 °C | blood glucose: 260.363 mg/dL | hemoglobin: 129.1 g/L | alanine aminotransferase: 163.8 U/L,0.75,OUT_OF_BROAD_RANGE_TEMP_C,,,
+8c3081a3c5a24488696a,Patient: [NAME] | Tel: [PHONE] | MRN: [MRN] | Complaint: fatigue for three days | temperature: 280 °C | blood glucose: 140.362 mg/dL | hemoglobin: 97.6 g/L | alanine aminotransferase: 70.4 U/L,0.75,OUT_OF_BROAD_RANGE_TEMP_C,,,
+ac798925503660fb6206,Patient: [NAME] | Tel: [PHONE] | MRN: [MRN] | Complaint: fatigue for three days | temperature: 280 °C | blood glucose: 116.037 mg/dL | hemoglobin: 122.9 g/L | alanine aminotransferase: 15.1 U/L,0.75,OUT_OF_BROAD_RANGE_TEMP_C,,,
+b5072a6961bb9a020164,Patient: [NAME] | Tel: [PHONE] | MRN: [MRN] | Complaint: five days of cough | temperature: 280 °C | blood glucose: 103.244 mg/dL | hemoglobin: 140.3 g/L | alanine aminotransferase: 89.8 U/L,0.75,OUT_OF_BROAD_RANGE_TEMP_C,,,
+c4d9145be93ae2f2de8d,Patient: [NAME] | Tel: [PHONE] | MRN: [MRN] | Complaint: five days of cough | temperature: 280 °C | blood glucose: 165.047 mg/dL | hemoglobin: 88.2 g/L | alanine aminotransferase: 111.4 U/L,0.75,OUT_OF_BROAD_RANGE_TEMP_C,,,
+a058868d8765234a4a47,姓名：[NAME];电话：[PHONE];病历号：[MRN];主诉：乏力三周;体温：38.0℃;血糖：8.1mmol/L;血红蛋白：97.1g/L;ALT：22.0U/L,0.956,DUPLICATE_WITHIN_PATIENT,,,
+afb1ca2323df7db449a2,姓名：[NAME];电话：[PHONE];病历号：[MRN];主诉：近期口渴;体温：36.5℃;血糖：13.1mmol/L;血红蛋白：105.2g/L;ALT：34.5U/L,0.959,DUPLICATE_WITHIN_PATIENT,,,
+c00a16e8b906f360cb16,姓名：[NAME];电话：[PHONE];病历号：[MRN];主诉：近期口渴;体温：37.2℃;血糖：12.36mmol/L;血红蛋白：93.3g/L;ALT：10.0U/L,0.959,DUPLICATE_WITHIN_PATIENT,,,
+275b03dd1ca62ca9971f,姓名：[NAME]；电话：[PHONE]；病历号：[MRN]；主诉：夜间胸闷；体温：38.8℃；血糖：8.12mmol/L；血红蛋白：152.9g/L；ALT：76.6U/L。,0.96,DUPLICATE_WITHIN_PATIENT,,,
+366a16e4bb25d8501cef,姓名：[NAME]；电话：[PHONE]；病历号：[MRN]；主诉：夜间胸闷；体温：39.5℃；血糖：4.4mmol/L；血红蛋白：115.8g/L；ALT：125.5U/L。,0.96,DUPLICATE_WITHIN_PATIENT,,,
+3c0ead323519a0886a2f,姓名：[NAME]；电话：[PHONE]；病历号：[MRN]；主诉：咳嗽五天；体温：38.4℃；血糖：8.75mmol/L；血红蛋白：88.5g/L；ALT：134.6U/L。,0.96,DUPLICATE_WITHIN_PATIENT,,,

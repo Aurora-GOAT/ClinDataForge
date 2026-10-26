@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "clin-data-forge"
+version = "0.1.1"
+description = "Auditable medical text processing and synthetic benchmark, not a clinical system"
+requires-python = ">=3.10"
+dependencies = []
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["clinforge*"]

@@ -1,0 +1,27 @@
+{
+  "n_cases": 60,
+  "n_phi_gold": 180,
+  "baseline_phi_span_exact": {
+    "tp": 50,
+    "fp": 0,
+    "fn": 130,
+    "precision": 1.0,
+    "recall": 0.2778,
+    "f1": 0.4348
+  },
+  "pipeline_phi_span_exact": {
+    "tp": 100,
+    "fp": 0,
+    "fn": 80,
+    "precision": 1.0,
+    "recall": 0.5556,
+    "f1": 0.7143
+  },
+  "known_weaknesses": [
+    "Prefixes other than 姓名：/Patient: are not covered",
+    "Phones with dots are not covered",
+    "MRN with other labels are not covered"
+  ],
+  "scope": "Deliberately separate synthetic stress templates; no real patient data or clinical expert labels.",
+  "warning": "Do not use this prototype for real PHI; incomplete recall can expose identifiers."
+}

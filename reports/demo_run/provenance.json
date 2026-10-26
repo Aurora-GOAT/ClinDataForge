@@ -1,0 +1,8 @@
+{
+  "source_basename": "synthetic_notes.jsonl",
+  "source_sha256_local_only": "7d43470260ec317f2480f35499a22d835e4e91a4f2b9e85e7d46967bfe1f5e19",
+  "synthetic_data_mode": true,
+  "version": "0.1.0",
+  "output_count": 730,
+  "raw_source_not_copied": true
+}
